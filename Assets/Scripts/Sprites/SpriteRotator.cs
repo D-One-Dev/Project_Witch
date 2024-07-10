@@ -6,17 +6,13 @@ public class SpriteRotator : MonoBehaviour
     [SerializeField] private Sprite frontSprite, backSprite, leftSprite, rightSprite;
     [SerializeField] private Texture frontN, backN, leftN, rightN;
     [SerializeField] private SpriteRenderer _SR;
-    [SerializeField] private Transform _parentObject;
     [SerializeField] private Material _material;
     void FixedUpdate()
     {
         transform.LookAt(player.position);
         transform.localEulerAngles = new Vector3(0f, transform.localEulerAngles.y + 180f, 0f);
-        //transform.forward = player.transform.forward;
-
-        float angle = transform.localEulerAngles.y - _parentObject.transform.localEulerAngles.y;
+        float angle = transform.localEulerAngles.y;
         {
-            Debug.Log(angle);
             if (angle <= 45f || angle > 315f)
             {
                 _SR.sprite = frontSprite;

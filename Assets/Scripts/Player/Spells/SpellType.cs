@@ -1,7 +1,7 @@
 public enum SpellType
 {
-    CastObject,
-    EffectObject,
-    EffectPlayer,
-    Other
+    CastObject = 0,
+    EffectObject = 1,
+    EffectPlayer = 2,
+    Other = 3
 }

@@ -12,8 +12,8 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         _controls = new Controls();
-        _controls.Gameplay.Shift.performed += ctx => shift = true;
-        _controls.Gameplay.Shift.canceled += ctx => shift = false;
+        //_controls.Gameplay.Shift.performed += ctx => shift = true;
+        //_controls.Gameplay.Shift.canceled += ctx => shift = false;
     }
     private void OnEnable()
     {
