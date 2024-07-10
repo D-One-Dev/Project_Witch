@@ -7,5 +7,5 @@ public class CastObjectSpell : ISpell
 
     public GameObject objectPrefab;
     public float objectSpeed;
-    public int manaCost;
+    //public int manaCost;
 }

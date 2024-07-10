@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6672efc1a7be1a45af3a8511514eb39, type: 3}
   m_Name: IncreaseSize
   m_EditorClassIdentifier: 
-  manaCost: 5
+  manaCost: 30
+  effect: 0

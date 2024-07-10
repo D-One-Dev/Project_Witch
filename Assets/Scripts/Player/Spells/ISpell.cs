@@ -6,4 +6,6 @@ public abstract class ISpell : ScriptableObject
     {
         get;
     }
+
+    public int manaCost;
 }

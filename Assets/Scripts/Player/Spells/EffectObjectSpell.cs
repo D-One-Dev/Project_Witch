@@ -8,7 +8,7 @@ public class EffectObjectSpell : ISpell
     //public GameObject objectPrefab;
     //public float objectSpeed;
     public Effect effect;
-    public int manaCost;
+    //public int manaCost;
 
     public enum Effect
     {

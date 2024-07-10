@@ -8,14 +8,14 @@ public class SpellCaster : MonoBehaviour
     [SerializeField] private Transform _projectilesParentObject;
     [SerializeField, SerializeReference] public ISpell leftSpell, topSpell, rightSpell, bottomSpell;
     [SerializeField] private float castDelay;
+    [SerializeField] private int manaAmount;
 
     private Controls _controls;
 
     private bool leftSpellCheck, topSpellCheck, rightSpellCheck, bottomSpellCheck;
-
     private Coroutine _castCoroutine;
-
     private List<ISpell> spells;
+    private int currentMana;
 
     private void Awake()
     {
@@ -44,14 +44,15 @@ public class SpellCaster : MonoBehaviour
         _controls.Disable();
     }
 
+    private void Start()
+    {
+        spells = new List<ISpell>();
+        currentMana = manaAmount;
+        ManaBarController.instance.UpdateFill(manaAmount, currentMana);
+    }
+
     private void Update()
     {
-        if (_castCoroutine == null && (leftSpellCheck || topSpellCheck || rightSpellCheck || bottomSpellCheck))
-        {
-            Debug.Log("Started casting");
-            _castCoroutine = StartCoroutine(CastDelay());
-            spells = new List<ISpell>();
-        }
         CheckSpells();
     }
 
@@ -59,26 +60,54 @@ public class SpellCaster : MonoBehaviour
     {
         if (leftSpellCheck)
         {
-            spells.Add(leftSpell);
-            leftSpellCheck = false;
+            if (leftSpell.manaCost <= currentMana)
+            {
+                if (_castCoroutine != null) StopCoroutine(_castCoroutine);
+                _castCoroutine = StartCoroutine(CastDelay());
+                currentMana -= leftSpell.manaCost;
+                ManaBarController.instance.UpdateFill(manaAmount, currentMana);
+                spells.Add(leftSpell);
+                leftSpellCheck = false;
+            }
         }
 
         else if (topSpellCheck)
         {
-            spells.Add(topSpell);
-            topSpellCheck = false;
+            if (topSpell.manaCost <= currentMana)
+            {
+                if (_castCoroutine != null) StopCoroutine(_castCoroutine);
+                _castCoroutine = StartCoroutine(CastDelay());
+                currentMana -= topSpell.manaCost;
+                ManaBarController.instance.UpdateFill(manaAmount, currentMana);
+                spells.Add(topSpell);
+                topSpellCheck = false;
+            }
         }
 
         else if (rightSpellCheck)
         {
-            spells.Add(rightSpell);
-            rightSpellCheck = false;
+            if (rightSpell.manaCost <= currentMana)
+            {
+                if (_castCoroutine != null) StopCoroutine(_castCoroutine);
+                _castCoroutine = StartCoroutine(CastDelay());
+                currentMana -= rightSpell.manaCost;
+                ManaBarController.instance.UpdateFill(manaAmount, currentMana);
+                spells.Add(rightSpell);
+                rightSpellCheck = false;
+            }
         }
 
         else if (bottomSpellCheck)
         {
-            spells.Add(bottomSpell);
-            bottomSpellCheck = false;
+            if (bottomSpell.manaCost <= currentMana)
+            {
+                if (_castCoroutine != null) StopCoroutine(_castCoroutine);
+                _castCoroutine = StartCoroutine(CastDelay());
+                currentMana -= bottomSpell.manaCost;
+                ManaBarController.instance.UpdateFill(manaAmount, currentMana);
+                spells.Add(bottomSpell);
+                bottomSpellCheck = false;
+            }
         }
     }
 
@@ -86,6 +115,9 @@ public class SpellCaster : MonoBehaviour
     {
         yield return new WaitForSeconds(castDelay);
         Cast();
+        spells.Clear();
+        currentMana = manaAmount;
+        ManaBarController.instance.UpdateFill(manaAmount, currentMana);
         _castCoroutine = null;
     }
 
