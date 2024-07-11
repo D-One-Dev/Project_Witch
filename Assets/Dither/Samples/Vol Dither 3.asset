@@ -108,7 +108,7 @@ MonoBehaviour:
     m_Value: 0
   m_Palette:
     m_OverrideState: 1
-    m_Value: {fileID: 2800000, guid: a549e7648ca5f4748abe881dff3a0430, type: 3}
+    m_Value: {fileID: 2800000, guid: e4ad2470ff5bbb54aa063f88e4fe0b45, type: 3}
   m_Pattern:
     m_OverrideState: 1
     m_Value: {fileID: 2800000, guid: a7ad2a875f5fcf442a267169bae8f2bb, type: 3}

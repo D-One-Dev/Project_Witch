@@ -60,7 +60,7 @@ public class SpellCaster : MonoBehaviour
     {
         if (leftSpellCheck)
         {
-            if (leftSpell.manaCost <= currentMana)
+            if (leftSpell != null && leftSpell.manaCost <= currentMana)
             {
                 if (_castCoroutine != null) StopCoroutine(_castCoroutine);
                 _castCoroutine = StartCoroutine(CastDelay());
@@ -73,7 +73,7 @@ public class SpellCaster : MonoBehaviour
 
         else if (topSpellCheck)
         {
-            if (topSpell.manaCost <= currentMana)
+            if (topSpell != null && topSpell.manaCost <= currentMana)
             {
                 if (_castCoroutine != null) StopCoroutine(_castCoroutine);
                 _castCoroutine = StartCoroutine(CastDelay());
@@ -86,7 +86,7 @@ public class SpellCaster : MonoBehaviour
 
         else if (rightSpellCheck)
         {
-            if (rightSpell.manaCost <= currentMana)
+            if (rightSpell != null && rightSpell.manaCost <= currentMana)
             {
                 if (_castCoroutine != null) StopCoroutine(_castCoroutine);
                 _castCoroutine = StartCoroutine(CastDelay());
@@ -99,7 +99,7 @@ public class SpellCaster : MonoBehaviour
 
         else if (bottomSpellCheck)
         {
-            if (bottomSpell.manaCost <= currentMana)
+            if (bottomSpell != null && bottomSpell.manaCost <= currentMana)
             {
                 if (_castCoroutine != null) StopCoroutine(_castCoroutine);
                 _castCoroutine = StartCoroutine(CastDelay());
