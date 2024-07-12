@@ -12,8 +12,8 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         _controls = new Controls();
-        //_controls.Gameplay.Shift.performed += ctx => shift = true;
-        //_controls.Gameplay.Shift.canceled += ctx => shift = false;
+        _controls.Gameplay.Shift.performed += ctx => shift = true;
+        _controls.Gameplay.Shift.canceled += ctx => shift = false;
     }
     private void OnEnable()
     {
@@ -42,20 +42,14 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_characterController.enabled)
         {
-            //if (PlayerInteraction.instance.playerStatus == 0)
-            //{
-                Vector2 input = _controls.Gameplay.Movement.ReadValue<Vector2>();
-                //if (input != Vector2.zero) SoundController.instance.StartWalk();
-                //else SoundController.instance.StopWalk();
-                Vector3 movement;
-                if(shift) movement = movementSpeed * 2 * Time.deltaTime * (input.x * transform.right + input.y * transform.forward);
-                else movement = movementSpeed * Time.deltaTime * (input.x * transform.right + input.y * transform.forward);
-                _characterController.Move(movement);
-            //}
-            //else SoundController.instance.StopWalk();
+            Vector2 input = _controls.Gameplay.Movement.ReadValue<Vector2>();
+            Vector3 movement;
+            if(shift) movement = movementSpeed * 2 * Time.deltaTime * (input.x * transform.right + input.y * transform.forward);
+            else movement = movementSpeed * Time.deltaTime * (input.x * transform.right + input.y * transform.forward);
+            _characterController.Move(movement);
             if (_characterController.isGrounded) grav = 0;
             else grav += gravity;
-            _characterController.Move(Vector3.up * grav * Time.deltaTime);
+            _characterController.Move(grav * Time.deltaTime * Vector3.up);
         }
     }
 }

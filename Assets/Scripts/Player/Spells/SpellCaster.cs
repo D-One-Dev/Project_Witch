@@ -13,6 +13,7 @@ public class SpellCaster : MonoBehaviour
     private Controls _controls;
 
     private bool leftSpellCheck, topSpellCheck, rightSpellCheck, bottomSpellCheck;
+    private bool leftSpellCheckComplete, topSpellCheckComplete, rightSpellCheckComplete, bottomSpellCheckComplete;
     private Coroutine _castCoroutine;
     private List<ISpell> spells;
     private int currentMana;
@@ -22,16 +23,32 @@ public class SpellCaster : MonoBehaviour
         _controls = new Controls();
 
         _controls.Gameplay.LMB.started += ctx => leftSpellCheck = true;
-        _controls.Gameplay.LMB.canceled += ctx => leftSpellCheck = false;
+        _controls.Gameplay.LMB.canceled += ctx =>
+        {
+            leftSpellCheck = false;
+            leftSpellCheckComplete = false;
+        };
 
         _controls.Gameplay.Shift.started += ctx => topSpellCheck = true;
-        _controls.Gameplay.Shift.canceled += ctx => topSpellCheck = false;
+        _controls.Gameplay.Shift.canceled += ctx =>
+        {
+            topSpellCheck = false;
+            topSpellCheckComplete = false;
+        };
 
         _controls.Gameplay.RMB.started += ctx => rightSpellCheck = true;
-        _controls.Gameplay.RMB.canceled += ctx => rightSpellCheck = false;
+        _controls.Gameplay.RMB.canceled += ctx =>
+        {
+            rightSpellCheck = false;
+            rightSpellCheckComplete = false;
+        };
 
         _controls.Gameplay.LControl.started += ctx => bottomSpellCheck = true;
-        _controls.Gameplay.LControl.canceled += ctx => bottomSpellCheck = false;
+        _controls.Gameplay.LControl.canceled += ctx =>
+        {
+            bottomSpellCheck = false;
+            bottomSpellCheckComplete = false;
+        };
     }
 
     private void OnEnable()
@@ -58,7 +75,7 @@ public class SpellCaster : MonoBehaviour
 
     private void CheckSpells()
     {
-        if (leftSpellCheck)
+        if (leftSpellCheck && !leftSpellCheckComplete)
         {
             if (leftSpell != null && leftSpell.manaCost <= currentMana)
             {
@@ -67,11 +84,11 @@ public class SpellCaster : MonoBehaviour
                 currentMana -= leftSpell.manaCost;
                 ManaBarController.instance.UpdateFill(manaAmount, currentMana);
                 spells.Add(leftSpell);
-                leftSpellCheck = false;
+                leftSpellCheckComplete = true;
             }
         }
 
-        else if (topSpellCheck)
+        else if (topSpellCheck && !topSpellCheckComplete)
         {
             if (topSpell != null && topSpell.manaCost <= currentMana)
             {
@@ -80,11 +97,11 @@ public class SpellCaster : MonoBehaviour
                 currentMana -= topSpell.manaCost;
                 ManaBarController.instance.UpdateFill(manaAmount, currentMana);
                 spells.Add(topSpell);
-                topSpellCheck = false;
+                topSpellCheckComplete = true;
             }
         }
 
-        else if (rightSpellCheck)
+        else if (rightSpellCheck && !rightSpellCheckComplete)
         {
             if (rightSpell != null && rightSpell.manaCost <= currentMana)
             {
@@ -93,11 +110,11 @@ public class SpellCaster : MonoBehaviour
                 currentMana -= rightSpell.manaCost;
                 ManaBarController.instance.UpdateFill(manaAmount, currentMana);
                 spells.Add(rightSpell);
-                rightSpellCheck = false;
+                rightSpellCheckComplete = true;
             }
         }
 
-        else if (bottomSpellCheck)
+        else if (bottomSpellCheck && !bottomSpellCheckComplete)
         {
             if (bottomSpell != null && bottomSpell.manaCost <= currentMana)
             {
@@ -106,7 +123,7 @@ public class SpellCaster : MonoBehaviour
                 currentMana -= bottomSpell.manaCost;
                 ManaBarController.instance.UpdateFill(manaAmount, currentMana);
                 spells.Add(bottomSpell);
-                bottomSpellCheck = false;
+                bottomSpellCheckComplete = true;
             }
         }
     }
@@ -114,11 +131,51 @@ public class SpellCaster : MonoBehaviour
     private IEnumerator CastDelay()
     {
         yield return new WaitForSeconds(castDelay);
-        Cast();
-        spells.Clear();
-        currentMana = manaAmount;
-        ManaBarController.instance.UpdateFill(manaAmount, currentMana);
-        _castCoroutine = null;
+        if((leftSpellCheck && leftSpellCheckComplete) ||
+            (topSpellCheck && topSpellCheckComplete) ||
+            (rightSpellCheck && rightSpellCheckComplete) ||
+            (bottomSpellCheck && bottomSpellCheckComplete))
+        {
+            if (leftSpellCheck && currentMana - leftSpell.manaCost >= 0)
+            {
+                currentMana -= leftSpell.manaCost;
+                spells.Add(leftSpell);
+            }
+            if (topSpellCheck && currentMana - topSpell.manaCost >= 0)
+            {
+                currentMana -= topSpell.manaCost;
+                spells.Add(topSpell);
+            }
+            if (rightSpellCheck && currentMana - rightSpell.manaCost >= 0)
+            {
+                currentMana -= rightSpell.manaCost;
+                spells.Add(rightSpell);
+            }
+            if (bottomSpellCheck && currentMana - bottomSpell.manaCost >= 0)
+            {
+                currentMana -= bottomSpell.manaCost;
+                spells.Add(bottomSpell);
+            }
+            ManaBarController.instance.UpdateFill(manaAmount, currentMana);
+            StopCoroutine(_castCoroutine);
+            _castCoroutine = StartCoroutine(CastDelay());
+        }
+        else
+        {
+            Cast();
+            spells.Clear();
+            currentMana = manaAmount;
+            ManaBarController.instance.UpdateFill(manaAmount, currentMana);
+            leftSpellCheck = false;
+            topSpellCheck = false;
+            rightSpellCheck = false;
+            bottomSpellCheck = false;
+            leftSpellCheckComplete = false;
+            topSpellCheckComplete = false;
+            rightSpellCheckComplete = false;
+            bottomSpellCheckComplete = false;
+            _castCoroutine = null;
+        }
     }
 
     private void Cast()
