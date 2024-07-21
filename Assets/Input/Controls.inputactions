@@ -58,6 +58,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Q",
+                    "type": "Button",
+                    "id": "bca4d673-6248-46b5-876e-0af9b1332a6a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "E",
+                    "type": "Button",
+                    "id": "7bf0c164-c525-48a8-ada8-559569f2f120",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -168,6 +186,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "RMB",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "13c8fd59-75d4-455e-a55e-033c6090a922",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Q",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "086c44f6-bd66-476d-b035-3973c5dc6fd6",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "E",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
