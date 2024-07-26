@@ -148,6 +148,7 @@ public class NewSpellCaster : MonoBehaviour
         {
             Cast();
             spells.Clear();
+            effects.Clear();
             currentMana = manaAmount;
             ManaBarController.instance.UpdateFill(manaAmount, currentMana);
             leftSpellCheck = false;
@@ -189,6 +190,13 @@ public class NewSpellCaster : MonoBehaviour
             //    }
             //}
         }
+
+        foreach (Effect effect in effects)
+        {
+            effect.Activate(objects);
+        }
+
+
     }
 
     //private void SortSpells()
