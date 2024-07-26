@@ -13082,7 +13082,6 @@ GameObject:
   - component: {fileID: 1184195739}
   - component: {fileID: 1184195738}
   - component: {fileID: 1184195740}
-  - component: {fileID: 1184195741}
   - component: {fileID: 1184195742}
   m_Layer: 7
   m_Name: Player
@@ -13149,26 +13148,6 @@ MonoBehaviour:
   movementSpeed: 5
   gravity: -0.15
   cam: {fileID: 330585546}
---- !u!114 &1184195741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1184195737}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f385d909b35faf34d9cf7ffb9b972c0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cam: {fileID: 330585546}
-  _projectilesParentObject: {fileID: 2138780469}
-  leftSpell: {fileID: 11400000, guid: a45452bf70de0fa47b77a9bfef8c387c, type: 2}
-  rightSpell: {fileID: 11400000, guid: a45452bf70de0fa47b77a9bfef8c387c, type: 2}
-  leftEffect: {fileID: 11400000, guid: 670aedee6c33b0b4ab331be857a07f6f, type: 2}
-  rightEffect: {fileID: 11400000, guid: 670aedee6c33b0b4ab331be857a07f6f, type: 2}
-  castDelay: 0.25
-  manaAmount: 100
 --- !u!114 &1184195742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13184,11 +13163,12 @@ MonoBehaviour:
   _cam: {fileID: 330585546}
   _projectilesParentObject: {fileID: 2138780469}
   leftSpell: {fileID: 11400000, guid: 29341cccf08603947a03fb4888d7ce25, type: 2}
-  rightSpell: {fileID: 11400000, guid: 29341cccf08603947a03fb4888d7ce25, type: 2}
+  rightSpell: {fileID: 11400000, guid: 7f3762dc9062be0468aedb52f423c6da, type: 2}
   leftEffect: {fileID: 11400000, guid: d9cfc28c11392ad4cacfe913abe3b01a, type: 2}
   rightEffect: {fileID: 11400000, guid: d9cfc28c11392ad4cacfe913abe3b01a, type: 2}
   castDelay: 0.25
   manaAmount: 100
+  steamSpell: {fileID: 11400000, guid: c3269f31bff42294386f25cee047dbb3, type: 2}
 --- !u!1001 &1205732787
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,7 +1,9 @@
 public enum SpellType
 {
-    CastObject = 0,
-    EffectObject = 1,
-    EffectPlayer = 2,
-    Other = 3
+    None = 0,
+    Fire = 1,
+    Ice = 2,
+    Earth = 3,
+    Poison = 4,
+    Void = 5
 }

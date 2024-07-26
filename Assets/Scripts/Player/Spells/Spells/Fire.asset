@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c45dbe9e71a3a384c9972b03e27bde21, type: 3}
-  m_Name: Brick
+  m_Script: {fileID: 11500000, guid: c8fc4cec5e088964cae176e60c7fb09f, type: 3}
+  m_Name: Fire
   m_EditorClassIdentifier: 
-  manaCost: 20
+  Type: 1
   objectPrefab: {fileID: 2121257395508586386, guid: 6e3c3a906acda0b4ba982277a2ea2183,
     type: 3}
-  objectSpeed: 10
+  manaCost: 30

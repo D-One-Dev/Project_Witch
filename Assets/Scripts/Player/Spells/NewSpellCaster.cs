@@ -2,20 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpellCaster : MonoBehaviour
+public class NewSpellCaster : MonoBehaviour
 {
     [SerializeField] private Transform _cam;
     [SerializeField] private Transform _projectilesParentObject;
-    [SerializeReference] public ISpell leftSpell, rightSpell, leftEffect, rightEffect;
+
+    [SerializeReference] private Spell leftSpell, rightSpell;
+    [SerializeField, SerializeReference] public Effect leftEffect, rightEffect;
+
     [SerializeField] private float castDelay;
     [SerializeField] private int manaAmount;
+
+    [Header ("Secondary Spells")]
+    [SerializeReference] private Spell steamSpell;
 
     private Controls _controls;
 
     private bool leftSpellCheck, rightSpellCheck;
     private bool leftSpellCheckComplete, rightSpellCheckComplete;
     private Coroutine _castCoroutine;
-    private List<ISpell> spells;
+
+    private List<Spell> spells;
+    private List<Effect> effects;
+
     private int currentMana;
 
     private void Awake()
@@ -38,21 +47,23 @@ public class SpellCaster : MonoBehaviour
 
         _controls.Gameplay.Q.performed += ctx =>
         {
-            if(leftEffect.manaCost <= currentMana)
+            if (leftEffect.ManaCost <= currentMana)
             {
-                currentMana -= leftEffect.manaCost;
+                currentMana -= leftEffect.ManaCost;
                 ManaBarController.instance.UpdateFill(manaAmount, currentMana);
-                spells.Add(leftEffect);
+
+                effects.Add(leftEffect);
             }
         };
 
         _controls.Gameplay.E.performed += ctx =>
         {
-            if (rightEffect.manaCost <= currentMana)
+            if (rightEffect.ManaCost <= currentMana)
             {
-                currentMana -= rightEffect.manaCost;
+                currentMana -= rightEffect.ManaCost;
                 ManaBarController.instance.UpdateFill(manaAmount, currentMana);
-                spells.Add(rightEffect);
+
+                effects.Add(rightEffect);
             }
         };
     }
@@ -69,7 +80,9 @@ public class SpellCaster : MonoBehaviour
 
     private void Start()
     {
-        spells = new List<ISpell>();
+        spells = new List<Spell>();
+        effects = new List<Effect>();
+
         currentMana = manaAmount;
         ManaBarController.instance.UpdateFill(manaAmount, currentMana);
     }
@@ -111,7 +124,7 @@ public class SpellCaster : MonoBehaviour
     private IEnumerator CastDelay()
     {
         yield return new WaitForSeconds(castDelay);
-        if((leftSpellCheck && leftSpellCheckComplete) ||
+        if ((leftSpellCheck && leftSpellCheckComplete) ||
             (rightSpellCheck && rightSpellCheckComplete))
         {
             if (leftSpellCheck && currentMana - leftSpell.manaCost >= 0)
@@ -132,6 +145,7 @@ public class SpellCaster : MonoBehaviour
         {
             Cast();
             spells.Clear();
+            effects.Clear();
             currentMana = manaAmount;
             ManaBarController.instance.UpdateFill(manaAmount, currentMana);
             leftSpellCheck = false;
@@ -144,46 +158,51 @@ public class SpellCaster : MonoBehaviour
 
     private void Cast()
     {
-        SortSpells();
+        List<Spell> outputSpells = new List<Spell>();
         List<GameObject> objects = new List<GameObject>();
-        foreach (ISpell spell in spells)
+        while (spells.Count > 0)
         {
-            Debug.Log(spell);
-
-            if(spell.Type == SpellType.CastObject)
+            if(spells.Count == 1)
             {
-                CastObjectSpell script = (CastObjectSpell)spell;
-                GameObject obj = Instantiate(script.objectPrefab, _cam.position, Quaternion.identity, _projectilesParentObject);
-                obj.transform.forward = _cam.transform.forward;
-                obj.GetComponent<Rigidbody>().velocity = obj.transform.forward * script.objectSpeed;
-                objects.Add(obj);
+                outputSpells.Add(spells[0]);
+                spells.RemoveAt(0);
             }
-            else if (spell.Type == SpellType.EffectObject)
+            SpellType spell1Type;
+            SpellType spell2Type;
+            for (int i = 0; i < spells.Count - 1; i++)
             {
-                EffectObjectSpell script = (EffectObjectSpell)spell;
-                if(script.effect == EffectObjectSpell.Effect.SizeIncrease)
+                for (int j = i + 1; j < spells.Count; j++)
                 {
-                    foreach (GameObject obj in objects)
+                    spell1Type = spells[i].Type;
+                    spell2Type = spells[j].Type;
+
+                    if ((spell1Type == SpellType.Fire && spell2Type == SpellType.Ice) || (spell1Type == SpellType.Ice && spell2Type == SpellType.Fire))
                     {
-                        obj.transform.localScale *= 1.5f;
+                        outputSpells.Add(steamSpell);
+                        spells.RemoveAt(i);
+                        spells.RemoveAt(j - 1);
+                    }
+
+                    else
+                    {
+                        outputSpells.Add(spells[i]);
+                        spells.RemoveAt(i);
                     }
                 }
             }
         }
-    }
 
-    private void SortSpells()
-    {
-        int length = spells.Count;
-        for(int i = 1; i < length; i++)
+        foreach (Spell spell in outputSpells)
         {
-            for(int j = 0; j < length - i; j++)
-            {
-                if (spells[j].Type > spells[j + 1].Type)
-                {
-                    (spells[j], spells[j + 1]) = (spells[j + 1], spells[j]);
-                }
-            }
+            Debug.Log(spell);
+            GameObject obj = Instantiate(spell.objectPrefab, _cam.position, Quaternion.identity, _projectilesParentObject);
+            obj.transform.forward = _cam.transform.forward;
+            objects.Add(obj);
+        }
+
+        foreach (Effect effect in effects)
+        {
+            effect.Activate(objects);
         }
     }
 }

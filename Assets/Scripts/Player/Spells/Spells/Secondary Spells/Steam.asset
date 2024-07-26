@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8fc4cec5e088964cae176e60c7fb09f, type: 3}
-  m_Name: Fire
+  m_Name: Steam
   m_EditorClassIdentifier: 
-  objectPrefab: {fileID: 2121257395508586386, guid: 6e3c3a906acda0b4ba982277a2ea2183,
+  Type: 0
+  objectPrefab: {fileID: 2015579761831088943, guid: 8c3e062fc8da5494c997dc195d9d6f39,
     type: 3}
-  manaCost: 30
+  manaCost: 0
