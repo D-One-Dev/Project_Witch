@@ -4,16 +4,20 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private CharacterController _characterController;
     [SerializeField] private float movementSpeed;
+    [SerializeField] private float jumpSpeed;
     [SerializeField] private float gravity;
     [SerializeField] private Transform cam;
     private Controls _controls;
     private bool shift;
+    private bool jump;
     private float grav;
     private void Awake()
     {
         _controls = new Controls();
-        _controls.Gameplay.Shift.performed += ctx => shift = true;
+        _controls.Gameplay.Shift.started += ctx => shift = true;
         _controls.Gameplay.Shift.canceled += ctx => shift = false;
+        _controls.Gameplay.Space.started += ctx => jump = true;
+        _controls.Gameplay.Space.canceled += ctx => jump = false;
     }
     private void OnEnable()
     {
@@ -47,9 +51,27 @@ public class PlayerMovement : MonoBehaviour
             if(shift) movement = movementSpeed * 2 * Time.deltaTime * (input.x * transform.right + input.y * transform.forward);
             else movement = movementSpeed * Time.deltaTime * (input.x * transform.right + input.y * transform.forward);
             _characterController.Move(movement);
-            if (_characterController.isGrounded) grav = 0;
-            else grav += gravity;
+
+            if (jump)
+            {
+                _characterController.Move(Vector3.up * -.01f);
+                if (_characterController.isGrounded)
+                {
+                    grav = jumpSpeed;
+                }
+            }
             _characterController.Move(grav * Time.deltaTime * Vector3.up);
+            if (_characterController.isGrounded && grav < 0) grav = 0;
+            else grav += gravity * Time.deltaTime;
+        }
+    }
+
+    private void Jump()
+    {
+        _characterController.Move(Vector3.up * -.01f);
+        if (_characterController.isGrounded)
+        {
+            grav = jumpSpeed;
         }
     }
 }
