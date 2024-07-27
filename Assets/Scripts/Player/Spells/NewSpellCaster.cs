@@ -1,6 +1,8 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NewSpellCaster : MonoBehaviour
 {
@@ -15,6 +17,12 @@ public class NewSpellCaster : MonoBehaviour
 
     [Header ("Secondary Spells")]
     [SerializeReference] private Spell steamSpell;
+
+    [Header("UI")]
+    [SerializeField] private Image leftSpellIcon;
+    [SerializeField] private Image rightSpellIcon;
+    [SerializeField] private Image leftEffectIcon;
+    [SerializeField] private Image rightEffectIcon;
 
     private Controls _controls;
 
@@ -54,6 +62,7 @@ public class NewSpellCaster : MonoBehaviour
 
                 effects.Add(leftEffect);
             }
+            leftEffectIcon.DOColor(new Color(.5f, .5f, .5f), .1f).OnComplete(() => { leftEffectIcon.DOColor(Color.white, .1f); });
         };
 
         _controls.Gameplay.E.performed += ctx =>
@@ -65,6 +74,8 @@ public class NewSpellCaster : MonoBehaviour
 
                 effects.Add(rightEffect);
             }
+
+            rightEffectIcon.DOColor(new Color(.5f, .5f, .5f), .1f).OnComplete(() => { rightEffectIcon.DOColor(Color.white, .1f); });
         };
     }
 
@@ -105,6 +116,9 @@ public class NewSpellCaster : MonoBehaviour
                 spells.Add(leftSpell);
             }
             leftSpellCheckComplete = true;
+
+            
+            leftSpellIcon.DOColor(new Color(.5f, .5f, .5f), .1f).OnComplete(()=>{leftSpellIcon.DOColor(Color.white, .1f);});
         }
 
         else if (rightSpellCheck && !rightSpellCheckComplete)
@@ -118,6 +132,8 @@ public class NewSpellCaster : MonoBehaviour
                 spells.Add(rightSpell);
             }
             rightSpellCheckComplete = true;
+
+            rightSpellIcon.DOColor(new Color(.5f, .5f, .5f), .1f).OnComplete(() => { rightSpellIcon.DOColor(Color.white, .1f); });
         }
     }
 

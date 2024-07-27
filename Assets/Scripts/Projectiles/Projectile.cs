@@ -20,11 +20,11 @@ public class Projectile : MonoBehaviour
         {
             if(target == null)
             {
-                RaycastHit hit;
-                if(Physics.SphereCast(transform.position, targetLockRadius, transform.forward, out hit, targetLockRadius, enemies))
+                Collider[] hit = Physics.OverlapSphere(transform.position, targetLockRadius, enemies);
+                if(hit.Length > 0)
                 {
                     Debug.Log("Locked");
-                    target = hit.transform;
+                    target = hit[0].transform;
                 }
             }
             else
