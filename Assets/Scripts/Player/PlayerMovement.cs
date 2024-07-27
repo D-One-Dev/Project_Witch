@@ -52,26 +52,13 @@ public class PlayerMovement : MonoBehaviour
             else movement = movementSpeed * Time.deltaTime * (input.x * transform.right + input.y * transform.forward);
             _characterController.Move(movement);
 
-            if (jump)
-            {
-                _characterController.Move(Vector3.up * -.01f);
-                if (_characterController.isGrounded)
-                {
-                    grav = jumpSpeed;
-                }
-            }
             _characterController.Move(grav * Time.deltaTime * Vector3.up);
             if (_characterController.isGrounded && grav < 0) grav = 0;
             else grav += gravity * Time.deltaTime;
-        }
-    }
-
-    private void Jump()
-    {
-        _characterController.Move(Vector3.up * -.01f);
-        if (_characterController.isGrounded)
-        {
-            grav = jumpSpeed;
+            if (jump && _characterController.isGrounded)
+            {
+                grav = jumpSpeed;
+            }
         }
     }
 }

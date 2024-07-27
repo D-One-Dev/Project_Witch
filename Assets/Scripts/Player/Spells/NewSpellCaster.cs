@@ -195,7 +195,12 @@ public class NewSpellCaster : MonoBehaviour
         foreach (Spell spell in outputSpells)
         {
             Debug.Log(spell);
-            GameObject obj = Instantiate(spell.objectPrefab, _cam.position, Quaternion.identity, _projectilesParentObject);
+            Vector3 randomPos;
+            if(outputSpells.Count < 2) randomPos = _cam.transform.position;
+            else randomPos = _cam.position + (_cam.transform.right * Random.Range(-spell.objectPrefab.transform.localScale.x,
+                spell.objectPrefab.transform.localScale.x) + _cam.transform.up * Random.Range(-spell.objectPrefab.transform.localScale.y,
+                spell.objectPrefab.transform.localScale.y)) / 2;
+            GameObject obj = Instantiate(spell.objectPrefab, randomPos, Quaternion.identity, _projectilesParentObject);
             obj.transform.forward = _cam.transform.forward;
             objects.Add(obj);
         }

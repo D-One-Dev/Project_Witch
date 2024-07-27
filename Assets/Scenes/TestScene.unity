@@ -2951,7 +2951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 367013641}
   - component: {fileID: 367013642}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4474,7 +4474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 524487077}
   - component: {fileID: 524487078}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LightBat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6161,7 +6161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 642448657}
   - component: {fileID: 642448658}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DemonBat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13178,7 +13178,7 @@ MonoBehaviour:
   leftSpell: {fileID: 11400000, guid: 29341cccf08603947a03fb4888d7ce25, type: 2}
   rightSpell: {fileID: 11400000, guid: 7f3762dc9062be0468aedb52f423c6da, type: 2}
   leftEffect: {fileID: 11400000, guid: d9cfc28c11392ad4cacfe913abe3b01a, type: 2}
-  rightEffect: {fileID: 11400000, guid: d9cfc28c11392ad4cacfe913abe3b01a, type: 2}
+  rightEffect: {fileID: 11400000, guid: 0ba98c0a383de2340a26ac4f7fe7e267, type: 2}
   castDelay: 0.25
   manaAmount: 100
   steamSpell: {fileID: 11400000, guid: c3269f31bff42294386f25cee047dbb3, type: 2}
