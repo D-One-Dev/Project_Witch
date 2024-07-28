@@ -4,6 +4,7 @@ public class CameraLook : MonoBehaviour
 {
     [SerializeField] private float mouseSens;
     [SerializeField] private Transform playerBody;
+    [SerializeField] private CharacterController _characterController;
     private float xRotation = 0f;
     private Controls _controls;
 
@@ -35,17 +36,17 @@ public class CameraLook : MonoBehaviour
     }
     void Update()
     {
-        //if (PlayerInteraction.instance.playerStatus == 0)
-        //{
+        if (_characterController.enabled)
+        {
             Vector2 mouseDelta = _controls.Gameplay.MouseDelta.ReadValue<Vector2>();
-            float mouseX = mouseDelta.x * mouseSens;//Time.deltaTime * mouseSens;
-            float mouseY = mouseDelta.y * mouseSens;//Time.deltaTime * mouseSens;
+            float mouseX = mouseDelta.x * mouseSens;
+            float mouseY = mouseDelta.y * mouseSens;
             xRotation -= mouseY;
             xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
             transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
             playerBody.Rotate(Vector3.up * mouseX);
-        //}
+        }
     }
 
     public void ChangeSens(int value)

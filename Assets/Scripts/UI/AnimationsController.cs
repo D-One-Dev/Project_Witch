@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using Unity.VisualScripting;
 
 public class AnimationsController : MonoBehaviour
 {
@@ -28,5 +29,21 @@ public class AnimationsController : MonoBehaviour
     public void ShakeBar(RectTransform barParent)
     {
         barParent.DOShakePosition(.1f, 10f, 100);
+    }
+
+    public void FadeInScreen(GameObject screen, Tween fadeOutTween)
+    {
+        if (fadeOutTween != null) fadeOutTween.Kill();
+        screen.GetComponent<Image>().color = new Color(0f, 0f, 0f, 0f);
+        screen.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        screen.GetComponent<Image>().DOFade(.8f, .5f).SetUpdate(UpdateType.Normal, true);
+    }
+    public Tween FadeOutScreen(GameObject screen)
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        return screen.GetComponent<Image>().DOFade(0f, .5f).SetUpdate(UpdateType.Normal, true).OnComplete(() => {screen.SetActive(false); });
     }
 }

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
@@ -5,12 +6,14 @@ public class Projectile : MonoBehaviour
     public float speed;
     public bool isHoming;
     public float rotationSpeed;
+    public float lifeTime = 30f;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private LayerMask enemies;
     [SerializeField] private float targetLockRadius;
     private Transform target;
     private void Start()
     {
+        StartCoroutine(Life());
         rb.velocity = transform.forward * speed;
     }
 
@@ -48,5 +51,11 @@ public class Projectile : MonoBehaviour
         Gizmos.color = Color.yellow;
 
         Gizmos.DrawWireSphere(transform.position, targetLockRadius);
+    }
+
+    private IEnumerator Life()
+    {
+        yield return new WaitForSeconds(lifeTime);
+        Destroy(gameObject);
     }
 }

@@ -1,22 +1,26 @@
-using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class NewSpellCaster : MonoBehaviour
 {
     [SerializeField] private Transform _cam;
     [SerializeField] private Transform _projectilesParentObject;
 
-    [SerializeReference] private Spell leftSpell, rightSpell;
-    [SerializeField, SerializeReference] public Effect leftEffect, rightEffect;
 
     [SerializeField] private float castDelay;
     [SerializeField] private int manaAmount;
 
     [Header ("Secondary Spells")]
     [SerializeReference] private Spell steamSpell;
+    [SerializeField] private Spell lavaSpell;
+    [SerializeField] private Spell icyRockSpell;
+
+    [Header("Current Spells and Effects")]
+    [SerializeReference] private Spell leftSpell;
+    [SerializeReference] private Spell rightSpell;
+    [SerializeReference] public Effect leftEffect;
+    [SerializeReference] public Effect rightEffect;
 
     [Header("UI")]
     [SerializeField] private GameObject leftSpellIcon;
@@ -39,14 +43,26 @@ public class NewSpellCaster : MonoBehaviour
     {
         _controls = new Controls();
 
-        _controls.Gameplay.LMB.started += ctx => leftSpellCheck = true;
+        _controls.Gameplay.LMB.started += ctx =>
+        {
+            if (Time.timeScale > 0f)
+            {
+                leftSpellCheck = true;
+            }
+        };
         _controls.Gameplay.LMB.canceled += ctx =>
         {
             leftSpellCheck = false;
             leftSpellCheckComplete = false;
         };
 
-        _controls.Gameplay.RMB.started += ctx => rightSpellCheck = true;
+        _controls.Gameplay.RMB.started += ctx =>
+        {
+            if (Time.timeScale > 0f)
+            {
+                rightSpellCheck = true;
+            }
+        }; 
         _controls.Gameplay.RMB.canceled += ctx =>
         {
             rightSpellCheck = false;
@@ -55,28 +71,34 @@ public class NewSpellCaster : MonoBehaviour
 
         _controls.Gameplay.Q.performed += ctx =>
         {
-            if (leftEffect.ManaCost <= currentMana)
+            if (Time.timeScale > 0f)
             {
-                currentMana -= leftEffect.ManaCost;
-                ManaBarController.instance.UpdateFill(manaAmount, currentMana);
+                if (leftEffect.ManaCost <= currentMana)
+                {
+                    currentMana -= leftEffect.ManaCost;
+                    ManaBarController.instance.UpdateFill(manaAmount, currentMana);
 
-                effects.Add(leftEffect);
-            }
-            else ManaBarController.instance.ShakeManaBar();
-            AnimationsController.instance.ClickButton(leftEffectIcon);
+                    effects.Add(leftEffect);
+                }
+                else ManaBarController.instance.ShakeManaBar();
+                AnimationsController.instance.ClickButton(leftEffectIcon);
+            };
         };
 
         _controls.Gameplay.E.performed += ctx =>
         {
-            if (rightEffect.ManaCost <= currentMana)
+            if (Time.timeScale > 0f)
             {
-                currentMana -= rightEffect.ManaCost;
-                ManaBarController.instance.UpdateFill(manaAmount, currentMana);
+                if (rightEffect.ManaCost <= currentMana)
+                {
+                    currentMana -= rightEffect.ManaCost;
+                    ManaBarController.instance.UpdateFill(manaAmount, currentMana);
 
-                effects.Add(rightEffect);
-            }
-            else ManaBarController.instance.ShakeManaBar();
-            AnimationsController.instance.ClickButton(rightEffectIcon);
+                    effects.Add(rightEffect);
+                }
+                else ManaBarController.instance.ShakeManaBar();
+                AnimationsController.instance.ClickButton(rightEffectIcon);
+            };
         };
     }
 
@@ -198,6 +220,20 @@ public class NewSpellCaster : MonoBehaviour
                     if ((spell1Type == SpellType.Fire && spell2Type == SpellType.Ice) || (spell1Type == SpellType.Ice && spell2Type == SpellType.Fire))
                     {
                         outputSpells.Add(steamSpell);
+                        spells.RemoveAt(i);
+                        spells.RemoveAt(j - 1);
+                    }
+
+                    else if ((spell1Type == SpellType.Fire && spell2Type == SpellType.Earth) || (spell1Type == SpellType.Earth && spell2Type == SpellType.Fire))
+                    {
+                        outputSpells.Add(lavaSpell);
+                        spells.RemoveAt(i);
+                        spells.RemoveAt(j - 1);
+                    }
+
+                    else if ((spell1Type == SpellType.Ice && spell2Type == SpellType.Earth) || (spell1Type == SpellType.Earth && spell2Type == SpellType.Ice))
+                    {
+                        outputSpells.Add(icyRockSpell);
                         spells.RemoveAt(i);
                         spells.RemoveAt(j - 1);
                     }
