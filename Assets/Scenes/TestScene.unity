@@ -1578,6 +1578,7 @@ GameObject:
   - component: {fileID: 223917067}
   - component: {fileID: 223917066}
   - component: {fileID: 223917070}
+  - component: {fileID: 223917071}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -1643,7 +1644,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 1
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 1
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1683,7 +1684,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manaBar: {fileID: 759866453}
+  manaBarParent: {fileID: 545273604}
   smoothness: 0.5
+--- !u!114 &223917071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223917065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23f6d81194344f46b1011d7a004dccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &228031046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5605,7 +5619,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &590305800
 MonoBehaviour:
@@ -5654,10 +5668,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 36.55
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 17
@@ -12914,10 +12928,10 @@ MonoBehaviour:
   castDelay: 0.25
   manaAmount: 100
   steamSpell: {fileID: 11400000, guid: c3269f31bff42294386f25cee047dbb3, type: 2}
-  leftSpellIcon: {fileID: 701187980}
-  rightSpellIcon: {fileID: 139608494}
-  leftEffectIcon: {fileID: 882080599}
-  rightEffectIcon: {fileID: 2091085878}
+  leftSpellIcon: {fileID: 701187978}
+  rightSpellIcon: {fileID: 139608492}
+  leftEffectIcon: {fileID: 882080597}
+  rightEffectIcon: {fileID: 2091085876}
 --- !u!1001 &1205732787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13850,7 +13864,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1236373542
 MonoBehaviour:
@@ -13899,10 +13913,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 34.05
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 17

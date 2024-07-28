@@ -19,10 +19,10 @@ public class NewSpellCaster : MonoBehaviour
     [SerializeReference] private Spell steamSpell;
 
     [Header("UI")]
-    [SerializeField] private Image leftSpellIcon;
-    [SerializeField] private Image rightSpellIcon;
-    [SerializeField] private Image leftEffectIcon;
-    [SerializeField] private Image rightEffectIcon;
+    [SerializeField] private GameObject leftSpellIcon;
+    [SerializeField] private GameObject rightSpellIcon;
+    [SerializeField] private GameObject leftEffectIcon;
+    [SerializeField] private GameObject rightEffectIcon;
 
     private Controls _controls;
 
@@ -62,7 +62,8 @@ public class NewSpellCaster : MonoBehaviour
 
                 effects.Add(leftEffect);
             }
-            leftEffectIcon.DOColor(new Color(.5f, .5f, .5f), .1f).OnComplete(() => { leftEffectIcon.DOColor(Color.white, .1f); });
+            else ManaBarController.instance.ShakeManaBar();
+            AnimationsController.instance.ClickButton(leftEffectIcon);
         };
 
         _controls.Gameplay.E.performed += ctx =>
@@ -74,8 +75,8 @@ public class NewSpellCaster : MonoBehaviour
 
                 effects.Add(rightEffect);
             }
-
-            rightEffectIcon.DOColor(new Color(.5f, .5f, .5f), .1f).OnComplete(() => { rightEffectIcon.DOColor(Color.white, .1f); });
+            else ManaBarController.instance.ShakeManaBar();
+            AnimationsController.instance.ClickButton(rightEffectIcon);
         };
     }
 
@@ -115,10 +116,11 @@ public class NewSpellCaster : MonoBehaviour
                 ManaBarController.instance.UpdateFill(manaAmount, currentMana);
                 spells.Add(leftSpell);
             }
+            else ManaBarController.instance.ShakeManaBar();
             leftSpellCheckComplete = true;
 
-            
-            leftSpellIcon.DOColor(new Color(.5f, .5f, .5f), .1f).OnComplete(()=>{leftSpellIcon.DOColor(Color.white, .1f);});
+
+            AnimationsController.instance.ClickButton(leftSpellIcon);
         }
 
         else if (rightSpellCheck && !rightSpellCheckComplete)
@@ -131,9 +133,10 @@ public class NewSpellCaster : MonoBehaviour
                 ManaBarController.instance.UpdateFill(manaAmount, currentMana);
                 spells.Add(rightSpell);
             }
+            else ManaBarController.instance.ShakeManaBar();
             rightSpellCheckComplete = true;
 
-            rightSpellIcon.DOColor(new Color(.5f, .5f, .5f), .1f).OnComplete(() => { rightSpellIcon.DOColor(Color.white, .1f); });
+            AnimationsController.instance.ClickButton(rightSpellIcon);
         }
     }
 

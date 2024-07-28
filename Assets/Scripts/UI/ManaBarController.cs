@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class ManaBarController : MonoBehaviour
 {
     [SerializeField] private Image manaBar;
+    [SerializeField] private RectTransform manaBarParent;
     [SerializeField] private float smoothness;
 
     public static ManaBarController instance;
@@ -15,13 +16,16 @@ public class ManaBarController : MonoBehaviour
         instance = this;
     }
 
-    private void FixedUpdate()
-    {
-        manaBar.fillAmount = Mathf.Lerp(manaBar.fillAmount, barTarget, smoothness);
-    }
-
     public void UpdateFill(int maxMana, int currentMana)
     {
         barTarget = currentMana / (float) maxMana;
+        if(manaBar.fillAmount > barTarget)
+            AnimationsController.instance.UpdateBar(manaBar, currentMana / (float)maxMana, manaBarParent, true);
+        else AnimationsController.instance.UpdateBar(manaBar, currentMana / (float)maxMana, manaBarParent, false);
+    }
+
+    public void ShakeManaBar()
+    {
+        AnimationsController.instance.ShakeBar(manaBarParent);
     }
 }
