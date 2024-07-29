@@ -66,6 +66,10 @@ public class AnimationsController : MonoBehaviour
         blackScreen.enabled = true;
         sceneLoadOperation = SceneManager.LoadSceneAsync(sceneID);
         sceneLoadOperation.allowSceneActivation = false;
-        blackScreen.DOColor(Color.black, 1f).SetUpdate(UpdateType.Normal, true).OnComplete(() => { sceneLoadOperation.allowSceneActivation = true; });
+        blackScreen.DOColor(Color.black, 1f).SetUpdate(UpdateType.Normal, true).OnComplete(() =>
+        {
+            Time.timeScale = 1f;
+            sceneLoadOperation.allowSceneActivation = true;
+        });
     }
 }

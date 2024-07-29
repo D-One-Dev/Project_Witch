@@ -116,6 +116,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Esc"",
+                    ""type"": ""Button"",
+                    ""id"": ""4a4fb927-99aa-4f4a-85a2-bddc0bdcd96d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -272,6 +281,17 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""Tab"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0ec7b434-2461-4c6b-af73-eb15c6154945"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Esc"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -290,6 +310,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Gameplay_E = m_Gameplay.FindAction("E", throwIfNotFound: true);
         m_Gameplay_Space = m_Gameplay.FindAction("Space", throwIfNotFound: true);
         m_Gameplay_Tab = m_Gameplay.FindAction("Tab", throwIfNotFound: true);
+        m_Gameplay_Esc = m_Gameplay.FindAction("Esc", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -361,6 +382,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_E;
     private readonly InputAction m_Gameplay_Space;
     private readonly InputAction m_Gameplay_Tab;
+    private readonly InputAction m_Gameplay_Esc;
     public struct GameplayActions
     {
         private @Controls m_Wrapper;
@@ -375,6 +397,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @E => m_Wrapper.m_Gameplay_E;
         public InputAction @Space => m_Wrapper.m_Gameplay_Space;
         public InputAction @Tab => m_Wrapper.m_Gameplay_Tab;
+        public InputAction @Esc => m_Wrapper.m_Gameplay_Esc;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -414,6 +437,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Tab.started += instance.OnTab;
             @Tab.performed += instance.OnTab;
             @Tab.canceled += instance.OnTab;
+            @Esc.started += instance.OnEsc;
+            @Esc.performed += instance.OnEsc;
+            @Esc.canceled += instance.OnEsc;
         }
 
         private void UnregisterCallbacks(IGameplayActions instance)
@@ -448,6 +474,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Tab.started -= instance.OnTab;
             @Tab.performed -= instance.OnTab;
             @Tab.canceled -= instance.OnTab;
+            @Esc.started -= instance.OnEsc;
+            @Esc.performed -= instance.OnEsc;
+            @Esc.canceled -= instance.OnEsc;
         }
 
         public void RemoveCallbacks(IGameplayActions instance)
@@ -477,5 +506,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnE(InputAction.CallbackContext context);
         void OnSpace(InputAction.CallbackContext context);
         void OnTab(InputAction.CallbackContext context);
+        void OnEsc(InputAction.CallbackContext context);
     }
 }

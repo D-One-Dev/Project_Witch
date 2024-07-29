@@ -1,20 +1,19 @@
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class SpellSelectScreenController : MonoBehaviour
 {
-    [SerializeField] private float pauseGameSmoothness;
-    [SerializeField] private CharacterController _characterController;
     [SerializeField] private GameObject spellSelectScreen;
     [SerializeField] private TMP_Text spellNameText, spellDescriptionText, spellCostText;
     private Controls _controls;
-    private bool isGamePused;
+
     private Tween spellSelectScreenFadeOutTween;
     private Spell currentSpell;
     private GameObject currentCard;
     private Effect currentEffect;
+
+    private bool isSpellScreenActive;
 
     public static SpellSelectScreenController instance;
 
@@ -23,21 +22,25 @@ public class SpellSelectScreenController : MonoBehaviour
         instance = this;
         _controls = new Controls();
         _controls.Gameplay.Tab.performed += ctx => TriggerSpellSelectScreen();
+        _controls.Gameplay.Esc.performed += ctx =>
+        {
+            if (GlobalGamePause.instance.isGamePaused && isSpellScreenActive) TriggerSpellSelectScreen();
+        };
         _controls.Gameplay.LMB.performed += ctx =>
         {
-            if (isGamePused) SetLeftSpell();
+            if (GlobalGamePause.instance.isGamePaused) SetLeftSpell();
         };
         _controls.Gameplay.RMB.performed += ctx =>
         {
-            if (isGamePused) SetRightSpell();
+            if (GlobalGamePause.instance.isGamePaused) SetRightSpell();
         };
         _controls.Gameplay.Q.performed += ctx =>
         {
-            if (isGamePused) SetLeftEffect();
+            if (GlobalGamePause.instance.isGamePaused) SetLeftEffect();
         };
         _controls.Gameplay.E.performed += ctx =>
         {
-            if (isGamePused) SetRightEffect();
+            if (GlobalGamePause.instance.isGamePaused) SetRightEffect();
         };
 
     }
@@ -52,28 +55,22 @@ public class SpellSelectScreenController : MonoBehaviour
         _controls.Disable();
     }
 
-    private void FixedUpdate()
-    {
-        if (isGamePused) Time.timeScale = Mathf.MoveTowards(Time.timeScale, 0f, pauseGameSmoothness);
-        else Time.timeScale = Mathf.MoveTowards(Time.timeScale, 1f, pauseGameSmoothness);
-        if(Time.timeScale == 0f) _characterController.enabled = false;
-        else _characterController.enabled = true;
-    }
-
     private void TriggerSpellSelectScreen()
     {
-        if (!isGamePused)
+        if (!GlobalGamePause.instance.isGamePaused)
         {
             AnimationsController.instance.FadeInScreen(spellSelectScreen, spellSelectScreenFadeOutTween);
-            isGamePused = true;
+            GlobalGamePause.instance.isGamePaused = true;
+            isSpellScreenActive = true;
         }
         else
         {
             spellSelectScreenFadeOutTween = AnimationsController.instance.FadeOutScreen(spellSelectScreen);
-            isGamePused = false;
-            FixedUpdate();
+            GlobalGamePause.instance.isGamePaused = false;
+            GlobalGamePause.instance.FixedUpdate();
             NewSpellCaster.instance.ClearCastList();
             NewSpellCaster.instance.UpdateSpellIcons();
+            isSpellScreenActive = false;
         }
     }
 
