@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
-using Unity.VisualScripting;
 
 public class AnimationsController : MonoBehaviour
 {
