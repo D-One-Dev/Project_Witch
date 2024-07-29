@@ -16,3 +16,6 @@ MonoBehaviour:
   objectPrefab: {fileID: 3006442616532056023, guid: 8b2703a71b5679c42a5373366f56f2cd,
     type: 3}
   manaCost: 30
+  spellName: Ice
+  spellDescription: Launches an ice shard
+  spellIcon: {fileID: 21300000, guid: 9930d7480a431504093e070cad55fbe2, type: 3}

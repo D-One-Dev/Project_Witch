@@ -16,3 +16,6 @@ MonoBehaviour:
   objectPrefab: {fileID: 2121257395508586386, guid: 6e3c3a906acda0b4ba982277a2ea2183,
     type: 3}
   manaCost: 30
+  spellName: Fire
+  spellDescription: Launches a fireball
+  spellIcon: {fileID: 21300000, guid: fd60b50c1124ada478531d66412a1ba2, type: 3}

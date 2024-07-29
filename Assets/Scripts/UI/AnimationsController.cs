@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class AnimationsController : MonoBehaviour
 {
     public static AnimationsController instance;
+
+    private AsyncOperation sceneLoadOperation;
     private void Awake()
     {
         instance = this;
@@ -12,10 +15,10 @@ public class AnimationsController : MonoBehaviour
 
     public void ClickButton(GameObject button)
     {
-        button.GetComponent<Image>().DOColor(new Color(.5f, .5f, .5f), .1f).OnComplete(() =>
-            { button.GetComponent<Image>().DOColor(Color.white, .1f); });
-        button.GetComponent<RectTransform>().DOScale(new Vector3(.75f, .75f, 1f), .1f).OnComplete(() =>
-            { button.GetComponent<RectTransform>().DOScale(new Vector3(1f, 1f, 1f), .1f); });
+        button.GetComponent<Image>().DOColor(new Color(.5f, .5f, .5f), .1f).SetUpdate(UpdateType.Normal, true).OnComplete(() =>
+            { button.GetComponent<Image>().DOColor(Color.white, .1f).SetUpdate(UpdateType.Normal, true); });
+        button.GetComponent<RectTransform>().DOScale(new Vector3(.85f, .85f, 1f), .1f).SetUpdate(UpdateType.Normal, true).OnComplete(() =>
+            { button.GetComponent<RectTransform>().DOScale(new Vector3(1f, 1f, 1f), .1f).SetUpdate(UpdateType.Normal, true); });
     }
 
     public void UpdateBar(Image bar, float value, RectTransform barParent, bool isDraining)
@@ -44,5 +47,25 @@ public class AnimationsController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         return screen.GetComponent<Image>().DOFade(0f, .5f).SetUpdate(UpdateType.Normal, true).OnComplete(() => {screen.SetActive(false); });
+    }
+
+    public Tween SpellCardEnter(GameObject spellCard, Tween spellCardExitTween)
+    {
+        if (spellCardExitTween != null) spellCardExitTween.Kill();
+        return spellCard.GetComponentInChildren<Image>().DOColor(new Color(.75f, .75f, .75f), .1f).SetUpdate(UpdateType.Normal, true);
+    }
+
+    public Tween SpellCardExit(GameObject spellCard, Tween spellCardEnterTween)
+    {
+        if (spellCardEnterTween != null) spellCardEnterTween.Kill();
+        return spellCard.GetComponentInChildren<Image>().DOColor(new Color(1f, 1f, 1f), .1f).SetUpdate(UpdateType.Normal, true);
+    }
+
+    public void ChangeScene(Image blackScreen, int sceneID)
+    {
+        blackScreen.enabled = true;
+        sceneLoadOperation = SceneManager.LoadSceneAsync(sceneID);
+        sceneLoadOperation.allowSceneActivation = false;
+        blackScreen.DOColor(Color.black, 1f).SetUpdate(UpdateType.Normal, true).OnComplete(() => { sceneLoadOperation.allowSceneActivation = true; });
     }
 }

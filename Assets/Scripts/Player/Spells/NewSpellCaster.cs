@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NewSpellCaster : MonoBehaviour
 {
@@ -17,8 +18,8 @@ public class NewSpellCaster : MonoBehaviour
     [SerializeField] private Spell icyRockSpell;
 
     [Header("Current Spells and Effects")]
-    [SerializeReference] private Spell leftSpell;
-    [SerializeReference] private Spell rightSpell;
+    [SerializeReference] public Spell leftSpell;
+    [SerializeReference] public Spell rightSpell;
     [SerializeReference] public Effect leftEffect;
     [SerializeReference] public Effect rightEffect;
 
@@ -27,6 +28,10 @@ public class NewSpellCaster : MonoBehaviour
     [SerializeField] private GameObject rightSpellIcon;
     [SerializeField] private GameObject leftEffectIcon;
     [SerializeField] private GameObject rightEffectIcon;
+    [SerializeField] private Image leftSpellIconImage;
+    [SerializeField] private Image rightSpellIconImage;
+    [SerializeField] private Image leftEffectIconImage;
+    [SerializeField] private Image rightEffectIconImage;
 
     private Controls _controls;
 
@@ -39,8 +44,12 @@ public class NewSpellCaster : MonoBehaviour
 
     private int currentMana;
 
+    public static NewSpellCaster instance;
+
     private void Awake()
     {
+        instance = this;
+
         _controls = new Controls();
 
         _controls.Gameplay.LMB.started += ctx =>
@@ -119,6 +128,7 @@ public class NewSpellCaster : MonoBehaviour
 
         currentMana = manaAmount;
         ManaBarController.instance.UpdateFill(manaAmount, currentMana);
+        UpdateSpellIcons();
     }
 
     private void Update()
@@ -264,5 +274,26 @@ public class NewSpellCaster : MonoBehaviour
         {
             effect.Activate(objects);
         }
+    }
+
+    public void ClearCastList()
+    {
+        spells.Clear();
+        effects.Clear();
+        if(_castCoroutine != null)
+        {
+            StopCoroutine(_castCoroutine);
+            _castCoroutine = null;
+        }
+        currentMana = manaAmount;
+        ManaBarController.instance.UpdateFill(manaAmount, currentMana);
+    }
+
+    public void UpdateSpellIcons()
+    {
+        leftSpellIconImage.sprite = leftSpell.spellIcon;
+        rightSpellIconImage.sprite = rightSpell.spellIcon;
+        leftEffectIconImage.sprite = leftEffect.EffectIcon;
+        rightEffectIconImage.sprite = rightEffect.EffectIcon;
     }
 }
