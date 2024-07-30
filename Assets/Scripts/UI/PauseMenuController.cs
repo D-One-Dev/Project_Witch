@@ -49,7 +49,7 @@ public class PauseMenuController : MonoBehaviour
 
     public void Quit()
     {
-        SavesController.instance.Save();
+        //SavesController.instance.Save();
         AnimationsController.instance.ChangeScene(blackScreen, 0);
     }
 }

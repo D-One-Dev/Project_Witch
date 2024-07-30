@@ -72,3 +72,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 Build.zip
+
+/[Aa]ssets/save.savefile
+/[Aa]ssets/save.savefile.meta

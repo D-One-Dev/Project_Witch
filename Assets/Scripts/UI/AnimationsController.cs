@@ -23,9 +23,9 @@ public class AnimationsController : MonoBehaviour
 
     public void UpdateBar(Image bar, float value, RectTransform barParent, bool isDraining)
     {
-        bar.DOFillAmount(value, .2f).SetEase(Ease.OutBack);
-        if(isDraining) barParent.DOLocalMoveY(150f, .1f).OnComplete(() =>
-            { barParent.DOLocalMoveY(175f, .1f); });
+        bar.DOFillAmount(value, .2f).SetEase(Ease.OutBack).SetLink(bar.gameObject);
+        if(isDraining) barParent.DOLocalMoveY(150f, .1f).SetLink(bar.gameObject).OnComplete(() =>
+           { barParent.DOLocalMoveY(175f, .1f).SetLink(bar.gameObject); });
     }
 
     public void ShakeBar(RectTransform barParent)
@@ -71,5 +71,10 @@ public class AnimationsController : MonoBehaviour
             Time.timeScale = 1f;
             sceneLoadOperation.allowSceneActivation = true;
         });
+    }
+
+    public void ImageInOutFade(Image image)
+    {
+        image.DOFade(1f, .5f).SetUpdate(UpdateType.Normal, true).OnComplete(() => { image.DOFade(0f, .5f).SetUpdate(UpdateType.Normal, true); });
     }
 }
