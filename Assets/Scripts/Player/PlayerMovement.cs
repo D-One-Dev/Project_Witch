@@ -7,6 +7,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpSpeed;
     [SerializeField] private float gravity;
     [SerializeField] private Transform cam;
+    [SerializeField] private AudioSource _AS;
+    [SerializeField] private AudioClip jumpSound;
+    private bool isLandingSoundPlayed;
     private Controls _controls;
     private bool shift;
     private bool jump;
@@ -58,7 +61,15 @@ public class PlayerMovement : MonoBehaviour
             if (jump && _characterController.isGrounded)
             {
                 grav = jumpSpeed;
+                _AS.PlayOneShot(jumpSound);
             }
         }
+
+        if(grav == 0f && !isLandingSoundPlayed)
+        {
+            _AS.PlayOneShot(jumpSound);
+            isLandingSoundPlayed = true;
+        }
+        else if(grav > 5f || grav < -5f) isLandingSoundPlayed = false;
     }
 }
