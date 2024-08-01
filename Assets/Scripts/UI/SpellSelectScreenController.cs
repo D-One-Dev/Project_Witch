@@ -59,7 +59,7 @@ public class SpellSelectScreenController : MonoBehaviour
     {
         if (!GlobalGamePause.instance.isGamePaused)
         {
-            AnimationsController.instance.FadeInScreen(spellSelectScreen, spellSelectScreenFadeOutTween);
+            AnimationsController.instance.FadeInScreen(spellSelectScreen);
             GlobalGamePause.instance.isGamePaused = true;
             isSpellScreenActive = true;
         }

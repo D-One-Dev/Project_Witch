@@ -33,31 +33,34 @@ public class AnimationsController : MonoBehaviour
         barParent.DOShakePosition(.1f, 10f, 100);
     }
 
-    public void FadeInScreen(GameObject screen, Tween fadeOutTween)
+    public void FadeInScreen(GameObject screen)//, Tween fadeOutTween)
     {
-        if (fadeOutTween != null) fadeOutTween.Kill();
-        screen.GetComponent<Image>().color = new Color(0f, 0f, 0f, 0f);
+        //if (fadeOutTween != null) fadeOutTween.Kill();
+        screen.GetComponent<CanvasGroup>().DOKill();
+        screen.GetComponent<CanvasGroup>().alpha = 0f;
         screen.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        screen.GetComponent<Image>().DOFade(.8f, .5f).SetUpdate(UpdateType.Normal, true);
+        screen.GetComponent<CanvasGroup>().DOFade(1f, .5f).SetUpdate(UpdateType.Normal, true);
     }
     public Tween FadeOutScreen(GameObject screen)
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        return screen.GetComponent<Image>().DOFade(0f, .5f).SetUpdate(UpdateType.Normal, true).OnComplete(() => {screen.SetActive(false); });
+        return screen.GetComponent<CanvasGroup>().DOFade(0f, .5f).SetUpdate(UpdateType.Normal, true).OnComplete(() => {screen.SetActive(false);});
     }
 
     public Tween SpellCardEnter(GameObject spellCard, Tween spellCardExitTween)
     {
-        if (spellCardExitTween != null) spellCardExitTween.Kill();
+        //if (spellCardExitTween != null) spellCardExitTween.Kill();
+        spellCard.GetComponentInChildren<Image>().DOKill();
         return spellCard.GetComponentInChildren<Image>().DOColor(new Color(.75f, .75f, .75f), .1f).SetUpdate(UpdateType.Normal, true);
     }
 
     public Tween SpellCardExit(GameObject spellCard, Tween spellCardEnterTween)
     {
-        if (spellCardEnterTween != null) spellCardEnterTween.Kill();
+        //if (spellCardEnterTween != null) spellCardEnterTween.Kill();
+        spellCard.GetComponentInChildren<Image>().DOKill();
         return spellCard.GetComponentInChildren<Image>().DOColor(new Color(1f, 1f, 1f), .1f).SetUpdate(UpdateType.Normal, true);
     }
 

@@ -31,7 +31,7 @@ public class PauseMenuController : MonoBehaviour
     {
         if (!GlobalGamePause.instance.isGamePaused)
         {
-            AnimationsController.instance.FadeInScreen(pauseScreen, pauseScreenFadeOutTween);
+            AnimationsController.instance.FadeInScreen(pauseScreen);
             GlobalGamePause.instance.isGamePaused = true;
             isPauseActive = true;
         }
