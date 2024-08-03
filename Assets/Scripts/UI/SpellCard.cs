@@ -1,4 +1,3 @@
-using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -10,8 +9,6 @@ public class SpellCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     [SerializeField] private TMP_Text spellNameText;
     [SerializeField] private Image spellIconImage;
 
-    private Tween cardTween;
-
     private void Start()
     {
         spellNameText.text = spell.name;
@@ -20,13 +17,13 @@ public class SpellCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        cardTween = AnimationsController.instance.SpellCardEnter(gameObject, cardTween);
+        AnimationsController.instance.SpellCardEnter(gameObject);
         SpellSelectScreenController.instance.SetCurrentSpell(spell, gameObject.GetComponentInChildren<Image>().gameObject);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        cardTween = AnimationsController.instance.SpellCardExit(gameObject, cardTween);
+        AnimationsController.instance.SpellCardExit(gameObject);
         SpellSelectScreenController.instance.ClearCurrentSpell();
     }
 }

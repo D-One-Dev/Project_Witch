@@ -33,9 +33,8 @@ public class AnimationsController : MonoBehaviour
         barParent.DOShakePosition(.1f, 10f, 100);
     }
 
-    public void FadeInScreen(GameObject screen)//, Tween fadeOutTween)
+    public void FadeInScreen(GameObject screen)
     {
-        //if (fadeOutTween != null) fadeOutTween.Kill();
         screen.GetComponent<CanvasGroup>().DOKill();
         screen.GetComponent<CanvasGroup>().alpha = 0f;
         screen.SetActive(true);
@@ -50,16 +49,14 @@ public class AnimationsController : MonoBehaviour
         return screen.GetComponent<CanvasGroup>().DOFade(0f, .5f).SetUpdate(UpdateType.Normal, true).OnComplete(() => {screen.SetActive(false);});
     }
 
-    public Tween SpellCardEnter(GameObject spellCard, Tween spellCardExitTween)
+    public Tween SpellCardEnter(GameObject spellCard)
     {
-        //if (spellCardExitTween != null) spellCardExitTween.Kill();
         spellCard.GetComponentInChildren<Image>().DOKill();
         return spellCard.GetComponentInChildren<Image>().DOColor(new Color(.75f, .75f, .75f), .1f).SetUpdate(UpdateType.Normal, true);
     }
 
-    public Tween SpellCardExit(GameObject spellCard, Tween spellCardEnterTween)
+    public Tween SpellCardExit(GameObject spellCard)
     {
-        //if (spellCardEnterTween != null) spellCardEnterTween.Kill();
         spellCard.GetComponentInChildren<Image>().DOKill();
         return spellCard.GetComponentInChildren<Image>().DOColor(new Color(1f, 1f, 1f), .1f).SetUpdate(UpdateType.Normal, true);
     }
@@ -79,5 +76,17 @@ public class AnimationsController : MonoBehaviour
     public void ImageInOutFade(Image image)
     {
         image.DOFade(1f, .5f).SetUpdate(UpdateType.Normal, true).OnComplete(() => { image.DOFade(0f, .5f).SetUpdate(UpdateType.Normal, true); });
+    }
+
+    public void CameraFOVChange(Camera cam)
+    {
+        float defaultFOV = cam.fieldOfView;
+        cam.DOFieldOfView(defaultFOV * 2f, .05f).SetUpdate(UpdateType.Normal, true).OnKill(() =>
+        { cam.DOFieldOfView(defaultFOV, .05f).SetEase(Ease.OutElastic);});
+    }
+
+    public void Cooldown(Image icon, float cooldownTime)
+    {
+        icon.DOFillAmount(0f, .1f).OnKill(() => { icon.DOFillAmount(1f, cooldownTime - .1f);});
     }
 }

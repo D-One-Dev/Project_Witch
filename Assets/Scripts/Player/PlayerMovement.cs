@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -9,11 +11,15 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform cam;
     [SerializeField] private AudioSource _AS;
     [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private float dashDistance;
+    [SerializeField] private float dashCooldownTime;
+    [SerializeField] private Image dashIcon;
     private bool isLandingSoundPlayed;
     private Controls _controls;
     private bool shift;
     private bool jump;
     private float grav;
+    private bool canDash = true;
     private void Awake()
     {
         _controls = new Controls();
@@ -21,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
         _controls.Gameplay.Shift.canceled += ctx => shift = false;
         _controls.Gameplay.Space.started += ctx => jump = true;
         _controls.Gameplay.Space.canceled += ctx => jump = false;
+        _controls.Gameplay.Dash.performed += ctx => Dash();
     }
     private void OnEnable()
     {
@@ -45,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
         }
         _characterController.enabled = true;
     }
-    void Update()
+    private void Update()
     {
         if (_characterController.enabled)
         {
@@ -71,5 +78,23 @@ public class PlayerMovement : MonoBehaviour
             isLandingSoundPlayed = true;
         }
         else if(grav > 5f || grav < -5f) isLandingSoundPlayed = false;
+    }
+
+    private void Dash()
+    {
+        if (canDash)
+        {
+            _characterController.Move(cam.transform.forward * dashDistance);
+            AnimationsController.instance.Cooldown(dashIcon, dashCooldownTime);
+            AnimationsController.instance.CameraFOVChange(cam.GetComponent<Camera>());
+            canDash = false;
+            StartCoroutine(DashCooldown());
+        }
+    }
+
+    private IEnumerator DashCooldown()
+    {
+        yield return new WaitForSeconds(dashCooldownTime);
+        canDash = true;
     }
 }
