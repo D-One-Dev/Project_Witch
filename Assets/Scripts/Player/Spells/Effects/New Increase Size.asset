@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0c0f922febd7da41b4a0a93fe820220, type: 3}
   m_Name: New Increase Size
   m_EditorClassIdentifier: 
-  EffectIcon: {fileID: 21300000, guid: c2ca94d0bdd12ba46a813e71913b9056, type: 3}
+  EffectIcon: {fileID: 21300000, guid: cf558c37cbc6fa141824dcec8369a146, type: 3}
