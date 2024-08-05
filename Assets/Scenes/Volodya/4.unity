@@ -1722,9 +1722,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985a37f53a2b7374c86e4d0599535768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseGameSmoothness: 0.1
-  _characterController: {fileID: 1184195738}
   spellSelectScreen: {fileID: 784436685}
+  spellNameText: {fileID: 0}
+  spellDescriptionText: {fileID: 0}
+  spellCostText: {fileID: 0}
 --- !u!1001 &228031046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13075,6 +13076,8 @@ MonoBehaviour:
   jumpSpeed: 7.5
   gravity: -15
   cam: {fileID: 330585546}
+  _AS: {fileID: 0}
+  jumpSound: {fileID: 0}
 --- !u!114 &1184195742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13102,6 +13105,10 @@ MonoBehaviour:
   rightSpellIcon: {fileID: 139608492}
   leftEffectIcon: {fileID: 882080597}
   rightEffectIcon: {fileID: 2091085876}
+  leftSpellIconImage: {fileID: 0}
+  rightSpellIconImage: {fileID: 0}
+  leftEffectIconImage: {fileID: 0}
+  rightEffectIconImage: {fileID: 0}
 --- !u!1001 &1205732787
 PrefabInstance:
   m_ObjectHideFlags: 0
