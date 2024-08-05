@@ -150,6 +150,7 @@ MonoBehaviour:
   isHoming: 0
   rotationSpeed: 2.5
   lifeTime: 30
+  damage: 5
   rb: {fileID: 5910355795042054266}
   enemies:
     serializedVersion: 2

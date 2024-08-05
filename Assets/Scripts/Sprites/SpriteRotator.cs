@@ -20,6 +20,10 @@ public class SpriteRotator : MonoBehaviour
 
     private void Start()
     {
+        if(player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player").transform;
+        }
         if(_SR != null)
         {
             _material = _SR.material;

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Hint
   - Sound_Stone
+  - Enemy
   layers:
   - Default
   - TransparentFX

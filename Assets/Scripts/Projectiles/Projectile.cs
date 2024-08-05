@@ -7,6 +7,8 @@ public class Projectile : MonoBehaviour
     public bool isHoming;
     public float rotationSpeed;
     public float lifeTime = 30f;
+    public int damage;
+    public DamageType damageType;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private LayerMask enemies;
     [SerializeField] private float targetLockRadius;
@@ -43,6 +45,10 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            collision.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage, damageType);
+        }
         Destroy(gameObject);
     }
 

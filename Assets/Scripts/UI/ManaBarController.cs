@@ -6,6 +6,7 @@ public class ManaBarController : MonoBehaviour
     [SerializeField] private Image manaBar;
     [SerializeField] private RectTransform manaBarParent;
     [SerializeField] private float smoothness;
+    [SerializeField] private Image[] manaFlasks;
 
     public static ManaBarController instance;
 
