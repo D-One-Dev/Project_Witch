@@ -30,6 +30,8 @@ public class PlayerInteraction : MonoBehaviour
         if(currentHint != null && !isHintActive)
         {
             hintText.text = currentHint.hintText;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             AnimationsController.instance.FadeInScreen(hintScreen);
             isHintActive = true;
         }
@@ -51,6 +53,8 @@ public class PlayerInteraction : MonoBehaviour
             currentHint.Deactivate();
             currentHint = null;
             isHintActive = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
             AnimationsController.instance.FadeOutScreen(hintScreen);
         }
     }

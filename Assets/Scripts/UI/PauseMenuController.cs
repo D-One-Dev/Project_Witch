@@ -31,6 +31,8 @@ public class PauseMenuController : MonoBehaviour
     {
         if (!GlobalGamePause.instance.isGamePaused)
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             AnimationsController.instance.FadeInScreen(pauseScreen);
             GlobalGamePause.instance.isGamePaused = true;
             isPauseActive = true;
@@ -39,7 +41,9 @@ public class PauseMenuController : MonoBehaviour
         {
             if (isPauseActive)
             {
-                pauseScreenFadeOutTween = AnimationsController.instance.FadeOutScreen(pauseScreen);
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+                AnimationsController.instance.FadeOutScreen(pauseScreen);
                 GlobalGamePause.instance.isGamePaused = false;
                 GlobalGamePause.instance.FixedUpdate();
                 isPauseActive = false;

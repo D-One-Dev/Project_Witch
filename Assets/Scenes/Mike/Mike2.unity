@@ -26958,7 +26958,7 @@ MonoBehaviour:
   cam: {fileID: 330585546}
   _AS: {fileID: 1184195743}
   jumpSound: {fileID: 8300000, guid: 846ce0fcc05e065479c5f36e2ca7f828, type: 3}
-  dashDistance: 6.5
+  dashDistance: 10
   dashCooldownTime: 3
   dashIcon: {fileID: 190246584}
 --- !u!114 &1184195742

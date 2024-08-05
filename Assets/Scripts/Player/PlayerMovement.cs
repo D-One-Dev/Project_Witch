@@ -84,9 +84,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (canDash)
         {
-            _characterController.Move(cam.transform.forward * dashDistance);
             AnimationsController.instance.Cooldown(dashIcon, dashCooldownTime);
-            AnimationsController.instance.CameraFOVChange(cam.GetComponent<Camera>());
+            AnimationsController.instance.CameraFOVChange(cam.GetComponent<Camera>(), this);
             canDash = false;
             StartCoroutine(DashCooldown());
         }
@@ -96,5 +95,10 @@ public class PlayerMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(dashCooldownTime);
         canDash = true;
+    }
+
+    public void DoDash()
+    {
+        _characterController.Move(cam.transform.forward * dashDistance);
     }
 }

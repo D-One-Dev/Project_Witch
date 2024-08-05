@@ -38,27 +38,23 @@ public class AnimationsController : MonoBehaviour
         screen.GetComponent<CanvasGroup>().DOKill();
         screen.GetComponent<CanvasGroup>().alpha = 0f;
         screen.SetActive(true);
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
         screen.GetComponent<CanvasGroup>().DOFade(1f, .5f).SetUpdate(UpdateType.Normal, true);
     }
-    public Tween FadeOutScreen(GameObject screen)
+    public void FadeOutScreen(GameObject screen)
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-        return screen.GetComponent<CanvasGroup>().DOFade(0f, .5f).SetUpdate(UpdateType.Normal, true).OnComplete(() => {screen.SetActive(false);});
+        screen.GetComponent<CanvasGroup>().DOFade(0f, .5f).SetUpdate(UpdateType.Normal, true).OnComplete(() => {screen.SetActive(false);});
     }
 
-    public Tween SpellCardEnter(GameObject spellCard)
+    public void SpellCardEnter(GameObject spellCard)
     {
         spellCard.GetComponentInChildren<Image>().DOKill();
-        return spellCard.GetComponentInChildren<Image>().DOColor(new Color(.75f, .75f, .75f), .1f).SetUpdate(UpdateType.Normal, true);
+        spellCard.GetComponentInChildren<Image>().DOColor(new Color(.75f, .75f, .75f), .1f).SetUpdate(UpdateType.Normal, true);
     }
 
-    public Tween SpellCardExit(GameObject spellCard)
+    public void SpellCardExit(GameObject spellCard)
     {
         spellCard.GetComponentInChildren<Image>().DOKill();
-        return spellCard.GetComponentInChildren<Image>().DOColor(new Color(1f, 1f, 1f), .1f).SetUpdate(UpdateType.Normal, true);
+        spellCard.GetComponentInChildren<Image>().DOColor(new Color(1f, 1f, 1f), .1f).SetUpdate(UpdateType.Normal, true);
     }
 
     public void ChangeScene(Image blackScreen, int sceneID)
@@ -78,11 +74,14 @@ public class AnimationsController : MonoBehaviour
         image.DOFade(1f, .5f).SetUpdate(UpdateType.Normal, true).OnComplete(() => { image.DOFade(0f, .5f).SetUpdate(UpdateType.Normal, true); });
     }
 
-    public void CameraFOVChange(Camera cam)
+    public void CameraFOVChange(Camera cam, PlayerMovement playerMovement)
     {
         float defaultFOV = cam.fieldOfView;
-        cam.DOFieldOfView(defaultFOV * 2f, .05f).SetUpdate(UpdateType.Normal, true).OnKill(() =>
-        { cam.DOFieldOfView(defaultFOV, .05f).SetEase(Ease.OutElastic);});
+        cam.DOFieldOfView(defaultFOV * 2f, .1f).SetUpdate(UpdateType.Normal, true).OnKill(() =>
+        {
+            if (playerMovement != null) playerMovement.DoDash();
+            cam.DOFieldOfView(defaultFOV, .1f).SetEase(Ease.OutElastic);
+        });
     }
 
     public void Cooldown(Image icon, float cooldownTime)

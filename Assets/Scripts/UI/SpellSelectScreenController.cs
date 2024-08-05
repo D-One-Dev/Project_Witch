@@ -59,13 +59,17 @@ public class SpellSelectScreenController : MonoBehaviour
     {
         if (!GlobalGamePause.instance.isGamePaused)
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             AnimationsController.instance.FadeInScreen(spellSelectScreen);
             GlobalGamePause.instance.isGamePaused = true;
             isSpellScreenActive = true;
         }
         else
         {
-            spellSelectScreenFadeOutTween = AnimationsController.instance.FadeOutScreen(spellSelectScreen);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            AnimationsController.instance.FadeOutScreen(spellSelectScreen);
             GlobalGamePause.instance.isGamePaused = false;
             GlobalGamePause.instance.FixedUpdate();
             NewSpellCaster.instance.ClearCastList();
