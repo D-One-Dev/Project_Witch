@@ -4,9 +4,9 @@ using UnityEngine;
 public class PlayerInteraction : MonoBehaviour
 {
     private Controls _controls;
-    public InGameHint currentHint;
     [SerializeField] private GameObject hintScreen;
     [SerializeField] private TMP_Text hintText;
+    private InGameHint currentHint;
     private bool isHintActive;
 
     private void Awake()
