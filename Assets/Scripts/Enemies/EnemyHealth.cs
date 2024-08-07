@@ -17,6 +17,8 @@ public class EnemyHealth : MonoBehaviour
 
         else
         {
+            gameObject.TryGetComponent<EnemyMoneyCost>(out EnemyMoneyCost component);
+            if (component) component.DropMoney();
             Destroy(gameObject);
         }
     }

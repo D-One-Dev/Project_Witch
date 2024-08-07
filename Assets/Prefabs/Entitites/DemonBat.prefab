@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8234288452468941802}
   - component: {fileID: 6665610864114937435}
   - component: {fileID: 3228327531149109267}
+  - component: {fileID: 5980097647461590914}
   m_Layer: 8
   m_Name: DemonBat
   m_TagString: Enemy
@@ -69,7 +70,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 15
   damageResistType: 0
-  damageVulnerabilityType: 1
+  damageVulnerabilityType: 0
+--- !u!114 &5980097647461590914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091843924899195305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfd9c23bceeef40438605628b377565d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneyCost: 100
 --- !u!1 &1443173761962071034
 GameObject:
   m_ObjectHideFlags: 0
