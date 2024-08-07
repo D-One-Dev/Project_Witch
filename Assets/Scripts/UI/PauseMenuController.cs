@@ -6,6 +6,7 @@ public class PauseMenuController : MonoBehaviour
 {
     [SerializeField] private GameObject pauseScreen;
     [SerializeField] private Image blackScreen;
+    [SerializeField] private GameObject settingsScreen;
     private bool isPauseActive;
     private Controls _controls;
 
@@ -39,7 +40,8 @@ public class PauseMenuController : MonoBehaviour
         }
         else
         {
-            if (isPauseActive)
+            if(settingsScreen.activeSelf) AnimationsController.instance.FadeOutScreen(settingsScreen);
+            else if (isPauseActive)
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
@@ -47,8 +49,10 @@ public class PauseMenuController : MonoBehaviour
                 GlobalGamePause.instance.isGamePaused = false;
                 GlobalGamePause.instance.FixedUpdate();
                 isPauseActive = false;
+                settingsScreen.SetActive(false);
             }
         }
+
     }
 
     public void Quit()

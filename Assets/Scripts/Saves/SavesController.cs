@@ -16,7 +16,7 @@ public class SavesController : MonoBehaviour
 
     private void Start()
     {
-        Load();
+        if(player != null) Load();
     }
     private class SaveFile
     {
@@ -25,6 +25,16 @@ public class SavesController : MonoBehaviour
         public Spell leftSpell, rightSpell;
         public Effect leftEffect, rightEffect;
     }
+
+    public class SettingsFile
+    {
+        public int soundVolume;
+        public int musicVolume;
+        public int graphics;
+        public int voiceLanguage;
+        public int textLanguage;
+    }
+
 
     public void Save()
     {
@@ -55,5 +65,35 @@ public class SavesController : MonoBehaviour
             NewSpellCaster.instance.leftEffect = file.leftEffect;
             NewSpellCaster.instance.rightEffect = file.rightEffect;
         }
+    }
+
+    public void SaveSettings(int soundVolume, int musicVolume, int graphics, int voiceLanguage, int textLanguage)
+    {
+        SettingsFile file = new SettingsFile();
+        if (file.soundVolume != -1) file.soundVolume = soundVolume;
+        else file.soundVolume = 100;
+        if (file.musicVolume != -1) file.musicVolume = musicVolume;
+        else file.musicVolume = 100;
+        if (file.graphics != -1) file.graphics = graphics;
+        else file.graphics = 2;
+        if (file.voiceLanguage != -1) file.voiceLanguage = voiceLanguage;
+        else file.voiceLanguage = 1;
+        if (file.textLanguage != -1) file.textLanguage = textLanguage;
+        else file.textLanguage = 1;
+        string json = JsonUtility.ToJson(file);
+        File.WriteAllText(Application.dataPath + "/settings.savefile", json);
+
+        SettingsLoader.Instance.UpdateSettings(file);
+    }
+
+    public SettingsFile LoadSettings()
+    {
+        if (File.Exists(Application.dataPath + "/settings.savefile"))
+        {
+            string json = File.ReadAllText(Application.dataPath + "/settings.savefile");
+            SettingsFile file = JsonUtility.FromJson<SettingsFile>(json);
+            return file;
+        }
+        return null;
     }
 }

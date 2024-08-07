@@ -1990,6 +1990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1291041926563315814}
   - component: {fileID: 8600074237998035967}
+  - component: {fileID: 260933776019157380}
   m_Layer: 5
   m_Name: Settings Screen
   m_TagString: Untagged
@@ -2032,6 +2033,25 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &260933776019157380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754775905548800811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa6ed92c37e16de47ad64784ed5b780a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundText: {fileID: 2640259668858916439}
+  soundSlider: {fileID: 5205887830822389759}
+  musicText: {fileID: 8867081079065551535}
+  musicSlider: {fileID: 7374319963329230703}
+  graphicsDropdown: {fileID: 2040514363575543170}
+  voiceLanguageDropdown: {fileID: 0}
+  textLanguageDropdown: {fileID: 0}
 --- !u!1 &1827915259895031375
 GameObject:
   m_ObjectHideFlags: 0
@@ -2805,11 +2825,21 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: High
       m_Image: {fileID: 0}
-    - m_Text: Ultra
-      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 260933776019157380}
+        m_TargetAssemblyTypeName: SettingsScreenController, Assembly-CSharp
+        m_MethodName: OnGraphicsChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!1 &2564454572368806178
 GameObject:
@@ -5755,6 +5785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseScreen: {fileID: 3167114751729749129}
   blackScreen: {fileID: 8961192896974434829}
+  settingsScreen: {fileID: 1754775905548800811}
 --- !u!114 &6757541114668812479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7621,7 +7652,19 @@ MonoBehaviour:
   m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 260933776019157380}
+        m_TargetAssemblyTypeName: SettingsScreenController, Assembly-CSharp
+        m_MethodName: OnMusicVolumeChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7514018056822620408
 GameObject:
   m_ObjectHideFlags: 0
@@ -8529,7 +8572,19 @@ MonoBehaviour:
   m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 260933776019157380}
+        m_TargetAssemblyTypeName: SettingsScreenController, Assembly-CSharp
+        m_MethodName: OnSoundVolumeChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8380547091714953602
 GameObject:
   m_ObjectHideFlags: 0
