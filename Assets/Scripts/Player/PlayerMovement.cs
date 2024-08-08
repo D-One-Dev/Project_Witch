@@ -14,6 +14,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float dashDistance;
     [SerializeField] private float dashCooldownTime;
     [SerializeField] private Image dashIcon;
+    [SerializeField] private float jumpHelpTime;
+    [SerializeField] private float maxJumpAngle;
+    private float lasGroundedTime;
     private bool isLandingSoundPlayed;
     private Controls _controls;
     private bool shift;
@@ -56,6 +59,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_characterController.enabled)
         {
+            if(_characterController.isGrounded) lasGroundedTime = Time.time;
+
             Vector2 input = _controls.Gameplay.Movement.ReadValue<Vector2>();
             Vector3 movement;
             if(shift) movement = movementSpeed * 2 * Time.deltaTime * (input.x * transform.right + input.y * transform.forward);
@@ -63,11 +68,12 @@ public class PlayerMovement : MonoBehaviour
             _characterController.Move(movement);
 
             _characterController.Move(grav * Time.deltaTime * Vector3.up);
-            if (_characterController.isGrounded && grav < 0) grav = 0;
+            if (_characterController.isGrounded) grav = 0f;
             else grav += gravity * Time.deltaTime;
-            if (jump && _characterController.isGrounded)
+            if (jump && (Time.time < lasGroundedTime + jumpHelpTime) && IsSurfaceJumpable())
             {
                 grav = jumpSpeed;
+                lasGroundedTime = 0;
                 _AS.PlayOneShot(jumpSound);
             }
         }
@@ -100,5 +106,17 @@ public class PlayerMovement : MonoBehaviour
     public void DoDash()
     {
         _characterController.Move(cam.transform.forward * dashDistance);
+    }
+
+    private bool IsSurfaceJumpable()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.down, out hit))
+        {
+            float angle = Vector3.Angle(hit.normal, Vector3.up);
+            return angle <= maxJumpAngle;
+        }
+
+        return false;
     }
 }

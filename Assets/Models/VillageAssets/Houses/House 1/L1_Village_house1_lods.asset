@@ -1,12 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!43 &-7055500377350254042
+--- !u!43 &-7724707125986431606
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: L1_Village_house1 LOD1
+  m_Name: L1_Village_house1 LOD2
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -165,13 +165,13 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &-4206211653458225236
+--- !u!43 &-6238885340816198288
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: L1_Village_house1 LOD2
+  m_Name: L1_Village_house1 LOD1
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
