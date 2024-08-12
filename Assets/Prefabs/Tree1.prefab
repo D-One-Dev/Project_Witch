@@ -470,15 +470,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 144419ab07d02fe469393e6a17686354,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4866299899193161504}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 144419ab07d02fe469393e6a17686354,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1759174017205252283}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 144419ab07d02fe469393e6a17686354,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2542261822696057972}
+      addedObject: {fileID: -2260322619548783477}
   m_SourcePrefab: {fileID: 100100000, guid: 144419ab07d02fe469393e6a17686354, type: 3}
 --- !u!4 &5048661674254288133 stripped
 Transform:
@@ -515,75 +507,7 @@ CapsuleCollider:
   m_Height: 0.1124893
   m_Direction: 1
   m_Center: {x: 0, y: 0.038712263, z: 0}
---- !u!114 &4866299899193161504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5574228904404459455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b6501244c613244685e05adcefbedff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeMode: 0
-  animateCrossFading: 0
-  autoCollectRenderers: 1
-  simplificationOptions:
-    PreserveBorderEdges: 1
-    PreserveUVSeamEdges: 1
-    PreserveUVFoldoverEdges: 1
-    PreserveSurfaceCurvature: 1
-    EnableSmartLink: 1
-    VertexLinkDistance: 5e-324
-    MaxIterationCount: 100
-    Agressiveness: 7
-    ManualUVComponentCount: 0
-    UVComponentCount: 2
-  saveAssetsPath: 
-  levels:
-  - screenRelativeTransitionHeight: 0.5
-    fadeTransitionWidth: 0
-    quality: 1
-    combineMeshes: 0
-    combineSubMeshes: 0
-    renderers: []
-    skinQuality: 0
-    shadowCastingMode: 1
-    receiveShadows: 1
-    motionVectorGenerationMode: 1
-    skinnedMotionVectors: 1
-    lightProbeUsage: 1
-    reflectionProbeUsage: 1
-  - screenRelativeTransitionHeight: 0.17
-    fadeTransitionWidth: 0
-    quality: 0.195
-    combineMeshes: 1
-    combineSubMeshes: 1
-    renderers: []
-    skinQuality: 0
-    shadowCastingMode: 1
-    receiveShadows: 1
-    motionVectorGenerationMode: 1
-    skinnedMotionVectors: 1
-    lightProbeUsage: 1
-    reflectionProbeUsage: 3
-  - screenRelativeTransitionHeight: 0.02
-    fadeTransitionWidth: 0
-    quality: 0.056
-    combineMeshes: 1
-    combineSubMeshes: 1
-    renderers: []
-    skinQuality: 2
-    shadowCastingMode: 0
-    receiveShadows: 0
-    motionVectorGenerationMode: 1
-    skinnedMotionVectors: 0
-    lightProbeUsage: 0
-    reflectionProbeUsage: 0
-  isGenerated: 1
---- !u!205 &1759174017205252283
+--- !u!205 &-2260322619548783477
 LODGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -591,39 +515,24 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5574228904404459455}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.0007985458, y: 0.0745442, z: -0.012529001}
-  m_Size: 0.16029723
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.5
+  - screenRelativeHeight: 0.6
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 5418754993318869783}
-  - screenRelativeHeight: 0.17
+    - renderer: {fileID: 6222672689733156458}
+  - screenRelativeHeight: 0.3
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 4143103875785735424}
-  - screenRelativeHeight: 0.02
+    - renderer: {fileID: 6222672689733156458}
+  - screenRelativeHeight: 0.1
     fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 4794732718787925240}
+    renderers: []
   m_Enabled: 1
---- !u!114 &2542261822696057972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5574228904404459455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e0eb9661dcb8ea4f8acb45586df32e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  originalRenderers:
-  - {fileID: 6222672689733156458}
 --- !u!23 &6222672689733156458 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 144419ab07d02fe469393e6a17686354,

@@ -242,6 +242,8 @@ MonoBehaviour:
   dashDistance: 10
   dashCooldownTime: 3
   dashIcon: {fileID: 0}
+  jumpHelpTime: 0.5
+  maxJumpAngle: 45
 --- !u!114 &3163467115000149065
 MonoBehaviour:
   m_ObjectHideFlags: 0

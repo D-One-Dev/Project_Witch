@@ -1,12 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!43 &-6026949956082852897
+--- !u!43 &-8295804818434010662
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Pitchfork1 LOD2
+  m_Name: Pitchfork1 LOD1
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -165,13 +165,13 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &-1350769214197462611
+--- !u!43 &-6382530998643552074
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Pitchfork1 LOD1
+  m_Name: Pitchfork1 LOD2
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
