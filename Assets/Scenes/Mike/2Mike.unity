@@ -34193,13 +34193,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882764892}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17, y: 0.58, z: -157.8}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 11.61, y: 5.98, z: -55.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1001 &883685326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85018,6 +85018,16 @@ PrefabInstance:
       propertyPath: _projectilesParentObject
       value: 
       objectReference: {fileID: 2138780469}
+    - target: {fileID: 7152769691974169505, guid: efd0c05bdc4ade845ac33f72aa501543,
+        type: 3}
+      propertyPath: currentSens
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7152769691974169505, guid: efd0c05bdc4ade845ac33f72aa501543,
+        type: 3}
+      propertyPath: defaultSens
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 8606559745280061162, guid: efd0c05bdc4ade845ac33f72aa501543,
         type: 3}
       propertyPath: dashIcon

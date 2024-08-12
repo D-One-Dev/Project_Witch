@@ -20,8 +20,8 @@ public class SettingsLoader : MonoBehaviour
 
     public void UpdateSettings(SettingsFile file)
     {
-        mixer.audioMixer.SetFloat("SoundVolume", Mathf.Lerp(-80f, 0f, file.soundVolume / 100f));
-        mixer.audioMixer.SetFloat("MusicVolume", Mathf.Lerp(-80f, 0, file.musicVolume / 100f));
+        mixer.audioMixer.SetFloat("SoundVolume", Mathf.Log10(file.soundVolume / 100f) * 20);
+        mixer.audioMixer.SetFloat("MusicVolume", Mathf.Log10(file.musicVolume / 100f) * 20);
 
         switch (file.graphics)
         {
