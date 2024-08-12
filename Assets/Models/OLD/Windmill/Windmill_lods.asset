@@ -31,13 +31,13 @@ MonoBehaviour:
   lod5: []
   lod6: []
   lod7: []
---- !u!43 &993049276245629464
+--- !u!43 &2844800028147840224
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Cylinder LOD2
+  m_Name: Cylinder LOD1
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -196,13 +196,13 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &5576779522994767222
+--- !u!43 &5954450416954583023
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Cylinder LOD1
+  m_Name: Cylinder LOD2
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2

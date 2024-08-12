@@ -1,12 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!43 &-6527019333576304276
+--- !u!43 &-5585240633812857324
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Chest3P2 LOD1
+  m_Name: Chest3P2 LOD2
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -165,13 +165,13 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &-3033628260744808038
+--- !u!43 &-553640442149245749
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Chest3P2 LOD2
+  m_Name: Chest3P2 LOD1
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -364,7 +364,7 @@ MonoBehaviour:
   lod5: []
   lod6: []
   lod7: []
---- !u!43 &3217139103945374617
+--- !u!43 &1042844212150526405
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -529,7 +529,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &8992872786270494832
+--- !u!43 &1835987636511239944
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

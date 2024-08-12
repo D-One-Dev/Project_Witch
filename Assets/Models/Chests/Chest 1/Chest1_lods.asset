@@ -1,12 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!43 &-2267902391009935123
+--- !u!43 &-4629080302195454574
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Chest1P2 LOD2
+  m_Name: Chest1P1 LOD2
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -151,8 +151,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 0, y: -0.0036552553, z: 0.0017681166}
-    m_Extent: {x: 0.0053532105, y: 0.0036552553, z: 0.0017681166}
+    m_Center: {x: 0.000014030375, y: 0.00013110833, z: -0.0006117642}
+    m_Extent: {x: 0.0053532105, y: 0.0036552555, z: 0.0018940172}
   m_MeshUsageFlags: 0
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
@@ -165,41 +165,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e927627221206e04dba83232f13d1949, type: 3}
-  m_Name: Chest1_lods
-  m_EditorClassIdentifier: 
-  overrideDefaults: 0
-  importSettings:
-    generateOnImport: 1
-    meshSimplifier: Unity.AutoLOD.QuadricMeshSimplifier, Unity.AutoLOD.Editor, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    batcher: 
-    maxLODGenerated: 2
-    initialLODMaxPolyCount: 500000
-  lod0:
-  - {fileID: 1608722036922974144, guid: 9238d71a6eaee0b44bddc0c338f19913, type: 3}
-  - {fileID: 953832959426007971, guid: 9238d71a6eaee0b44bddc0c338f19913, type: 3}
-  lod1:
-  - {fileID: -4149813864968327489, guid: 9238d71a6eaee0b44bddc0c338f19913, type: 3}
-  - {fileID: 805009529283532807, guid: 9238d71a6eaee0b44bddc0c338f19913, type: 3}
-  lod2:
-  - {fileID: 6846611027177565634, guid: 9238d71a6eaee0b44bddc0c338f19913, type: 3}
-  - {fileID: -8801288837276359265, guid: 9238d71a6eaee0b44bddc0c338f19913, type: 3}
-  lod3: []
-  lod4: []
-  lod5: []
-  lod6: []
-  lod7: []
---- !u!43 &3618656057855830407
+--- !u!43 &-895488655405406755
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -364,13 +330,47 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &5377908731300765322
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e927627221206e04dba83232f13d1949, type: 3}
+  m_Name: Chest1_lods
+  m_EditorClassIdentifier: 
+  overrideDefaults: 0
+  importSettings:
+    generateOnImport: 1
+    meshSimplifier: Unity.AutoLOD.QuadricMeshSimplifier, Unity.AutoLOD.Editor, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    batcher: 
+    maxLODGenerated: 2
+    initialLODMaxPolyCount: 500000
+  lod0:
+  - {fileID: 1608722036922974144, guid: 9238d71a6eaee0b44bddc0c338f19913, type: 3}
+  - {fileID: 953832959426007971, guid: 9238d71a6eaee0b44bddc0c338f19913, type: 3}
+  lod1:
+  - {fileID: -4149813864968327489, guid: 9238d71a6eaee0b44bddc0c338f19913, type: 3}
+  - {fileID: 805009529283532807, guid: 9238d71a6eaee0b44bddc0c338f19913, type: 3}
+  lod2:
+  - {fileID: 6846611027177565634, guid: 9238d71a6eaee0b44bddc0c338f19913, type: 3}
+  - {fileID: -8801288837276359265, guid: 9238d71a6eaee0b44bddc0c338f19913, type: 3}
+  lod3: []
+  lod4: []
+  lod5: []
+  lod6: []
+  lod7: []
+--- !u!43 &2348012928539426030
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Chest1P2 LOD1
+  m_Name: Chest1P2 LOD2
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -529,13 +529,13 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!43 &5387048002136896504
+--- !u!43 &3606751377499128984
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Chest1P1 LOD2
+  m_Name: Chest1P2 LOD1
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -680,8 +680,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 0.000014030375, y: 0.00013110833, z: -0.0006117642}
-    m_Extent: {x: 0.0053532105, y: 0.0036552555, z: 0.0018940172}
+    m_Center: {x: 0, y: -0.0036552553, z: 0.0017681166}
+    m_Extent: {x: 0.0053532105, y: 0.0036552553, z: 0.0017681166}
   m_MeshUsageFlags: 0
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 

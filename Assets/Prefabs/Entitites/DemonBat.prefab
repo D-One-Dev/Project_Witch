@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6665610864114937435}
   - component: {fileID: 3228327531149109267}
   - component: {fileID: 5980097647461590914}
+  - component: {fileID: 8415163463355206177}
+  - component: {fileID: -5198404930822125085}
   m_Layer: 8
   m_Name: DemonBat
   m_TagString: Enemy
@@ -84,6 +86,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyCost: 100
+--- !u!195 &8415163463355206177
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091843924899195305}
+  m_Enabled: 1
+  m_AgentTypeID: -1372625422
+  m_Radius: 0.5
+  m_Speed: 6
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 2
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &-5198404930822125085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091843924899195305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97a6bfcbf8614ce3b325b08decb8ab3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  walkPointRange: 5
+  timeBetweenAttacks: 2
+  sightRange: 50
+  attackRange: 5
+  projectTile: {fileID: 2121257395508586386, guid: 6e3c3a906acda0b4ba982277a2ea2183,
+    type: 3}
 --- !u!1 &1443173761962071034
 GameObject:
   m_ObjectHideFlags: 0

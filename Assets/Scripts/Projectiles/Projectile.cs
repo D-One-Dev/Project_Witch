@@ -1,17 +1,20 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Projectile : MonoBehaviour
 {
+    [SerializeField] private Rigidbody rb;
+    [FormerlySerializedAs("enemies")] [SerializeField] private LayerMask targetLayer;
+    [SerializeField] private float targetLockRadius;
+    
     public float speed;
     public bool isHoming;
     public float rotationSpeed;
     public float lifeTime = 30f;
     public int damage;
     public DamageType damageType;
-    [SerializeField] private Rigidbody rb;
-    [SerializeField] private LayerMask enemies;
-    [SerializeField] private float targetLockRadius;
+    
     private Transform target;
     private void Start()
     {
@@ -25,7 +28,7 @@ public class Projectile : MonoBehaviour
         {
             if(target == null)
             {
-                Collider[] hit = Physics.OverlapSphere(transform.position, targetLockRadius, enemies);
+                Collider[] hit = Physics.OverlapSphere(transform.position, targetLockRadius, targetLayer);
                 if(hit.Length > 0)
                 {
                     Debug.Log("Locked");
@@ -43,9 +46,11 @@ public class Projectile : MonoBehaviour
         }
     }
 
+    public void SetTargetLayer(LayerMask layerMask) => targetLayer = layerMask;
+
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.layer.Equals(targetLayer))
         {
             collision.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage, damageType);
         }
