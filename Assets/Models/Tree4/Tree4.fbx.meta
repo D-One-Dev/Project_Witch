@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a6242b07e39a7e549aa45f9c918b90f0
+guid: 1f14e041a5768604cb99b45a9ea59f09
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: CaveP2
-    second: {fileID: 2100000, guid: 82034f7acd0e58044a17d448c768039d, type: 2}
+      name: Tree4
+    second: {fileID: 2100000, guid: 18a35a51b4d60634ba6d4d8e3e060c33, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leafs4.1
+    second: {fileID: 2100000, guid: 2790f6a09e3fe014e9fd1a37b7de249e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leafs4.2
+    second: {fileID: 2100000, guid: 94ddb8572b968a2478065db5eb70f3ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leafs4.3
+    second: {fileID: 2100000, guid: 76f508a07cb06ae42bf8d44b4124dc91, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

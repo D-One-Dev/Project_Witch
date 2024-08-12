@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a6242b07e39a7e549aa45f9c918b90f0
+guid: 8a4e006782f455048b1cf58602a56486
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: CaveP2
-    second: {fileID: 2100000, guid: 82034f7acd0e58044a17d448c768039d, type: 2}
+      name: CaveDoorP1
+    second: {fileID: 2100000, guid: 7b94c461bce35a54c8a6b7fe95158ddf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: caveDoorP2
+    second: {fileID: 2100000, guid: 9cf3a7282c11dd44fb02117c3ba45fa1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

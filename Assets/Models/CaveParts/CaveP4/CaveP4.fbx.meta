@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: a6242b07e39a7e549aa45f9c918b90f0
+guid: 1861598ad35451f4397ecf40753f3af8
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: CaveP2
-    second: {fileID: 2100000, guid: 82034f7acd0e58044a17d448c768039d, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
