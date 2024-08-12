@@ -99,7 +99,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 95c0acc840e5ba84eaecdb94cf902f2c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5622006440719296095}
+      addedObject: {fileID: 3715424452204289927}
   m_SourcePrefab: {fileID: 100100000, guid: 95c0acc840e5ba84eaecdb94cf902f2c, type: 3}
 --- !u!23 &3415557702381094324 stripped
 MeshRenderer:
@@ -136,7 +136,7 @@ CapsuleCollider:
   m_Height: 0.015626896
   m_Direction: 1
   m_Center: {x: 0, y: 0.007813448, z: -4.6566126e-10}
---- !u!205 &5622006440719296095
+--- !u!205 &3715424452204289927
 LODGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,6 +160,5 @@ LODGroup:
     - renderer: {fileID: 3415557702381094324}
   - screenRelativeHeight: 0.1
     fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 3415557702381094324}
+    renderers: []
   m_Enabled: 1
