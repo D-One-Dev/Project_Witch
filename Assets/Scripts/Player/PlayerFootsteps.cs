@@ -50,6 +50,7 @@ public class PlayerFootsteps : MonoBehaviour
                 _AS.Play();
             }
         }
+
         else
         {
             _AS.loop = false;

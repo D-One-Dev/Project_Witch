@@ -24,6 +24,8 @@ public class SavesController : MonoBehaviour
         public quaternion playerRotation;
         public Spell leftSpell, rightSpell;
         public Effect leftEffect, rightEffect;
+        public int money;
+        public string currentTask;
     }
 
     public class SettingsFile
@@ -46,6 +48,8 @@ public class SavesController : MonoBehaviour
         file.rightSpell = NewSpellCaster.instance.rightSpell;
         file.leftEffect = NewSpellCaster.instance.leftEffect;
         file.rightEffect = NewSpellCaster.instance.rightEffect;
+        file.money = PlayerMoney.Instance.Balance;
+        file.currentTask = TaskUI.Instance.currentTask;
         string json = JsonUtility.ToJson(file);
         File.WriteAllText(Application.dataPath + "/save.savefile", json);
     }
@@ -64,6 +68,8 @@ public class SavesController : MonoBehaviour
             NewSpellCaster.instance.rightSpell = file.rightSpell;
             NewSpellCaster.instance.leftEffect = file.leftEffect;
             NewSpellCaster.instance.rightEffect = file.rightEffect;
+            PlayerMoney.Instance.SetBalance(file.money);
+            TaskUI.Instance.ChangeTask(file.currentTask);
         }
     }
 

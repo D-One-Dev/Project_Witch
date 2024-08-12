@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class AnimationsController : MonoBehaviour
 {
@@ -24,8 +25,8 @@ public class AnimationsController : MonoBehaviour
     public void UpdateBar(Image bar, float value, RectTransform barParent, bool isDraining)
     {
         bar.DOFillAmount(value, .2f).SetEase(Ease.OutBack).SetLink(bar.gameObject);
-        if(isDraining) barParent.DOLocalMoveY(150f, .1f).SetLink(bar.gameObject).OnComplete(() =>
-           { barParent.DOLocalMoveY(175f, .1f).SetLink(bar.gameObject); });
+        if(isDraining) barParent.DOLocalMoveY(100f, .1f).SetLink(bar.gameObject).OnComplete(() =>
+           { barParent.DOLocalMoveY(115f, .1f).SetLink(bar.gameObject); });
     }
 
     public void ShakeBar(RectTransform barParent)
@@ -87,5 +88,16 @@ public class AnimationsController : MonoBehaviour
     public void Cooldown(Image icon, float cooldownTime)
     {
         icon.DOFillAmount(0f, .1f).OnKill(() => { icon.DOFillAmount(1f, cooldownTime - .1f);});
+    }
+
+    public void ChangeTask(GameObject taskUI, string task)
+    {
+        taskUI.GetComponent<CanvasGroup>().DOFade(0f, .5f).OnComplete(() =>
+        {
+            if (task.Length > 0) taskUI.GetComponentInChildren<Image>().enabled = true;
+            else taskUI.GetComponentInChildren<Image>().enabled = false;
+            taskUI.GetComponentInChildren<TMP_Text>().text = task;
+            taskUI.GetComponent<CanvasGroup>().DOFade(1f, .5f);
+        });
     }
 }

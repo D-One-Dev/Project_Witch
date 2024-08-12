@@ -23,9 +23,9 @@ public class PlayerMoney : MonoBehaviour
         PlayerBalanceUI.instance.UpdateBalance(Balance);
     }
 
-    private void Start()
+    public void SetBalance(int value)
     {
-        Balance = 0;
+        Balance = value;
         PlayerBalanceUI.instance.UpdateBalance(Balance);
     }
 }
