@@ -44,6 +44,11 @@ public class NewSpellCaster : MonoBehaviour
 
     private int currentMana;
 
+    private Vector3 tempCamPos;
+    private Vector3 tempCamUp;
+    private Vector3 tempCamForward;
+    private Vector3 tempCamRight;
+
     public static NewSpellCaster instance;
 
     private void Awake()
@@ -91,6 +96,8 @@ public class NewSpellCaster : MonoBehaviour
                 }
                 else ManaBarController.instance.ShakeManaBar();
                 AnimationsController.instance.ClickButton(leftEffectIcon);
+
+                SetTempCamPos();
             };
         };
 
@@ -107,6 +114,8 @@ public class NewSpellCaster : MonoBehaviour
                 }
                 else ManaBarController.instance.ShakeManaBar();
                 AnimationsController.instance.ClickButton(rightEffectIcon);
+
+                SetTempCamPos();
             };
         };
     }
@@ -153,6 +162,8 @@ public class NewSpellCaster : MonoBehaviour
 
 
             AnimationsController.instance.ClickButton(leftSpellIcon);
+
+            SetTempCamPos();
         }
 
         else if (rightSpellCheck && !rightSpellCheckComplete)
@@ -169,6 +180,8 @@ public class NewSpellCaster : MonoBehaviour
             rightSpellCheckComplete = true;
 
             AnimationsController.instance.ClickButton(rightSpellIcon);
+
+            SetTempCamPos();
         }
     }
 
@@ -188,6 +201,7 @@ public class NewSpellCaster : MonoBehaviour
                 currentMana -= rightSpell.manaCost;
                 spells.Add(rightSpell);
             }
+            SetTempCamPos();
             ManaBarController.instance.UpdateFill(manaAmount, currentMana);
             StopCoroutine(_castCoroutine);
             _castCoroutine = StartCoroutine(CastDelay());
@@ -261,12 +275,19 @@ public class NewSpellCaster : MonoBehaviour
         {
             Debug.Log(spell);
             Vector3 randomPos;
-            if(outputSpells.Count < 2) randomPos = _cam.transform.position;
-            else randomPos = _cam.position + (_cam.transform.right * Random.Range(-spell.objectPrefab.transform.localScale.x,
-                spell.objectPrefab.transform.localScale.x) + _cam.transform.up * Random.Range(-spell.objectPrefab.transform.localScale.y,
+            //if(outputSpells.Count < 2) randomPos = _cam.transform.position;
+            //else randomPos = _cam.position + (_cam.transform.right * Random.Range(-spell.objectPrefab.transform.localScale.x,
+            //    spell.objectPrefab.transform.localScale.x) + _cam.transform.up * Random.Range(-spell.objectPrefab.transform.localScale.y,
+            //    spell.objectPrefab.transform.localScale.y)) / 2;
+
+            if (outputSpells.Count < 2) randomPos = tempCamPos;
+            else randomPos = tempCamPos + (tempCamRight * Random.Range(-spell.objectPrefab.transform.localScale.x,
+                spell.objectPrefab.transform.localScale.x) + tempCamUp * Random.Range(-spell.objectPrefab.transform.localScale.y,
                 spell.objectPrefab.transform.localScale.y)) / 2;
+
             GameObject obj = Instantiate(spell.objectPrefab, randomPos, Quaternion.identity, _projectilesParentObject);
-            obj.transform.forward = _cam.transform.forward;
+            //obj.transform.forward = _cam.transform.forward;
+            obj.transform.forward = tempCamForward;
             objects.Add(obj);
         }
 
@@ -295,5 +316,13 @@ public class NewSpellCaster : MonoBehaviour
         rightSpellIconImage.sprite = rightSpell.spellIcon;
         leftEffectIconImage.sprite = leftEffect.EffectIcon;
         rightEffectIconImage.sprite = rightEffect.EffectIcon;
+    }
+
+    private void SetTempCamPos()
+    {
+        tempCamPos = _cam.transform.position;
+        tempCamUp = _cam.transform.up;
+        tempCamForward = _cam.transform.forward;
+        tempCamRight = _cam.transform.right;
     }
 }
