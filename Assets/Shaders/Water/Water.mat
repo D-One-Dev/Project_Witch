@@ -46,7 +46,7 @@ Material:
     - _Smoothness: 1
     - _WaterOpacity: 0.5
     - _WaterTransparency: 0.25
-    - _WaveHeight: 0.25
+    - _WaveHeight: 0.0005
     - _WaveSpeed: 0.1
     m_Colors:
     - _BaseColor: {r: 0.22851546, g: 0.5082854, b: 0.9245283, a: 1}
