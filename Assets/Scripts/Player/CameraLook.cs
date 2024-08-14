@@ -49,8 +49,8 @@ public class CameraLook : MonoBehaviour
             playerBody.Rotate(Vector3.up * mouseX);
         }
 
-        if (GlobalGamePause.instance.isGamePaused) currentSens = Mathf.Lerp(currentSens, 0f, .1f);
-        else currentSens = Mathf.Lerp(currentSens, defaultSens, .1f);
+        if (GlobalGamePause.instance.isGamePaused) currentSens = Mathf.Lerp(currentSens, 0f, 10f * Time.deltaTime);
+        else currentSens = Mathf.Lerp(currentSens, defaultSens, 10f * Time.deltaTime);
     }
 
     public void ChangeSens(int value)
