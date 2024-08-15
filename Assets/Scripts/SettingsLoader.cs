@@ -42,7 +42,32 @@ public class SettingsLoader : MonoBehaviour
             default:
                 QualitySettings.SetQualityLevel(3);
                 break;
+        }
 
+        switch (file.windowType)
+        {
+            case 0:
+                Screen.fullScreen = true;
+                break;
+            case 1:
+                Screen.fullScreen = false;
+                break;
+            default:
+                Screen.fullScreen = true;
+                break;
+        }
+
+        switch (file.VSync)
+        {
+            case 0:
+                QualitySettings.vSyncCount = 1;
+                break;
+            case 1:
+                QualitySettings.vSyncCount = 0;
+                break;
+            default:
+                QualitySettings.vSyncCount = 1;
+                break;
         }
     }
 }
