@@ -73,7 +73,6 @@ public class SpellSelectScreenController : MonoBehaviour
             GlobalGamePause.instance.isGamePaused = false;
             GlobalGamePause.instance.FixedUpdate();
             NewSpellCaster.instance.ClearCastList();
-            NewSpellCaster.instance.UpdateSpellIcons();
             isSpellScreenActive = false;
         }
     }
@@ -93,6 +92,7 @@ public class SpellSelectScreenController : MonoBehaviour
         {
             NewSpellCaster.instance.leftSpell = currentSpell;
             AnimationsController.instance.ClickButton(currentCard);
+            NewSpellCaster.instance.UpdateSpellIcons();
         }
     }
 
@@ -102,6 +102,7 @@ public class SpellSelectScreenController : MonoBehaviour
         {
             NewSpellCaster.instance.rightSpell = currentSpell;
             AnimationsController.instance.ClickButton(currentCard);
+            NewSpellCaster.instance.UpdateSpellIcons();
         }
     }
 
@@ -120,6 +121,7 @@ public class SpellSelectScreenController : MonoBehaviour
         {
             NewSpellCaster.instance.leftEffect = currentEffect;
             AnimationsController.instance.ClickButton(currentCard);
+            NewSpellCaster.instance.UpdateSpellIcons();
         }
     }
 
@@ -129,6 +131,7 @@ public class SpellSelectScreenController : MonoBehaviour
         {
             NewSpellCaster.instance.rightEffect = currentEffect;
             AnimationsController.instance.ClickButton(currentCard);
+            NewSpellCaster.instance.UpdateSpellIcons();
         }
     }
 

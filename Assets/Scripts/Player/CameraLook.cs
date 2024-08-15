@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class CameraLook : MonoBehaviour
 {
-    [SerializeField] private float mouseSens;
+    public float defaultSens;
+    public float currentSens;
     [SerializeField] private Transform playerBody;
     [SerializeField] private CharacterController _characterController;
     private float xRotation = 0f;
@@ -39,19 +40,23 @@ public class CameraLook : MonoBehaviour
         if (_characterController.enabled)
         {
             Vector2 mouseDelta = _controls.Gameplay.MouseDelta.ReadValue<Vector2>();
-            float mouseX = mouseDelta.x * mouseSens;
-            float mouseY = mouseDelta.y * mouseSens;
+            float mouseX = mouseDelta.x * currentSens;
+            float mouseY = mouseDelta.y * currentSens;
             xRotation -= mouseY;
             xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
             transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
             playerBody.Rotate(Vector3.up * mouseX);
         }
+
+        if (GlobalGamePause.instance.isGamePaused) currentSens = Mathf.Lerp(currentSens, 0f, 10f * Time.deltaTime);
+        else currentSens = Mathf.Lerp(currentSens, defaultSens, 10f * Time.deltaTime);
     }
 
     public void ChangeSens(int value)
     {
         float sens = (float)value / 50 * .15f;
-        mouseSens = sens;
+        defaultSens = sens;
+        currentSens = sens;
     }
 }
