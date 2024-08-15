@@ -36,8 +36,11 @@ public class SettingsLoader : MonoBehaviour
             case 2:
                 QualitySettings.SetQualityLevel(2);
                 break;
+            case 3:
+                QualitySettings.SetQualityLevel(3);
+                break;
             default:
-                QualitySettings.SetQualityLevel(2);
+                QualitySettings.SetQualityLevel(3);
                 break;
 
         }
