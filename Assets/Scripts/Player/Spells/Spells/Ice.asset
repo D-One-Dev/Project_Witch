@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ice
   m_EditorClassIdentifier: 
   Type: 2
-  objectPrefab: {fileID: 3006442616532056023, guid: 8b2703a71b5679c42a5373366f56f2cd,
+  objectPrefab: {fileID: 6658851618858588500, guid: 8575a6309915aa446845aa6324a5dae3,
     type: 3}
   manaCost: 30
   spellName: Ice
