@@ -15,12 +15,16 @@ public class SettingsScreenController : MonoBehaviour
     [SerializeField] private TMP_Dropdown graphicsDropdown;
     [SerializeField] private TMP_Dropdown voiceLanguageDropdown;
     [SerializeField] private TMP_Dropdown textLanguageDropdown;
+    [SerializeField] private TMP_Dropdown windowTypeDropdown;
+    [SerializeField] private TMP_Dropdown VSyncDropdown;
 
     private int soundVolume = -1;
     private int musicVolume = -1;
     private int graphics = -1;
     private int voiceLanguage = -1;
     private int textLanguage = -1;
+    private int windowType = -1;
+    private int VSync = -1;
 
     private void OnEnable()
     {
@@ -58,9 +62,21 @@ public class SettingsScreenController : MonoBehaviour
         SaveSettings();
     }
 
+    public void OnWindowTypeChanged()
+    {
+        windowType = windowTypeDropdown.value;
+        SaveSettings();
+    }
+
+    public void OnVSyncChanged()
+    {
+        VSync = VSyncDropdown.value;
+        SaveSettings();
+    }
+
     public void SaveSettings()
     {
-        SavesController.instance.SaveSettings(soundVolume, musicVolume, graphics, voiceLanguage, textLanguage);
+        SavesController.instance.SaveSettings(soundVolume, musicVolume, graphics, voiceLanguage, textLanguage, windowType, VSync);
     }
 
     public void LoadSettings()
@@ -73,6 +89,8 @@ public class SettingsScreenController : MonoBehaviour
             graphics = file.graphics;
             voiceLanguage = file.voiceLanguage;
             textLanguage = file.textLanguage;
+            windowType = file.windowType;
+            VSync = file.VSync;
 
             if (soundText) soundText.text = "sounds: " + soundVolume;
             if (musicText) musicText.text = "sounds: " + musicVolume;
@@ -83,6 +101,8 @@ public class SettingsScreenController : MonoBehaviour
             if (graphicsDropdown) graphicsDropdown.value = graphics;
             if (voiceLanguageDropdown) voiceLanguageDropdown.value = voiceLanguage;
             if (textLanguageDropdown) textLanguageDropdown.value = textLanguage;
+            if (windowTypeDropdown) windowTypeDropdown.value = windowType;
+            if (VSyncDropdown) VSyncDropdown.value = VSync;
         }
     }
 }

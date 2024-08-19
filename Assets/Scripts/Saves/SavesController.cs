@@ -35,6 +35,8 @@ public class SavesController : MonoBehaviour
         public int graphics;
         public int voiceLanguage;
         public int textLanguage;
+        public int windowType;
+        public int VSync;
     }
 
 
@@ -73,7 +75,7 @@ public class SavesController : MonoBehaviour
         }
     }
 
-    public void SaveSettings(int soundVolume, int musicVolume, int graphics, int voiceLanguage, int textLanguage)
+    public void SaveSettings(int soundVolume, int musicVolume, int graphics, int voiceLanguage, int textLanguage, int windowType, int VSync)
     {
         SettingsFile file = new SettingsFile();
         if (file.soundVolume != -1) file.soundVolume = soundVolume;
@@ -86,6 +88,10 @@ public class SavesController : MonoBehaviour
         else file.voiceLanguage = 1;
         if (file.textLanguage != -1) file.textLanguage = textLanguage;
         else file.textLanguage = 1;
+        if (file.windowType != -1) file.windowType = windowType;
+        else file.windowType = 0;
+        if (file.VSync != -1) file.VSync = VSync;
+        else file.VSync = 0;
         string json = JsonUtility.ToJson(file);
         File.WriteAllText(Application.dataPath + "/settings.savefile", json);
 
