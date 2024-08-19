@@ -34,8 +34,8 @@ public class SpriteRotator : MonoBehaviour
     void FixedUpdate()
     {
         transform.LookAt(player.position);
-        transform.localEulerAngles = new Vector3(0f, transform.localEulerAngles.y + 180f, 0f);
-        if(_SR != null)
+        transform.localEulerAngles = new Vector3(0f, transform.localEulerAngles.y, 0f);
+        if (_SR != null)
         {
             float angle = transform.localEulerAngles.y;
             {
@@ -46,8 +46,8 @@ public class SpriteRotator : MonoBehaviour
                 }
                 else if (angle > 45f && angle <= 135f)
                 {
-                    _SR.sprite = leftSprite;
-                    _material.SetTexture(bumpMap, leftN);
+                    _SR.sprite = rightSprite;
+                    _material.SetTexture(bumpMap, rightN);
                 }
                 else if (angle > 135f && angle <= 225f)
                 {
@@ -56,8 +56,8 @@ public class SpriteRotator : MonoBehaviour
                 }
                 else
                 {
-                    _SR.sprite = rightSprite;
-                    _material.SetTexture(bumpMap, rightN);
+                    _SR.sprite = leftSprite;
+                    _material.SetTexture(bumpMap, leftN);
                 }
             }
         }
