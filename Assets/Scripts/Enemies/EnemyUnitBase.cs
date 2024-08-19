@@ -7,6 +7,7 @@ namespace Enemies
     [RequireComponent(typeof(NavMeshAgent))]
     public abstract class EnemyUnitBase : MonoBehaviour
     {
+        [SerializeField] protected Animator animator;
         [SerializeField] protected LayerMask playerLayer, groundLayer;
         
         [SerializeField] protected float walkPointRange;

@@ -104,7 +104,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2
+  m_Height: 1.2
   m_BaseOffset: 2
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a6bfcbf8614ce3b325b08decb8ab3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 8578896453911138260}
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -127,8 +128,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   walkPointRange: 5
-  timeBetweenAttacks: 2
-  sightRange: 50
+  timeBetweenAttacks: 3
+  sightRange: 20
   attackRange: 5
   projectTile: {fileID: 2121257395508586386, guid: 6e3c3a906acda0b4ba982277a2ea2183,
     type: 3}

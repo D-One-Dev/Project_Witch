@@ -66,12 +66,13 @@ namespace Enemies
     
     public abstract class Attack : IAction
     {
-        private readonly float _timeBetweenAttacks;
+        protected readonly float _timeBetweenAttacks;
         private readonly Transform _player;
 
-        protected Enemy EnemyCache;
+        protected Enemy _enemy;
         
         private bool _isAbleToAttack = true;
+        private static readonly int IsAttacking = Animator.StringToHash("isAttacking");
 
         protected Attack(Transform player, float timeBetweenAttacks)
         {
@@ -85,13 +86,14 @@ namespace Enemies
             
             enemy.Transform.LookAt(_player);
 
-            EnemyCache = enemy;
+            _enemy = enemy;
 
             if (_isAbleToAttack)
             {
                 _isAbleToAttack = false;
-                DoAttack();
+                enemy.Animator.SetTrigger(IsAttacking);
                 enemy.EnemyUnit.StartCoroutine(Cooldown());
+                DoAttack();
             }
         }
 
@@ -113,8 +115,11 @@ namespace Enemies
             _spawnProjectTile = spawnProjectTile;
         }
 
-        protected override void DoAttack()
+        protected override void DoAttack() => _enemy.EnemyUnit.StartCoroutine(Attacking());
+
+        private IEnumerator Attacking()
         {
+            yield return new WaitForSeconds(_enemy.Animator.GetCurrentAnimatorClipInfo(0).Length + 0.1f);
             _spawnProjectTile();
         }
     }

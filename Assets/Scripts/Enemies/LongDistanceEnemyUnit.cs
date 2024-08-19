@@ -10,7 +10,7 @@ namespace Enemies
         
         protected override void InitEnemy()
         {
-            _enemy = new Enemy(_agent, transform, this);
+            _enemy = new Enemy(_agent, transform, animator, this);
             _walkAction = new Walk(walkPointRange, groundLayer);
             _chaseAction = new Chase(_player);
             
