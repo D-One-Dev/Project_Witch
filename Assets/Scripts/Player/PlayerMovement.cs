@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Image dashIcon;
     [SerializeField] private float jumpHelpTime;
     [SerializeField] private float maxJumpAngle;
+    [SerializeField] private Sprite effectDisabledSprite;
+    [SerializeField] private Sprite effectEnabledSprite;
     private float lasGroundedTime;
     private bool isLandingSoundPlayed;
     private Controls _controls;
@@ -90,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (canDash)
         {
-            AnimationsController.instance.Cooldown(dashIcon, dashCooldownTime);
+            AnimationsController.instance.Cooldown(dashIcon, dashCooldownTime, effectDisabledSprite, effectEnabledSprite);
             AnimationsController.instance.CameraFOVChange(cam.GetComponent<Camera>(), this);
             canDash = false;
             StartCoroutine(DashCooldown());
