@@ -8199,7 +8199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   balanceText: {fileID: 359308725874271227}
-  animationSmoothness: 0.05
+  animationSmoothness: 0.005
 --- !u!114 &4290750268347127177
 MonoBehaviour:
   m_ObjectHideFlags: 0
