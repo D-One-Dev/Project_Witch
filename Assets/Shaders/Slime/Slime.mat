@@ -47,8 +47,8 @@ Material:
     - _RippleIntencity: 0.75
     - _RippleSpeed: 1
     m_Colors:
-    - _BaseColor: {r: 0.28355616, g: 0.8792453, b: 0.14432886, a: 0}
-    - _DepthColor: {r: 0.09258459, g: 0.23018855, b: 0.07426838, a: 0}
+    - _BaseColor: {r: 0.07527926, g: 0.20392157, b: 0.015905885, a: 0}
+    - _DepthColor: {r: 0.008156861, g: 0.101960786, b: 0.048358545, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &2041469954610318440
 MonoBehaviour:

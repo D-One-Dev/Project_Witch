@@ -15162,7 +15162,7 @@ MonoBehaviour:
   - {fileID: 3955485269605730902}
   - {fileID: 2240280309177816785}
   icon: {fileID: 5538603095975899778}
-  moneyAmount: 5000
+  moneyAmount: 1200
 --- !u!135 &5274405417923762190
 SphereCollider:
   m_ObjectHideFlags: 0

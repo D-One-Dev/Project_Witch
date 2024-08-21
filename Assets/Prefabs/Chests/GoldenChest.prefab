@@ -5398,7 +5398,7 @@ MonoBehaviour:
   particles:
   - {fileID: 4010535628926559847}
   icon: {fileID: 5538603095975899778}
-  moneyAmount: 2000
+  moneyAmount: 750
 --- !u!135 &5274405417923762190
 SphereCollider:
   m_ObjectHideFlags: 0
