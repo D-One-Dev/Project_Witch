@@ -37,7 +37,7 @@ namespace Enemies
             if (distanceToWalkPoint.magnitude < 1f)
             {
                 _isWalkPointSet = false;
-                Debug.Log("disabled");
+                //Debug.Log("disabled");
             }
         }
         
@@ -55,19 +55,21 @@ namespace Enemies
     public class Chase : IAction
     {
         private readonly Transform _player;
+        private static readonly int IsWalking = Animator.StringToHash("isWalking");
 
         public Chase(Transform player) => _player = player;
         
         public void PerformAction(Enemy enemy)
         {
             enemy.Agent.SetDestination(_player.position);
+            enemy.Animator.SetTrigger(IsWalking);
         }
     }
     
     public abstract class Attack : IAction
     {
         protected readonly float _timeBetweenAttacks;
-        private readonly Transform _player;
+        protected readonly Transform _player;
 
         protected Enemy _enemy;
         
@@ -85,6 +87,7 @@ namespace Enemies
             enemy.Agent.SetDestination(enemy.Transform.position);
             
             enemy.Transform.LookAt(_player);
+            enemy.Transform.localEulerAngles = new Vector3(0f, enemy.Transform.localEulerAngles.y, 0f);
 
             _enemy = enemy;
 
@@ -106,16 +109,22 @@ namespace Enemies
         }
     }
 
-    public class LongDistanceAttack : Attack
+    public class ShootingAttack : Attack
     {
-        private readonly LongDistanceEnemyUnit.SpawnProjectTile _spawnProjectTile;
+        private readonly ShootingEnemyUnit.SpawnProjectTile _spawnProjectTile;
         
-        public LongDistanceAttack(Transform player, float timeBetweenAttacks, LongDistanceEnemyUnit.SpawnProjectTile spawnProjectTile) : base(player, timeBetweenAttacks)
+        public ShootingAttack(Transform player, float timeBetweenAttacks, ShootingEnemyUnit.SpawnProjectTile spawnProjectTile) : base(player, timeBetweenAttacks)
         {
             _spawnProjectTile = spawnProjectTile;
         }
 
-        protected override void DoAttack() => _enemy.EnemyUnit.StartCoroutine(Attacking());
+        protected override void DoAttack()
+        {
+            var shootingEnemyUnit = (ShootingEnemyUnit)_enemy.EnemyUnit;
+            shootingEnemyUnit.shootingPoint.LookAt(_player);
+            
+            _enemy.EnemyUnit.StartCoroutine(Attacking());
+        }
 
         private IEnumerator Attacking()
         {

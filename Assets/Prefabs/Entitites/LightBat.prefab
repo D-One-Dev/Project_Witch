@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8811128390577962873}
   - component: {fileID: 7574614360637887716}
   - component: {fileID: 7173123502578531860}
+  - component: {fileID: 1090518511303591948}
+  - component: {fileID: 2059154906633240327}
   m_Layer: 8
   m_Name: LightBat
   m_TagString: Enemy
@@ -32,6 +34,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 1004498628184257747}
   - {fileID: 2746730420661420686}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -71,6 +74,9 @@ MonoBehaviour:
   health: 15
   damageResistType: 1
   damageVulnerabilityType: 0
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &7173123502578531860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,6 +90,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyCost: 100
+--- !u!195 &1090518511303591948
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014677664834399212}
+  m_Enabled: 1
+  m_AgentTypeID: -1372625422
+  m_Radius: 0.5
+  m_Speed: 6
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.2
+  m_BaseOffset: 2
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &2059154906633240327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014677664834399212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97a6bfcbf8614ce3b325b08decb8ab3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 836798674362854087}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  walkPointRange: 5
+  timeBetweenAttacks: 3
+  sightRange: 20
+  attackRange: 6.5
+  projectTile: {fileID: 2121257395508586386, guid: c912a310e271c474baa20983726163db,
+    type: 3}
+  shootingPoint: {fileID: 1004498628184257747}
 --- !u!1 &3232796575198387574
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,14 +238,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   _SR: {fileID: 921609645941734613}
-  frontSprite: {fileID: 21300000, guid: 6e5ef466ce8dd2349b81118fe10c0014, type: 3}
-  backSprite: {fileID: 21300000, guid: 95cc1a69d3f9f0343822e8448814c2f5, type: 3}
-  leftSprite: {fileID: 21300000, guid: 7bf89d3d2defc91458656bb259230f69, type: 3}
-  rightSprite: {fileID: 21300000, guid: 1ea669a19159af146a5b60052f3dba17, type: 3}
-  frontN: {fileID: 2800000, guid: 94391fd0f21342c449116daf22f488b3, type: 3}
-  backN: {fileID: 2800000, guid: d2af5182c2afc41438e0928f0aa2f23a, type: 3}
-  leftN: {fileID: 2800000, guid: 8c31cfb6f95dd3b43abf2e36fcb0ee6b, type: 3}
-  rightN: {fileID: 2800000, guid: 6aa8a900eacf16942a2bb41576dd8303, type: 3}
+  frontSprite: {fileID: 21300000, guid: 9930d7480a431504093e070cad55fbe2, type: 3}
+  backSprite: {fileID: 21300000, guid: 70b3ad7bd189e43449d8c90fc09f3288, type: 3}
+  leftSprite: {fileID: 21300000, guid: 9bb50cdcdd6ca3f479fc442ba4dc0276, type: 3}
+  rightSprite: {fileID: 21300000, guid: f1174e51aefa69041adbbe5da49828d2, type: 3}
+  frontN: {fileID: 2800000, guid: 1d74ea857aece80428f8c21967faf997, type: 3}
+  backN: {fileID: 2800000, guid: 3a1c99668a7fc25459f57c7bad25c7c4, type: 3}
+  leftN: {fileID: 2800000, guid: 5aa001b52dbc94e4bb22591fe3628db7, type: 3}
+  rightN: {fileID: 2800000, guid: 71e5e45552a3d3d49975c8de37c44282, type: 3}
 --- !u!95 &836798674362854087
 Animator:
   serializedVersion: 5
@@ -213,3 +267,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &4515213967371755473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1004498628184257747}
+  m_Layer: 8
+  m_Name: shootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1004498628184257747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4515213967371755473}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.009, y: 0.273, z: 0.009}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1529234533794236743}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

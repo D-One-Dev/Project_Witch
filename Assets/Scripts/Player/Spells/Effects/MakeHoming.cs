@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Projectiles;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Effect/Make Homing")]
