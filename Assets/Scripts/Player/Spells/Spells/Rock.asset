@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Rock
   m_EditorClassIdentifier: 
   Type: 3
-  objectPrefab: {fileID: 2121257395508586386, guid: c7ea0e7b2df510541ae2e3b592655372,
+  objectPrefab: {fileID: 7491185641990123097, guid: 6335d8c3a41b3fc4d871bdbde58a0d2b,
     type: 3}
   manaCost: 30
   spellName: Earth
