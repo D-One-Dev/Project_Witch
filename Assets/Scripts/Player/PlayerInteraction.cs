@@ -6,7 +6,7 @@ public class PlayerInteraction : MonoBehaviour
     private Controls _controls;
     [SerializeField] private GameObject hintScreen;
     [SerializeField] private TMP_Text hintText;
-    private InGameHint currentHint;
+    [SerializeField] private InGameHint currentHint = null;
     private bool isHintActive;
 
     private void Awake()
@@ -30,8 +30,8 @@ public class PlayerInteraction : MonoBehaviour
         if(currentHint != null && !isHintActive)
         {
             hintText.text = currentHint.hintText;
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            //Cursor.lockState = CursorLockMode.None;
+            //Cursor.visible = true;
             AnimationsController.instance.FadeInScreen(hintScreen);
             isHintActive = true;
         }
@@ -53,8 +53,8 @@ public class PlayerInteraction : MonoBehaviour
             currentHint.Deactivate();
             currentHint = null;
             isHintActive = false;
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            //Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.visible = false;
             AnimationsController.instance.FadeOutScreen(hintScreen);
         }
     }

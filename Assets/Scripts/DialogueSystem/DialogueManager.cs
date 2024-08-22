@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -12,7 +11,7 @@ public class DialogueManager : MonoBehaviour
     private Queue<AudioClip> audioPhrases;
     private Controls _controls;
 
-    public Dialogue currentDialogue;
+    public Dialogue currentDialogue = null;
     public static DialogueManager Instance;
 
     private void Awake()
@@ -35,7 +34,7 @@ public class DialogueManager : MonoBehaviour
 
     public void Trigger()
     {
-        if(currentDialogue != null && currentDialogue.pharses != null)
+        if (currentDialogue != null && currentDialogue.pharses != null && currentDialogue.pharses.Length > 0)
         {
             string[] text = currentDialogue.pharses;
             AudioClip[] audio = currentDialogue.audio;

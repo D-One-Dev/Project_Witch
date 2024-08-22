@@ -65,6 +65,7 @@ namespace Enemies
             enemy.Animator.SetTrigger(IsWalking);
         }
     }
+
     
     public abstract class Attack : IAction
     {
