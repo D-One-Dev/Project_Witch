@@ -171,16 +171,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e62a43c2d5aa067479a27fa9341b0f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 6132667641908159135}
-  targetLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  targetTag: Enemy
+  speed: 40
+  isHoming: 0
+  rotationSpeed: 15
   lifeTime: 30
-  lifeTimeAfterCollide: 0
   damage: 6
   damageType: 2
+  rb: {fileID: 6132667641908159135}
+  enemies:
+    serializedVersion: 2
+    m_Bits: 256
   targetLockRadius: 7.5
-  speed: 20
-  isHoming: 0
-  rotationSpeed: 2.5

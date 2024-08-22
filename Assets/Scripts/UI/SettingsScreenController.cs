@@ -41,7 +41,7 @@ public class SettingsScreenController : MonoBehaviour
     public void OnMusicVolumeChanged()
     {
         musicVolume = musicSlider.value.RoundToInt();
-        musicText.text = "sounds: " + musicVolume;
+        musicText.text = "music: " + musicVolume;
         SaveSettings();
     }
 
@@ -93,7 +93,7 @@ public class SettingsScreenController : MonoBehaviour
             VSync = file.VSync;
 
             if (soundText) soundText.text = "sounds: " + soundVolume;
-            if (musicText) musicText.text = "sounds: " + musicVolume;
+            if (musicText) musicText.text = "music: " + musicVolume;
 
             if (soundSlider) soundSlider.value = soundVolume;
             if (musicSlider) musicSlider.value = musicVolume;

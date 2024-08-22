@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using VolFx;
@@ -29,7 +26,7 @@ public class PlayerBalanceUI : MonoBehaviour
 
     public void UpdateBalance(int newBalance)
     {
-        temp = Int32.Parse(balanceText.text);
+        if(!float.TryParse(balanceText.text, out temp)) temp = newBalance;
         targetBalance = newBalance;
     }
 }
