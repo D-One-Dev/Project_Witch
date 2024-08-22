@@ -274,14 +274,24 @@ public class NewSpellCaster : MonoBehaviour
         foreach (Spell spell in outputSpells)
         {
             Debug.Log(spell);
+
+            GameObject spellPrefab = spell.objectPrefabs[Random.Range(0, spell.objectPrefabs.Length)];
+
             Vector3 randomPos;
 
             if (outputSpells.Count < 2) randomPos = tempCamPos;
-            else randomPos = tempCamPos + (tempCamRight * Random.Range(-spell.objectPrefab.transform.localScale.x,
-                spell.objectPrefab.transform.localScale.x) + tempCamUp * Random.Range(-spell.objectPrefab.transform.localScale.y,
-                spell.objectPrefab.transform.localScale.y)) / 2;
+            //else randomPos = tempCamPos + (tempCamRight * Random.Range(-spell.objectPrefab.transform.localScale.x,
+            //    spell.objectPrefab.transform.localScale.x) + tempCamUp * Random.Range(-spell.objectPrefab.transform.localScale.y,
+            //    spell.objectPrefab.transform.localScale.y)) / 2;
 
-            GameObject obj = Instantiate(spell.objectPrefab, randomPos, Quaternion.identity, _projectilesParentObject);
+            else randomPos = tempCamPos + (tempCamRight * Random.Range(-spellPrefab.transform.localScale.x,
+                spellPrefab.transform.localScale.x) + tempCamUp * Random.Range(-spellPrefab.transform.localScale.y,
+                spellPrefab.transform.localScale.y)) / 2;
+
+            //GameObject obj = Instantiate(spell.objectPrefab, randomPos, Quaternion.identity, _projectilesParentObject);
+
+            GameObject obj = Instantiate(spellPrefab, randomPos, Quaternion.identity, _projectilesParentObject);
+
             obj.transform.forward = tempCamForward;
             obj.transform.localEulerAngles = new Vector3(obj.transform.localEulerAngles.x, obj.transform.localEulerAngles.y, Random.Range(0f, 360f));
             objects.Add(obj);

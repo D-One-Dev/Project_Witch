@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Lava
   m_EditorClassIdentifier: 
   Type: 0
-  objectPrefab: {fileID: 2121257395508586386, guid: 4bfe6165bf8dc334ca71e0b8663f51c1,
-    type: 3}
+  objectPrefabs:
+  - {fileID: 2121257395508586386, guid: 4bfe6165bf8dc334ca71e0b8663f51c1, type: 3}
   manaCost: 0
+  spellName: 
+  spellDescription: 
+  spellIcon: {fileID: 0}

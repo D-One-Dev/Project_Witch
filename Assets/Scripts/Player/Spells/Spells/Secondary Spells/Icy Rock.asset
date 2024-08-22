@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Icy Rock
   m_EditorClassIdentifier: 
   Type: 0
-  objectPrefab: {fileID: 2121257395508586386, guid: ce6628d4717ad9b4f94a83b2e55f640e,
-    type: 3}
+  objectPrefabs:
+  - {fileID: 2121257395508586386, guid: ce6628d4717ad9b4f94a83b2e55f640e, type: 3}
   manaCost: 0
+  spellName: 
+  spellDescription: 
+  spellIcon: {fileID: 0}
