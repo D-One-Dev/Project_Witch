@@ -157,7 +157,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &6322759659838524722
 MonoBehaviour:
@@ -183,4 +183,5 @@ MonoBehaviour:
   targetLockRadius: 7.5
   speed: 7.5
   isHoming: 0
+  isElementStrengthened: 0
   rotationSpeed: 2.5
