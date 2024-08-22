@@ -15,7 +15,7 @@ namespace Enemies
 
             if (transform.localScale.x < maxScale)
             {
-                GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(0, 5), 15, Random.Range(0, 5)), ForceMode.Impulse);
+                GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(0, 10), 50, Random.Range(0, 10)) * 1000);
             }
         }
 
