@@ -7,6 +7,7 @@ namespace Projectiles
         [SerializeField] protected float targetLockRadius;
         public float speed;
         public bool isHoming;
+        public bool isElementStrengthened;
         public float rotationSpeed;
         
         protected override void Start()
@@ -43,7 +44,7 @@ namespace Projectiles
         {
             if (collision.gameObject.CompareTag(targetTag))
             {
-                GiveDamage(collision.gameObject);
+                GiveDamage(collision.gameObject, isElementStrengthened);
             }
             else
             {
@@ -56,6 +57,12 @@ namespace Projectiles
             Gizmos.color = Color.yellow;
 
             Gizmos.DrawWireSphere(transform.position, targetLockRadius);
+        }
+
+        public void ChangeProjectileSpeed(float value)
+        {
+            speed *= value;
+            rb.velocity = transform.forward * speed;
         }
     }
 }

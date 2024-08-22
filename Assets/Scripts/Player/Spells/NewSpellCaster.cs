@@ -275,10 +275,6 @@ public class NewSpellCaster : MonoBehaviour
         {
             Debug.Log(spell);
             Vector3 randomPos;
-            //if(outputSpells.Count < 2) randomPos = _cam.transform.position;
-            //else randomPos = _cam.position + (_cam.transform.right * Random.Range(-spell.objectPrefab.transform.localScale.x,
-            //    spell.objectPrefab.transform.localScale.x) + _cam.transform.up * Random.Range(-spell.objectPrefab.transform.localScale.y,
-            //    spell.objectPrefab.transform.localScale.y)) / 2;
 
             if (outputSpells.Count < 2) randomPos = tempCamPos;
             else randomPos = tempCamPos + (tempCamRight * Random.Range(-spell.objectPrefab.transform.localScale.x,
@@ -286,8 +282,8 @@ public class NewSpellCaster : MonoBehaviour
                 spell.objectPrefab.transform.localScale.y)) / 2;
 
             GameObject obj = Instantiate(spell.objectPrefab, randomPos, Quaternion.identity, _projectilesParentObject);
-            //obj.transform.forward = _cam.transform.forward;
             obj.transform.forward = tempCamForward;
+            obj.transform.localEulerAngles = new Vector3(obj.transform.localEulerAngles.x, obj.transform.localEulerAngles.y, Random.Range(0f, 360f));
             objects.Add(obj);
         }
 

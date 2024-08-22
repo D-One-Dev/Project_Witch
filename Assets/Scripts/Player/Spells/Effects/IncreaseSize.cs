@@ -1,3 +1,4 @@
+using Projectiles;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,6 +14,7 @@ public class IncreaseSize : Effect
         foreach (GameObject projectile in projectiles)
         {
             projectile.transform.localScale *= 2f;
+            projectile.GetComponent<ProjectileBase>().damage = Mathf.RoundToInt(projectile.GetComponent<ProjectileBase>().damage * 1.5f);
         }
     }
 }

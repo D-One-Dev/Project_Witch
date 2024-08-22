@@ -28,7 +28,7 @@ namespace Projectiles
             if (_playerLastPosition.Equals(Player.Player.Instance.transform.position))
             {
                 print("you are beamed");
-                GiveDamage(Player.Player.Instance.gameObject);
+                GiveDamage(Player.Player.Instance.gameObject, false);
             }
         }
     }
