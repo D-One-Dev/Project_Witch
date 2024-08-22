@@ -70477,7 +70477,7 @@ GameObject:
   - component: {fileID: 1578778606}
   - component: {fileID: 1578778605}
   - component: {fileID: 1578778604}
-  m_Layer: 3
+  m_Layer: 10
   m_Name: QuestMark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83993,7 +83993,7 @@ GameObject:
   - component: {fileID: 1881631321}
   - component: {fileID: 1881631326}
   - component: {fileID: 1881631325}
-  m_Layer: 3
+  m_Layer: 10
   m_Name: QuestMark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
