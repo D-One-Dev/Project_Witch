@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RockDust
+  m_Name: LavaSteam
   m_Shader: {fileID: 4800000, guid: 0406db5a14f94604a8c57ccfbc9f3b46, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -117,12 +117,12 @@ Material:
     - _UVSec: 0
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.80377346, g: 0.67183334, b: 0.6781006, a: 0.101960786}
+    - _BaseColor: {r: 1, g: 0.25025943, b: 0, a: 1}
     - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 0.80377346, g: 0.67183334, b: 0.6781006, a: 0.101960786}
+    - _Color: {r: 1, g: 0.2502594, b: 0, a: 1}
     - _ColorAddSubDiff: {r: 1, g: 0, b: 0, a: 0}
-    - _EmissionColor: {r: 3.0475347, g: 2.5268285, b: 2.5012786, a: 1}
+    - _EmissionColor: {r: 58.71208, g: 19.991564, b: 6.535868, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 2, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &426729541012370613

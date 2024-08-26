@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fc4cec5e088964cae176e60c7fb09f, type: 3}
   m_Name: Fire
   m_EditorClassIdentifier: 
-  Type: 0
+  Type: 1
   objectPrefabs:
   - {fileID: 7196121003433257656, guid: f936d738c4b22314f8d3e98fa96cf414, type: 3}
   manaCost: 30
