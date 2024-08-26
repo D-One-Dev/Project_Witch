@@ -49,6 +49,7 @@ namespace Projectiles
             else
             {
                 Destroy(gameObject);
+                PlayDeathParticles();
             }
         }
         

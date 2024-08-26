@@ -75,7 +75,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1023
+    m_Bits: 3071
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -588,6 +588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintScreen: {fileID: 0}
   hintText: {fileID: 0}
+  currentHint: {fileID: 0}
 --- !u!114 &7654740787020942425
 MonoBehaviour:
   m_ObjectHideFlags: 0

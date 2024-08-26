@@ -5,7 +5,7 @@ namespace Enemies
 {
     public class ShootingEnemyUnit : EnemyUnitBase
     {
-        [SerializeField] private GameObject projectTile;
+        [SerializeField] private GameObject projectile;
         public Transform shootingPoint;
         
         public delegate void SpawnProjectTile();
@@ -18,7 +18,7 @@ namespace Enemies
             
             SpawnProjectTile spawnProjectTile = delegate
             {
-                Instantiate(projectTile, shootingPoint.position, shootingPoint.rotation).GetComponent<Projectile>();
+                Instantiate(projectile, shootingPoint.position, shootingPoint.rotation).GetComponent<Projectile>();
             };
             
             _attackAction = new ShootingAttack(_player, timeBetweenAttacks, spawnProjectTile);

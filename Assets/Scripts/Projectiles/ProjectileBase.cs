@@ -9,6 +9,8 @@ namespace Projectiles
         [SerializeField] protected LayerMask targetLayer;
         
         [SerializeField] protected string targetTag;
+
+        [SerializeField] protected GameObject deathParticles;
         
         public float lifeTime = 30f;
         public float lifeTimeAfterCollide;
@@ -28,13 +30,27 @@ namespace Projectiles
         private IEnumerator Destroying()
         {
             yield return new WaitForSeconds(lifeTimeAfterCollide);
+            PlayDeathParticles();
             Destroy(gameObject);
         }
 
         private IEnumerator Life()
         {
             yield return new WaitForSeconds(lifeTime);
+            PlayDeathParticles();
             Destroy(gameObject);
+        }
+
+        protected void PlayDeathParticles()
+        {
+            if(deathParticles != null)
+            {
+                GameObject particles = Instantiate(deathParticles, transform.position, Quaternion.identity, transform.parent);
+                //ParticleSystem ps = particles.GetComponent<ParticleSystem>();
+                //var main = ps.main;
+                //main.scalingMode = ParticleSystemScalingMode.Hierarchy;
+                particles.transform.localScale = transform.localScale;
+            }
         }
     }
 }
