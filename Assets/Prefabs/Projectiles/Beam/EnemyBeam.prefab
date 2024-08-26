@@ -151,6 +151,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 128
+  targetTag: 
   lifeTime: 0.3
   lifeTimeAfterCollide: 0.3
   damage: 5
@@ -208,7 +209,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.545454
+        value: 0.32619748
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -216,8 +217,8 @@ LineRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.9420425
-        value: 0.2352885
+        time: 0.9178757
+        value: 0.01603195
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -229,9 +230,9 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.50181097, b: 0, a: 1}
-      key1: {r: 0.48627448, g: 1, b: 0.6634213, a: 1}
-      key2: {r: 1, g: 0.95661926, b: 0.8443396, a: 0}
+      key0: {r: 1, g: 0.7066075, b: 0.36320752, a: 1}
+      key1: {r: 0.40650585, g: 0.8207547, b: 0.5488051, a: 1}
+      key2: {r: 0.0047169924, g: 0.90286016, b: 1, a: 0}
       key3: {r: 1, g: 1, b: 1, a: 0}
       key4: {r: 1, g: 1, b: 1, a: 0}
       key5: {r: 1, g: 1, b: 1, a: 0}
