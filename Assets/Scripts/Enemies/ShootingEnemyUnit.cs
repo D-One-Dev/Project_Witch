@@ -6,9 +6,9 @@ namespace Enemies
     public class ShootingEnemyUnit : EnemyUnitBase
     {
         [SerializeField] private GameObject projectTile;
-        public Transform shootingPoint;
-        
         public delegate void SpawnProjectTile();
+        
+        public Transform shootingPoint;
         
         protected override void InitEnemy()
         {

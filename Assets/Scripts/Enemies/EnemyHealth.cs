@@ -3,12 +3,13 @@ using UnityEngine.Events;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] private int health;
+    [SerializeField] protected int health;
+    
     [SerializeField] private DamageType damageResistType;
     [SerializeField] private DamageType damageVulnerabilityType;
 
     public UnityEvent onDeath;
-
+    
     public void TakeDamage(int damage, DamageType damageType, bool isElementStrengthened)
     {
         int coef = isElementStrengthened ? 4 : 2;
@@ -18,7 +19,6 @@ public class EnemyHealth : MonoBehaviour
         {
             health -= damage;
         }
-
         else
         {
             onDeath.Invoke();
@@ -26,5 +26,9 @@ public class EnemyHealth : MonoBehaviour
             if (component) component.DropMoney();
             Destroy(gameObject);
         }
+        
+        UpdateUI();
     }
+    
+    public virtual void UpdateUI() {}
 }

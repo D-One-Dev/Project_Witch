@@ -45,7 +45,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9529412, g: 0.78543377, b: 0.35686275, a: 1}
-  m_Intensity: 3
+  m_Intensity: 1
   m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -279,6 +279,7 @@ MonoBehaviour:
   targetLockRadius: 7.5
   speed: 7.5
   isHoming: 0
+  isElementStrengthened: 0
   rotationSpeed: 2.5
 --- !u!96 &8556331689490203589
 TrailRenderer:

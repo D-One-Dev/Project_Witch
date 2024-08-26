@@ -41,12 +41,17 @@ namespace Enemies
         {
             _playerInSightRange = Physics.CheckSphere(transform.position, sightRange, playerLayer);
             _playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, playerLayer);
+            
+            CheckState();
+            
+            _enemy.DoAction(_currentAction);
+        }
 
+        protected virtual void CheckState()
+        {
             if (!_playerInSightRange && !_playerInAttackRange) SetAction(_walkAction);
             else if (_playerInSightRange && !_playerInAttackRange) SetAction(_chaseAction);
             else if (_playerInSightRange && _playerInAttackRange) SetAction(_attackAction);
-            
-            _enemy.DoAction(_currentAction);
         }
 
         private void SetAction(IAction newAction)
