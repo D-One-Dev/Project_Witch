@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fc4cec5e088964cae176e60c7fb09f, type: 3}
   m_Name: Rock
   m_EditorClassIdentifier: 
-  Type: 3
-  objectPrefab: {fileID: 7491185641990123097, guid: 6335d8c3a41b3fc4d871bdbde58a0d2b,
-    type: 3}
+  Type: 0
+  objectPrefabs:
+  - {fileID: 7491185641990123097, guid: 6335d8c3a41b3fc4d871bdbde58a0d2b, type: 3}
+  - {fileID: 7491185641990123097, guid: 3feb9394d8d11534aa047e30dfdfb15b, type: 3}
   manaCost: 30
   spellName: Earth
   spellDescription: Launches a rock

@@ -19,9 +19,9 @@ namespace Projectiles
 
         protected virtual void Start() => StartCoroutine(Life());
 
-        protected void GiveDamage(GameObject targetObj)
+        protected void GiveDamage(GameObject targetObj, bool isElementStrengthened)
         {
-            if (targetObj.TryGetComponent(out EnemyHealth enemyHealth)) enemyHealth.TakeDamage(damage, damageType);
+            if (targetObj.TryGetComponent(out EnemyHealth enemyHealth)) enemyHealth.TakeDamage(damage, damageType, isElementStrengthened);
             StartCoroutine(Destroying());
         }
 

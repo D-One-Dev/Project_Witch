@@ -9,10 +9,11 @@ public class EnemyHealth : MonoBehaviour
 
     public UnityEvent onDeath;
 
-    public void TakeDamage(int damage, DamageType damageType)
+    public void TakeDamage(int damage, DamageType damageType, bool isElementStrengthened)
     {
-        if (damageResistType == damageType) damage /= 2;
-        else if (damageVulnerabilityType == damageType) damage *= 2;
+        int coef = isElementStrengthened ? 4 : 2;
+        if (damageResistType == damageType) damage /= coef;
+        else if (damageVulnerabilityType == damageType) damage *= coef;
         if(health - damage > 0)
         {
             health -= damage;

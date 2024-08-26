@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Steam
   m_EditorClassIdentifier: 
   Type: 0
-  objectPrefab: {fileID: 2015579761831088943, guid: 8c3e062fc8da5494c997dc195d9d6f39,
-    type: 3}
+  objectPrefabs:
+  - {fileID: 2015579761831088943, guid: 8c3e062fc8da5494c997dc195d9d6f39, type: 3}
   manaCost: 0
+  spellName: 
+  spellDescription: 
+  spellIcon: {fileID: 0}

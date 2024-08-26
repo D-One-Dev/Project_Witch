@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spell : ScriptableObject
 {
     public SpellType Type;
-    public GameObject objectPrefab;
+    public GameObject[] objectPrefabs;
     public int manaCost;
     public string spellName;
     public string spellDescription;

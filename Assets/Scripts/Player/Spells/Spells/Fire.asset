@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fc4cec5e088964cae176e60c7fb09f, type: 3}
   m_Name: Fire
   m_EditorClassIdentifier: 
-  Type: 1
-  objectPrefab: {fileID: 2121257395508586386, guid: 6e3c3a906acda0b4ba982277a2ea2183,
-    type: 3}
+  Type: 0
+  objectPrefabs:
+  - {fileID: 919132149155446097, guid: 140bd96a293c0654a9e50ddc77116dab, type: 3}
   manaCost: 30
   spellName: Fire
   spellDescription: Launches a fireball
