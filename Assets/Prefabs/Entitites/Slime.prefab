@@ -250,9 +250,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9833c370b1cbee440b4addbd2d65a13e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 0
+  originHealth: 30
   damageResistType: 0
   damageVulnerabilityType: 0
+  surfaceDamageCooldownTime: 0.5
   onDeath:
     m_PersistentCalls:
       m_Calls: []
@@ -314,8 +316,7 @@ MonoBehaviour:
   timeBetweenAttacks: 2
   sightRange: 20
   attackRange: 6
-  projectTile: {fileID: 2121257395508586386, guid: 649a3f2322c93af41afb7cbabf39a4bd,
-    type: 3}
+  projectile: {fileID: 0}
   shootingPoint: {fileID: 8183338547608636007}
 --- !u!114 &1684438548256600381
 MonoBehaviour:
@@ -357,7 +358,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &7815147742086648066
 GameObject:

@@ -1,4 +1,6 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Projectiles
 {
@@ -48,8 +50,9 @@ namespace Projectiles
             }
             else
             {
-                Destroy(gameObject);
+                onDestroy?.Invoke(transform, transform.localScale.x);
                 PlayDeathParticles();
+                Destroy(gameObject);
             }
         }
         

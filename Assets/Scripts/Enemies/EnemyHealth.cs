@@ -1,13 +1,32 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] private int health;
+    public int health;
+    public int originHealth;
     [SerializeField] private DamageType damageResistType;
     [SerializeField] private DamageType damageVulnerabilityType;
+    [SerializeField] private float surfaceDamageCooldownTime;
+
+    private Coroutine surfaceDamageCoroutine = null;
 
     public UnityEvent onDeath;
+
+    private void Start()
+    {
+        health = originHealth;
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("DamagingSurface"))
+        {
+            Debug.Log("Taking surface damage");
+            TakeSurfaceDamage(other.gameObject.GetComponent<DamagingSurface>().damage);
+        }
+    }
 
     public void TakeDamage(int damage, DamageType damageType, bool isElementStrengthened)
     {
@@ -17,14 +36,41 @@ public class EnemyHealth : MonoBehaviour
         if(health - damage > 0)
         {
             health -= damage;
+            AnimationsController.instance.DamageEnemy(GetComponentInChildren<SpriteRenderer>());
         }
 
         else
         {
             onDeath.Invoke();
-            gameObject.TryGetComponent<EnemyMoneyCost>(out EnemyMoneyCost component);
-            if (component) component.DropMoney();
+            if(gameObject.TryGetComponent<EnemyMoneyCost>(out EnemyMoneyCost component)) component.DropMoney();
             Destroy(gameObject);
         }
+    }
+
+    public void TakeSurfaceDamage(int damage)
+    {
+        if(surfaceDamageCoroutine == null)
+        {
+            Debug.Log("Taking surface damage");
+            surfaceDamageCoroutine = StartCoroutine(SurfaceDamageCooldown());
+            if (health - damage > 0)
+            {
+                health -= damage;
+                AnimationsController.instance.DamageEnemy(GetComponentInChildren<SpriteRenderer>());
+            }
+
+            else
+            {
+                onDeath.Invoke();
+                if (gameObject.TryGetComponent<EnemyMoneyCost>(out EnemyMoneyCost component)) component.DropMoney();
+                Destroy(gameObject);
+            }
+        }
+    }
+
+    private IEnumerator SurfaceDamageCooldown()
+    {
+        yield return new WaitForSeconds(surfaceDamageCooldownTime);
+        surfaceDamageCoroutine = null;
     }
 }

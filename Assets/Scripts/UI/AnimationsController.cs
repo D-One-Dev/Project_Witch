@@ -106,4 +106,11 @@ public class AnimationsController : MonoBehaviour
             taskUI.GetComponent<CanvasGroup>().DOFade(1f, .5f);
         });
     }
+
+    public void DamageEnemy(SpriteRenderer sr)
+    {
+        Material mat = sr.material;
+        float alpha = mat.color.a;
+        mat.DOColor(new Color(.1f, .1f, .1f, alpha), .1f).OnKill(() => mat.DOColor(new Color(1f, 1f, 1f, alpha), .1f));
+    }
 }

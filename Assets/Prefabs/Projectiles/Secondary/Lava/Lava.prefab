@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 418627694463378069}
   - component: {fileID: 5689409107020426351}
   - component: {fileID: 5805313514767551304}
+  - component: {fileID: 6574423932765049969}
   m_Layer: 6
   m_Name: Lava
   m_TagString: Untagged
@@ -154,6 +155,21 @@ MonoBehaviour:
   targetTag: Enemy
   deathParticles: {fileID: 1337198075554910, guid: 320381c15bc72a94797cf47320169ea2,
     type: 3}
+  onDestroy:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6574423932765049969}
+        m_TargetAssemblyTypeName: LavaPuddle, Assembly-CSharp
+        m_MethodName: CreatePuddle
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   lifeTime: 30
   lifeTimeAfterCollide: 0
   damage: 10
@@ -163,6 +179,24 @@ MonoBehaviour:
   isHoming: 0
   isElementStrengthened: 0
   rotationSpeed: 2.5
+--- !u!114 &6574423932765049969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121257395508586386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 921a91532143fa244877b2026e9dd3eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puddlePrefab: {fileID: 6033946153105476312, guid: 66b987e34a34eed4386e4ae267502c27,
+    type: 3}
+  yOffset: 0.04
+  lm:
+    serializedVersion: 2
+    m_Bits: 25
 --- !u!1001 &6125006254850997844
 PrefabInstance:
   m_ObjectHideFlags: 0
