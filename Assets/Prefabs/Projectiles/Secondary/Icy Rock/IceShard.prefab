@@ -120,17 +120,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 80532301e6b6ef844960d9c2edb32960,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80532301e6b6ef844960d9c2edb32960,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80532301e6b6ef844960d9c2edb32960,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80532301e6b6ef844960d9c2edb32960,
         type: 3}
@@ -300,9 +300,9 @@ MonoBehaviour:
   onDestroy:
     m_PersistentCalls:
       m_Calls: []
-  lifeTime: 30
+  lifeTime: 10
   lifeTimeAfterCollide: 0
-  damage: 6
+  damage: 2
   damageType: 2
   targetLockRadius: 7.5
   speed: 40

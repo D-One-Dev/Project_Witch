@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 418627694463378069}
   - component: {fileID: 5689409107020426351}
   - component: {fileID: 5805313514767551304}
+  - component: {fileID: 719694661663044624}
   m_Layer: 6
   m_Name: Icy Rock
   m_TagString: Untagged
@@ -33,7 +34,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 886194257692449837}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &286182649274091328
@@ -43,7 +45,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121257395508586386}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 857205207733156932, guid: 5aaa7375c2a49424fa92bf9f3494b851, type: 3}
 --- !u!23 &7693602146398045759
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 70cd2283371b8c743a03a0e4e1899b64, type: 2}
+  - {fileID: 2100000, guid: 7de98ecd0912f3241b5313bfdc5ccf51, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -151,6 +153,23 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   targetTag: Enemy
+  deathParticles: {fileID: 1329845292236604, guid: 8099622b188f0d647986b074a4cc6a39,
+    type: 3}
+  onDestroy:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 719694661663044624}
+        m_TargetAssemblyTypeName: IcyRockExplosion, Assembly-CSharp
+        m_MethodName: Explode
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   lifeTime: 30
   lifeTimeAfterCollide: 0
   damage: 10
@@ -160,3 +179,112 @@ MonoBehaviour:
   isHoming: 0
   isElementStrengthened: 0
   rotationSpeed: 2.5
+--- !u!114 &719694661663044624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121257395508586386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dc3c3d67eaeb934688c2fcb65c1d310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iceShard: {fileID: 6658851618858588500, guid: 5a766289d05348340ac7d77119494002,
+    type: 3}
+  shardsAmount: 15
+--- !u!1001 &8650547433712769779
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1022692622790476004}
+    m_Modifications:
+    - target: {fileID: 7564462548551422009, guid: 049909671dc31e24c9c5bf4e95c43cec,
+        type: 3}
+      propertyPath: m_Name
+      value: Ice
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376853591899637470, guid: 049909671dc31e24c9c5bf4e95c43cec,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376853591899637470, guid: 049909671dc31e24c9c5bf4e95c43cec,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376853591899637470, guid: 049909671dc31e24c9c5bf4e95c43cec,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376853591899637470, guid: 049909671dc31e24c9c5bf4e95c43cec,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376853591899637470, guid: 049909671dc31e24c9c5bf4e95c43cec,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376853591899637470, guid: 049909671dc31e24c9c5bf4e95c43cec,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376853591899637470, guid: 049909671dc31e24c9c5bf4e95c43cec,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376853591899637470, guid: 049909671dc31e24c9c5bf4e95c43cec,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376853591899637470, guid: 049909671dc31e24c9c5bf4e95c43cec,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376853591899637470, guid: 049909671dc31e24c9c5bf4e95c43cec,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376853591899637470, guid: 049909671dc31e24c9c5bf4e95c43cec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376853591899637470, guid: 049909671dc31e24c9c5bf4e95c43cec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376853591899637470, guid: 049909671dc31e24c9c5bf4e95c43cec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8376853591899637470, guid: 049909671dc31e24c9c5bf4e95c43cec,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 049909671dc31e24c9c5bf4e95c43cec, type: 3}
+--- !u!4 &886194257692449837 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8376853591899637470, guid: 049909671dc31e24c9c5bf4e95c43cec,
+    type: 3}
+  m_PrefabInstance: {fileID: 8650547433712769779}
+  m_PrefabAsset: {fileID: 0}

@@ -10,6 +10,8 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private DamageType damageVulnerabilityType;
     [SerializeField] private float surfaceDamageCooldownTime;
 
+    private bool isDead;
+
     private Coroutine surfaceDamageCoroutine = null;
 
     public UnityEvent onDeath;
@@ -41,9 +43,13 @@ public class EnemyHealth : MonoBehaviour
 
         else
         {
-            onDeath.Invoke();
-            if(gameObject.TryGetComponent<EnemyMoneyCost>(out EnemyMoneyCost component)) component.DropMoney();
-            Destroy(gameObject);
+            if (!isDead)
+            {
+                isDead = true;
+                onDeath.Invoke();
+                if(gameObject.TryGetComponent<EnemyMoneyCost>(out EnemyMoneyCost component)) component.DropMoney();
+                Destroy(gameObject);
+            }
         }
     }
 
@@ -61,9 +67,13 @@ public class EnemyHealth : MonoBehaviour
 
             else
             {
-                onDeath.Invoke();
-                if (gameObject.TryGetComponent<EnemyMoneyCost>(out EnemyMoneyCost component)) component.DropMoney();
-                Destroy(gameObject);
+                if (!isDead)
+                {
+                    isDead = true;
+                    onDeath.Invoke();
+                    if (gameObject.TryGetComponent<EnemyMoneyCost>(out EnemyMoneyCost component)) component.DropMoney();
+                    Destroy(gameObject);
+                }
             }
         }
     }
