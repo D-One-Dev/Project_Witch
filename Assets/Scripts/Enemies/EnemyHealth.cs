@@ -30,6 +30,7 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
+    
     public void TakeDamage(int damage, DamageType damageType, bool isElementStrengthened)
     {
         int coef = isElementStrengthened ? 4 : 2;
@@ -40,7 +41,6 @@ public class EnemyHealth : MonoBehaviour
             health -= damage;
             AnimationsController.instance.DamageEnemy(GetComponentInChildren<SpriteRenderer>());
         }
-
         else
         {
             if (!isDead)
@@ -51,6 +51,8 @@ public class EnemyHealth : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        
+        UpdateUI();
     }
 
     public void TakeSurfaceDamage(int damage)
@@ -83,4 +85,5 @@ public class EnemyHealth : MonoBehaviour
         yield return new WaitForSeconds(surfaceDamageCooldownTime);
         surfaceDamageCoroutine = null;
     }
+    public virtual void UpdateUI() {}
 }

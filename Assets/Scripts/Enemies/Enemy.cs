@@ -5,12 +5,12 @@ namespace Enemies
 {
     public class Enemy
     {
-        public readonly EnemyUnitBase EnemyUnit;
+        public readonly EnemyUnitBase.EnemyUnitBase EnemyUnit;
         public readonly NavMeshAgent Agent;
         public readonly Transform Transform;
         public readonly Animator Animator;
 
-        public Enemy(NavMeshAgent agent, Transform transform, Animator animator, EnemyUnitBase enemyUnit)
+        public Enemy(NavMeshAgent agent, Transform transform, Animator animator, EnemyUnitBase.EnemyUnitBase enemyUnit)
         {
             Agent = agent;
             Transform = transform;

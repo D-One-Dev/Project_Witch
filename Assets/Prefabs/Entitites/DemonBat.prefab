@@ -166,7 +166,7 @@ MonoBehaviour:
   timeBetweenAttacks: 3
   sightRange: 20
   attackRange: 6.5
-  projectile: {fileID: 7196121003433257656, guid: 95a3ecf2a82384e45a04041d83e6689e,
+  projectTile: {fileID: 2121257395508586386, guid: 5c88ade8455bbb54281c942441488e10,
     type: 3}
   shootingPoint: {fileID: 1130919160677277889}
 --- !u!1 &1443173761962071034

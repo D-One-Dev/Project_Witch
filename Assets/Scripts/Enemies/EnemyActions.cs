@@ -1,11 +1,18 @@
 using System.Collections;
+using Enemies.EnemyUnitBase;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace Enemies
 {
     public interface IAction
     {
         public void PerformAction(Enemy enemy);
+    }
+
+    public class Idle : IAction
+    {
+        public void PerformAction(Enemy enemy) {}
     }
 
     public class Walk : IAction
@@ -33,11 +40,10 @@ namespace Enemies
             }
 
             Vector3 distanceToWalkPoint = enemy.Transform.position - _walkPoint;
-
-            if (distanceToWalkPoint.magnitude < 1f)
+            if (distanceToWalkPoint.magnitude < 1.5f)
             {
                 _isWalkPointSet = false;
-                //Debug.Log("disabled");
+                Debug.Log("disabled");
             }
         }
         
@@ -48,7 +54,34 @@ namespace Enemies
 
             _walkPoint = new Vector3(enemy.Transform.position.x + randomX, enemy.Transform.position.y, enemy.Transform.position.z + randomZ);
             
-            if (Physics.Raycast(_walkPoint, -enemy.Transform.up, 2f, _ground)) _isWalkPointSet = true;
+            if (Physics.Raycast(_walkPoint, -enemy.Transform.up, 2f, _ground) && IsPointOnNavMesh(_walkPoint)) _isWalkPointSet = true;
+        }
+        
+        private bool IsPointOnNavMesh(Vector3 position) => NavMesh.SamplePosition(position, out NavMeshHit hit, 1f, NavMesh.AllAreas);
+    }
+
+    public class WalkInRadius : IAction
+    {
+        private readonly Transform _centerPoint;
+        private readonly float _radius;
+
+        public WalkInRadius(float radius, Transform centerPoint)
+        {
+            _radius = radius;
+            _centerPoint = centerPoint;
+        }
+        
+        public void PerformAction(Enemy enemy)
+        {
+            float angle = Random.Range(0, 360);
+
+            Vector3 targetPosition = new Vector3
+            {
+                x = _centerPoint.position.x + Mathf.Cos(angle) * _radius,
+                z = _centerPoint.position.z + Mathf.Sin(angle) * _radius
+            };
+            
+            enemy.Agent.SetDestination(targetPosition);
         }
     }
 
@@ -66,36 +99,36 @@ namespace Enemies
         }
     }
 
-    
     public abstract class Attack : IAction
     {
-        protected readonly float _timeBetweenAttacks;
-        protected readonly Transform _player;
+        protected readonly float TimeBetweenAttacks;
+        protected readonly Transform Player;
 
-        protected Enemy _enemy;
+        protected Enemy Enemy;
         
         private bool _isAbleToAttack = true;
-        private static readonly int IsAttacking = Animator.StringToHash("isAttacking");
+        private readonly string _isAttacking;
 
-        protected Attack(Transform player, float timeBetweenAttacks)
+        protected Attack(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey)
         {
-            _player = player;
-            _timeBetweenAttacks = timeBetweenAttacks;
+            Player = player;
+            TimeBetweenAttacks = timeBetweenAttacks;
+            _isAttacking = isAttackingTriggerKey;
         }
 
         public void PerformAction(Enemy enemy)
         {
             enemy.Agent.SetDestination(enemy.Transform.position);
             
-            enemy.Transform.LookAt(_player);
+            enemy.Transform.LookAt(Player);
             enemy.Transform.localEulerAngles = new Vector3(0f, enemy.Transform.localEulerAngles.y, 0f);
 
-            _enemy = enemy;
+            Enemy = enemy;
 
             if (_isAbleToAttack)
             {
                 _isAbleToAttack = false;
-                enemy.Animator.SetTrigger(IsAttacking);
+                enemy.Animator.SetTrigger(_isAttacking);
                 enemy.EnemyUnit.StartCoroutine(Cooldown());
                 DoAttack();
             }
@@ -105,31 +138,32 @@ namespace Enemies
 
         private IEnumerator Cooldown()
         {
-            yield return new WaitForSeconds(_timeBetweenAttacks);
+            yield return new WaitForSeconds(TimeBetweenAttacks);
             _isAbleToAttack = true;
         }
     }
 
     public class ShootingAttack : Attack
     {
-        private readonly ShootingEnemyUnit.SpawnProjectTile _spawnProjectTile;
+        private readonly ShootingEnemyUnitBase.SpawnProjectTile _spawnProjectTile;
         
-        public ShootingAttack(Transform player, float timeBetweenAttacks, ShootingEnemyUnit.SpawnProjectTile spawnProjectTile) : base(player, timeBetweenAttacks)
+        public ShootingAttack(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey,
+            ShootingEnemyUnitBase.SpawnProjectTile spawnProjectTile) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
         {
             _spawnProjectTile = spawnProjectTile;
         }
 
         protected override void DoAttack()
         {
-            var shootingEnemyUnit = (ShootingEnemyUnit)_enemy.EnemyUnit;
-            shootingEnemyUnit.shootingPoint.LookAt(_player);
+            var shootingEnemyUnit = (ShootingEnemyUnitBase) Enemy.EnemyUnit;
+            shootingEnemyUnit.shootingPoint.LookAt(Player);
             
-            _enemy.EnemyUnit.StartCoroutine(Attacking());
+            Enemy.EnemyUnit.StartCoroutine(Attacking());
         }
 
         private IEnumerator Attacking()
         {
-            yield return new WaitForSeconds(_enemy.Animator.GetCurrentAnimatorClipInfo(0).Length + 0.1f);
+            yield return new WaitForSeconds(Enemy.Animator.GetCurrentAnimatorClipInfo(0).Length + 0.1f);
             _spawnProjectTile();
         }
     }
