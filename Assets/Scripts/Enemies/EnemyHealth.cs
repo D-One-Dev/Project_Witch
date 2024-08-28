@@ -4,7 +4,6 @@ using UnityEngine.Events;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] protected int health;
-    
     [SerializeField] private DamageType damageResistType;
     [SerializeField] private DamageType damageVulnerabilityType;
 

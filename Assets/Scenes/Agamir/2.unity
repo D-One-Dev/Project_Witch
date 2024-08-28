@@ -1114,6 +1114,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3823,6 +3828,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4963,6 +4973,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: barrel1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 29aea2a1888f04843971e19f407cd48b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9015,6 +9030,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box1 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9330,6 +9350,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14938,6 +14963,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15191,6 +15221,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box1 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17238,6 +17273,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: barrel2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a0b15e50dd6dc1a44954778fc1c235d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20527,6 +20567,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrel2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a0b15e50dd6dc1a44954778fc1c235d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20864,7 +20909,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 473034578}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Boxes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21274,6 +21319,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21831,6 +21881,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: barrel1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 29aea2a1888f04843971e19f407cd48b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23525,6 +23580,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: barrel2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a0b15e50dd6dc1a44954778fc1c235d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25414,7 +25474,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 585904935}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Barrels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26341,6 +26401,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box1 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27682,6 +27747,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28151,6 +28221,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box1 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30015,6 +30090,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box1 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30203,6 +30283,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36719,6 +36804,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrel1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 29aea2a1888f04843971e19f407cd48b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37245,6 +37335,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: barrel2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a0b15e50dd6dc1a44954778fc1c235d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38147,6 +38242,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38810,6 +38910,101 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7651549254762355626, guid: cf9dad8bc29d7c4418831cf8b8f6a8e1, type: 3}
+--- !u!1 &862881554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 862881557}
+  - component: {fileID: 862881556}
+  - component: {fileID: 862881555}
+  m_Layer: 0
+  m_Name: NavMesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &862881555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862881554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: -1372625422
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
+--- !u!114 &862881556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862881554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 2047
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: 1bae089c58d44754e8c4cf8c12f25df2, type: 2}
+  m_BuildHeightMesh: 0
+--- !u!4 &862881557
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862881554}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &863754818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38990,6 +39185,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39923,6 +40123,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: barrel2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a0b15e50dd6dc1a44954778fc1c235d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40938,6 +41143,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box1 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42580,6 +42790,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box1 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42763,6 +42978,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: barrel1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 29aea2a1888f04843971e19f407cd48b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -44581,6 +44801,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -46427,6 +46652,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrel1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 29aea2a1888f04843971e19f407cd48b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -47927,6 +48157,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box1 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50755,6 +50990,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrel2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a0b15e50dd6dc1a44954778fc1c235d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51071,6 +51311,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: barrel2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a0b15e50dd6dc1a44954778fc1c235d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -51483,6 +51728,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: barrel1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 29aea2a1888f04843971e19f407cd48b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -55352,6 +55602,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box1 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59041,6 +59296,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box1 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -60909,6 +61169,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box1 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -62020,6 +62285,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box1 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -63396,6 +63666,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64395,6 +64670,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrel1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 29aea2a1888f04843971e19f407cd48b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64613,6 +64893,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrel1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 29aea2a1888f04843971e19f407cd48b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64778,6 +65063,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box1 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -66173,6 +66463,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box1 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -69357,6 +69652,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrel1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 29aea2a1888f04843971e19f407cd48b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -71518,6 +71818,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box1 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -72645,6 +72950,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box1 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -73048,6 +73358,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: barrel1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 29aea2a1888f04843971e19f407cd48b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -76868,6 +77183,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77158,6 +77478,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: barrel1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 29aea2a1888f04843971e19f407cd48b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -82119,6 +82444,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrel1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 29aea2a1888f04843971e19f407cd48b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -83439,6 +83769,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box1 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -83913,6 +84248,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -86894,6 +87234,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -87880,6 +88225,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -90978,6 +91328,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box1 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -94688,6 +95043,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrel1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 29aea2a1888f04843971e19f407cd48b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -94779,6 +95139,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box1 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -95375,6 +95740,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: barrel2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a0b15e50dd6dc1a44954778fc1c235d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -97395,6 +97765,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrel2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a0b15e50dd6dc1a44954778fc1c235d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -97867,6 +98242,79 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2101728046}
   m_SourcePrefab: {fileID: 100100000, guid: e0f1d91a6b67e18498e3fa59f77d3026, type: 3}
+--- !u!1001 &665776707963639792
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 631793022318173581, guid: eed448219bbe39147911dac1096b079f,
+        type: 3}
+      propertyPath: walkPointRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000746035825119568, guid: eed448219bbe39147911dac1096b079f,
+        type: 3}
+      propertyPath: m_Name
+      value: GreatMage
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205840142885680567, guid: eed448219bbe39147911dac1096b079f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205840142885680567, guid: eed448219bbe39147911dac1096b079f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.352
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205840142885680567, guid: eed448219bbe39147911dac1096b079f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205840142885680567, guid: eed448219bbe39147911dac1096b079f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205840142885680567, guid: eed448219bbe39147911dac1096b079f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205840142885680567, guid: eed448219bbe39147911dac1096b079f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205840142885680567, guid: eed448219bbe39147911dac1096b079f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205840142885680567, guid: eed448219bbe39147911dac1096b079f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205840142885680567, guid: eed448219bbe39147911dac1096b079f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205840142885680567, guid: eed448219bbe39147911dac1096b079f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eed448219bbe39147911dac1096b079f, type: 3}
 --- !u!1001 &2089674911543734863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98597,6 +99045,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 56358030}
+  - {fileID: 862881557}
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 7147283688148496830}
@@ -98605,6 +99054,7 @@ SceneRoots:
   - {fileID: 97059532}
   - {fileID: 772024454}
   - {fileID: 839914945}
+  - {fileID: 665776707963639792}
   - {fileID: 198297375}
   - {fileID: 1094323671}
   - {fileID: 1248220521}
