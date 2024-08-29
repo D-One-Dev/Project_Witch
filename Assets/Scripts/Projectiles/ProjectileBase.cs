@@ -43,7 +43,7 @@ namespace Projectiles
             Destroy(gameObject);
         }
 
-        private IEnumerator Life()
+        protected virtual IEnumerator Life()
         {
             yield return new WaitForSeconds(lifeTime);
             PlayDeathParticles();

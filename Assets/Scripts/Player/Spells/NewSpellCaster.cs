@@ -45,9 +45,9 @@ public class NewSpellCaster : MonoBehaviour
     private int currentMana;
 
     private Vector3 tempCamPos;
-    private Vector3 tempCamUp;
-    private Vector3 tempCamForward;
-    private Vector3 tempCamRight;
+    //private Vector3 tempCamUp;
+    //private Vector3 tempCamForward;
+    //private Vector3 tempCamRight;
 
     public static NewSpellCaster instance;
 
@@ -280,19 +280,21 @@ public class NewSpellCaster : MonoBehaviour
             Vector3 randomPos;
 
             if (outputSpells.Count < 2) randomPos = tempCamPos;
-            //else randomPos = tempCamPos + (tempCamRight * Random.Range(-spell.objectPrefab.transform.localScale.x,
-            //    spell.objectPrefab.transform.localScale.x) + tempCamUp * Random.Range(-spell.objectPrefab.transform.localScale.y,
-            //    spell.objectPrefab.transform.localScale.y)) / 2;
 
-            else randomPos = tempCamPos + (tempCamRight * Random.Range(-spellPrefab.transform.localScale.x,
-                spellPrefab.transform.localScale.x) + tempCamUp * Random.Range(-spellPrefab.transform.localScale.y,
+            //else randomPos = tempCamPos + (tempCamRight * Random.Range(-spellPrefab.transform.localScale.x,
+            //    spellPrefab.transform.localScale.x) + tempCamUp * Random.Range(-spellPrefab.transform.localScale.y,
+            //    spellPrefab.transform.localScale.y)) / 2;
+
+            else randomPos = tempCamPos + (_cam.transform.right * Random.Range(-spellPrefab.transform.localScale.x,
+                spellPrefab.transform.localScale.x) + _cam.transform.up * Random.Range(-spellPrefab.transform.localScale.y,
                 spellPrefab.transform.localScale.y)) / 2;
-
-            //GameObject obj = Instantiate(spell.objectPrefab, randomPos, Quaternion.identity, _projectilesParentObject);
 
             GameObject obj = Instantiate(spellPrefab, randomPos, Quaternion.identity, _projectilesParentObject);
 
-            obj.transform.forward = tempCamForward;
+            //obj.transform.forward = tempCamForward;
+
+            obj.transform.forward = _cam.transform.forward;
+
             obj.transform.localEulerAngles = new Vector3(obj.transform.localEulerAngles.x, obj.transform.localEulerAngles.y, Random.Range(0f, 360f));
             objects.Add(obj);
         }
@@ -327,8 +329,8 @@ public class NewSpellCaster : MonoBehaviour
     private void SetTempCamPos()
     {
         tempCamPos = _cam.transform.position;
-        tempCamUp = _cam.transform.up;
-        tempCamForward = _cam.transform.forward;
-        tempCamRight = _cam.transform.right;
+        //tempCamUp = _cam.transform.up;
+        //tempCamForward = _cam.transform.forward;
+        //tempCamRight = _cam.transform.right;
     }
 }
