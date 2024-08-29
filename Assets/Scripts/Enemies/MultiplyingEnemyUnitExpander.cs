@@ -27,7 +27,7 @@ namespace Enemies
             {
                 GameObject child = Instantiate(enemyUnitPrefab, transform.position, transform.rotation);
                 child.transform.localScale /= 2;
-                child.GetComponent<EnemyHealth>().originHealth = GetComponent<EnemyHealth>().originHealth / 2;
+                GetComponent<EnemyHealth>().health /= 2;
             }
         }
     }

@@ -5,7 +5,7 @@ using UnityEngine.Events;
 public class EnemyHealth : MonoBehaviour
 {
     public int health;
-    public int originHealth;
+    protected int OriginHealth;
     [SerializeField] private DamageType damageResistType;
     [SerializeField] private DamageType damageVulnerabilityType;
     [SerializeField] private float surfaceDamageCooldownTime;
@@ -15,10 +15,13 @@ public class EnemyHealth : MonoBehaviour
     private Coroutine surfaceDamageCoroutine = null;
 
     public UnityEvent onDeath;
+    public event HealthChanged onHealthChanged;
+    public delegate void HealthChanged(int health, int originHealth);
 
     private void Start()
     {
-        health = originHealth;
+        OriginHealth = health;
+        UpdateUI();
     }
 
     private void OnTriggerStay(Collider other)
@@ -39,6 +42,7 @@ public class EnemyHealth : MonoBehaviour
         if(health - damage > 0)
         {
             health -= damage;
+            onHealthChanged?.Invoke(health, OriginHealth);
             AnimationsController.instance.DamageEnemy(GetComponentInChildren<SpriteRenderer>());
         }
         else
@@ -78,6 +82,8 @@ public class EnemyHealth : MonoBehaviour
                 }
             }
         }
+        
+        UpdateUI();
     }
 
     private IEnumerator SurfaceDamageCooldown()
@@ -85,5 +91,6 @@ public class EnemyHealth : MonoBehaviour
         yield return new WaitForSeconds(surfaceDamageCooldownTime);
         surfaceDamageCoroutine = null;
     }
+    
     public virtual void UpdateUI() {}
 }

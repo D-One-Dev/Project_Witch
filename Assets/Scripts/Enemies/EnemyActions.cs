@@ -64,6 +64,8 @@ namespace Enemies
     {
         private readonly Transform _centerPoint;
         private readonly float _radius;
+        private bool _isWalkPointSet;
+        private Vector3 targetPosition;
 
         public WalkInRadius(float radius, Transform centerPoint)
         {
@@ -73,15 +75,79 @@ namespace Enemies
         
         public void PerformAction(Enemy enemy)
         {
-            float angle = Random.Range(0, 360);
-
-            Vector3 targetPosition = new Vector3
+            if (!_isWalkPointSet)
             {
-                x = _centerPoint.position.x + Mathf.Cos(angle) * _radius,
-                z = _centerPoint.position.z + Mathf.Sin(angle) * _radius
-            };
+                float angle = Random.Range(0, 360);
+
+                targetPosition = new Vector3
+                {
+                    x = _centerPoint.position.x + Mathf.Cos(angle) * _radius,
+                    z = _centerPoint.position.z + Mathf.Sin(angle) * _radius
+                };
+                
+                enemy.Agent.SetDestination(targetPosition);
+                
+                enemy.Transform.LookAt(targetPosition);
+                enemy.Transform.localEulerAngles = new Vector3(0f, enemy.Transform.localEulerAngles.y, 0f);
+
+                _isWalkPointSet = true;
+            }
             
-            enemy.Agent.SetDestination(targetPosition);
+            if (!enemy.Agent.pathPending && enemy.Agent.remainingDistance <= enemy.Agent.stoppingDistance)
+            {
+                _isWalkPointSet = false;
+            }
+        }
+    }
+    
+    public class TeleportationInRadius : IAction
+    {
+        private readonly Transform _centerPoint;
+        private readonly float _radius;
+        private bool _isAbleToTeleport = true;
+
+        private readonly float _teleportCooldown;
+
+        public TeleportationInRadius(float radius, Transform centerPoint)
+        {
+            _radius = radius;
+            _centerPoint = centerPoint;
+
+            _teleportCooldown = 2;
+        }
+        
+        public TeleportationInRadius(float radius, float teleportCooldown, Transform centerPoint)
+        {
+            _radius = radius;
+            _centerPoint = centerPoint;
+
+            _teleportCooldown = teleportCooldown;
+        }
+        
+        public void PerformAction(Enemy enemy)
+        {
+            if (_isAbleToTeleport)
+            {
+                _isAbleToTeleport = false;
+                
+                float angle = Random.Range(0, 360);
+
+                Vector3 targetPosition = new Vector3
+                {
+                    x = _centerPoint.position.x + Mathf.Cos(angle) * _radius,
+                    z = _centerPoint.position.z + Mathf.Sin(angle) * _radius
+                };
+
+                enemy.Transform.position = targetPosition;
+
+                enemy.EnemyUnit.StartCoroutine(TeleportCooldown());
+            }
+        }
+
+        private IEnumerator TeleportCooldown()
+        {
+            yield return new WaitForSeconds(_teleportCooldown);
+            _isAbleToTeleport = true;
         }
     }
 
