@@ -58,12 +58,25 @@ public class AnimationsController : MonoBehaviour
         spellCard.GetComponentInChildren<Image>().DOColor(new Color(1f, 1f, 1f), .1f).SetUpdate(UpdateType.Normal, true);
     }
 
-    public void ChangeScene(Image blackScreen, int sceneID)
+    public void ChangeScene(GameObject loadingScreen, int sceneID)
     {
-        blackScreen.enabled = true;
+        loadingScreen.SetActive(true);
         sceneLoadOperation = SceneManager.LoadSceneAsync(sceneID);
         sceneLoadOperation.allowSceneActivation = false;
-        blackScreen.DOColor(Color.black, 1f).SetUpdate(UpdateType.Normal, true).OnComplete(() =>
+        loadingScreen.GetComponent<CanvasGroup>().DOFade(1f, .5f).SetUpdate(UpdateType.Normal, true).OnComplete(() =>
+        {
+            Time.timeScale = 1f;
+            sceneLoadOperation.allowSceneActivation = true;
+        });
+    }
+
+    public void ChangeScene(GameObject loadingScreen)
+    {
+        int sceneID = SavesController.instance.currentSceneID;
+        loadingScreen.SetActive(true);
+        sceneLoadOperation = SceneManager.LoadSceneAsync(sceneID);
+        sceneLoadOperation.allowSceneActivation = false;
+        loadingScreen.GetComponent<CanvasGroup>().DOFade(1f, .5f).SetUpdate(UpdateType.Normal, true).OnComplete(() =>
         {
             Time.timeScale = 1f;
             sceneLoadOperation.allowSceneActivation = true;

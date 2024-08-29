@@ -4,6 +4,6 @@ public class LavaPuddleLifetime : MonoBehaviour
 {
     public void DestroyPuddle()
     {
-        Destroy(gameObject);
+        Destroy(transform.parent.gameObject);
     }
 }

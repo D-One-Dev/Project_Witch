@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Mike/MainMenu.unity
     guid: a66b7dff42b93ce40bcd3c4a1d2f202d
   - enabled: 1
+    path: Assets/Scenes/Mike/1Mike.unity
+    guid: 5311b3901eb615e4cbb1acd526106429
+  - enabled: 1
     path: Assets/Scenes/Mike/2Mike.unity
-    guid: 547e9c8a99f27a145a9d720113a899de
+    guid: f87ca8f0fc79ec5449c23648be1eda35
   - enabled: 0
     path: Assets/Scenes/Mike/NEWNEW2.unity
     guid: f044c84df7277f146bfce1b7de828bfe

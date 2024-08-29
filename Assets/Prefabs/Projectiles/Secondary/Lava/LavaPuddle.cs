@@ -13,6 +13,7 @@ public class LavaPuddle : MonoBehaviour
         {
             GameObject puddle = Instantiate(puddlePrefab, hit.point + Vector3.down * yOffset, puddlePrefab.transform.localRotation);
             puddle.transform.localScale *= puddleScale * 2;
+            puddle.transform.up = hit.normal;
         }
     }
 }

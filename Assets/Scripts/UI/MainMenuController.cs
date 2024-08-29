@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
 {
-    [SerializeField] private Image blackScreen;
+    [SerializeField] private GameObject loadingScreen;
     [SerializeField] private Button loadButton;
 
     private void Start()
@@ -23,15 +23,16 @@ public class MainMenuController : MonoBehaviour
     {
         if(File.Exists(Application.dataPath + "/save.savefile")) File.Delete(Application.dataPath + "/save.savefile");
         if (File.Exists(Application.dataPath + "/save.savefile.meta"))File.Delete(Application.dataPath + "/save.savefile.meta");
-        AnimationsController.instance.ChangeScene(blackScreen, 1);
+        AnimationsController.instance.ChangeScene(loadingScreen, 1);
     }
 
     public void LoadGame()
     {
-        AnimationsController.instance.ChangeScene(blackScreen, 1);
+        AnimationsController.instance.ChangeScene(loadingScreen);
     }
 
     public void QuitGame()
+
     {
         Application.Quit();
     }
