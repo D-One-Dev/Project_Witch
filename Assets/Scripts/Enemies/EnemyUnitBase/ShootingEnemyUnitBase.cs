@@ -4,7 +4,7 @@ namespace Enemies.EnemyUnitBase
 {
     public abstract class ShootingEnemyUnitBase : EnemyUnitBase
     {
-        [SerializeField] private GameObject projectTile;
+        [SerializeField] protected GameObject projectTile;
         public delegate void SpawnProjectTile();
         
         public Transform shootingPoint;

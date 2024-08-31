@@ -208,6 +208,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Market_Door (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c0d15fd4b4d00914da8ef0f07add7bd1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2931,6 +2936,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_FoodCounter (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 72f23973c058b2b41a34b3fac44aae8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3609,6 +3619,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Village_house1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3eda3b2b3d7acc148bcb16027f807f4a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4404,6 +4419,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Village_house3 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 48b6e4829f1b61344b72eaa315015c97,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7618,6 +7638,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Market_P2 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 46032d9f00908da4c8ee2176aae72bed,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8434,6 +8459,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_FoodCounter2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d12f8f9bb1ee43546868751ffe26209a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10171,6 +10201,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Market_Door (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c0d15fd4b4d00914da8ef0f07add7bd1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12056,6 +12091,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7871167840446461091, guid: ba9debf91ac2ac4448390166b6ca5936,
+        type: 3}
+      propertyPath: hpBar
+      value: 
+      objectReference: {fileID: 1276174554}
     - target: {fileID: 7903579373380605343, guid: ba9debf91ac2ac4448390166b6ca5936,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -13848,6 +13888,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_FoodCounter (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 72f23973c058b2b41a34b3fac44aae8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17499,6 +17544,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Village_house4 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7cec255fa8c7c3248a7252cd3a79d764,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18544,6 +18594,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Market_P4
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d042221f2a90fa499a65f8b92254c20,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18790,6 +18845,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Village_house1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3eda3b2b3d7acc148bcb16027f807f4a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19145,6 +19205,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_FoodCounter2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d12f8f9bb1ee43546868751ffe26209a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20111,6 +20176,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Market_P3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d01e33b837920e14e92c540cdd542097,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20474,6 +20544,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Market_P3 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d01e33b837920e14e92c540cdd542097,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24264,6 +24339,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_FoodCounter2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d12f8f9bb1ee43546868751ffe26209a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25639,6 +25719,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Market_Door (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c0d15fd4b4d00914da8ef0f07add7bd1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25726,6 +25811,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_FoodCounter2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d12f8f9bb1ee43546868751ffe26209a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26217,6 +26307,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_FoodCounter
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 72f23973c058b2b41a34b3fac44aae8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27155,6 +27250,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Village_house2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9c7f7fef526226f4995d900dc9ca40db,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29388,6 +29488,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Market_P2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 65cd233ae3ae13143908e2cf405daded,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32551,6 +32656,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 48b6e4829f1b61344b72eaa315015c97,
         type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 48b6e4829f1b61344b72eaa315015c97,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -32733,6 +32843,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_FoodCounter (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 72f23973c058b2b41a34b3fac44aae8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34169,6 +34284,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Market_P2 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 46032d9f00908da4c8ee2176aae72bed,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37961,6 +38081,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Market_P4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d042221f2a90fa499a65f8b92254c20,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38057,6 +38182,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Village_house2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9c7f7fef526226f4995d900dc9ca40db,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38977,7 +39107,7 @@ MonoBehaviour:
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 2047
+    m_Bits: 4095
   m_UseGeometry: 0
   m_DefaultArea: 0
   m_GenerateLinks: 0
@@ -41697,6 +41827,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_FoodCounter (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 72f23973c058b2b41a34b3fac44aae8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42240,6 +42375,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Market_Door (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c0d15fd4b4d00914da8ef0f07add7bd1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43971,6 +44111,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Village_house4 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7cec255fa8c7c3248a7252cd3a79d764,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -44325,6 +44470,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Village_house3 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 48b6e4829f1b61344b72eaa315015c97,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -46486,6 +46636,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_FoodCounter (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 72f23973c058b2b41a34b3fac44aae8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -47152,6 +47307,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Market_P3 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d01e33b837920e14e92c540cdd542097,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47907,6 +48067,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Village_house3 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 48b6e4829f1b61344b72eaa315015c97,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48032,6 +48197,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Village_house4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7cec255fa8c7c3248a7252cd3a79d764,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -49204,6 +49374,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Village_house4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7cec255fa8c7c3248a7252cd3a79d764,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -52006,6 +52181,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Village_house4 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7cec255fa8c7c3248a7252cd3a79d764,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -54367,6 +54547,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Village_house2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9c7f7fef526226f4995d900dc9ca40db,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55234,6 +55419,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Market_P1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d7be2f382486d042a3b30fe17a0046d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55829,6 +56019,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Village_house2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9c7f7fef526226f4995d900dc9ca40db,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58185,6 +58380,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_FoodCounter (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 72f23973c058b2b41a34b3fac44aae8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -58390,6 +58590,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Market_Door (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c0d15fd4b4d00914da8ef0f07add7bd1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58696,6 +58901,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Village_house1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3eda3b2b3d7acc148bcb16027f807f4a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -61452,6 +61662,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Market_P3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d01e33b837920e14e92c540cdd542097,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -62109,6 +62324,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Market_Door (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c0d15fd4b4d00914da8ef0f07add7bd1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -63948,6 +64168,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Village_house2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9c7f7fef526226f4995d900dc9ca40db,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64073,6 +64298,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Market_P3 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d01e33b837920e14e92c540cdd542097,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -65833,6 +66063,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Market_Door
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c0d15fd4b4d00914da8ef0f07add7bd1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -67028,6 +67263,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Market_P3 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d01e33b837920e14e92c540cdd542097,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -68270,6 +68510,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Village_house3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 48b6e4829f1b61344b72eaa315015c97,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -70141,6 +70386,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Market_P2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 65cd233ae3ae13143908e2cf405daded,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -72858,6 +73108,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Market_P1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8d7be2f382486d042a3b30fe17a0046d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -73936,6 +74191,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Village_house2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9c7f7fef526226f4995d900dc9ca40db,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -76233,6 +76493,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Village_house1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3eda3b2b3d7acc148bcb16027f807f4a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78402,6 +78667,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Market_P3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d01e33b837920e14e92c540cdd542097,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79162,6 +79432,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Market_Door (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c0d15fd4b4d00914da8ef0f07add7bd1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79506,6 +79781,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Market_P3 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d01e33b837920e14e92c540cdd542097,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -81840,6 +82120,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Village_house1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3eda3b2b3d7acc148bcb16027f807f4a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -82540,6 +82825,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_FoodCounter2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d12f8f9bb1ee43546868751ffe26209a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -84663,6 +84953,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Village_house1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3eda3b2b3d7acc148bcb16027f807f4a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -86806,6 +87101,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Village_house4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7cec255fa8c7c3248a7252cd3a79d764,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -87709,6 +88009,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Village_house3 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 48b6e4829f1b61344b72eaa315015c97,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -88677,6 +88982,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Market_Door (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c0d15fd4b4d00914da8ef0f07add7bd1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -88764,6 +89074,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Market_P3 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d01e33b837920e14e92c540cdd542097,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -89070,6 +89385,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Market_P3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d01e33b837920e14e92c540cdd542097,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -92175,6 +92495,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Village_house1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3eda3b2b3d7acc148bcb16027f807f4a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -92611,6 +92936,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Village_house3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 48b6e4829f1b61344b72eaa315015c97,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -93519,6 +93849,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Market_P3 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d01e33b837920e14e92c540cdd542097,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -93621,6 +93956,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Village_house3 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 48b6e4829f1b61344b72eaa315015c97,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -93752,6 +94092,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Village_house3 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 48b6e4829f1b61344b72eaa315015c97,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -96056,6 +96401,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_FoodCounter (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 72f23973c058b2b41a34b3fac44aae8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -96152,6 +96502,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_Village_house2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9c7f7fef526226f4995d900dc9ca40db,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -96687,6 +97042,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Market_P3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d01e33b837920e14e92c540cdd542097,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -96812,6 +97172,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: L1_FoodCounter (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 72f23973c058b2b41a34b3fac44aae8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -98145,6 +98510,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: L1_Market_Door (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c0d15fd4b4d00914da8ef0f07add7bd1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -98250,11 +98620,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 631793022318173581, guid: eed448219bbe39147911dac1096b079f,
-        type: 3}
-      propertyPath: walkPointRange
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 2000746035825119568, guid: eed448219bbe39147911dac1096b079f,
         type: 3}
       propertyPath: m_Name
@@ -98263,17 +98628,17 @@ PrefabInstance:
     - target: {fileID: 3205840142885680567, guid: eed448219bbe39147911dac1096b079f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0.091
       objectReference: {fileID: 0}
     - target: {fileID: 3205840142885680567, guid: eed448219bbe39147911dac1096b079f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.352
+      value: 2.115
       objectReference: {fileID: 0}
     - target: {fileID: 3205840142885680567, guid: eed448219bbe39147911dac1096b079f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.26
+      value: 2.29
       objectReference: {fileID: 0}
     - target: {fileID: 3205840142885680567, guid: eed448219bbe39147911dac1096b079f,
         type: 3}

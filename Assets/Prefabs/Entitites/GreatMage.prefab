@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 1934487535773307660}
   - component: {fileID: 3900603004876353328}
   - component: {fileID: 631793022318173581}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GreatMage
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 2000746035825119568}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.76125145, y: 1.062, z: 12.16}
-  m_LocalScale: {x: 1.75, y: 1.75, z: 1.75}
+  m_LocalPosition: {x: 0.76125145, y: 0.971, z: 12.16}
+  m_LocalScale: {x: 2.8, y: 2.8, z: 2.8}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7429154782935189177}
@@ -70,7 +70,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 6
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -94,13 +94,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd0b078993ef41e89985d15c6469c0a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 40
+  health: 100
   damageResistType: 0
   damageVulnerabilityType: 0
+  surfaceDamageCooldownTime: 0
   onDeath:
     m_PersistentCalls:
       m_Calls: []
-  hpBar: {fileID: 0}
 --- !u!114 &631793022318173581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,15 +120,22 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  walkPointRange: 10
+  walkPointRange: 20
   timeBetweenAttacks: 3
   sightRange: 0
   attackRange: 0
-  projectTile: {fileID: 919132149155446097, guid: a0b15e50dd6dc1a44954778fc1c235d2,
+  projectTile: {fileID: 7491185641990123097, guid: 230630d5899a37548ace59ad0fa34c98,
     type: 3}
   shootingPoint: {fileID: 6159336435876294442}
-  timeBetweenBossActions: 5
+  timeBetweenBossActions:
+  - 4.5
+  - 3.5
+  - 1.8
+  - 0.5
+  currentTimeBetweenBossActions: 0
   centerPointPrefab: {fileID: 1577745875905826404, guid: 2921fc2d05116c1429307d7e965bba33,
+    type: 3}
+  pillarObj: {fileID: 919132149155446097, guid: 52b27b0f4e779c54d956114d9c7f0813,
     type: 3}
 --- !u!1 &2452247405508033398
 GameObject:
@@ -155,7 +162,7 @@ Transform:
   m_GameObject: {fileID: 2452247405508033398}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.011, y: 0.249, z: 0}
+  m_LocalPosition: {x: 0.011, y: 0.424, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -172,7 +179,7 @@ GameObject:
   - component: {fileID: 4072505890355428023}
   - component: {fileID: 8000864856570861042}
   - component: {fileID: 5502068085964757371}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,7 +315,7 @@ GameObject:
   - component: {fileID: 8097528806597238082}
   - component: {fileID: 561552138152414108}
   - component: {fileID: 3774646434817631661}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -432,7 +439,7 @@ GameObject:
   - component: {fileID: 6091031209033762913}
   - component: {fileID: 4625807187227899729}
   - component: {fileID: 4305651082532174913}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
