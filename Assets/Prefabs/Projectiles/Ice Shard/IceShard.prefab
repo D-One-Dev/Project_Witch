@@ -302,7 +302,7 @@ MonoBehaviour:
       m_Calls: []
   lifeTime: 30
   lifeTimeAfterCollide: 0
-  damage: 6
+  damage: 75
   damageType: 2
   targetLockRadius: 7.5
   speed: 40

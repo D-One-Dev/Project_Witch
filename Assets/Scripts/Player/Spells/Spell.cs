@@ -8,6 +8,7 @@ public class Spell : ScriptableObject
     public GameObject[] objectPrefabs;
     public int manaCost;
     public string spellName;
+    [TextArea]
     public string spellDescription;
     public Sprite spellIcon;
 }

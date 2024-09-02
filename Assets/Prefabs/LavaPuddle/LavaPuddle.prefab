@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7150927702529472946}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LavaPuddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 3876069194777801983}
   - component: {fileID: 2560212511354324368}
   - component: {fileID: 676077970290676683}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Embers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4799,7 +4799,7 @@ GameObject:
   - component: {fileID: 8313905111778145336}
   - component: {fileID: 2725976313138920466}
   - component: {fileID: 2715580753872543111}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LavaPuddle
   m_TagString: DamagingSurface
   m_Icon: {fileID: 0}
@@ -4897,7 +4897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df51e4c358b6d444b618c45846c871b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 35
 --- !u!95 &2725976313138920466
 Animator:
   serializedVersion: 5
@@ -4953,6 +4953,10 @@ PrefabInstance:
     - target: {fileID: 1293630020605024, guid: ea309e8646148c24ab067d84d5d22697, type: 3}
       propertyPath: m_Name
       value: Heat Distortion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293630020605024, guid: ea309e8646148c24ab067d84d5d22697, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4394396899019480, guid: ea309e8646148c24ab067d84d5d22697, type: 3}
       propertyPath: m_LocalScale.x

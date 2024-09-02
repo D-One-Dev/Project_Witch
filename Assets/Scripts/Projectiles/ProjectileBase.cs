@@ -24,7 +24,7 @@ namespace Projectiles
         protected Transform target;
 
         [Serializable]
-        protected class onDestroyEvent : UnityEvent<Transform, float> { }
+        protected class onDestroyEvent : UnityEvent<Transform, float, bool> { }
 
 
         protected virtual void Start() => StartCoroutine(Life());
@@ -39,7 +39,7 @@ namespace Projectiles
         {
             yield return new WaitForSeconds(lifeTimeAfterCollide);
             PlayDeathParticles();
-            onDestroy?.Invoke(transform, transform.localScale.x);
+            onDestroy?.Invoke(transform, transform.localScale.x, true);
             Destroy(gameObject);
         }
 
@@ -47,7 +47,7 @@ namespace Projectiles
         {
             yield return new WaitForSeconds(lifeTime);
             PlayDeathParticles();
-            onDestroy?.Invoke(transform, transform.localScale.x);
+            onDestroy?.Invoke(transform, transform.localScale.x, false);
             Destroy(gameObject);
         }
 

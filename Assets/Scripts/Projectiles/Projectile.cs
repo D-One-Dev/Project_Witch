@@ -48,7 +48,7 @@ namespace Projectiles
             }
             else
             {
-                onDestroy?.Invoke(transform, transform.localScale.x);
+                onDestroy?.Invoke(transform, transform.localScale.x, false);
                 PlayDeathParticles();
                 Destroy(gameObject);
             }

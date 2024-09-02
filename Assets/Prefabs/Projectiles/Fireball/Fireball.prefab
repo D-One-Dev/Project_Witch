@@ -338,9 +338,12 @@ MonoBehaviour:
   targetTag: Enemy
   deathParticles: {fileID: 1337198075554910, guid: 4c0e327295f736449b5111bb562ede32,
     type: 3}
+  onDestroy:
+    m_PersistentCalls:
+      m_Calls: []
   lifeTime: 30
   lifeTimeAfterCollide: 0
-  damage: 5
+  damage: 40
   damageType: 1
   targetLockRadius: 7.5
   speed: 7.5

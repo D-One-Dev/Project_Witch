@@ -22,6 +22,6 @@ public class SteamProjectile : Projectile
     {
         yield return new WaitForSeconds(lifeTime);
         PlayDeathParticles();
-        onDestroy?.Invoke(transform, transform.localScale.x);
+        onDestroy?.Invoke(transform, transform.localScale.x,false);
     }
 }
