@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float maxJumpAngle;
     [SerializeField] private Sprite effectDisabledSprite;
     [SerializeField] private Sprite effectEnabledSprite;
-    private float lasGroundedTime;
+    private float lastGroundedTime;
     private bool isLandingSoundPlayed;
     private Controls _controls;
     private bool shift;
@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
         _controls.Gameplay.Space.canceled += ctx => jump = false;
         _controls.Gameplay.Dash.performed += ctx => Dash();
     }
+
     private void OnEnable()
     {
         _controls.Enable();
@@ -61,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_characterController.enabled)
         {
-            if(_characterController.isGrounded) lasGroundedTime = Time.time;
+            if(_characterController.isGrounded) lastGroundedTime = Time.time;
 
             Vector2 input = _controls.Gameplay.Movement.ReadValue<Vector2>();
             Vector3 movement;
@@ -72,10 +73,10 @@ public class PlayerMovement : MonoBehaviour
             _characterController.Move(grav * Time.deltaTime * Vector3.up);
             if (_characterController.isGrounded) grav = 0f;
             else grav += gravity * Time.deltaTime;
-            if (jump && (Time.time < lasGroundedTime + jumpHelpTime) && IsSurfaceJumpable())
+            if (jump && (Time.time < lastGroundedTime + jumpHelpTime) && IsSurfaceJumpable())
             {
                 grav = jumpSpeed;
-                lasGroundedTime = 0;
+                lastGroundedTime = 0;
                 _AS.PlayOneShot(jumpSound);
             }
         }

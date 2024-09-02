@@ -16,6 +16,7 @@ public class NewSpellCaster : MonoBehaviour
     [SerializeReference] private Spell steamSpell;
     [SerializeField] private Spell lavaSpell;
     [SerializeField] private Spell icyRockSpell;
+    [SerializeField] private Spell poisonedRockSpell;
 
     [Header("Current Spells and Effects")]
     [SerializeReference] public Spell leftSpell;
@@ -45,9 +46,6 @@ public class NewSpellCaster : MonoBehaviour
     private int currentMana;
 
     private Vector3 tempCamPos;
-    //private Vector3 tempCamUp;
-    //private Vector3 tempCamForward;
-    //private Vector3 tempCamRight;
 
     public static NewSpellCaster instance;
 
@@ -262,6 +260,13 @@ public class NewSpellCaster : MonoBehaviour
                         spells.RemoveAt(j - 1);
                     }
 
+                    else if ((spell1Type == SpellType.Fire && spell2Type == SpellType.Poison) || (spell1Type == SpellType.Poison && spell2Type == SpellType.Fire))
+                    {
+                        outputSpells.Add(poisonedRockSpell);
+                        spells.RemoveAt(i);
+                        spells.RemoveAt(j - 1);
+                    }
+
                     else
                     {
                         outputSpells.Add(spells[i]);
@@ -281,17 +286,11 @@ public class NewSpellCaster : MonoBehaviour
 
             if (outputSpells.Count < 2) randomPos = tempCamPos;
 
-            //else randomPos = tempCamPos + (tempCamRight * Random.Range(-spellPrefab.transform.localScale.x,
-            //    spellPrefab.transform.localScale.x) + tempCamUp * Random.Range(-spellPrefab.transform.localScale.y,
-            //    spellPrefab.transform.localScale.y)) / 2;
-
             else randomPos = tempCamPos + (_cam.transform.right * Random.Range(-spellPrefab.transform.localScale.x,
                 spellPrefab.transform.localScale.x) + _cam.transform.up * Random.Range(-spellPrefab.transform.localScale.y,
                 spellPrefab.transform.localScale.y)) / 2;
 
             GameObject obj = Instantiate(spellPrefab, randomPos, Quaternion.identity, _projectilesParentObject);
-
-            //obj.transform.forward = tempCamForward;
 
             obj.transform.forward = _cam.transform.forward;
 
@@ -329,8 +328,5 @@ public class NewSpellCaster : MonoBehaviour
     private void SetTempCamPos()
     {
         tempCamPos = _cam.transform.position;
-        //tempCamUp = _cam.transform.up;
-        //tempCamForward = _cam.transform.forward;
-        //tempCamRight = _cam.transform.right;
     }
 }

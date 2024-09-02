@@ -11975,7 +11975,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _characterController
       value: 
-      objectReference: {fileID: 1184195738}
+      objectReference: {fileID: 1184195749}
     - target: {fileID: 7348348755289129170, guid: ba9debf91ac2ac4448390166b6ca5936,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -53826,15 +53826,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7147283688148496830}
   m_PrefabAsset: {fileID: 0}
---- !u!143 &1184195738 stripped
-CharacterController:
-  m_CorrespondingSourceObject: {fileID: 3780648973356488207, guid: efd0c05bdc4ade845ac33f72aa501543,
-    type: 3}
-  m_PrefabInstance: {fileID: 7147283688148496830}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1184195739 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2270279368515137601, guid: efd0c05bdc4ade845ac33f72aa501543,
+    type: 3}
+  m_PrefabInstance: {fileID: 7147283688148496830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!143 &1184195749 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 3780648973356488207, guid: efd0c05bdc4ade845ac33f72aa501543,
     type: 3}
   m_PrefabInstance: {fileID: 7147283688148496830}
   m_PrefabAsset: {fileID: 0}
@@ -98447,18 +98447,43 @@ PrefabInstance:
       propertyPath: _projectilesParentObject
       value: 
       objectReference: {fileID: 2138780469}
+    - target: {fileID: 3780648973356488207, guid: efd0c05bdc4ade845ac33f72aa501543,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305939758796500740, guid: efd0c05bdc4ade845ac33f72aa501543,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7104350890174850232, guid: efd0c05bdc4ade845ac33f72aa501543,
+        type: 3}
+      propertyPath: _CC
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8606559745280061162, guid: efd0c05bdc4ade845ac33f72aa501543,
         type: 3}
       propertyPath: dashIcon
       value: 
       objectReference: {fileID: 2026419280}
+    - target: {fileID: 8606559745280061162, guid: efd0c05bdc4ade845ac33f72aa501543,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606559745280061162, guid: efd0c05bdc4ade845ac33f72aa501543,
+        type: 3}
+      propertyPath: _characterController
+      value: 
+      objectReference: {fileID: 1184195749}
     - target: {fileID: 9042547177009050889, guid: efd0c05bdc4ade845ac33f72aa501543,
         type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 5325632753527174583, guid: efd0c05bdc4ade845ac33f72aa501543, type: 3}
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

@@ -543,6 +543,7 @@ MonoBehaviour:
   steamSpell: {fileID: 11400000, guid: c3269f31bff42294386f25cee047dbb3, type: 2}
   lavaSpell: {fileID: 11400000, guid: 53c83689d77b9324c8ffb77a1c3648af, type: 2}
   icyRockSpell: {fileID: 11400000, guid: e99492c34dd271348a3aa8bba5604e47, type: 2}
+  poisonedRockSpell: {fileID: 11400000, guid: 010635b7e29507940beb8e1df6ed0d3b, type: 2}
   leftSpell: {fileID: 11400000, guid: 7f3762dc9062be0468aedb52f423c6da, type: 2}
   rightSpell: {fileID: 11400000, guid: 4ef05c7d89fd545439fbe154445a46c0, type: 2}
   leftEffect: {fileID: 11400000, guid: d9cfc28c11392ad4cacfe913abe3b01a, type: 2}
