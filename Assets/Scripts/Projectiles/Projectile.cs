@@ -1,6 +1,4 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace Projectiles
 {
@@ -50,7 +48,7 @@ namespace Projectiles
             }
             else
             {
-                DestroyProjectTile();
+                DestroyProjectTile(false);
             }
         }
         

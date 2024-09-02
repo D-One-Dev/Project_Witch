@@ -26,7 +26,7 @@ namespace Projectiles
         protected Transform target;
 
         [Serializable]
-        protected class onDestroyEvent : UnityEvent<Transform, float> { }
+        protected class onDestroyEvent : UnityEvent<Transform, float, bool> { }
         
         protected virtual void Start()
         {
@@ -44,19 +44,19 @@ namespace Projectiles
         private IEnumerator Destroying()
         {
             yield return new WaitForSeconds(lifeTimeAfterCollide);
-            DestroyProjectTile();
+            DestroyProjectTile(true);
         }
 
         private IEnumerator Life()
         {
             yield return new WaitForSeconds(lifeTime);
-            DestroyProjectTile();
+            DestroyProjectTile(false);
         }
 
-        protected void DestroyProjectTile()
+        protected void DestroyProjectTile(bool isEnemyHit)
         {
             PlayEffectParticles();
-            onDestroy?.Invoke(transform, transform.localScale.x);
+            onDestroy?.Invoke(transform, transform.localScale.x, isEnemyHit);
             Destroy(gameObject);
         }
 
