@@ -178,7 +178,7 @@ MonoBehaviour:
   rb: {fileID: -7336036059123915699}
   targetLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   targetTag: Player
   deathParticles: {fileID: 4834426850347794042, guid: 258f19da5444a2b41b789af2200a5007,
     type: 3}
@@ -187,7 +187,7 @@ MonoBehaviour:
       m_Calls: []
   lifeTime: 30
   lifeTimeAfterCollide: 0
-  damage: 10
+  damage: 80
   damageType: 3
   targetLockRadius: 7.5
   speed: 20

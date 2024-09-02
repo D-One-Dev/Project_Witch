@@ -187,6 +187,12 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -5754084199372789682, guid: 80532301e6b6ef844960d9c2edb32960,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 2347308273527034868, guid: 292af044f7c2edb49b41e76e9d4f5c05,
+        type: 3}
     - target: {fileID: 919132149155446097, guid: 80532301e6b6ef844960d9c2edb32960,
         type: 3}
       propertyPath: m_Name
@@ -302,7 +308,7 @@ MonoBehaviour:
       m_Calls: []
   lifeTime: 10
   lifeTimeAfterCollide: 0
-  damage: 2
+  damage: 45
   damageType: 2
   targetLockRadius: 7.5
   speed: 40

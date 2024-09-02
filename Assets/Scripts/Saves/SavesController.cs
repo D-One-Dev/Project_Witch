@@ -7,6 +7,7 @@ public class SavesController : MonoBehaviour
 {
     [SerializeField] private GameObject player;
     [SerializeField] private Image savingIconImage;
+    public int currentSceneID;
     public static SavesController instance;
 
     private void Awake()
@@ -17,9 +18,11 @@ public class SavesController : MonoBehaviour
     private void Start()
     {
         if(player != null) Load();
+        else LoadSceneID();
     }
     private class SaveFile
     {
+        public int sceneID;
         public Vector3 playerPosition;
         public quaternion playerRotation;
         public Spell leftSpell, rightSpell;
@@ -44,7 +47,24 @@ public class SavesController : MonoBehaviour
     {
         AnimationsController.instance.ImageInOutFade(savingIconImage);
         SaveFile file = new SaveFile();
+        file.sceneID = currentSceneID;
         file.playerPosition = player.transform.position;
+        file.playerRotation = player.transform.localRotation;
+        file.leftSpell = NewSpellCaster.instance.leftSpell;
+        file.rightSpell = NewSpellCaster.instance.rightSpell;
+        file.leftEffect = NewSpellCaster.instance.leftEffect;
+        file.rightEffect = NewSpellCaster.instance.rightEffect;
+        file.money = PlayerMoney.Instance.Balance;
+        file.currentTask = TaskUI.Instance.currentTask;
+        string json = JsonUtility.ToJson(file);
+        File.WriteAllText(Application.dataPath + "/save.savefile", json);
+    }
+
+    public void ResetPlayerPos()
+    {
+        SaveFile file = new SaveFile();
+        file.sceneID = currentSceneID;
+        file.playerPosition = Vector3.zero;
         file.playerRotation = player.transform.localRotation;
         file.leftSpell = NewSpellCaster.instance.leftSpell;
         file.rightSpell = NewSpellCaster.instance.rightSpell;
@@ -62,16 +82,30 @@ public class SavesController : MonoBehaviour
         {
             string json = File.ReadAllText(Application.dataPath + "/save.savefile");
             SaveFile file = JsonUtility.FromJson<SaveFile>(json);
-            player.GetComponent<CharacterController>().enabled = false;
-            player.transform.position = file.playerPosition;
-            player.transform.localRotation = file.playerRotation;
-            player.GetComponent<CharacterController>().enabled = true;
+            currentSceneID = file.sceneID;
+            if(file.playerPosition != Vector3.zero)
+            {
+                player.GetComponent<CharacterController>().enabled = false;
+                player.transform.position = file.playerPosition;
+                player.transform.localRotation = file.playerRotation;
+                player.GetComponent<CharacterController>().enabled = true;
+            }
             NewSpellCaster.instance.leftSpell = file.leftSpell;
             NewSpellCaster.instance.rightSpell = file.rightSpell;
             NewSpellCaster.instance.leftEffect = file.leftEffect;
             NewSpellCaster.instance.rightEffect = file.rightEffect;
             PlayerMoney.Instance.SetBalance(file.money);
             TaskUI.Instance.ChangeTask(file.currentTask);
+        }
+    }
+
+    private void LoadSceneID()
+    {
+        if (File.Exists(Application.dataPath + "/save.savefile"))
+        {
+            string json = File.ReadAllText(Application.dataPath + "/save.savefile");
+            SaveFile file = JsonUtility.FromJson<SaveFile>(json);
+            currentSceneID = file.sceneID;
         }
     }
 

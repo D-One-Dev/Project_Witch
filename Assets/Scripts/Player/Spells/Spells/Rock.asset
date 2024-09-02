@@ -16,7 +16,7 @@ MonoBehaviour:
   objectPrefabs:
   - {fileID: 7491185641990123097, guid: 6335d8c3a41b3fc4d871bdbde58a0d2b, type: 3}
   - {fileID: 7491185641990123097, guid: 3feb9394d8d11534aa047e30dfdfb15b, type: 3}
-  manaCost: 30
+  manaCost: 40
   spellName: Earth
   spellDescription: Launches a rock
   spellIcon: {fileID: 21300000, guid: 2ec04e3bd45ad81489796306d2a3e9b7, type: 3}

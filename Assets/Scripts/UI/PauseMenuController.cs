@@ -1,11 +1,10 @@
 using DG.Tweening;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PauseMenuController : MonoBehaviour
 {
     [SerializeField] private GameObject pauseScreen;
-    [SerializeField] private Image blackScreen;
+    [SerializeField] private GameObject loadingScreen;
     [SerializeField] private GameObject settingsScreen;
     private bool isPauseActive;
     private Controls _controls;
@@ -58,6 +57,6 @@ public class PauseMenuController : MonoBehaviour
     public void Quit()
     {
         //SavesController.instance.Save();
-        AnimationsController.instance.ChangeScene(blackScreen, 0);
+        AnimationsController.instance.ChangeScene(loadingScreen, 0);
     }
 }
