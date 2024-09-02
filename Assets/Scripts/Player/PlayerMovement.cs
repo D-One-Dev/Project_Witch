@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_characterController.enabled)
         {
-            if(_characterController.isGrounded) lasGroundedTime = Time.time;
+            if (_characterController.isGrounded) lasGroundedTime = Time.time;
 
             Vector2 input = _controls.Gameplay.Movement.ReadValue<Vector2>();
             Vector3 movement;

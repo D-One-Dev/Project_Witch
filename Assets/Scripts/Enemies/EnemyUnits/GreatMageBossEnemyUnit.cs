@@ -13,6 +13,8 @@ namespace Enemies.EnemyUnits
         [SerializeField] private float currentTimeBetweenBossActions;
         [SerializeField] private GameObject centerPointPrefab;
         [SerializeField] private GameObject pillarObj;
+        [SerializeField] private GameObject teleportEffect;
+        
         private Transform _centerPoint;
 
         private List<IAction> _actions = new();
@@ -29,21 +31,23 @@ namespace Enemies.EnemyUnits
 
             currentTimeBetweenBossActions = timeBetweenBossActions[0];
             
-            _actions.Add(new WalkInRadius(walkPointRange, _centerPoint));
-            _actions.Add(new TeleportationInRadius(walkPointRange, _centerPoint));
-            _actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking1", SpawnMultipleProjectTiles));
-            _actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnPillarObj));
+            //_actions.Add(new WalkInRadius(walkPointRange, _centerPoint));
+            _actions.Add(new TeleportationInRadius(walkPointRange, _centerPoint, SpawnTeleportEffect));
+            //_actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking1", SpawnMultipleProjectTiles));
+            //_actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnPillarObj));
 
             StartCoroutine(BossActionUpdate());
         }
+
+        private void SpawnTeleportEffect() => Instantiate(teleportEffect, transform.position, Quaternion.identity);
 
         protected void SpawnPillarObj() => StartCoroutine(SpawningPillarObj());
 
         private IEnumerator SpawningPillarObj()
         {
-            Vector3 playerPosition = Player.Player.Instance.transform.position;
-            yield return new WaitForSeconds(0.15f);
-            Instantiate(pillarObj, playerPosition, pillarObj.transform.rotation);
+            Vector3 position = new Vector3(Player.Player.Instance.transform.position.x, -10f, Player.Player.Instance.transform.position.z);
+            yield return new WaitForSeconds(0.4f);
+            Instantiate(pillarObj, position, pillarObj.transform.rotation);
         }
 
         protected void SpawnMultipleProjectTiles() => StartCoroutine(SpawningMultipleProjectTiles());
@@ -80,7 +84,7 @@ namespace Enemies.EnemyUnits
                     break;
                 case <= 0.4f and > 0.2f:
                     currentTimeBetweenBossActions = timeBetweenBossActions[2];
-                    _actions[1] = new TeleportationInRadius(walkPointRange, 1, _centerPoint);
+                    _actions[1] = new TeleportationInRadius(walkPointRange, 1, _centerPoint, SpawnTeleportEffect);
                     break;
                 case <= 0.2f:
                     currentTimeBetweenBossActions = timeBetweenBossActions[3];
