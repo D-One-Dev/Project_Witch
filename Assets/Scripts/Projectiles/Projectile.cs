@@ -40,7 +40,7 @@ namespace Projectiles
             }
         }
         
-        protected virtual void OnCollisionEnter(Collision collision)
+        private void OnCollisionEnter(Collision collision)
         {
             if (collision.gameObject.CompareTag(targetTag))
             {
@@ -48,9 +48,7 @@ namespace Projectiles
             }
             else
             {
-                onDestroy?.Invoke(transform, transform.localScale.x, false);
-                PlayDeathParticles();
-                Destroy(gameObject);
+                DestroyProjectTile(false);
             }
         }
         

@@ -43,7 +43,7 @@ namespace Enemies
             if (distanceToWalkPoint.magnitude < 1.5f)
             {
                 _isWalkPointSet = false;
-                Debug.Log("disabled");
+                //Debug.Log("disabled");
             }
         }
         
@@ -107,21 +107,28 @@ namespace Enemies
         private bool _isAbleToTeleport = true;
 
         private readonly float _teleportCooldown;
+        public delegate void TeleportEffect();
 
-        public TeleportationInRadius(float radius, Transform centerPoint)
+        private readonly TeleportEffect _teleportEffect;
+
+        public TeleportationInRadius(float radius, Transform centerPoint, TeleportEffect teleportEffect)
         {
             _radius = radius;
             _centerPoint = centerPoint;
 
             _teleportCooldown = 2;
+
+            _teleportEffect = teleportEffect;
         }
         
-        public TeleportationInRadius(float radius, float teleportCooldown, Transform centerPoint)
+        public TeleportationInRadius(float radius, float teleportCooldown, Transform centerPoint, TeleportEffect teleportEffect)
         {
             _radius = radius;
             _centerPoint = centerPoint;
 
             _teleportCooldown = teleportCooldown;
+            
+            _teleportEffect = teleportEffect;
         }
         
         public void PerformAction(Enemy enemy)
@@ -139,6 +146,8 @@ namespace Enemies
                 };
 
                 enemy.Transform.position = targetPosition;
+
+                _teleportEffect();
 
                 enemy.EnemyUnit.StartCoroutine(TeleportCooldown());
             }

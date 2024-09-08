@@ -7,7 +7,6 @@ namespace Projectiles
 {
     public abstract class ProjectileBase : MonoBehaviour
     {
-        [SerializeField] protected Rigidbody rb;
         [SerializeField] protected LayerMask targetLayer;
         
         [SerializeField] protected string targetTag;
@@ -15,19 +14,26 @@ namespace Projectiles
         [SerializeField] protected GameObject deathParticles;
 
         [SerializeField] protected onDestroyEvent onDestroy;
+        protected Rigidbody rb;
 
         public float lifeTime = 30f;
         public float lifeTimeAfterCollide;
         public int damage;
         public DamageType damageType;
 
+        protected Vector3 ParticleEffectScale;
+
         protected Transform target;
 
         [Serializable]
         protected class onDestroyEvent : UnityEvent<Transform, float, bool> { }
-
-
-        protected virtual void Start() => StartCoroutine(Life());
+        
+        protected virtual void Start()
+        {
+            rb = GetComponent<Rigidbody>();
+            StartCoroutine(Life());
+            ParticleEffectScale = transform.localScale;
+        }
 
         protected void GiveDamage(GameObject targetObj, bool isElementStrengthened)
         {
@@ -38,25 +44,28 @@ namespace Projectiles
         private IEnumerator Destroying()
         {
             yield return new WaitForSeconds(lifeTimeAfterCollide);
-            PlayDeathParticles();
-            onDestroy?.Invoke(transform, transform.localScale.x, true);
-            Destroy(gameObject);
+            DestroyProjectTile(true);
         }
 
-        protected virtual IEnumerator Life()
+        private IEnumerator Life()
         {
             yield return new WaitForSeconds(lifeTime);
-            PlayDeathParticles();
-            onDestroy?.Invoke(transform, transform.localScale.x, false);
+            DestroyProjectTile(false);
+        }
+
+        protected void DestroyProjectTile(bool isEnemyHit)
+        {
+            PlayEffectParticles();
+            onDestroy?.Invoke(transform, transform.localScale.x, isEnemyHit);
             Destroy(gameObject);
         }
 
-        protected void PlayDeathParticles()
+        protected void PlayEffectParticles()
         {
-            if(deathParticles != null)
+            if (deathParticles != null)
             {
                 GameObject particles = Instantiate(deathParticles, transform.position, Quaternion.identity, transform.parent);
-                particles.transform.localScale = transform.localScale;
+                particles.transform.localScale = ParticleEffectScale;
             }
         }
     }
