@@ -40,7 +40,7 @@ namespace Projectiles
             }
         }
         
-        private void OnCollisionEnter(Collision collision)
+        protected virtual void OnCollisionEnter(Collision collision)
         {
             if (collision.gameObject.CompareTag(targetTag))
             {

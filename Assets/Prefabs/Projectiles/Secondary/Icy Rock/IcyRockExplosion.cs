@@ -4,7 +4,7 @@ public class IcyRockExplosion : MonoBehaviour
 {
     [SerializeField] private GameObject iceShard;
     [SerializeField] private int shardsAmount;
-    public void Explode(Transform _tansform, float projectileScale)
+    public void Explode(Transform _tansform, float projectileScale, bool isEnemyHit)
     {
         Transform projectilesLayer = GameObject.Find("Projectiles").transform;
         Vector3 pos = transform.position;

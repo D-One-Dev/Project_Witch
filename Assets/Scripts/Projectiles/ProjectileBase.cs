@@ -47,7 +47,7 @@ namespace Projectiles
             DestroyProjectTile(true);
         }
 
-        private IEnumerator Life()
+        protected virtual IEnumerator Life()
         {
             yield return new WaitForSeconds(lifeTime);
             DestroyProjectTile(false);

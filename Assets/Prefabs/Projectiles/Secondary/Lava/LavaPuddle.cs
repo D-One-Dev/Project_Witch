@@ -6,7 +6,7 @@ public class LavaPuddle : MonoBehaviour
     [SerializeField] private float yOffset;
     [SerializeField] private LayerMask lm;
 
-    public void CreatePuddle(Transform _transform, float puddleScale)
+    public void CreatePuddle(Transform _transform, float puddleScale, bool isEnemyHit)
     {
         RaycastHit hit;
         if (Physics.Raycast(transform.position, Vector3.down, out hit, Mathf.Infinity, lm))

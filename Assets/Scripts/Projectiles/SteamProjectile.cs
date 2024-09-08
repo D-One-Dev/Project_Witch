@@ -21,7 +21,7 @@ public class SteamProjectile : Projectile
     protected override IEnumerator Life()
     {
         yield return new WaitForSeconds(lifeTime);
-        PlayDeathParticles();
+        PlayEffectParticles();
         onDestroy?.Invoke(transform, transform.localScale.x,false);
     }
 }
