@@ -236,7 +236,7 @@ namespace Enemies
             Enemy.EnemyUnit.StartCoroutine(Attacking());
         }
 
-        private IEnumerator Attacking()
+        protected IEnumerator Attacking()
         {
             yield return new WaitForSeconds(Enemy.Animator.GetCurrentAnimatorClipInfo(0).Length + 0.1f);
             _spawnProjectTile();
