@@ -16,6 +16,7 @@ public class NewSpellCaster : MonoBehaviour
     [SerializeReference] private Spell steamSpell;
     [SerializeField] private Spell lavaSpell;
     [SerializeField] private Spell icyRockSpell;
+    [SerializeField] private Spell poisonedFireballSpell;
     [SerializeField] private Spell poisonedRockSpell;
 
     [Header("Current Spells and Effects")]
@@ -261,6 +262,13 @@ public class NewSpellCaster : MonoBehaviour
                     }
 
                     else if ((spell1Type == SpellType.Fire && spell2Type == SpellType.Poison) || (spell1Type == SpellType.Poison && spell2Type == SpellType.Fire))
+                    {
+                        outputSpells.Add(poisonedFireballSpell);
+                        spells.RemoveAt(i);
+                        spells.RemoveAt(j - 1);
+                    }
+
+                    else if ((spell1Type == SpellType.Earth && spell2Type == SpellType.Poison) || (spell1Type == SpellType.Poison && spell2Type == SpellType.Earth))
                     {
                         outputSpells.Add(poisonedRockSpell);
                         spells.RemoveAt(i);

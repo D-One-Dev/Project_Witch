@@ -102,8 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9833c370b1cbee440b4addbd2d65a13e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
-  originHealth: 0
+  health: 150
   damageResistType: 0
   damageVulnerabilityType: 0
   surfaceDamageCooldownTime: 0

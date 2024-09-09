@@ -31,7 +31,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5aaa7375c2a49424fa92bf9f3494b851,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5aaa7375c2a49424fa92bf9f3494b851,
         type: 3}
@@ -78,6 +78,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5aaa7375c2a49424fa92bf9f3494b851,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 03616f98944744c4686d5a5047088047, type: 2}
     - target: {fileID: 919132149155446097, guid: 5aaa7375c2a49424fa92bf9f3494b851,
         type: 3}
       propertyPath: m_Name
@@ -181,12 +186,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e62a43c2d5aa067479a27fa9341b0f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1474041124771000531}
   targetLayer:
     serializedVersion: 2
     m_Bits: 256
   targetTag: Enemy
-  deathParticles: {fileID: 2015579761831088943, guid: 30634ed64d4351940a8f58894dddbcd3,
+  deathParticles: {fileID: 939204241929003246, guid: 33dcaba7a38de5341b8755bac199c6dd,
     type: 3}
   onDestroy:
     m_PersistentCalls:
@@ -352,7 +356,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 9a1ad94e3eb2138488895100b3ba31f5, type: 2}
+      objectReference: {fileID: 2100000, guid: 616f640accf288642b8a555342fb944f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7467590472830034473, guid: 0fd57f3a66762a5489f4e7b45c67918d, type: 3}

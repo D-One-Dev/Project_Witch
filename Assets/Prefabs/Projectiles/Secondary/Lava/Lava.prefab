@@ -148,7 +148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e62a43c2d5aa067479a27fa9341b0f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 5689409107020426351}
   targetLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -172,7 +171,7 @@ MonoBehaviour:
         m_CallState: 2
   lifeTime: 30
   lifeTimeAfterCollide: 0
-  damage: 40
+  damage: 35
   damageType: 1
   targetLockRadius: 7.5
   speed: 5

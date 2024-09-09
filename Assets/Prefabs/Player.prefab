@@ -543,7 +543,9 @@ MonoBehaviour:
   steamSpell: {fileID: 11400000, guid: c3269f31bff42294386f25cee047dbb3, type: 2}
   lavaSpell: {fileID: 11400000, guid: 53c83689d77b9324c8ffb77a1c3648af, type: 2}
   icyRockSpell: {fileID: 11400000, guid: e99492c34dd271348a3aa8bba5604e47, type: 2}
-  poisonedRockSpell: {fileID: 11400000, guid: 010635b7e29507940beb8e1df6ed0d3b, type: 2}
+  poisonedFireballSpell: {fileID: 11400000, guid: 010635b7e29507940beb8e1df6ed0d3b,
+    type: 2}
+  poisonedRockSpell: {fileID: 11400000, guid: 0254283dd62da1743a02174769f0f69f, type: 2}
   leftSpell: {fileID: 11400000, guid: 7f3762dc9062be0468aedb52f423c6da, type: 2}
   rightSpell: {fileID: 11400000, guid: 4ef05c7d89fd545439fbe154445a46c0, type: 2}
   leftEffect: {fileID: 11400000, guid: d9cfc28c11392ad4cacfe913abe3b01a, type: 2}
@@ -571,27 +573,27 @@ MonoBehaviour:
   _AS: {fileID: 7419340979374165197}
   _CC: {fileID: 3780648973356488207}
   footstepsDefault:
-  - {fileID: 8300000, guid: e250cc4b4d3c8094cb288eb8380318cd, type: 3}
-  - {fileID: 8300000, guid: 8de1e69d310c34b439bf8983ad11d34c, type: 3}
-  - {fileID: 8300000, guid: b2a76f31d45f8c7459c517b043b2e7d9, type: 3}
-  - {fileID: 8300000, guid: 250dd1af21833d24a867a99fd07a588b, type: 3}
-  - {fileID: 8300000, guid: a0af64deea410ed4782f8428481b590c, type: 3}
-  - {fileID: 8300000, guid: ac86e7cf75072e4478c7e85dbce8d1e0, type: 3}
-  - {fileID: 8300000, guid: da1f62ba92b5a3b439f7552bd9161e52, type: 3}
+  - {fileID: 8300000, guid: 1c7c52fa8d5b4cd498d196cc35c3cb43, type: 3}
+  - {fileID: 8300000, guid: 85248f5aafb20bc45a578121aa7b3767, type: 3}
+  - {fileID: 8300000, guid: e59d88a3e4966f24091d065b81839312, type: 3}
+  - {fileID: 8300000, guid: 935bee592c349ee47b721878c6699334, type: 3}
+  - {fileID: 8300000, guid: 9119be95fdae60c46bbcaff5deff384e, type: 3}
+  - {fileID: 8300000, guid: 7d166e39670ee2943b260d5f69fb1895, type: 3}
+  - {fileID: 8300000, guid: f56cc315197f9454d9ca30badc07f67b, type: 3}
   footstepsStone:
-  - {fileID: 8300000, guid: e250cc4b4d3c8094cb288eb8380318cd, type: 3}
-  - {fileID: 8300000, guid: 8de1e69d310c34b439bf8983ad11d34c, type: 3}
-  - {fileID: 8300000, guid: b2a76f31d45f8c7459c517b043b2e7d9, type: 3}
-  - {fileID: 8300000, guid: 250dd1af21833d24a867a99fd07a588b, type: 3}
-  - {fileID: 8300000, guid: a0af64deea410ed4782f8428481b590c, type: 3}
-  - {fileID: 8300000, guid: ac86e7cf75072e4478c7e85dbce8d1e0, type: 3}
-  - {fileID: 8300000, guid: da1f62ba92b5a3b439f7552bd9161e52, type: 3}
+  - {fileID: 8300000, guid: 1c7c52fa8d5b4cd498d196cc35c3cb43, type: 3}
+  - {fileID: 8300000, guid: 85248f5aafb20bc45a578121aa7b3767, type: 3}
+  - {fileID: 8300000, guid: e59d88a3e4966f24091d065b81839312, type: 3}
+  - {fileID: 8300000, guid: 935bee592c349ee47b721878c6699334, type: 3}
+  - {fileID: 8300000, guid: 9119be95fdae60c46bbcaff5deff384e, type: 3}
+  - {fileID: 8300000, guid: 7d166e39670ee2943b260d5f69fb1895, type: 3}
+  - {fileID: 8300000, guid: f56cc315197f9454d9ca30badc07f67b, type: 3}
   footstepsGrass:
-  - {fileID: 8300000, guid: 0a7e5044ed4067d4f9846c6345340963, type: 3}
-  - {fileID: 8300000, guid: 5b44f54dff771414a84a3cce54e3e139, type: 3}
-  - {fileID: 8300000, guid: 719d2970da23dbb4ab22e4dede19ca17, type: 3}
-  - {fileID: 8300000, guid: 79311f37aaf8a4e488b4eb52a5127b9c, type: 3}
-  - {fileID: 8300000, guid: f2ad65023010382458ab99ddef921994, type: 3}
+  - {fileID: 8300000, guid: 90313c697e69d7142bd0863841397bf0, type: 3}
+  - {fileID: 8300000, guid: 4d78924ac388303448acca8932a41b0e, type: 3}
+  - {fileID: 8300000, guid: 65ca6f5ceb6230d4484b6a1d93c54e35, type: 3}
+  - {fileID: 8300000, guid: 493f48c41ad7dc740b5cb3324cb346f8, type: 3}
+  - {fileID: 8300000, guid: b288ee910a8dac946a07207851c6bf9d, type: 3}
   _layerMask:
     serializedVersion: 2
     m_Bits: 55

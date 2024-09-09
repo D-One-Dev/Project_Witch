@@ -21,13 +21,14 @@ namespace Enemies
 
         private void OnMultiply()
         {
+            Debug.Log("HUI");
             if (transform.localScale.x <= minScale) return;
             
             for (int i = 0; i < 3; i++)
             {
                 GameObject child = Instantiate(enemyUnitPrefab, transform.position, transform.rotation);
                 child.transform.localScale /= 2;
-                GetComponent<EnemyHealth>().health /= 2;
+                child.GetComponent<EnemyHealth>().health /= 2;
             }
         }
     }

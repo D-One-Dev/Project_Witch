@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   objectPrefabs:
-  - {fileID: 2207831808178466832, guid: d5cec9ffdaf204e41916b3bd9eb009c9, type: 3}
+  - {fileID: 2207831808178466832, guid: 9dfb61e19b5e8e54082dd42c887a4674, type: 3}
   manaCost: 0
   spellName: 
   spellDescription: 
