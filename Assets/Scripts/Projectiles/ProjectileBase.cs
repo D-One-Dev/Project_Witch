@@ -41,7 +41,7 @@ namespace Projectiles
             StartCoroutine(Destroying());
         }
 
-        private IEnumerator Destroying()
+        protected virtual IEnumerator Destroying()
         {
             yield return new WaitForSeconds(lifeTimeAfterCollide);
             DestroyProjectTile(true);

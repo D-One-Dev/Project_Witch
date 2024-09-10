@@ -5,6 +5,9 @@ namespace Projectiles
     public class Projectile : ProjectileBase
     {
         [SerializeField] protected float targetLockRadius;
+        
+        [SerializeField] protected string ignoreTag;
+        
         public float speed;
         public bool isHoming;
         public bool isElementStrengthened;
@@ -46,7 +49,7 @@ namespace Projectiles
             {
                 GiveDamage(collision.gameObject, isElementStrengthened);
             }
-            else
+            else if (!collision.gameObject.CompareTag(ignoreTag))
             {
                 DestroyProjectTile(false);
             }

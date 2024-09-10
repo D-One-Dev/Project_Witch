@@ -124,7 +124,7 @@ MonoBehaviour:
   timeBetweenAttacks: 3
   sightRange: 0
   attackRange: 0
-  projectTile: {fileID: 7491185641990123097, guid: 230630d5899a37548ace59ad0fa34c98,
+  projectTile: {fileID: 2121257395508586386, guid: 6e5b52906d163984fae3199655a37797,
     type: 3}
   shootingPoint: {fileID: 6159336435876294442}
   timeBetweenBossActions:
@@ -135,9 +135,12 @@ MonoBehaviour:
   currentTimeBetweenBossActions: 0
   centerPointPrefab: {fileID: 1577745875905826404, guid: 2921fc2d05116c1429307d7e965bba33,
     type: 3}
+  rockObj: {fileID: 7491185641990123097, guid: 230630d5899a37548ace59ad0fa34c98, type: 3}
   pillarObj: {fileID: 8474811592475035810, guid: 7975faa0acfede141b238b0f8ae5cf33,
     type: 3}
   teleportEffect: {fileID: 1329845292236604, guid: e86ea5d5c5088184886ab72e5963f68e,
+    type: 3}
+  pillarWaveSpawner: {fileID: 3357595570342457002, guid: dbc6ee431cd20d449a4b4348ee3c4493,
     type: 3}
 --- !u!1 &2452247405508033398
 GameObject:

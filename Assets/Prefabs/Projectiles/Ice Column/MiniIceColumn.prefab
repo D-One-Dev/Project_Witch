@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 91eba680b6e02054693a937dd61dc05c,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 100
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91eba680b6e02054693a937dd61dc05c,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 100
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91eba680b6e02054693a937dd61dc05c,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 100
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91eba680b6e02054693a937dd61dc05c,
         type: 3}
@@ -31,7 +31,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 91eba680b6e02054693a937dd61dc05c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.404
+      value: 0.114
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91eba680b6e02054693a937dd61dc05c,
         type: 3}
@@ -73,10 +73,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 91eba680b6e02054693a937dd61dc05c,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 91eba680b6e02054693a937dd61dc05c,
         type: 3}
       propertyPath: m_Name
-      value: Elder_IceColumn
+      value: MiniIceColumn
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 91eba680b6e02054693a937dd61dc05c,
         type: 3}
@@ -204,11 +209,15 @@ MonoBehaviour:
   onDestroy:
     m_PersistentCalls:
       m_Calls: []
-  lifeTime: 15
-  lifeTimeAfterCollide: 15
+  lifeTime: 1.35
+  lifeTimeAfterCollide: 1
   damage: 10
   damageType: 2
   targetAimView: {fileID: 1774267915423354737, guid: f96628eb86c317d4393f74e0750365d0,
     type: 3}
   explosionEffect: {fileID: 3721022018611559325, guid: 3c57deb902f5c594c9d94e287b88b9f9,
     type: 3}
+  timeForAppear: 0.01
+  appearStep: 0.25
+  isColumnAnimDisappearing: 1
+  effectsScale: 2
