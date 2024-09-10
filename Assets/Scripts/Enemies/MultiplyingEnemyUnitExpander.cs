@@ -21,7 +21,6 @@ namespace Enemies
 
         private void OnMultiply()
         {
-            Debug.Log("HUI");
             if (transform.localScale.x <= minScale) return;
             
             for (int i = 0; i < 3; i++)
