@@ -540,6 +540,7 @@ MonoBehaviour:
   _projectilesParentObject: {fileID: 0}
   castDelay: 0.25
   manaAmount: 100
+  manaRefillSpeed: 0.0125
   steamSpell: {fileID: 11400000, guid: c3269f31bff42294386f25cee047dbb3, type: 2}
   lavaSpell: {fileID: 11400000, guid: 53c83689d77b9324c8ffb77a1c3648af, type: 2}
   icyRockSpell: {fileID: 11400000, guid: e99492c34dd271348a3aa8bba5604e47, type: 2}

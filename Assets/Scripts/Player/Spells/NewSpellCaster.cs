@@ -11,6 +11,7 @@ public class NewSpellCaster : MonoBehaviour
 
     [SerializeField] private float castDelay;
     [SerializeField] private int manaAmount;
+    [SerializeField] private float manaRefillSpeed;
 
     [Header ("Secondary Spells")]
     [SerializeReference] private Spell steamSpell;
@@ -40,6 +41,7 @@ public class NewSpellCaster : MonoBehaviour
     private bool leftSpellCheck, rightSpellCheck;
     private bool leftSpellCheckComplete, rightSpellCheckComplete;
     private Coroutine _castCoroutine;
+    private Coroutine _manaRefillCoroutine;
 
     private List<Spell> spells;
     private List<Effect> effects;
@@ -137,6 +139,8 @@ public class NewSpellCaster : MonoBehaviour
         currentMana = manaAmount;
         ManaBarController.instance.UpdateFill(manaAmount, currentMana);
         UpdateSpellIcons();
+
+        _manaRefillCoroutine = StartCoroutine(RefillMana());
     }
 
     private void Update()
@@ -210,13 +214,14 @@ public class NewSpellCaster : MonoBehaviour
             Cast();
             spells.Clear();
             effects.Clear();
-            currentMana = manaAmount;
             ManaBarController.instance.UpdateFill(manaAmount, currentMana);
             leftSpellCheck = false;
             rightSpellCheck = false;
             leftSpellCheckComplete = false;
             rightSpellCheckComplete = false;
             _castCoroutine = null;
+
+            if (_manaRefillCoroutine == null) _manaRefillCoroutine = StartCoroutine(RefillMana());
         }
     }
 
@@ -336,5 +341,23 @@ public class NewSpellCaster : MonoBehaviour
     private void SetTempCamPos()
     {
         tempCamPos = _cam.transform.position;
+    }
+
+    private IEnumerator RefillMana()
+    {
+        yield return new WaitForSeconds(manaRefillSpeed);
+        if (currentMana < manaAmount)
+        {
+            currentMana++;
+            ManaBarController.instance.UpdateFill(manaAmount, currentMana);
+        }
+        if(spells.Count > 0 || effects.Count > 0)
+        {
+            _manaRefillCoroutine = null;
+        }
+        else
+        {
+            _manaRefillCoroutine = StartCoroutine(RefillMana());
+        }
     }
 }
