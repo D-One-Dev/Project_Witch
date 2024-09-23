@@ -8611,6 +8611,7 @@ GameObject:
   - component: {fileID: 4457520541513602240}
   - component: {fileID: 1040387021375803969}
   - component: {fileID: 671393804552165925}
+  - component: {fileID: 1055073539143876509}
   - component: {fileID: 7871167840446461091}
   - component: {fileID: 2834671419686277650}
   - component: {fileID: 3648110035989774140}
@@ -8750,6 +8751,22 @@ MonoBehaviour:
   manaBarParent: {fileID: 4100516789793266822}
   smoothness: 0.5
   manaFlasks: []
+--- !u!114 &1055073539143876509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5028087485225606441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8ce1722b460bc64f9b0c1a4d0ba360c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpBar: {fileID: 9112369853107766199}
+  hpBarParent: {fileID: 7218364005586346600}
+  smoothness: 0.5
+  hpFlasks: []
 --- !u!114 &7871167840446461091
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class ManaBarController : MonoBehaviour
 
     public static ManaBarController instance;
 
-    private float barTarget;
+    private float _barTarget;
 
     private void Awake()
     {
@@ -19,10 +19,10 @@ public class ManaBarController : MonoBehaviour
 
     public void UpdateFill(int maxMana, int currentMana)
     {
-        barTarget = currentMana / (float) maxMana;
-        if(manaBar.fillAmount > barTarget)
-            AnimationsController.instance.UpdateBar(manaBar, currentMana / (float)maxMana, manaBarParent, true);
-        else AnimationsController.instance.UpdateBar(manaBar, currentMana / (float)maxMana, manaBarParent, false);
+        _barTarget = currentMana / (float) maxMana;
+        if(manaBar.fillAmount > _barTarget)
+            AnimationsController.instance.UpdateBar(manaBar, _barTarget, manaBarParent, true);
+        else AnimationsController.instance.UpdateBar(manaBar, _barTarget, manaBarParent, false);
     }
 
     public void ShakeManaBar()
