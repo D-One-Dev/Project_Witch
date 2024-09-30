@@ -53065,6 +53065,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1798397135149837112, guid: 9ae13ec5e5c703249b73a575ef3f3c64, type: 3}
+--- !u!1 &1168546348 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1409838586814214338, guid: ba9debf91ac2ac4448390166b6ca5936,
+    type: 3}
+  m_PrefabInstance: {fileID: 280139066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1168601882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98683,6 +98689,11 @@ PrefabInstance:
       propertyPath: healthbar
       value: 
       objectReference: {fileID: 1399363785}
+    - target: {fileID: 5486978225539705530, guid: efd0c05bdc4ade845ac33f72aa501543,
+        type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 1168546348}
     - target: {fileID: 7419340979374165197, guid: efd0c05bdc4ade845ac33f72aa501543,
         type: 3}
       propertyPath: m_Volume

@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
         _controls.Gameplay.Space.started += ctx => jump = true;
         _controls.Gameplay.Space.canceled += ctx => jump = false;
         _controls.Gameplay.Dash.performed += ctx => Dash();
+        PlayerHealth.OnPlayerDeath += OnDisable;
     }
 
     private void OnEnable()

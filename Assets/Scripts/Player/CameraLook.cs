@@ -15,6 +15,7 @@ public class CameraLook : MonoBehaviour
     {
         instance = this;
         _controls = new Controls();
+        PlayerHealth.OnPlayerDeath += OnDisable;
     }
     private void OnEnable()
     {

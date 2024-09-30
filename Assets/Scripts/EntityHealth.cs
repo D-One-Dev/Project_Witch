@@ -50,7 +50,8 @@ public class EntityHealth : MonoBehaviour
         }
         else
         {
-            Death();
+            health = 0;
+            if (!isDead) Death();
         }
 
         UpdateUI();
@@ -69,7 +70,8 @@ public class EntityHealth : MonoBehaviour
 
             else
             {
-                Death();
+                health = 0;
+                if (!isDead) Death();
             }
         }
 
@@ -86,12 +88,9 @@ public class EntityHealth : MonoBehaviour
 
     protected virtual void Death()
     {
-        if (!isDead)
-        {
-            isDead = true;
-            onDeath.Invoke();
-            if (gameObject.TryGetComponent<EnemyMoneyCost>(out EnemyMoneyCost component)) component.DropMoney();
-            Destroy(gameObject);
-        }
+        isDead = true;
+        onDeath.Invoke();
+        if (gameObject.TryGetComponent<EnemyMoneyCost>(out EnemyMoneyCost component)) component.DropMoney();
+        Destroy(gameObject);
     }
 }

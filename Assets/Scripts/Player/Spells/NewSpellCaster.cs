@@ -119,6 +119,8 @@ public class NewSpellCaster : MonoBehaviour
                 SetTempCamPos();
             };
         };
+
+        PlayerHealth.OnPlayerDeath += OnDisable;
     }
 
     private void OnEnable()
