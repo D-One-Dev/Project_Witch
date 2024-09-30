@@ -37,7 +37,7 @@ namespace Projectiles
 
         protected void GiveDamage(GameObject targetObj, bool isElementStrengthened)
         {
-            if (targetObj.TryGetComponent(out EnemyHealth enemyHealth)) enemyHealth.TakeDamage(damage, damageType, isElementStrengthened);
+            if (targetObj.TryGetComponent(out EntityHealth entityHealth)) entityHealth.TakeDamage(damage, damageType, isElementStrengthened);
             StartCoroutine(Destroying());
         }
 

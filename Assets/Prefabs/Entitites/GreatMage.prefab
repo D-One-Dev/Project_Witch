@@ -97,7 +97,7 @@ MonoBehaviour:
   health: 100
   damageResistType: 0
   damageVulnerabilityType: 0
-  surfaceDamageCooldownTime: 0
+  surfaceDamageCooldownTime: 0.5
   onDeath:
     m_PersistentCalls:
       m_Calls: []

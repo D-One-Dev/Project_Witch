@@ -9,7 +9,7 @@ public class FireballProjectile : Projectile
         Collider[] enemies = Physics.OverlapSphere(transform.position, transform.localScale.x * areaDamageRadius, targetLayer);
         foreach (Collider enemy in enemies)
         {
-            enemy.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage / 2, damageType, isElementStrengthened);
+            enemy.gameObject.GetComponent<EntityHealth>().TakeDamage(damage / 2, damageType, isElementStrengthened);
         }
     }
 

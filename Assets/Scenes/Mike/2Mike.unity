@@ -62703,6 +62703,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1798397135149837112, guid: 9ae13ec5e5c703249b73a575ef3f3c64, type: 3}
+--- !u!114 &1399363785 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9112369853107766199, guid: ba9debf91ac2ac4448390166b6ca5936,
+    type: 3}
+  m_PrefabInstance: {fileID: 280139066}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1402257738 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8385533123832587456, guid: 05e8e06a4b9f52d47ab337c8af9156eb,
@@ -98666,6 +98678,11 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5486978225539705530, guid: efd0c05bdc4ade845ac33f72aa501543,
+        type: 3}
+      propertyPath: healthbar
+      value: 
+      objectReference: {fileID: 1399363785}
     - target: {fileID: 7419340979374165197, guid: efd0c05bdc4ade845ac33f72aa501543,
         type: 3}
       propertyPath: m_Volume

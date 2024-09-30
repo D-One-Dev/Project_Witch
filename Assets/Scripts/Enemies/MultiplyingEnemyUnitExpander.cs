@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Enemies
 {
-    [RequireComponent(typeof(EnemyHealth))]
+    [RequireComponent(typeof(EntityHealth))]
     public class MultiplyingEnemyUnitExpander : MonoBehaviour
     {
         [SerializeField] private GameObject enemyUnitPrefab;
@@ -11,7 +11,7 @@ namespace Enemies
         
         private void Start()
         {
-            GetComponent<EnemyHealth>().onDeath.AddListener(OnMultiply);
+            GetComponent<EntityHealth>().onDeath.AddListener(OnMultiply);
 
             if (transform.localScale.x < maxScale)
             {
@@ -27,7 +27,7 @@ namespace Enemies
             {
                 GameObject child = Instantiate(enemyUnitPrefab, transform.position, transform.rotation);
                 child.transform.localScale /= 2;
-                child.GetComponent<EnemyHealth>().health /= 2;
+                child.GetComponent<EntityHealth>().health /= 2;
             }
         }
     }

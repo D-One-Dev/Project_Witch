@@ -19,7 +19,7 @@ public class PoisonedRockSplash : MonoBehaviour
         Collider[] colliders = Physics.OverlapSphere(transform.position, damageRadius, enemies);
         foreach (Collider collider in colliders)
         {
-            if (collider.gameObject.TryGetComponent<EnemyHealth>(out EnemyHealth health)) health.TakeDamage(damage, DamageType.Poison, false);
+            if (collider.gameObject.TryGetComponent<EntityHealth>(out EntityHealth health)) health.TakeDamage(damage, DamageType.Poison, false);
         }
     }
 

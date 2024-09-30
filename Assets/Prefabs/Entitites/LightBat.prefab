@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1529234533794236743}
   - component: {fileID: 8811128390577962873}
-  - component: {fileID: 7574614360637887716}
   - component: {fileID: 7173123502578531860}
   - component: {fileID: 1090518511303591948}
   - component: {fileID: 2059154906633240327}
+  - component: {fileID: 6551271255752598947}
   m_Layer: 8
   m_Name: LightBat
   m_TagString: Enemy
@@ -59,24 +59,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.31
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7574614360637887716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2014677664834399212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9833c370b1cbee440b4addbd2d65a13e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 15
-  damageResistType: 1
-  damageVulnerabilityType: 0
-  onDeath:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &7173123502578531860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,6 +120,25 @@ MonoBehaviour:
   projectTile: {fileID: 2121257395508586386, guid: c912a310e271c474baa20983726163db,
     type: 3}
   shootingPoint: {fileID: 1004498628184257747}
+--- !u!114 &6551271255752598947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014677664834399212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b56d44616bcb654082304d051e6331c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  damageResistType: 1
+  damageVulnerabilityType: 0
+  surfaceDamageCooldownTime: 0.5
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3232796575198387574
 GameObject:
   m_ObjectHideFlags: 0
