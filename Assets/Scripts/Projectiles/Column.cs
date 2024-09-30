@@ -13,18 +13,27 @@ namespace Projectiles
         [SerializeField] private float timeForAppear = 0.3f;
         [SerializeField] private float appearStep = 0.1f;
         [SerializeField] private bool isColumnAnimDisappearing;
+        [SerializeField] private bool isColumnDisappearWithEffect;
+
+        private GameObject _deathParticlesCache;
 
         [SerializeField] private float effectsScale = 10;
-        
+
         protected override void Start()
         {
             base.Start();
             StartCoroutine(Appear());
             StartCoroutine(DestroyTargetAimView());
             
-            _targetAimViewCache = Instantiate(targetAimView, transform.position, targetAimView.transform.rotation);
+            if (targetAimView != null) _targetAimViewCache = Instantiate(targetAimView, transform.position, targetAimView.transform.rotation);
             transform.position = new Vector3(transform.position.x, -10f, transform.position.z);
-            
+
+            if (!isColumnDisappearWithEffect)
+            {
+                _deathParticlesCache = deathParticles;
+                deathParticles = null;
+            }
+
             ParticleEffectScale = new Vector3(effectsScale, effectsScale, effectsScale);
         }
 
@@ -54,11 +63,14 @@ namespace Projectiles
         private IEnumerator DestroyTargetAimView()
         {
             yield return new WaitForSeconds(timeForAppear + 0.2f);
-            Destroy(_targetAimViewCache);
-            yield return new WaitForSeconds(0.6f);
+            if (targetAimView != null)Destroy(_targetAimViewCache);
+            yield return new WaitForSeconds(timeForAppear + 0.6f);
+            
+            deathParticles = _deathParticlesCache;
             PlayEffectParticles();
+            deathParticles = null;
         }
-        
+
         private void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.CompareTag(targetTag))
