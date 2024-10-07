@@ -1,6 +1,6 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
-using VolFx;
 
 public class PlayerBalanceUI : MonoBehaviour
 {
@@ -16,17 +16,23 @@ public class PlayerBalanceUI : MonoBehaviour
         instance = this;
     }
 
-    private void FixedUpdate()
+    private void Start()
     {
-        temp = Mathf.Lerp(temp, targetBalance, animationSmoothness);
-        if (targetBalance + 1 > temp) balanceText.text = targetBalance.ToString();
-        else
-        balanceText.text = temp.RoundToInt().ToString();
+        StartCoroutine(IndependentUpdate());
     }
 
     public void UpdateBalance(int newBalance)
     {
         if(!float.TryParse(balanceText.text, out temp)) temp = newBalance;
         targetBalance = newBalance;
+    }
+
+    private IEnumerator IndependentUpdate()
+    {
+        temp = Mathf.Lerp(temp, targetBalance, animationSmoothness);
+        if (targetBalance + 1 > temp) balanceText.text = targetBalance.ToString();
+        else balanceText.text = Mathf.RoundToInt(temp).ToString();
+        yield return new WaitForSecondsRealtime(Time.unscaledDeltaTime);
+        StartCoroutine(IndependentUpdate());
     }
 }

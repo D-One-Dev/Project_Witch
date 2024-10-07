@@ -31,7 +31,7 @@ public class AnimationsController : MonoBehaviour
 
     public void ShakeBar(RectTransform barParent)
     {
-        barParent.DOShakePosition(.1f, 10f, 100);
+        barParent.DOShakePosition(.1f, 10f, 100).SetUpdate(UpdateType.Normal, true);
     }
 
     public void FadeInScreen(GameObject screen)
