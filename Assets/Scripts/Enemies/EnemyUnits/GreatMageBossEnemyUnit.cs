@@ -37,11 +37,11 @@ namespace Enemies.EnemyUnits
 
             currentTimeBetweenBossActions = timeBetweenBossActions[0];
             
-            _actions.Add(new WalkInRadius(walkPointRange, _centerPoint));
-            _actions.Add(new TeleportationInRadius(walkPointRange, _centerPoint, SpawnTeleportEffect));
-            _actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking1", SpawnMultipleProjectTiles));
-            _actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnNewProjectTile));
-            _actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnPillarObj));
+            //_actions.Add(new WalkInRadius(walkPointRange, _centerPoint));
+            //_actions.Add(new TeleportationInRadius(walkPointRange, _centerPoint, SpawnTeleportEffect));
+            //_actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking1", SpawnMultipleProjectTiles));
+            //_actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnNewProjectTile));
+            //_actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnPillarObj));
             _actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnPillarWave));
 
             StartCoroutine(BossActionUpdate());
@@ -54,6 +54,7 @@ namespace Enemies.EnemyUnits
             if (_pillarWaveSpawnerCache != null) return;
             
             StartCoroutine(Levitation());
+            
             float randomAngleDegrees = 90;
             float randomAngleRadians = Mathf.Deg2Rad * randomAngleDegrees;
 
