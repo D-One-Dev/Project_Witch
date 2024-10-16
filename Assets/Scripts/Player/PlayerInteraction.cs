@@ -1,18 +1,25 @@
 using TMPro;
 using UnityEngine;
+using Zenject;
 
 public class PlayerInteraction : MonoBehaviour
 {
+    [Inject(Id = "InGameHintScreen")]
+    private readonly GameObject _hintScreen;
+    [Inject(Id = "InGameHintText")]
+    private readonly TMP_Text _hintText;
     private Controls _controls;
-    [SerializeField] private GameObject hintScreen;
-    [SerializeField] private TMP_Text hintText;
-    [SerializeField] private InGameHint currentHint = null;
-    private bool isHintActive;
 
-    private void Awake()
+    private InGameHint _currentHint;
+    private bool _isHintActive;
+
+    [Inject]
+    public void Construct(Controls controls)
     {
-        _controls = new Controls();
+        _controls = controls;
+
         _controls.Gameplay.Interact.performed += ctx => Interact();
+        PlayerHealth.OnPlayerDeath += OnDisable;
     }
 
     private void OnEnable()
@@ -27,11 +34,11 @@ public class PlayerInteraction : MonoBehaviour
 
     private void Interact()
     {
-        if(currentHint != null && !isHintActive)
+        if(_currentHint != null && !_isHintActive)
         {
-            hintText.text = currentHint.hintText;
-            AnimationsController.instance.FadeInScreen(hintScreen);
-            isHintActive = true;
+            _hintText.text = _currentHint.hintText;
+            AnimationsController.instance.FadeInScreen(_hintScreen);
+            _isHintActive = true;
         }
     }
 
@@ -39,19 +46,19 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Hint"))
         {
-            currentHint = other.GetComponent<InGameHint>();
-            currentHint.Activate();
+            _currentHint = other.GetComponent<InGameHint>();
+            _currentHint.Activate();
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Hint") && currentHint != null)
+        if (other.gameObject.CompareTag("Hint") && _currentHint != null)
         {
-            currentHint.Deactivate();
-            currentHint = null;
-            isHintActive = false;
-            AnimationsController.instance.FadeOutScreen(hintScreen);
+            _currentHint.Deactivate();
+            _currentHint = null;
+            _isHintActive = false;
+            AnimationsController.instance.FadeOutScreen(_hintScreen);
         }
     }
 }

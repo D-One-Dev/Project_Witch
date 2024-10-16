@@ -1,50 +1,67 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : IInitializable, ITickable
 {
-    [SerializeField] private CharacterController _characterController;
-    [SerializeField] private float movementSpeed;
-    [SerializeField] private float jumpSpeed;
-    [SerializeField] private float gravity;
-    [SerializeField] private Transform cam;
-    [SerializeField] private AudioSource _AS;
-    [SerializeField] private AudioClip jumpSound;
-    [SerializeField] private float dashDistance;
-    [SerializeField] private float dashCooldownTime;
-    [SerializeField] private Image dashIcon;
-    [SerializeField] private float jumpHelpTime;
-    [SerializeField] private float maxJumpAngle;
-    [SerializeField] private Sprite effectDisabledSprite;
-    [SerializeField] private Sprite effectEnabledSprite;
-    private float lastGroundedTime;
-    private bool isLandingSoundPlayed;
+    private CharacterController _characterController;
+    [Inject(Id = "PlayerTransform")]
+    private readonly Transform _playerTransform;
+    [Inject(Id = "MovementSpeed")]
+    private readonly float _movementSpeed;
+    [Inject(Id = "JumpSpeed")]
+    private readonly float _jumpSpeed;
+    [Inject(Id = "Gravity")]
+    private readonly float _gravity;
+    [Inject(Id = "Camera")]
+    private readonly Transform _cam;
+    [Inject(Id = "PlayerAudioSource")]
+    private readonly AudioSource _playerAudioSource;
+    [Inject(Id = "JumpSound")]
+    private readonly AudioClip _jumpSound;
+    [Inject(Id = "DashDistance")]
+    private readonly float _dashDistance;
+    [Inject(Id = "DashCooldownTime")]
+    private readonly float _dashCooldownTime;
+    [Inject(Id = "DashIcon")]
+    private readonly Image _dashIcon;
+    [Inject(Id = "JumpHelpTime")]
+    private readonly float _jumpHelpTime;
+    [Inject(Id = "MaxJumpAngle")]
+    private readonly float _maxJumpAngle;
+    [Inject(Id = "EffectDisabledSprite")]
+    private readonly Sprite _effectDisabledSprite;
+    [Inject(Id = "EffectEnabledSprite")]
+    private readonly Sprite _effectEnabledSprite;
+    [Inject(Id = "PlayerInstaller")]
+    private readonly MonoInstaller _playerInstaller;
+
     private Controls _controls;
-    private bool shift;
-    private bool jump;
-    private float grav;
-    private bool canDash = true;
-    private void Awake()
+    private float _lastGroundedTime;
+    private bool _isLandingSoundPlayed;
+    private bool _shift;
+    private bool _jump;
+    private float _grav;
+    private bool _canDash = true;
+
+    [Inject]
+    public void Construct(Controls controls, CharacterController characterController)
     {
-        _controls = new Controls();
-        _controls.Gameplay.Shift.started += ctx => shift = true;
-        _controls.Gameplay.Shift.canceled += ctx => shift = false;
-        _controls.Gameplay.Space.started += ctx => jump = true;
-        _controls.Gameplay.Space.canceled += ctx => jump = false;
+        _controls = controls;
+        _characterController = characterController;
+
+        _controls.Gameplay.Shift.started += ctx => _shift = true;
+        _controls.Gameplay.Shift.canceled += ctx => _shift = false;
+        _controls.Gameplay.Space.started += ctx => _jump = true;
+        _controls.Gameplay.Space.canceled += ctx => _jump = false;
         _controls.Gameplay.Dash.performed += ctx => Dash();
-        PlayerHealth.OnPlayerDeath += OnDisable;
+        PlayerHealth.OnPlayerDeath += DisableControls;
+
+        controls.Enable();
     }
 
-    private void OnEnable()
-    {
-        _controls.Enable();
-    }
-    private void OnDisable()
-    {
-        _controls.Disable();
-    }
-    private void Start()
+    public void Initialize()
     {
         if (PlayerPrefs.GetFloat("PlayerPosY", -10000f) != -10000f)
         {
@@ -54,73 +71,78 @@ public class PlayerMovement : MonoBehaviour
 
             float playerRotY = PlayerPrefs.GetFloat("PlayerRotY", 0);
 
-            transform.position = new Vector3(playerPosX, playerPosY, playerPosZ);
-            transform.rotation = Quaternion.Euler(0f, playerRotY, 0f);
+            _playerTransform.position = new Vector3(playerPosX, playerPosY, playerPosZ);
+            _playerTransform.rotation = Quaternion.Euler(0f, playerRotY, 0f);
         }
         _characterController.enabled = true;
     }
-    private void Update()
+
+    public void Tick()
     {
         if (_characterController.enabled)
         {
-            if(_characterController.isGrounded) lastGroundedTime = Time.time;
+            if(_characterController.isGrounded) _lastGroundedTime = Time.time;
 
             Vector2 input = _controls.Gameplay.Movement.ReadValue<Vector2>();
             Vector3 movement;
-            if(shift) movement = movementSpeed * 2 * Time.deltaTime * (input.x * transform.right + input.y * transform.forward);
-            else movement = movementSpeed * Time.deltaTime * (input.x * transform.right + input.y * transform.forward);
+            if(_shift) movement = _movementSpeed * 2 * Time.deltaTime * (input.x * _playerTransform.right + input.y * _playerTransform.forward);
+            else movement = _movementSpeed * Time.deltaTime * (input.x * _playerTransform.right + input.y * _playerTransform.forward);
             _characterController.Move(movement);
 
-            _characterController.Move(grav * Time.deltaTime * Vector3.up);
-            if (_characterController.isGrounded) grav = 0f;
-            else grav += gravity * Time.deltaTime;
-            if (jump && (Time.time < lastGroundedTime + jumpHelpTime) && IsSurfaceJumpable())
+            _characterController.Move(_grav * Time.deltaTime * Vector3.up);
+            if (_characterController.isGrounded) _grav = 0f;
+            else _grav += _gravity * Time.deltaTime;
+            if (_jump && (Time.time < _lastGroundedTime + _jumpHelpTime) && IsSurfaceJumpable())
             {
-                grav = jumpSpeed;
-                lastGroundedTime = 0;
-                _AS.PlayOneShot(jumpSound);
+                _grav = _jumpSpeed;
+                _lastGroundedTime = 0;
+                _playerAudioSource.PlayOneShot(_jumpSound);
             }
         }
 
-        if(grav == 0f && !isLandingSoundPlayed)
+        if(_grav == 0f && !_isLandingSoundPlayed)
         {
-            _AS.PlayOneShot(jumpSound);
-            isLandingSoundPlayed = true;
+            _playerAudioSource.PlayOneShot(_jumpSound);
+            _isLandingSoundPlayed = true;
         }
-        else if(grav > 5f || grav < -5f) isLandingSoundPlayed = false;
+        else if(_grav > 5f || _grav < -5f) _isLandingSoundPlayed = false;
     }
 
     private void Dash()
     {
-        if (canDash)
+        if (_canDash)
         {
-            AnimationsController.instance.Cooldown(dashIcon, dashCooldownTime, effectDisabledSprite, effectEnabledSprite);
-            AnimationsController.instance.CameraFOVChange(cam.GetComponent<Camera>(), this);
-            canDash = false;
-            StartCoroutine(DashCooldown());
+            AnimationsController.instance.Cooldown(_dashIcon, _dashCooldownTime, _effectDisabledSprite, _effectEnabledSprite);
+            AnimationsController.instance.CameraFOVChange(_cam.GetComponent<Camera>(), this);
+            _canDash = false;
+            _playerInstaller.StartCoroutine(DashCooldown());
         }
     }
 
     private IEnumerator DashCooldown()
     {
-        yield return new WaitForSeconds(dashCooldownTime);
-        canDash = true;
+        yield return new WaitForSeconds(_dashCooldownTime);
+        _canDash = true;
     }
 
     public void DoDash()
     {
-        _characterController.Move(cam.transform.forward * dashDistance);
+        _characterController.Move(_cam.forward * _dashDistance);
     }
 
     private bool IsSurfaceJumpable()
     {
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit))
+        if (Physics.Raycast(_playerTransform.position, Vector3.down, out RaycastHit hit))
         {
             float angle = Vector3.Angle(hit.normal, Vector3.up);
-            return angle <= maxJumpAngle;
+            return angle <= _maxJumpAngle;
         }
 
         return false;
+    }
+
+    private void DisableControls()
+    {
+        _controls.Disable();
     }
 }

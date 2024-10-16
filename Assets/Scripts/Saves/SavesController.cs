@@ -2,6 +2,7 @@ using System.IO;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 public class SavesController : MonoBehaviour
 {
@@ -9,6 +10,14 @@ public class SavesController : MonoBehaviour
     [SerializeField] private Image savingIconImage;
     public int currentSceneID;
     public static SavesController instance;
+
+    private PlayerMoney _playerMoney;
+
+    [Inject]
+    public void Construct(PlayerMoney playerMoney)
+    {
+        _playerMoney = playerMoney;
+    }
 
     private void Awake()
     {
@@ -54,7 +63,7 @@ public class SavesController : MonoBehaviour
         file.rightSpell = NewSpellCaster.instance.rightSpell;
         file.leftEffect = NewSpellCaster.instance.leftEffect;
         file.rightEffect = NewSpellCaster.instance.rightEffect;
-        file.money = PlayerMoney.Instance.Balance;
+        file.money = _playerMoney.Balance;
         file.currentTask = TaskUI.Instance.currentTask;
         string json = JsonUtility.ToJson(file);
         File.WriteAllText(Application.dataPath + "/save.savefile", json);
@@ -70,7 +79,7 @@ public class SavesController : MonoBehaviour
         file.rightSpell = NewSpellCaster.instance.rightSpell;
         file.leftEffect = NewSpellCaster.instance.leftEffect;
         file.rightEffect = NewSpellCaster.instance.rightEffect;
-        file.money = PlayerMoney.Instance.Balance;
+        file.money = _playerMoney.Balance;
         file.currentTask = TaskUI.Instance.currentTask;
         string json = JsonUtility.ToJson(file);
         File.WriteAllText(Application.dataPath + "/save.savefile", json);
@@ -94,7 +103,7 @@ public class SavesController : MonoBehaviour
             NewSpellCaster.instance.rightSpell = file.rightSpell;
             NewSpellCaster.instance.leftEffect = file.leftEffect;
             NewSpellCaster.instance.rightEffect = file.rightEffect;
-            PlayerMoney.Instance.SetBalance(file.money);
+            _playerMoney.SetBalance(file.money);
             TaskUI.Instance.ChangeTask(file.currentTask);
         }
     }

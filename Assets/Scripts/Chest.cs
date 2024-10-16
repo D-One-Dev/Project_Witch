@@ -1,4 +1,5 @@
 using UnityEngine;
+using Zenject;
 
 public class Chest : MonoBehaviour
 {
@@ -8,6 +9,13 @@ public class Chest : MonoBehaviour
     [SerializeField] private int moneyAmount;
     private bool isActive;
     private Controls controls;
+    private PlayerMoney _playerMoney;
+
+    [Inject]
+    public void Construct(PlayerMoney playerMoney)
+    {
+        _playerMoney = playerMoney;
+    }
 
     private void Awake()
     {
@@ -28,7 +36,7 @@ public class Chest : MonoBehaviour
     {
         if (isActive)
         {
-            PlayerMoney.Instance.ChangeBalance(moneyAmount);
+            _playerMoney.ChangeBalance(moneyAmount);
             icon.SetActive(false);
             animator.SetTrigger("Open");
         }

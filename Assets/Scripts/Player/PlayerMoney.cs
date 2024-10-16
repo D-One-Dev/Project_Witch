@@ -1,17 +1,8 @@
-using UnityEngine;
-
-public class PlayerMoney : MonoBehaviour
+public class PlayerMoney
 {
     public int Balance;
 
-    public static PlayerMoney Instance;
-
-    private void Awake()
-    {
-        Instance = this;
-    }
-
-    private bool CheckPurchaseAbility(int price)
+    public bool CheckPurchaseAbility(int price)
     {
         if(Balance - price >= 0) return true;
         return false;

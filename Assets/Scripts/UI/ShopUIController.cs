@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using Zenject;
 
 public class ShopUIController : MonoBehaviour
 {
@@ -13,6 +14,14 @@ public class ShopUIController : MonoBehaviour
     private bool isShopScreenActive;
 
     public static ShopUIController instance;
+
+    private PlayerMoney _playerMoney;
+
+    [Inject]
+    public void Construct(PlayerMoney playerMoney)
+    {
+        _playerMoney = playerMoney;
+    }
 
     private void Awake()
     {
@@ -79,14 +88,13 @@ public class ShopUIController : MonoBehaviour
 
     private void BuyItem()
     {
-        int playerMoney = PlayerMoney.Instance.Balance;
         if (currentItem != null)
         {
-            if(currentCard.GetComponent<ItemCard>().cost <= playerMoney)
+            if(_playerMoney.CheckPurchaseAbility(currentCard.GetComponent<ItemCard>().cost))
             {
                 AnimationsController.instance.ClickButton(currentCardUI);
                 currentItem.OnBuy();
-                PlayerMoney.Instance.ChangeBalance(-currentCard.GetComponent<ItemCard>().cost);
+                _playerMoney.ChangeBalance(-currentCard.GetComponent<ItemCard>().cost);
             }
             else
             {

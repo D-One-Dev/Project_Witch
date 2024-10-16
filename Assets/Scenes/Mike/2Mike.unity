@@ -49140,6 +49140,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1078004257}
   - component: {fileID: 1078004256}
+  - component: {fileID: 1078004258}
+  - component: {fileID: 1078004259}
   m_Layer: 0
   m_Name: System
   m_TagString: Untagged
@@ -49160,7 +49162,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scriptableObjectInstallers: []
-  _monoInstallers: []
+  _monoInstallers:
+  - {fileID: 1078004258}
+  - {fileID: 1078004259}
   _installerPrefabs: []
   _autoRun: 1
   OnPreInstall:
@@ -49193,6 +49197,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1078004258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078004255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78dc88b85d1538540b85107569af5ace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterController: {fileID: 1184195749}
+  playerTransform: {fileID: 1184195739}
+  movementSpeed: 5
+  jumpSpeed: 7.5
+  gravity: -15
+  cam: {fileID: 7147283688148496832}
+  playerAudioSource: {fileID: 7147283688148496831}
+  jumpSound: {fileID: 8300000, guid: 846ce0fcc05e065479c5f36e2ca7f828, type: 3}
+  dashDistance: 10
+  dashCooldownTime: 3
+  dashIcon: {fileID: 2026419280}
+  jumpHelpTime: 0.5
+  maxJumpAngle: 45
+  effectDisabledSprite: {fileID: 21300000, guid: c0803147ce860c24d9ecf83ed8409812,
+    type: 3}
+  effectEnabledSprite: {fileID: 21300000, guid: 924b654771fa6b04581273593ef55ca3,
+    type: 3}
+  defaultMouseSens: 0.25
+  playerFootstepsDefault:
+  - {fileID: 8300000, guid: 1c7c52fa8d5b4cd498d196cc35c3cb43, type: 3}
+  - {fileID: 8300000, guid: 85248f5aafb20bc45a578121aa7b3767, type: 3}
+  - {fileID: 8300000, guid: e59d88a3e4966f24091d065b81839312, type: 3}
+  - {fileID: 8300000, guid: 935bee592c349ee47b721878c6699334, type: 3}
+  - {fileID: 8300000, guid: 9119be95fdae60c46bbcaff5deff384e, type: 3}
+  - {fileID: 8300000, guid: 7d166e39670ee2943b260d5f69fb1895, type: 3}
+  - {fileID: 8300000, guid: f56cc315197f9454d9ca30badc07f67b, type: 3}
+  playerFootstepsStone:
+  - {fileID: 8300000, guid: 1c7c52fa8d5b4cd498d196cc35c3cb43, type: 3}
+  - {fileID: 8300000, guid: 85248f5aafb20bc45a578121aa7b3767, type: 3}
+  - {fileID: 8300000, guid: e59d88a3e4966f24091d065b81839312, type: 3}
+  - {fileID: 8300000, guid: 935bee592c349ee47b721878c6699334, type: 3}
+  - {fileID: 8300000, guid: 9119be95fdae60c46bbcaff5deff384e, type: 3}
+  - {fileID: 8300000, guid: 7d166e39670ee2943b260d5f69fb1895, type: 3}
+  - {fileID: 8300000, guid: f56cc315197f9454d9ca30badc07f67b, type: 3}
+  playerFootstepsGrass:
+  - {fileID: 8300000, guid: 90313c697e69d7142bd0863841397bf0, type: 3}
+  - {fileID: 8300000, guid: 4d78924ac388303448acca8932a41b0e, type: 3}
+  - {fileID: 8300000, guid: 65ca6f5ceb6230d4484b6a1d93c54e35, type: 3}
+  - {fileID: 8300000, guid: 493f48c41ad7dc740b5cb3324cb346f8, type: 3}
+  - {fileID: 8300000, guid: b288ee910a8dac946a07207851c6bf9d, type: 3}
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 55
+--- !u!114 &1078004259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078004255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6161b62952180b41a01a2f4028c8374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inGameHintScreen: {fileID: 280139068}
+  inGameHintText: {fileID: 280139069}
 --- !u!4 &1079189864 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9b04cbcbc6f67fa4881ee1e8ea144c0b,
@@ -80133,6 +80206,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime
       objectReference: {fileID: 0}
+    - target: {fileID: 5447957759790275937, guid: bd15717fd63a89f4e8f6002433c9ea72,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7586686858239520047, guid: bd15717fd63a89f4e8f6002433c9ea72,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -80183,7 +80261,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9099526327311679703, guid: bd15717fd63a89f4e8f6002433c9ea72,
+        type: 3}
+      propertyPath: _monoInstallers.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4742813989809258798, guid: bd15717fd63a89f4e8f6002433c9ea72, type: 3}
+    - {fileID: 2900872216993759415, guid: bd15717fd63a89f4e8f6002433c9ea72, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -87086,6 +87171,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DemonBat
       objectReference: {fileID: 0}
+    - target: {fileID: 1091843924899195305, guid: 651ea407d091abe46b0d688c60e9e596,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3228327531149109267, guid: 651ea407d091abe46b0d688c60e9e596,
         type: 3}
       propertyPath: damageResistType
@@ -89959,6 +90049,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DemonBat (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1091843924899195305, guid: 651ea407d091abe46b0d688c60e9e596,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3228327531149109267, guid: 651ea407d091abe46b0d688c60e9e596,
         type: 3}
@@ -99003,10 +99098,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
+    - {fileID: 8606559745280061162, guid: efd0c05bdc4ade845ac33f72aa501543, type: 3}
+    - {fileID: 1286009410506146147, guid: efd0c05bdc4ade845ac33f72aa501543, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efd0c05bdc4ade845ac33f72aa501543, type: 3}
+--- !u!82 &7147283688148496831 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7419340979374165197, guid: efd0c05bdc4ade845ac33f72aa501543,
+    type: 3}
+  m_PrefabInstance: {fileID: 7147283688148496830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7147283688148496832 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3562728925792785905, guid: efd0c05bdc4ade845ac33f72aa501543,
+    type: 3}
+  m_PrefabInstance: {fileID: 7147283688148496830}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8014688486401877637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99079,6 +99188,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1078004257}
   - {fileID: 56358030}
   - {fileID: 410087041}
   - {fileID: 832575519}
@@ -99102,4 +99212,3 @@ SceneRoots:
   - {fileID: 2089674911543734863}
   - {fileID: 1789819668}
   - {fileID: 1428709034}
-  - {fileID: 1078004257}

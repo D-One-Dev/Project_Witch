@@ -1,14 +1,22 @@
-using UnityEditor;
 using UnityEngine;
+using Zenject;
 
 namespace Enemies
 {
     [RequireComponent(typeof(EntityHealth))]
     public class MultiplyingEnemyUnitExpander : MonoBehaviour
     {
+        private DiContainer _container;
+
         [SerializeField] private GameObject enemyUnitPrefab;
 
         [SerializeField] private float maxScale, minScale;
+
+        [Inject]
+        private void Construct(DiContainer container)
+        {
+            _container = container;
+        }
         
         private void Start()
         {
@@ -26,7 +34,7 @@ namespace Enemies
             
             for (int i = 0; i < 3; i++)
             {
-                GameObject child = Instantiate(enemyUnitPrefab, transform.position, transform.rotation);
+                GameObject child = _container.InstantiatePrefab(enemyUnitPrefab, transform.position, transform.rotation, null);
                 child.transform.localScale /= 2;
                 child.GetComponent<EntityHealth>().health /= 2;
             }

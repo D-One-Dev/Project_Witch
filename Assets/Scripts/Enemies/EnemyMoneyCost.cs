@@ -1,11 +1,20 @@
 using UnityEngine;
+using Zenject;
 
 public class EnemyMoneyCost : MonoBehaviour
 {
     [SerializeField] private int moneyCost;
 
+    private PlayerMoney _playerMoney;
+
+    [Inject]
+    public void Construct(PlayerMoney playerMoney)
+    {
+        _playerMoney = playerMoney;
+    }
+
     public void DropMoney()
     {
-        PlayerMoney.Instance.ChangeBalance(moneyCost);
+        _playerMoney.ChangeBalance(moneyCost);
     }
 }
