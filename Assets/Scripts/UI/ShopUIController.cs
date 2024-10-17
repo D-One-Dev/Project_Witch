@@ -17,10 +17,13 @@ public class ShopUIController : MonoBehaviour
 
     private PlayerMoney _playerMoney;
 
+    private NewSpellCaster _newSpellCaster;
+
     [Inject]
-    public void Construct(PlayerMoney playerMoney)
+    public void Construct(PlayerMoney playerMoney, NewSpellCaster newSpellCaster)
     {
         _playerMoney = playerMoney;
+        _newSpellCaster = newSpellCaster;
     }
 
     private void Awake()
@@ -71,7 +74,7 @@ public class ShopUIController : MonoBehaviour
             AnimationsController.instance.FadeOutScreen(shopScreen);
             GlobalGamePause.instance.isGamePaused = false;
             GlobalGamePause.instance.FixedUpdate();
-            NewSpellCaster.instance.ClearCastList();
+            _newSpellCaster.ClearCastList();
             isShopScreenActive = false;
         }
     }

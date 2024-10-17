@@ -13,10 +13,13 @@ public class SavesController : MonoBehaviour
 
     private PlayerMoney _playerMoney;
 
+    private NewSpellCaster _newSpellCaster;
+
     [Inject]
-    public void Construct(PlayerMoney playerMoney)
+    public void Construct(PlayerMoney playerMoney, NewSpellCaster newSpellCaster)
     {
         _playerMoney = playerMoney;
+        _newSpellCaster = newSpellCaster;
     }
 
     private void Awake()
@@ -59,10 +62,10 @@ public class SavesController : MonoBehaviour
         file.sceneID = currentSceneID;
         file.playerPosition = player.transform.position;
         file.playerRotation = player.transform.localRotation;
-        file.leftSpell = NewSpellCaster.instance.leftSpell;
-        file.rightSpell = NewSpellCaster.instance.rightSpell;
-        file.leftEffect = NewSpellCaster.instance.leftEffect;
-        file.rightEffect = NewSpellCaster.instance.rightEffect;
+        file.leftSpell = _newSpellCaster.LeftSpell;
+        file.rightSpell = _newSpellCaster.RightSpell;
+        file.leftEffect = _newSpellCaster.LeftEffect;
+        file.rightEffect = _newSpellCaster.RightEffect;
         file.money = _playerMoney.Balance;
         file.currentTask = TaskUI.Instance.currentTask;
         string json = JsonUtility.ToJson(file);
@@ -75,10 +78,10 @@ public class SavesController : MonoBehaviour
         file.sceneID = currentSceneID;
         file.playerPosition = Vector3.zero;
         file.playerRotation = player.transform.localRotation;
-        file.leftSpell = NewSpellCaster.instance.leftSpell;
-        file.rightSpell = NewSpellCaster.instance.rightSpell;
-        file.leftEffect = NewSpellCaster.instance.leftEffect;
-        file.rightEffect = NewSpellCaster.instance.rightEffect;
+        file.leftSpell = _newSpellCaster.LeftSpell;
+        file.rightSpell = _newSpellCaster.RightSpell;
+        file.leftEffect = _newSpellCaster.LeftEffect;
+        file.rightEffect = _newSpellCaster.RightEffect;
         file.money = _playerMoney.Balance;
         file.currentTask = TaskUI.Instance.currentTask;
         string json = JsonUtility.ToJson(file);
@@ -99,10 +102,10 @@ public class SavesController : MonoBehaviour
                 player.transform.localRotation = file.playerRotation;
                 player.GetComponent<CharacterController>().enabled = true;
             }
-            NewSpellCaster.instance.leftSpell = file.leftSpell;
-            NewSpellCaster.instance.rightSpell = file.rightSpell;
-            NewSpellCaster.instance.leftEffect = file.leftEffect;
-            NewSpellCaster.instance.rightEffect = file.rightEffect;
+            _newSpellCaster.LeftSpell = file.leftSpell;
+            _newSpellCaster.RightSpell = file.rightSpell;
+            _newSpellCaster.LeftEffect = file.leftEffect;
+            _newSpellCaster.RightEffect = file.rightEffect;
             _playerMoney.SetBalance(file.money);
             TaskUI.Instance.ChangeTask(file.currentTask);
         }

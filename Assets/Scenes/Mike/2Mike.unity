@@ -49142,6 +49142,7 @@ GameObject:
   - component: {fileID: 1078004256}
   - component: {fileID: 1078004258}
   - component: {fileID: 1078004259}
+  - component: {fileID: 1078004260}
   m_Layer: 0
   m_Name: System
   m_TagString: Untagged
@@ -49165,6 +49166,7 @@ MonoBehaviour:
   _monoInstallers:
   - {fileID: 1078004258}
   - {fileID: 1078004259}
+  - {fileID: 1078004260}
   _installerPrefabs: []
   _autoRun: 1
   OnPreInstall:
@@ -49266,6 +49268,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inGameHintScreen: {fileID: 280139068}
   inGameHintText: {fileID: 280139069}
+  healthbar: {fileID: 1399363785}
+  deathScreen: {fileID: 1168546348}
+  leftSpellIcon: {fileID: 2123092047}
+  rightSpellIcon: {fileID: 319323969}
+  leftEffectIcon: {fileID: 953429220}
+  rightEffectIcon: {fileID: 1796468936}
+  leftSpellIconImage: {fileID: 2123092049}
+  rightSpellIconImage: {fileID: 319323971}
+  leftEffectIconImage: {fileID: 953429222}
+  rightEffectIconImage: {fileID: 1796468938}
+--- !u!114 &1078004260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078004255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17975e50a57ccfd4085275173138258e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilesParentTransform: {fileID: 2138780469}
+  castDelay: 0.25
+  manaAmount: 100
+  manaRefillSpeed: 0.0125
+  steamSpell: {fileID: 11400000, guid: c3269f31bff42294386f25cee047dbb3, type: 2}
+  lavaSpell: {fileID: 11400000, guid: 53c83689d77b9324c8ffb77a1c3648af, type: 2}
+  icyRockSpell: {fileID: 11400000, guid: e99492c34dd271348a3aa8bba5604e47, type: 2}
+  poisonedFireballSpell: {fileID: 11400000, guid: 010635b7e29507940beb8e1df6ed0d3b,
+    type: 2}
+  poisonedRockSpell: {fileID: 11400000, guid: 0254283dd62da1743a02174769f0f69f, type: 2}
+  leftSpell: {fileID: 11400000, guid: 7f3762dc9062be0468aedb52f423c6da, type: 2}
+  rightSpell: {fileID: 11400000, guid: 4ef05c7d89fd545439fbe154445a46c0, type: 2}
+  leftEffect: {fileID: 11400000, guid: d9cfc28c11392ad4cacfe913abe3b01a, type: 2}
+  rightEffect: {fileID: 11400000, guid: 0ba98c0a383de2340a26ac4f7fe7e267, type: 2}
 --- !u!4 &1079189864 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9b04cbcbc6f67fa4881ee1e8ea144c0b,

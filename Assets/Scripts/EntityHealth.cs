@@ -14,8 +14,8 @@ public class EntityHealth : MonoBehaviour
 
     protected Coroutine surfaceDamageCoroutine = null;
 
-    public UnityEvent onDeath;
-    public event HealthChanged onHealthChanged;
+    public UnityEvent OnDeath;
+    public event HealthChanged OnHealthChanged;
     public delegate void HealthChanged(int health, int originHealth);
 
     private void Start()
@@ -41,7 +41,7 @@ public class EntityHealth : MonoBehaviour
         if (health - damage > 0)
         {
             health -= damage;
-            onHealthChanged?.Invoke(health, OriginHealth);
+            OnHealthChanged?.Invoke(health, OriginHealth);
             SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
             if (sr != null)
             {
@@ -89,7 +89,7 @@ public class EntityHealth : MonoBehaviour
     protected virtual void Death()
     {
         isDead = true;
-        onDeath.Invoke();
+        OnDeath.Invoke();
         if (gameObject.TryGetComponent<EnemyMoneyCost>(out EnemyMoneyCost component)) component.DropMoney();
         Destroy(gameObject);
     }

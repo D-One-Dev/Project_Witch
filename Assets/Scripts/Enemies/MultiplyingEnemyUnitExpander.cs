@@ -20,7 +20,7 @@ namespace Enemies
         
         private void Start()
         {
-            GetComponent<EntityHealth>().onDeath.AddListener(OnMultiply);
+            GetComponent<EntityHealth>().OnDeath.AddListener(OnMultiply);
 
             if (transform.localScale.x < maxScale)
             {

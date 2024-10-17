@@ -25,9 +25,9 @@ namespace Enemies.EnemyUnits
 
         private List<IAction> _actions = new();
 
-        private void OnEnable() => GetComponent<EnemyBossHealth>().onHealthChanged += HealthUpdate;
+        private void OnEnable() => GetComponent<EnemyBossHealth>().OnHealthChanged += HealthUpdate;
 
-        private void OnDisable() => GetComponent<EnemyBossHealth>().onHealthChanged -= HealthUpdate;
+        private void OnDisable() => GetComponent<EnemyBossHealth>().OnHealthChanged -= HealthUpdate;
 
         protected override void InitEnemy()
         {

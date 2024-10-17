@@ -420,7 +420,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2270279368515137601}
   - component: {fileID: 3780648973356488207}
-  - component: {fileID: 3163467115000149065}
   - component: {fileID: 2072977970812016982}
   - component: {fileID: 7419340979374165197}
   - component: {fileID: 1042204253233242318}
@@ -477,41 +476,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3163467115000149065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9042547177009050889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ca997c7da7e43e4eb7fe540f6050852, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cam: {fileID: 3562728925792785905}
-  _projectilesParentObject: {fileID: 0}
-  castDelay: 0.25
-  manaAmount: 100
-  manaRefillSpeed: 0.0125
-  steamSpell: {fileID: 11400000, guid: c3269f31bff42294386f25cee047dbb3, type: 2}
-  lavaSpell: {fileID: 11400000, guid: 53c83689d77b9324c8ffb77a1c3648af, type: 2}
-  icyRockSpell: {fileID: 11400000, guid: e99492c34dd271348a3aa8bba5604e47, type: 2}
-  poisonedFireballSpell: {fileID: 11400000, guid: 010635b7e29507940beb8e1df6ed0d3b,
-    type: 2}
-  poisonedRockSpell: {fileID: 11400000, guid: 0254283dd62da1743a02174769f0f69f, type: 2}
-  leftSpell: {fileID: 11400000, guid: 7f3762dc9062be0468aedb52f423c6da, type: 2}
-  rightSpell: {fileID: 11400000, guid: 4ef05c7d89fd545439fbe154445a46c0, type: 2}
-  leftEffect: {fileID: 11400000, guid: d9cfc28c11392ad4cacfe913abe3b01a, type: 2}
-  rightEffect: {fileID: 11400000, guid: 0ba98c0a383de2340a26ac4f7fe7e267, type: 2}
-  leftSpellIcon: {fileID: 0}
-  rightSpellIcon: {fileID: 0}
-  leftEffectIcon: {fileID: 0}
-  rightEffectIcon: {fileID: 0}
-  leftSpellIconImage: {fileID: 0}
-  rightSpellIconImage: {fileID: 0}
-  leftEffectIconImage: {fileID: 0}
-  rightEffectIconImage: {fileID: 0}
 --- !u!114 &2072977970812016982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -524,9 +488,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c173806078135449b91e1d1d81a8a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hintScreen: {fileID: 0}
-  hintText: {fileID: 0}
-  currentHint: {fileID: 0}
 --- !u!82 &7419340979374165197
 AudioSource:
   m_ObjectHideFlags: 0
@@ -760,11 +721,9 @@ MonoBehaviour:
   damageResistType: 0
   damageVulnerabilityType: 0
   surfaceDamageCooldownTime: 0.5
-  onDeath:
+  OnDeath:
     m_PersistentCalls:
       m_Calls: []
-  healthbar: {fileID: 0}
-  deathScreen: {fileID: 0}
 --- !u!114 &7898610516557369701
 MonoBehaviour:
   m_ObjectHideFlags: 0

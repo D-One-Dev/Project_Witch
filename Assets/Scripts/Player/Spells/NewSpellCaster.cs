@@ -2,101 +2,124 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
-public class NewSpellCaster : MonoBehaviour
+public class NewSpellCaster : IInitializable, ITickable
 {
-    [SerializeField] private Transform _cam;
-    [SerializeField] private Transform _projectilesParentObject;
+    [Inject(Id = "Camera")]
+    private readonly Transform _cam;
+    [Inject(Id = "ProjectilesParentTransform")]
+    private readonly Transform _projectilesParentTransform;
 
+    [Inject(Id = "CastDelay")]
+    private readonly float _castDelay;
+    [Inject(Id = "ManaAmount")]
+    private readonly int _manaAmount;
+    [Inject(Id = "ManaRefillSpeed")]
+    private readonly float _manaRefillSpeed;
 
-    [SerializeField] private float castDelay;
-    [SerializeField] private int manaAmount;
-    [SerializeField] private float manaRefillSpeed;
+    [Inject(Id = "SteamSpell")]
+    private readonly Spell _steamSpell;
+    [Inject(Id = "LavaSpell")]
+    private readonly Spell _lavaSpell;
+    [Inject(Id = "IcyRockSpell")]
+    private readonly Spell _icyRockSpell;
+    [Inject(Id = "PoisonedFireballSpell")]
+    private readonly Spell _poisonedFireballSpell;
+    [Inject(Id = "PoisonedRockSpell")]
+    private readonly Spell _poisonedRockSpell;
 
-    [Header ("Secondary Spells")]
-    [SerializeReference] private Spell steamSpell;
-    [SerializeField] private Spell lavaSpell;
-    [SerializeField] private Spell icyRockSpell;
-    [SerializeField] private Spell poisonedFireballSpell;
-    [SerializeField] private Spell poisonedRockSpell;
+    [Inject(Id = "LeftSpell")]
+    public Spell LeftSpell;
+    [Inject(Id = "RightSpell")]
+    public Spell RightSpell;
+    [Inject(Id = "LeftEffect")]
+    public Effect LeftEffect;
+    [Inject(Id = "RightEffect")]
+    public Effect RightEffect;
 
-    [Header("Current Spells and Effects")]
-    [SerializeReference] public Spell leftSpell;
-    [SerializeReference] public Spell rightSpell;
-    [SerializeReference] public Effect leftEffect;
-    [SerializeReference] public Effect rightEffect;
+    [Inject(Id = "LeftSpellIcon")]
+    private readonly GameObject _leftSpellIcon;
+    [Inject(Id = "RightSpellIcon")]
+    private readonly GameObject _rightSpellIcon;
+    [Inject(Id = "LeftEffectIcon")]
+    private readonly GameObject _leftEffectIcon;
+    [Inject(Id = "RightEffectIcon")]
+    private readonly GameObject _rightEffectIcon;
 
-    [Header("UI")]
-    [SerializeField] private GameObject leftSpellIcon;
-    [SerializeField] private GameObject rightSpellIcon;
-    [SerializeField] private GameObject leftEffectIcon;
-    [SerializeField] private GameObject rightEffectIcon;
-    [SerializeField] private Image leftSpellIconImage;
-    [SerializeField] private Image rightSpellIconImage;
-    [SerializeField] private Image leftEffectIconImage;
-    [SerializeField] private Image rightEffectIconImage;
+    [Inject(Id = "LeftSpellIconImage")]
+    private readonly Image _leftSpellIconImage;
+    [Inject(Id = "RightSpellIconImage")]
+    private readonly Image _rightSpellIconImage;
+    [Inject(Id = "LeftEffectIconImage")]
+    private readonly Image _leftEffectIconImage;
+    [Inject(Id = "RightEffectIconImage")]
+    private readonly Image _rightEffectIconImage;
 
     private Controls _controls;
 
-    private bool leftSpellCheck, rightSpellCheck;
-    private bool leftSpellCheckComplete, rightSpellCheckComplete;
+    private bool _leftSpellCheck, _rightSpellCheck;
+    private bool _leftSpellCheckComplete, _rightSpellCheckComplete;
     private Coroutine _castCoroutine;
     private Coroutine _manaRefillCoroutine;
 
-    private List<Spell> spells;
-    private List<Effect> effects;
+    private List<Spell> _spells;
+    private List<Effect> _effects;
 
-    private int currentMana;
+    private int _currentMana;
 
-    private Vector3 tempCamPos;
+    private Vector3 _tempCamPos;
 
-    public static NewSpellCaster instance;
+    [Inject(Id = "SpellsInstaller")]
+    private readonly MonoInstaller _spellsInstaller;
 
-    private void Awake()
+    private DiContainer _container;
+
+    [Inject]
+    public void Construct(Controls controls, DiContainer container)
     {
-        instance = this;
-
-        _controls = new Controls();
+        _container = container;
+        _controls = controls;
 
         _controls.Gameplay.LMB.started += ctx =>
         {
             if (Time.timeScale > 0f)
             {
-                leftSpellCheck = true;
+                _leftSpellCheck = true;
             }
         };
         _controls.Gameplay.LMB.canceled += ctx =>
         {
-            leftSpellCheck = false;
-            leftSpellCheckComplete = false;
+            _leftSpellCheck = false;
+            _leftSpellCheckComplete = false;
         };
 
         _controls.Gameplay.RMB.started += ctx =>
         {
             if (Time.timeScale > 0f)
             {
-                rightSpellCheck = true;
+                _rightSpellCheck = true;
             }
-        }; 
+        };
         _controls.Gameplay.RMB.canceled += ctx =>
         {
-            rightSpellCheck = false;
-            rightSpellCheckComplete = false;
+            _rightSpellCheck = false;
+            _rightSpellCheckComplete = false;
         };
 
         _controls.Gameplay.Q.performed += ctx =>
         {
             if (Time.timeScale > 0f)
             {
-                if (leftEffect.ManaCost <= currentMana)
+                if (LeftEffect.ManaCost <= _currentMana)
                 {
-                    currentMana -= leftEffect.ManaCost;
-                    ManaBarController.instance.UpdateFill(manaAmount, currentMana);
+                    _currentMana -= LeftEffect.ManaCost;
+                    ManaBarController.instance.UpdateFill(_manaAmount, _currentMana);
 
-                    effects.Add(leftEffect);
+                    _effects.Add(LeftEffect);
                 }
                 else ManaBarController.instance.ShakeManaBar();
-                AnimationsController.instance.ClickButton(leftEffectIcon);
+                AnimationsController.instance.ClickButton(_leftEffectIcon);
 
                 SetTempCamPos();
             };
@@ -106,85 +129,76 @@ public class NewSpellCaster : MonoBehaviour
         {
             if (Time.timeScale > 0f)
             {
-                if (rightEffect.ManaCost <= currentMana)
+                if (RightEffect.ManaCost <= _currentMana)
                 {
-                    currentMana -= rightEffect.ManaCost;
-                    ManaBarController.instance.UpdateFill(manaAmount, currentMana);
+                    _currentMana -= RightEffect.ManaCost;
+                    ManaBarController.instance.UpdateFill(_manaAmount, _currentMana);
 
-                    effects.Add(rightEffect);
+                    _effects.Add(RightEffect);
                 }
                 else ManaBarController.instance.ShakeManaBar();
-                AnimationsController.instance.ClickButton(rightEffectIcon);
+                AnimationsController.instance.ClickButton(_rightEffectIcon);
 
                 SetTempCamPos();
             };
         };
 
-        PlayerHealth.OnPlayerDeath += OnDisable;
-    }
-
-    private void OnEnable()
-    {
+        PlayerHealth.OnPlayerDeath += DisableControls;
         _controls.Enable();
     }
 
-    private void OnDisable()
+    public void Initialize()
     {
-        _controls.Disable();
-    }
+        _spells = new List<Spell>();
+        _effects = new List<Effect>();
 
-    private void Start()
-    {
-        spells = new List<Spell>();
-        effects = new List<Effect>();
-
-        currentMana = manaAmount;
-        ManaBarController.instance.UpdateFill(manaAmount, currentMana);
+        _currentMana = _manaAmount;
+        ManaBarController.instance.UpdateFill(_manaAmount, _currentMana);
         UpdateSpellIcons();
 
-        _manaRefillCoroutine = StartCoroutine(RefillMana());
+        _manaRefillCoroutine = _spellsInstaller.StartCoroutine(RefillMana());
     }
 
-    private void Update()
+    public void Tick()
     {
         CheckSpells();
     }
 
     private void CheckSpells()
     {
-        if (leftSpellCheck && !leftSpellCheckComplete)
+        if (_leftSpellCheck && !_leftSpellCheckComplete)
         {
-            if (_castCoroutine != null) StopCoroutine(_castCoroutine);
-            _castCoroutine = StartCoroutine(CastDelay());
-            if (leftSpell != null && leftSpell.manaCost <= currentMana)
+            if (_castCoroutine != null) _spellsInstaller.StopCoroutine(_castCoroutine);
+            _castCoroutine = _spellsInstaller.StartCoroutine(CastDelay());
+            if (LeftSpell != null && LeftSpell.manaCost <= _currentMana)
             {
-                currentMana -= leftSpell.manaCost;
-                ManaBarController.instance.UpdateFill(manaAmount, currentMana);
-                spells.Add(leftSpell);
+                _currentMana -= LeftSpell.manaCost;
+                ManaBarController.instance.UpdateFill(_manaAmount, _currentMana);
+                _spells.Add(LeftSpell);
             }
             else ManaBarController.instance.ShakeManaBar();
-            leftSpellCheckComplete = true;
+            _leftSpellCheckComplete = true;
 
 
-            AnimationsController.instance.ClickButton(leftSpellIcon);
+            AnimationsController.instance.ClickButton(_leftSpellIcon);
 
             SetTempCamPos();
         }
 
-        else if (rightSpellCheck && !rightSpellCheckComplete)
+        else if (_rightSpellCheck && !_rightSpellCheckComplete)
         {
-            if (_castCoroutine != null) StopCoroutine(_castCoroutine);
-            _castCoroutine = StartCoroutine(CastDelay());
-            if (rightSpell != null && rightSpell.manaCost <= currentMana)
+            if (_castCoroutine != null) _spellsInstaller.StopCoroutine(_castCoroutine);
+            _castCoroutine = _spellsInstaller.StartCoroutine(CastDelay());
+            if (RightSpell != null && RightSpell.manaCost <= _currentMana)
             {
-                currentMana -= rightSpell.manaCost;
-                ManaBarController.instance.UpdateFill(manaAmount, currentMana);
-                spells.Add(rightSpell);
+                _currentMana -= RightSpell.manaCost;
+                ManaBarController.instance.UpdateFill(_manaAmount, _currentMana);
+                _spells.Add(RightSpell);
             }
             else ManaBarController.instance.ShakeManaBar();
-            rightSpellCheckComplete = true;
+            _rightSpellCheckComplete = true;
 
-            AnimationsController.instance.ClickButton(rightSpellIcon);
+            AnimationsController.instance.ClickButton(_rightSpellIcon);
 
             SetTempCamPos();
         }
@@ -192,38 +206,38 @@ public class NewSpellCaster : MonoBehaviour
 
     private IEnumerator CastDelay()
     {
-        yield return new WaitForSeconds(castDelay);
-        if ((leftSpellCheck && leftSpellCheckComplete) ||
-            (rightSpellCheck && rightSpellCheckComplete))
+        yield return new WaitForSeconds(_castDelay);
+        if ((_leftSpellCheck && _leftSpellCheckComplete) ||
+            (_rightSpellCheck && _rightSpellCheckComplete))
         {
-            if (leftSpellCheck && currentMana - leftSpell.manaCost >= 0)
+            if (_leftSpellCheck && _currentMana - LeftSpell.manaCost >= 0)
             {
-                currentMana -= leftSpell.manaCost;
-                spells.Add(leftSpell);
+                _currentMana -= LeftSpell.manaCost;
+                _spells.Add(LeftSpell);
             }
-            if (rightSpellCheck && currentMana - rightSpell.manaCost >= 0)
+            if (_rightSpellCheck && _currentMana - RightSpell.manaCost >= 0)
             {
-                currentMana -= rightSpell.manaCost;
-                spells.Add(rightSpell);
+                _currentMana -= RightSpell.manaCost;
+                _spells.Add(RightSpell);
             }
             SetTempCamPos();
-            ManaBarController.instance.UpdateFill(manaAmount, currentMana);
-            StopCoroutine(_castCoroutine);
-            _castCoroutine = StartCoroutine(CastDelay());
+            ManaBarController.instance.UpdateFill(_manaAmount, _currentMana);
+            _spellsInstaller.StopCoroutine(_castCoroutine);
+            _castCoroutine = _spellsInstaller.StartCoroutine(CastDelay());
         }
         else
         {
             Cast();
-            spells.Clear();
-            effects.Clear();
-            ManaBarController.instance.UpdateFill(manaAmount, currentMana);
-            leftSpellCheck = false;
-            rightSpellCheck = false;
-            leftSpellCheckComplete = false;
-            rightSpellCheckComplete = false;
+            _spells.Clear();
+            _effects.Clear();
+            ManaBarController.instance.UpdateFill(_manaAmount, _currentMana);
+            _leftSpellCheck = false;
+            _rightSpellCheck = false;
+            _leftSpellCheckComplete = false;
+            _rightSpellCheckComplete = false;
             _castCoroutine = null;
 
-            if (_manaRefillCoroutine == null) _manaRefillCoroutine = StartCoroutine(RefillMana());
+            if (_manaRefillCoroutine == null) _manaRefillCoroutine = _spellsInstaller.StartCoroutine(RefillMana());
         }
     }
 
@@ -231,61 +245,61 @@ public class NewSpellCaster : MonoBehaviour
     {
         List<Spell> outputSpells = new List<Spell>();
         List<GameObject> objects = new List<GameObject>();
-        while (spells.Count > 0)
+        while (_spells.Count > 0)
         {
-            if(spells.Count == 1)
+            if(_spells.Count == 1)
             {
-                outputSpells.Add(spells[0]);
-                spells.RemoveAt(0);
+                outputSpells.Add(_spells[0]);
+                _spells.RemoveAt(0);
             }
             SpellType spell1Type;
             SpellType spell2Type;
-            for (int i = 0; i < spells.Count - 1; i++)
+            for (int i = 0; i < _spells.Count - 1; i++)
             {
-                for (int j = i + 1; j < spells.Count; j++)
+                for (int j = i + 1; j < _spells.Count; j++)
                 {
-                    spell1Type = spells[i].Type;
-                    spell2Type = spells[j].Type;
+                    spell1Type = _spells[i].Type;
+                    spell2Type = _spells[j].Type;
 
                     if ((spell1Type == SpellType.Fire && spell2Type == SpellType.Ice) || (spell1Type == SpellType.Ice && spell2Type == SpellType.Fire))
                     {
-                        outputSpells.Add(steamSpell);
-                        spells.RemoveAt(i);
-                        spells.RemoveAt(j - 1);
+                        outputSpells.Add(_steamSpell);
+                        _spells.RemoveAt(i);
+                        _spells.RemoveAt(j - 1);
                     }
 
                     else if ((spell1Type == SpellType.Fire && spell2Type == SpellType.Earth) || (spell1Type == SpellType.Earth && spell2Type == SpellType.Fire))
                     {
-                        outputSpells.Add(lavaSpell);
-                        spells.RemoveAt(i);
-                        spells.RemoveAt(j - 1);
+                        outputSpells.Add(_lavaSpell);
+                        _spells.RemoveAt(i);
+                        _spells.RemoveAt(j - 1);
                     }
 
                     else if ((spell1Type == SpellType.Ice && spell2Type == SpellType.Earth) || (spell1Type == SpellType.Earth && spell2Type == SpellType.Ice))
                     {
-                        outputSpells.Add(icyRockSpell);
-                        spells.RemoveAt(i);
-                        spells.RemoveAt(j - 1);
+                        outputSpells.Add(_icyRockSpell);
+                        _spells.RemoveAt(i);
+                        _spells.RemoveAt(j - 1);
                     }
 
                     else if ((spell1Type == SpellType.Fire && spell2Type == SpellType.Poison) || (spell1Type == SpellType.Poison && spell2Type == SpellType.Fire))
                     {
-                        outputSpells.Add(poisonedFireballSpell);
-                        spells.RemoveAt(i);
-                        spells.RemoveAt(j - 1);
+                        outputSpells.Add(_poisonedFireballSpell);
+                        _spells.RemoveAt(i);
+                        _spells.RemoveAt(j - 1);
                     }
 
                     else if ((spell1Type == SpellType.Earth && spell2Type == SpellType.Poison) || (spell1Type == SpellType.Poison && spell2Type == SpellType.Earth))
                     {
-                        outputSpells.Add(poisonedRockSpell);
-                        spells.RemoveAt(i);
-                        spells.RemoveAt(j - 1);
+                        outputSpells.Add(_poisonedRockSpell);
+                        _spells.RemoveAt(i);
+                        _spells.RemoveAt(j - 1);
                     }
 
                     else
                     {
-                        outputSpells.Add(spells[i]);
-                        spells.RemoveAt(i);
+                        outputSpells.Add(_spells[i]);
+                        _spells.RemoveAt(i);
                     }
                 }
             }
@@ -299,13 +313,13 @@ public class NewSpellCaster : MonoBehaviour
 
             Vector3 randomPos;
 
-            if (outputSpells.Count < 2) randomPos = tempCamPos;
+            if (outputSpells.Count < 2) randomPos = _tempCamPos;
 
-            else randomPos = tempCamPos + (_cam.transform.right * Random.Range(-spellPrefab.transform.localScale.x,
+            else randomPos = _tempCamPos + (_cam.transform.right * Random.Range(-spellPrefab.transform.localScale.x,
                 spellPrefab.transform.localScale.x) + _cam.transform.up * Random.Range(-spellPrefab.transform.localScale.y,
                 spellPrefab.transform.localScale.y)) / 2;
 
-            GameObject obj = Instantiate(spellPrefab, randomPos, Quaternion.identity, _projectilesParentObject);
+            GameObject obj = _container.InstantiatePrefab(spellPrefab, randomPos, Quaternion.identity, _projectilesParentTransform);
 
             obj.transform.forward = _cam.transform.forward;
 
@@ -313,7 +327,7 @@ public class NewSpellCaster : MonoBehaviour
             objects.Add(obj);
         }
 
-        foreach (Effect effect in effects)
+        foreach (Effect effect in _effects)
         {
             effect.Activate(objects);
         }
@@ -321,45 +335,50 @@ public class NewSpellCaster : MonoBehaviour
 
     public void ClearCastList()
     {
-        spells.Clear();
-        effects.Clear();
+        _spells.Clear();
+        _effects.Clear();
         if(_castCoroutine != null)
         {
-            StopCoroutine(_castCoroutine);
+            _spellsInstaller.StopCoroutine(_castCoroutine);
             _castCoroutine = null;
         }
-        currentMana = manaAmount;
-        ManaBarController.instance.UpdateFill(manaAmount, currentMana);
+        _currentMana = _manaAmount;
+        ManaBarController.instance.UpdateFill(_manaAmount, _currentMana);
     }
 
     public void UpdateSpellIcons()
     {
-        leftSpellIconImage.sprite = leftSpell.spellIcon;
-        rightSpellIconImage.sprite = rightSpell.spellIcon;
-        leftEffectIconImage.sprite = leftEffect.EffectIcon;
-        rightEffectIconImage.sprite = rightEffect.EffectIcon;
+        _leftSpellIconImage.sprite = LeftSpell.spellIcon;
+        _rightSpellIconImage.sprite = RightSpell.spellIcon;
+        _leftEffectIconImage.sprite = LeftEffect.EffectIcon;
+        _rightEffectIconImage.sprite = RightEffect.EffectIcon;
     }
 
     private void SetTempCamPos()
     {
-        tempCamPos = _cam.transform.position;
+        _tempCamPos = _cam.transform.position;
     }
 
     private IEnumerator RefillMana()
     {
-        yield return new WaitForSeconds(manaRefillSpeed);
-        if (currentMana < manaAmount)
+        yield return new WaitForSeconds(_manaRefillSpeed);
+        if (_currentMana < _manaAmount)
         {
-            currentMana++;
-            ManaBarController.instance.UpdateFill(manaAmount, currentMana);
+            _currentMana++;
+            ManaBarController.instance.UpdateFill(_manaAmount, _currentMana);
         }
-        if(spells.Count > 0 || effects.Count > 0)
+        if(_spells.Count > 0 || _effects.Count > 0)
         {
             _manaRefillCoroutine = null;
         }
         else
         {
-            _manaRefillCoroutine = StartCoroutine(RefillMana());
+            _manaRefillCoroutine = _spellsInstaller.StartCoroutine(RefillMana());
         }
+    }
+
+    private void DisableControls()
+    {
+        _controls.Disable();
     }
 }
