@@ -1,8 +1,10 @@
 using UnityEngine;
+using Zenject;
 
 public class SpriteRotator : MonoBehaviour
 {
-    [SerializeField] private Transform player;
+    [Inject(Id = "PlayerTransform")]
+    private readonly Transform _playerTransform;
     [SerializeField] private SpriteRenderer _SR;
     [Space]
     [SerializeField] private Sprite frontSprite;
@@ -16,50 +18,54 @@ public class SpriteRotator : MonoBehaviour
     [SerializeField] private Texture rightN;
     private Material _material;
 
-    private int bumpMap;
+    private int _bumpMap;
 
     private void Start()
     {
-        if(player == null)
+        if(_playerTransform == null)
         {
-            player = GameObject.FindGameObjectWithTag("Player").transform;
+            Debug.LogErrorFormat("Player transform on " + GetComponentInParent<Transform>().gameObject.name + " not set");
         }
         if(_SR != null)
         {
             _material = _SR.material;
             _material.EnableKeyword("_BumpMap");
-            bumpMap = Shader.PropertyToID("_BumpMap");
+            _bumpMap = Shader.PropertyToID("_BumpMap");
         }
     }
     void FixedUpdate()
     {
-        transform.LookAt(player.position);
-        transform.localEulerAngles = new Vector3(0f, transform.localEulerAngles.y, 0f);
-        if (_SR != null)
+        if(_playerTransform != null)
         {
-            float angle = transform.localEulerAngles.y;
+            transform.LookAt(_playerTransform.position);
+            transform.localEulerAngles = new Vector3(0f, transform.localEulerAngles.y, 0f);
+            if (_SR != null)
             {
-                if (angle <= 45f || angle > 315f)
+                float angle = transform.localEulerAngles.y;
                 {
-                    _SR.sprite = frontSprite;
-                    _material.SetTexture(bumpMap, frontN);
-                }
-                else if (angle > 45f && angle <= 135f)
-                {
-                    _SR.sprite = rightSprite;
-                    _material.SetTexture(bumpMap, rightN);
-                }
-                else if (angle > 135f && angle <= 225f)
-                {
-                    _SR.sprite = backSprite;
-                    _material.SetTexture(bumpMap, backN);
-                }
-                else
-                {
-                    _SR.sprite = leftSprite;
-                    _material.SetTexture(bumpMap, leftN);
+                    if (angle <= 45f || angle > 315f)
+                    {
+                        _SR.sprite = frontSprite;
+                        _material.SetTexture(_bumpMap, frontN);
+                    }
+                    else if (angle > 45f && angle <= 135f)
+                    {
+                        _SR.sprite = rightSprite;
+                        _material.SetTexture(_bumpMap, rightN);
+                    }
+                    else if (angle > 135f && angle <= 225f)
+                    {
+                        _SR.sprite = backSprite;
+                        _material.SetTexture(_bumpMap, backN);
+                    }
+                    else
+                    {
+                        _SR.sprite = leftSprite;
+                        _material.SetTexture(_bumpMap, leftN);
+                    }
                 }
             }
         }
+
     }
 }

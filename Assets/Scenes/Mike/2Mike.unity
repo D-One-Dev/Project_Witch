@@ -12430,6 +12430,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &280139070 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4255490646242317631, guid: ba9debf91ac2ac4448390166b6ca5936,
+    type: 3}
+  m_PrefabInstance: {fileID: 280139066}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &280139071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6261656300406694993, guid: ba9debf91ac2ac4448390166b6ca5936,
+    type: 3}
+  m_PrefabInstance: {fileID: 280139066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &280307325 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9b04cbcbc6f67fa4881ee1e8ea144c0b,
@@ -19901,7 +19919,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7213c8afe8fc2924980d7db007ec6637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   _SR: {fileID: 0}
   frontSprite: {fileID: 0}
   backSprite: {fileID: 0}
@@ -49270,6 +49287,8 @@ MonoBehaviour:
   inGameHintText: {fileID: 280139069}
   healthbar: {fileID: 1399363785}
   deathScreen: {fileID: 1168546348}
+  dialogueScreen: {fileID: 280139071}
+  dialogueText: {fileID: 280139070}
   leftSpellIcon: {fileID: 2123092047}
   rightSpellIcon: {fileID: 319323969}
   leftEffectIcon: {fileID: 953429220}
@@ -71440,7 +71459,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7213c8afe8fc2924980d7db007ec6637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1184195739}
   _SR: {fileID: 0}
   frontSprite: {fileID: 0}
   backSprite: {fileID: 0}
@@ -77738,7 +77756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 410a44c583bc6734595108d3a70ffea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 454632480}
+  interactIcon: {fileID: 454632480}
   dialogue:
     pharses:
     - AMOGUS
@@ -84955,7 +84973,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7213c8afe8fc2924980d7db007ec6637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1184195739}
   _SR: {fileID: 0}
   frontSprite: {fileID: 0}
   backSprite: {fileID: 0}

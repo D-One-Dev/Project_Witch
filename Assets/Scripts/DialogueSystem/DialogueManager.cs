@@ -1,58 +1,53 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using Zenject;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager
 {
-    [SerializeField] private GameObject dialogueScreen;
-    [SerializeField] private TMP_Text dialogueText;
-    [SerializeField] private AudioSource audioSource;
-    private Queue<string> textPhrases;
-    private Queue<AudioClip> audioPhrases;
+    [Inject(Id = "DialogueScreen")]
+    private readonly GameObject _dialogueScreen;
+    [Inject(Id = "DialogueText")]
+    private readonly TMP_Text _dialogueText;
+    [Inject(Id = "PlayerAudioSource")]
+    private readonly AudioSource _audioSource;
+
+    private Queue<string> _textPhrases;
+    private Queue<AudioClip> _audioPhrases;
+    private Dialogue _currentDialogue = null;
     private Controls _controls;
 
-    public Dialogue currentDialogue = null;
-    public static DialogueManager Instance;
-
-    private void Awake()
+    [Inject]
+    public void Construct(Controls controls)
     {
-        Instance = this;
-        _controls = new Controls();
+        _controls = controls;
 
+        PlayerHealth.OnPlayerDeath += DisableControls;
         _controls.Gameplay.Interact.performed += ctx => Trigger();
-    }
-
-    private void OnEnable()
-    {
         _controls.Enable();
-    }
-
-    private void OnDisable()
-    {
-        _controls.Disable();
     }
 
     public void Trigger()
     {
-        if (currentDialogue != null && currentDialogue.pharses != null && currentDialogue.pharses.Length > 0)
+        if (_currentDialogue != null && _currentDialogue.pharses != null && _currentDialogue.pharses.Length > 0)
         {
-            string[] text = currentDialogue.pharses;
-            AudioClip[] audio = currentDialogue.audio;
+            string[] text = _currentDialogue.pharses;
+            AudioClip[] audio = _currentDialogue.audio;
             if (text.Length != audio.Length)
             {
                 Debug.LogError("Text amount and audio amount are not equal");
                 return;
             }
 
-            if (textPhrases == null)
+            if (_textPhrases == null)
             {
-                AnimationsController.instance.FadeInScreen(dialogueScreen);
-                textPhrases = new Queue<string>();
-                audioPhrases = new Queue<AudioClip>();
+                AnimationsController.instance.FadeInScreen(_dialogueScreen);
+                _textPhrases = new Queue<string>();
+                _audioPhrases = new Queue<AudioClip>();
                 for (int i = 0; i < text.Length; i++)
                 {
-                    textPhrases.Enqueue(text[i]);
-                    audioPhrases.Enqueue(audio[i]);
+                    _textPhrases.Enqueue(text[i]);
+                    _audioPhrases.Enqueue(audio[i]);
                 }
             }
             DisplayPhrase();
@@ -61,25 +56,35 @@ public class DialogueManager : MonoBehaviour
 
     private void DisplayPhrase()
     {
-        if (textPhrases.Count == 0) EndDialogue();
+        if (_textPhrases.Count == 0) EndDialogue();
         else
         {
-            dialogueText.text = textPhrases.Dequeue();
-            audioSource.clip = audioPhrases.Dequeue();
-            audioSource.Play();
+            _dialogueText.text = _textPhrases.Dequeue();
+            _audioSource.clip = _audioPhrases.Dequeue();
+            _audioSource.Play();
         }
     }
 
     private void EndDialogue()
     {
-        AnimationsController.instance.FadeOutScreen(dialogueScreen);
-        textPhrases = null;
-        audioPhrases = null;
+        AnimationsController.instance.FadeOutScreen(_dialogueScreen);
+        _textPhrases = null;
+        _audioPhrases = null;
     }
 
     public void LeaveDialogue()
     {
-        currentDialogue = null;
+        _currentDialogue = null;
         EndDialogue();
+    }
+
+    private void DisableControls()
+    {
+        _controls.Disable();
+    }
+
+    public void SetDialogue(Dialogue dialogue)
+    {
+        _currentDialogue = dialogue;
     }
 }

@@ -1,24 +1,32 @@
 using UnityEngine;
+using Zenject;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    [SerializeField] private GameObject icon;
-    public Dialogue dialogue;
+    [SerializeField] private GameObject interactIcon;
+    [SerializeField] private Dialogue dialogue;
+    private DialogueManager _dialogueManager;
+
+    [Inject]
+    public void Construct(DialogueManager dialogueManager)
+    {
+        _dialogueManager = dialogueManager;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            icon.SetActive(true);
-            DialogueManager.Instance.currentDialogue = dialogue;
+            interactIcon.SetActive(true);
+            _dialogueManager.SetDialogue(dialogue);
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            icon.SetActive(false);
-            DialogueManager.Instance.LeaveDialogue();
+            interactIcon.SetActive(false);
+            _dialogueManager.LeaveDialogue();
         }
     }
 }

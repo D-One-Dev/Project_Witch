@@ -9,6 +9,8 @@ public class UIInstaller : MonoInstaller
     [SerializeField] private TMP_Text inGameHintText;
     [SerializeField] private Image healthbar;
     [SerializeField] private GameObject deathScreen;
+    [SerializeField] private GameObject dialogueScreen;
+    [SerializeField] private TMP_Text dialogueText;
 
     [Header("Spells UI")]
     [SerializeField] private GameObject leftSpellIcon;
@@ -72,5 +74,18 @@ public class UIInstaller : MonoInstaller
             .WithId("RightEffectIconImage")
             .FromInstance(rightEffectIconImage)
             .AsTransient();
+
+        this.Container.Bind<GameObject>()
+            .WithId("DialogueScreen")
+            .FromInstance(dialogueScreen)
+            .AsTransient();
+        this.Container.Bind<TMP_Text>()
+            .WithId("DialogueText")
+            .FromInstance(dialogueText)
+            .AsTransient();
+
+        this.Container.Bind<DialogueManager>()
+            .FromNew()
+            .AsSingle();
     }
 }
