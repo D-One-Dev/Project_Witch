@@ -28237,6 +28237,11 @@ PrefabInstance:
       propertyPath: _projectilesParentObject
       value: 
       objectReference: {fileID: 2138780469}
+    - target: {fileID: 5486978225539705530, guid: efd0c05bdc4ade845ac33f72aa501543,
+        type: 3}
+      propertyPath: healthbar
+      value: 
+      objectReference: {fileID: 2088145345}
     - target: {fileID: 8606559745280061162, guid: efd0c05bdc4ade845ac33f72aa501543,
         type: 3}
       propertyPath: dashIcon
@@ -29783,6 +29788,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba9debf91ac2ac4448390166b6ca5936, type: 3}
+--- !u!114 &2088145345 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9112369853107766199, guid: ba9debf91ac2ac4448390166b6ca5936,
+    type: 3}
+  m_PrefabInstance: {fileID: 2088145344}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2089457593
 PrefabInstance:
   m_ObjectHideFlags: 0

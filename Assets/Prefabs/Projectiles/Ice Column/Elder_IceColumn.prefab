@@ -212,3 +212,8 @@ MonoBehaviour:
     type: 3}
   explosionEffect: {fileID: 3721022018611559325, guid: 3c57deb902f5c594c9d94e287b88b9f9,
     type: 3}
+  timeForAppear: 0.3
+  appearStep: 0.1
+  isColumnAnimDisappearing: 0
+  isColumnAppearWithEffect: 1
+  effectsScale: 10

@@ -263,7 +263,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 140bd96a293c0654a9e50ddc77116dab,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6322759659838524722}
+      addedObject: {fileID: 8726241336353946978}
   m_SourcePrefab: {fileID: 100100000, guid: 140bd96a293c0654a9e50ddc77116dab, type: 3}
 --- !u!1 &7196121003433257656 stripped
 GameObject:
@@ -319,7 +319,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 1
---- !u!114 &6322759659838524722
+--- !u!114 &8726241336353946978
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -328,28 +328,41 @@ MonoBehaviour:
   m_GameObject: {fileID: 7196121003433257656}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e62a43c2d5aa067479a27fa9341b0f2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d786e9c1a978f54c9b643ef71182b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 8519608278046603145}
   targetLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   targetTag: Enemy
   deathParticles: {fileID: 1337198075554910, guid: 4c0e327295f736449b5111bb562ede32,
     type: 3}
   onDestroy:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8726241336353946978}
+        m_TargetAssemblyTypeName: FireballProjectile, Assembly-CSharp
+        m_MethodName: DamageArea
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   lifeTime: 30
   lifeTimeAfterCollide: 0
   damage: 40
   damageType: 1
   targetLockRadius: 7.5
+  ignoreTag: 
   speed: 7.5
   isHoming: 0
   isElementStrengthened: 0
   rotationSpeed: 2.5
+  areaDamageRadius: 2
 --- !u!4 &7536229999753146370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 140bd96a293c0654a9e50ddc77116dab,

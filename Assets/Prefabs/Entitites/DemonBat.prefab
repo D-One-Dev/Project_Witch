@@ -41,10 +41,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8234288452468941802}
   - component: {fileID: 6665610864114937435}
-  - component: {fileID: 3228327531149109267}
   - component: {fileID: 5980097647461590914}
   - component: {fileID: 8415163463355206177}
   - component: {fileID: -5198404930822125085}
+  - component: {fileID: 363018297691187173}
   m_Layer: 8
   m_Name: DemonBat
   m_TagString: Enemy
@@ -90,25 +90,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.31
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3228327531149109267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1091843924899195305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9833c370b1cbee440b4addbd2d65a13e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 150
-  damageResistType: 0
-  damageVulnerabilityType: 0
-  surfaceDamageCooldownTime: 0
-  onDeath:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &5980097647461590914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,6 +151,25 @@ MonoBehaviour:
   projectTile: {fileID: 2121257395508586386, guid: 95a3ecf2a82384e45a04041d83e6689e,
     type: 3}
   shootingPoint: {fileID: 1130919160677277889}
+--- !u!114 &363018297691187173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091843924899195305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b56d44616bcb654082304d051e6331c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 150
+  damageResistType: 0
+  damageVulnerabilityType: 0
+  surfaceDamageCooldownTime: 0.5
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1443173761962071034
 GameObject:
   m_ObjectHideFlags: 0

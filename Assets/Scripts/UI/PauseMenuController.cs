@@ -1,5 +1,6 @@
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenuController : MonoBehaviour
 {
@@ -56,7 +57,11 @@ public class PauseMenuController : MonoBehaviour
 
     public void Quit()
     {
-        //SavesController.instance.Save();
         AnimationsController.instance.ChangeScene(loadingScreen, 0);
+    }
+
+    public void RestartLevel()
+    {
+        AnimationsController.instance.ChangeScene(loadingScreen, SceneManager.GetActiveScene().buildIndex);
     }
 }

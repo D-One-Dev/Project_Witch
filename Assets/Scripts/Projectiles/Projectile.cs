@@ -49,7 +49,7 @@ namespace Projectiles
             {
                 GiveDamage(collision.gameObject, isElementStrengthened);
             }
-            else if (!collision.gameObject.CompareTag(ignoreTag))
+            else if (ignoreTag == "" || !collision.gameObject.CompareTag(ignoreTag))
             {
                 DestroyProjectTile(false);
             }

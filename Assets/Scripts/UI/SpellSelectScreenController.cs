@@ -1,4 +1,3 @@
-using DG.Tweening;
 using TMPro;
 using UnityEngine;
 
@@ -8,7 +7,6 @@ public class SpellSelectScreenController : MonoBehaviour
     [SerializeField] private TMP_Text spellNameText, spellDescriptionText, spellCostText;
     private Controls _controls;
 
-    private Tween spellSelectScreenFadeOutTween;
     private Spell currentSpell;
     private GameObject currentCard;
     private Effect currentEffect;

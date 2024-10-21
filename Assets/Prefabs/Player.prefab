@@ -446,6 +446,7 @@ GameObject:
   - component: {fileID: 1042204253233242318}
   - component: {fileID: 5305939758796500740}
   - component: {fileID: 1286009410506146147}
+  - component: {fileID: 5486978225539705530}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -540,6 +541,7 @@ MonoBehaviour:
   _projectilesParentObject: {fileID: 0}
   castDelay: 0.25
   manaAmount: 100
+  manaRefillSpeed: 0.0125
   steamSpell: {fileID: 11400000, guid: c3269f31bff42294386f25cee047dbb3, type: 2}
   lavaSpell: {fileID: 11400000, guid: 53c83689d77b9324c8ffb77a1c3648af, type: 2}
   icyRockSpell: {fileID: 11400000, guid: e99492c34dd271348a3aa8bba5604e47, type: 2}
@@ -854,3 +856,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d4d890f99a4ee3a1363efac0e13b0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5486978225539705530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9042547177009050889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 018d6793ae3e23e4eab265c30df8972c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  damageResistType: 0
+  damageVulnerabilityType: 0
+  surfaceDamageCooldownTime: 0.5
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  healthbar: {fileID: 0}

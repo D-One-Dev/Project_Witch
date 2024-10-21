@@ -15,6 +15,7 @@ public class CameraLook : MonoBehaviour
     {
         instance = this;
         _controls = new Controls();
+        PlayerHealth.OnPlayerDeath += OnDisable;
     }
     private void OnEnable()
     {
@@ -52,7 +53,6 @@ public class CameraLook : MonoBehaviour
         if (GlobalGamePause.instance.isGamePaused) currentSens = Mathf.Lerp(currentSens, 0f, 10f * Time.deltaTime);
         else currentSens = Mathf.Lerp(currentSens, defaultSens, 10f * Time.deltaTime);
     }
-
     public void ChangeSens(int value)
     {
         float sens = (float)value / 50 * .15f;
