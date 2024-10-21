@@ -39,10 +39,10 @@ EditorBuildSettings:
     path: Assets/Scenes/TestScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
-    path: Assets/Scenes/Volodya/1.unity
+    path: Assets/Scenes/Volodya/OLD/1.unity
     guid: e6372daa53c60a246bf3ae68b2eb2ab0
   - enabled: 0
-    path: Assets/Scenes/Volodya/2.unity
+    path: Assets/Scenes/Volodya/OLD/2.unity
     guid: a35c780b1adabcb4e8bd251eca6e98f9
   - enabled: 0
     path: Assets/Scenes/Mike/MikeTest.unity

@@ -133,6 +133,5 @@ public class PlayerInstaller : MonoInstaller
             .FromNew()
             .AsSingle()
             .NonLazy();
-
     }
 }
