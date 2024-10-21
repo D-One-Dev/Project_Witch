@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Projectiles
 {
@@ -14,14 +15,16 @@ namespace Projectiles
         [SerializeField] private float appearStep = 0.1f;
         [SerializeField] private bool isColumnAnimDisappearing;
         [SerializeField] private bool isColumnDisappearWithEffect;
+        [SerializeField] private bool isColumnAppearWithRandomPosition;
 
         private GameObject _deathParticlesCache;
 
         [SerializeField] private float effectsScale = 10;
 
-        protected override void Start()
+        protected override void OnEnable()
         {
-            base.Start();
+            base.OnEnable();
+            
             StartCoroutine(Appear());
             StartCoroutine(DestroyTargetAimView());
             
@@ -37,11 +40,19 @@ namespace Projectiles
             ParticleEffectScale = new Vector3(effectsScale, effectsScale, effectsScale);
         }
 
+        private void OnDisable()
+        {
+            StopAllCoroutines();
+        }
+
         private IEnumerator Appear()
         {
             yield return new WaitForSeconds(timeForAppear);
 
-            while (transform.position.y < 0.35f)
+            float endPosition = 0.35f;
+            if (isColumnAppearWithRandomPosition) endPosition = Random.Range(0.25f, 0.45f);
+
+            while (transform.position.y < endPosition)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y + appearStep, transform.position.z);
                 yield return null;

@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.AI;
+using Zenject;
 
 namespace Enemies.EnemyUnitBase
 {
@@ -16,7 +17,9 @@ namespace Enemies.EnemyUnitBase
         
         protected bool _playerInSightRange, _playerInAttackRange;
 
-        protected Transform _player;
+        [Inject(Id = "PlayerTransform")]
+        protected readonly Transform _player;
+        
         protected NavMeshAgent _agent;
 
         protected Enemy _enemy;
@@ -28,7 +31,6 @@ namespace Enemies.EnemyUnitBase
         private void Start()
         {
             _agent = GetComponent<NavMeshAgent>();
-            _player = Player.Player.Instance.transform;
 
             InitEnemy();
         }
