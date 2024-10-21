@@ -1,32 +1,34 @@
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
-public class ManaBarController : MonoBehaviour
+public class ManaBarController
 {
-    [SerializeField] private Image manaBar;
-    [SerializeField] private RectTransform manaBarParent;
-    [SerializeField] private float smoothness;
-    [SerializeField] private Image[] manaFlasks;
-
-    public static ManaBarController instance;
+    [Inject(Id = "PlayerManaBar")]
+    private readonly Image _manaBar;
+    [Inject(Id = "PlayerManaBarParent")]
+    private readonly RectTransform manaBarParent;
 
     private float _barTarget;
 
-    private void Awake()
+    private AnimationsController _animationsController;
+
+    [Inject]
+    public void Construct(AnimationsController animationsController)
     {
-        instance = this;
+        _animationsController = animationsController;
     }
 
     public void UpdateFill(int maxMana, int currentMana)
     {
         _barTarget = currentMana / (float) maxMana;
-        if(manaBar.fillAmount > _barTarget)
-            AnimationsController.instance.UpdateBar(manaBar, _barTarget, manaBarParent, true);
-        else AnimationsController.instance.UpdateBar(manaBar, _barTarget, manaBarParent, false);
+        if(_manaBar.fillAmount > _barTarget)
+            _animationsController.UpdateBar(_manaBar, _barTarget, manaBarParent, true);
+        else _animationsController.UpdateBar(_manaBar, _barTarget, manaBarParent, false);
     }
 
     public void ShakeManaBar()
     {
-        AnimationsController.instance.ShakeBar(manaBarParent);
+        _animationsController.ShakeBar(manaBarParent);
     }
 }

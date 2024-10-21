@@ -31382,6 +31382,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1560257760473235605, guid: 52b27b0f4e779c54d956114d9c7f0813, type: 3}
+--- !u!114 &700674781 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7150598098970251196, guid: ba9debf91ac2ac4448390166b6ca5936,
+    type: 3}
+  m_PrefabInstance: {fileID: 280139066}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &700782515 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8b391af0c3ed43549920a70bf5aa0263,
@@ -44994,6 +45006,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1798397135149837112, guid: 9ae13ec5e5c703249b73a575ef3f3c64, type: 3}
+--- !u!224 &989059086 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4100516789793266822, guid: ba9debf91ac2ac4448390166b6ca5936,
+    type: 3}
+  m_PrefabInstance: {fileID: 280139066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &991668766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49292,6 +49310,11 @@ MonoBehaviour:
   dialogueScreen: {fileID: 280139071}
   dialogueText: {fileID: 280139070}
   saveIconImage: {fileID: 280139067}
+  bossHealthBar: {fileID: 0}
+  playerHealthBar: {fileID: 1399363785}
+  playerHealthBarParent: {fileID: 1723390799}
+  playerManaBar: {fileID: 700674781}
+  playerManaBarParent: {fileID: 989059086}
   leftSpellIcon: {fileID: 2123092047}
   rightSpellIcon: {fileID: 319323969}
   leftEffectIcon: {fileID: 953429220}
@@ -71409,7 +71432,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ratio: 0.05
   canvas: {fileID: 1578778603}
-  player: {fileID: 1184195739}
 --- !u!212 &1578778605
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -77355,6 +77377,12 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.008378669, y: 0.025191, z: 0.3}
   m_Center: {x: 0.00015090444, y: 0.00037426682, z: 0.07}
+--- !u!224 &1723390799 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7218364005586346600, guid: ba9debf91ac2ac4448390166b6ca5936,
+    type: 3}
+  m_PrefabInstance: {fileID: 280139066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1724119633 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cf9dad8bc29d7c4418831cf8b8f6a8e1,
@@ -85076,7 +85104,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ratio: 0.05
   canvas: {fileID: 1881631324}
-  player: {fileID: 1184195739}
 --- !u!212 &1881631326
 SpriteRenderer:
   m_ObjectHideFlags: 0

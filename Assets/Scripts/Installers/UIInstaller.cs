@@ -1,4 +1,5 @@
 using TMPro;
+using UI;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -7,11 +8,15 @@ public class UIInstaller : MonoInstaller
 {
     [SerializeField] private GameObject inGameHintScreen;
     [SerializeField] private TMP_Text inGameHintText;
-    [SerializeField] private Image healthbar;
     [SerializeField] private GameObject deathScreen;
     [SerializeField] private GameObject dialogueScreen;
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private Image saveIconImage;
+    [SerializeField] private Image bossHealthBar;
+    [SerializeField] private Image playerHealthBar;
+    [SerializeField] private RectTransform playerHealthBarParent;
+    [SerializeField] private Image playerManaBar;
+    [SerializeField] private RectTransform playerManaBarParent;
 
     [Header("Spells UI")]
     [SerializeField] private GameObject leftSpellIcon;
@@ -32,10 +37,6 @@ public class UIInstaller : MonoInstaller
         this.Container.Bind<TMP_Text>()
             .WithId("InGameHintText")
             .FromInstance(inGameHintText)
-            .AsTransient();
-        this.Container.Bind<Image>()
-            .WithId("Healthbar")
-            .FromInstance(healthbar)
             .AsTransient();
         this.Container.Bind<GameObject>()
             .WithId("DeathScreen")
@@ -93,5 +94,38 @@ public class UIInstaller : MonoInstaller
             .WithId("SaveIconImage")
             .FromInstance(saveIconImage)
             .AsTransient();
+
+        this.Container.Bind<BossHealthUI>()
+            .FromNew()
+            .AsSingle();
+
+        this.Container.Bind<Image>()
+            .WithId("BossHealthBar")
+            .FromInstance(bossHealthBar)
+            .AsTransient();
+
+        this.Container.Bind<Image>()
+            .WithId("PlayerHealthBar")
+            .FromInstance(playerHealthBar)
+            .AsTransient();
+        this.Container.Bind<RectTransform>()
+            .WithId("PlayerHealthBarParent")
+            .FromInstance(playerHealthBarParent)
+            .AsTransient();
+        this.Container.Bind<HPBarController>()
+            .FromNew()
+            .AsSingle();
+
+        this.Container.Bind<Image>()
+            .WithId("PlayerManaBar")
+            .FromInstance(playerManaBar)
+            .AsTransient();
+        this.Container.Bind<RectTransform>()
+            .WithId("PlayerManaBarParent")
+            .FromInstance(playerManaBarParent)
+            .AsTransient();
+        this.Container.Bind<ManaBarController>()
+            .FromNew()
+            .AsSingle();
     }
 }

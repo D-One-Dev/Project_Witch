@@ -1,6 +1,7 @@
 using System.IO;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Zenject;
 
@@ -15,18 +16,20 @@ public class SavesController : IInitializable
 
     private PlayerMoney _playerMoney;
     private NewSpellCaster _newSpellCaster;
+    private AnimationsController _animationsController;
 
     [Inject]
-    public void Construct(PlayerMoney playerMoney, NewSpellCaster newSpellCaster)
+    public void Construct(PlayerMoney playerMoney, NewSpellCaster newSpellCaster, AnimationsController animationsController)
     {
         _playerMoney = playerMoney;
         _newSpellCaster = newSpellCaster;
+        _animationsController = animationsController;
     }
 
     public void Initialize()
     {
         if(_playerTransform != null) Load();
-        else LoadSceneID();
+        else GetSceneID();
     }
     private class SaveFile
     {
@@ -53,9 +56,10 @@ public class SavesController : IInitializable
 
     public void Save()
     {
-        AnimationsController.instance.ImageInOutFade(_savingIconImage);
+        _animationsController.ImageInOutFade(_savingIconImage);
         SaveFile file = new SaveFile();
-        file.sceneID = CurrentSceneID;
+        //file.sceneID = CurrentSceneID;
+        file.sceneID = SceneManager.GetActiveScene().buildIndex;
         file.playerPosition = _playerTransform.position;
         file.playerRotation = _playerTransform.localRotation;
         file.leftSpell = _newSpellCaster.LeftSpell;
@@ -107,14 +111,17 @@ public class SavesController : IInitializable
         }
     }
 
-    private void LoadSceneID()
+    public int GetSceneID()
     {
         if (File.Exists(Application.dataPath + "/save.savefile"))
         {
             string json = File.ReadAllText(Application.dataPath + "/save.savefile");
             SaveFile file = JsonUtility.FromJson<SaveFile>(json);
             CurrentSceneID = file.sceneID;
+            return CurrentSceneID;
         }
+
+        return 0;
     }
 
     public void SaveSettings(int soundVolume, int musicVolume, int graphics, int voiceLanguage, int textLanguage, int windowType, int VSync)

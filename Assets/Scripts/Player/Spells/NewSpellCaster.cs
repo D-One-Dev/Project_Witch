@@ -55,6 +55,8 @@ public class NewSpellCaster : IInitializable, ITickable
     private readonly Image _leftEffectIconImage;
     [Inject(Id = "RightEffectIconImage")]
     private readonly Image _rightEffectIconImage;
+    [Inject(Id = "SpellsInstaller")]
+    private readonly MonoInstaller _spellsInstaller;
 
     private Controls _controls;
 
@@ -70,16 +72,18 @@ public class NewSpellCaster : IInitializable, ITickable
 
     private Vector3 _tempCamPos;
 
-    [Inject(Id = "SpellsInstaller")]
-    private readonly MonoInstaller _spellsInstaller;
+    private AnimationsController _animationsController;
+    private ManaBarController _manaBarController;
 
     private DiContainer _container;
 
     [Inject]
-    public void Construct(Controls controls, DiContainer container)
+    public void Construct(Controls controls, DiContainer container, AnimationsController animationsController, ManaBarController manaBarController)
     {
         _container = container;
         _controls = controls;
+        _animationsController = animationsController;
+        _manaBarController = manaBarController;
 
         _controls.Gameplay.LMB.started += ctx =>
         {
@@ -114,12 +118,12 @@ public class NewSpellCaster : IInitializable, ITickable
                 if (LeftEffect.ManaCost <= _currentMana)
                 {
                     _currentMana -= LeftEffect.ManaCost;
-                    ManaBarController.instance.UpdateFill(_manaAmount, _currentMana);
+                    _manaBarController.UpdateFill(_manaAmount, _currentMana);
 
                     _effects.Add(LeftEffect);
                 }
-                else ManaBarController.instance.ShakeManaBar();
-                AnimationsController.instance.ClickButton(_leftEffectIcon);
+                else _manaBarController.ShakeManaBar();
+                _animationsController.ClickButton(_leftEffectIcon);
 
                 SetTempCamPos();
             };
@@ -132,12 +136,12 @@ public class NewSpellCaster : IInitializable, ITickable
                 if (RightEffect.ManaCost <= _currentMana)
                 {
                     _currentMana -= RightEffect.ManaCost;
-                    ManaBarController.instance.UpdateFill(_manaAmount, _currentMana);
+                    _manaBarController.UpdateFill(_manaAmount, _currentMana);
 
                     _effects.Add(RightEffect);
                 }
-                else ManaBarController.instance.ShakeManaBar();
-                AnimationsController.instance.ClickButton(_rightEffectIcon);
+                else _manaBarController.ShakeManaBar();
+                _animationsController.ClickButton(_rightEffectIcon);
 
                 SetTempCamPos();
             };
@@ -153,7 +157,7 @@ public class NewSpellCaster : IInitializable, ITickable
         _effects = new List<Effect>();
 
         _currentMana = _manaAmount;
-        ManaBarController.instance.UpdateFill(_manaAmount, _currentMana);
+        _manaBarController.UpdateFill(_manaAmount, _currentMana);
         UpdateSpellIcons();
 
         _manaRefillCoroutine = _spellsInstaller.StartCoroutine(RefillMana());
@@ -173,14 +177,14 @@ public class NewSpellCaster : IInitializable, ITickable
             if (LeftSpell != null && LeftSpell.manaCost <= _currentMana)
             {
                 _currentMana -= LeftSpell.manaCost;
-                ManaBarController.instance.UpdateFill(_manaAmount, _currentMana);
+                _manaBarController.UpdateFill(_manaAmount, _currentMana);
                 _spells.Add(LeftSpell);
             }
-            else ManaBarController.instance.ShakeManaBar();
+            else _manaBarController.ShakeManaBar();
             _leftSpellCheckComplete = true;
 
 
-            AnimationsController.instance.ClickButton(_leftSpellIcon);
+            _animationsController.ClickButton(_leftSpellIcon);
 
             SetTempCamPos();
         }
@@ -192,13 +196,13 @@ public class NewSpellCaster : IInitializable, ITickable
             if (RightSpell != null && RightSpell.manaCost <= _currentMana)
             {
                 _currentMana -= RightSpell.manaCost;
-                ManaBarController.instance.UpdateFill(_manaAmount, _currentMana);
+                _manaBarController.UpdateFill(_manaAmount, _currentMana);
                 _spells.Add(RightSpell);
             }
-            else ManaBarController.instance.ShakeManaBar();
+            else _manaBarController.ShakeManaBar();
             _rightSpellCheckComplete = true;
 
-            AnimationsController.instance.ClickButton(_rightSpellIcon);
+            _animationsController.ClickButton(_rightSpellIcon);
 
             SetTempCamPos();
         }
@@ -221,7 +225,7 @@ public class NewSpellCaster : IInitializable, ITickable
                 _spells.Add(RightSpell);
             }
             SetTempCamPos();
-            ManaBarController.instance.UpdateFill(_manaAmount, _currentMana);
+            _manaBarController.UpdateFill(_manaAmount, _currentMana);
             _spellsInstaller.StopCoroutine(_castCoroutine);
             _castCoroutine = _spellsInstaller.StartCoroutine(CastDelay());
         }
@@ -230,7 +234,7 @@ public class NewSpellCaster : IInitializable, ITickable
             Cast();
             _spells.Clear();
             _effects.Clear();
-            ManaBarController.instance.UpdateFill(_manaAmount, _currentMana);
+            _manaBarController.UpdateFill(_manaAmount, _currentMana);
             _leftSpellCheck = false;
             _rightSpellCheck = false;
             _leftSpellCheckComplete = false;
@@ -343,7 +347,7 @@ public class NewSpellCaster : IInitializable, ITickable
             _castCoroutine = null;
         }
         _currentMana = _manaAmount;
-        ManaBarController.instance.UpdateFill(_manaAmount, _currentMana);
+        _manaBarController.UpdateFill(_manaAmount, _currentMana);
     }
 
     public void UpdateSpellIcons()
@@ -365,7 +369,7 @@ public class NewSpellCaster : IInitializable, ITickable
         if (_currentMana < _manaAmount)
         {
             _currentMana++;
-            ManaBarController.instance.UpdateFill(_manaAmount, _currentMana);
+            _manaBarController.UpdateFill(_manaAmount, _currentMana);
         }
         if(_spells.Count > 0 || _effects.Count > 0)
         {

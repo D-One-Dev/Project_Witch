@@ -1,21 +1,33 @@
 using System.IO;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 public class MainMenuController : MonoBehaviour
 {
-    [SerializeField] private GameObject loadingScreen;
-    [SerializeField] private Button loadButton;
+    [Inject(Id = "LoadingScreen")]
+    private readonly GameObject _loadingScreen;
+    [Inject(Id = "LoadGameButton")]
+    private readonly Button _loadButton;
 
-    private void Start()
+    private AnimationsController _animationsController;
+
+    [Inject]
+    public void Construct(AnimationsController animationsController)
+    {
+        _animationsController = animationsController;
+    }
+
+    public void Start()
     {
         if(File.Exists(Application.dataPath + "/save.savefile"))
         {
-            loadButton.interactable = true;
+            _loadButton.interactable = true;
         }
         else
         {
-             loadButton.interactable = false;
+             _loadButton.interactable = false;
         }
     }
 
@@ -23,17 +35,21 @@ public class MainMenuController : MonoBehaviour
     {
         if(File.Exists(Application.dataPath + "/save.savefile")) File.Delete(Application.dataPath + "/save.savefile");
         if (File.Exists(Application.dataPath + "/save.savefile.meta"))File.Delete(Application.dataPath + "/save.savefile.meta");
-        AnimationsController.instance.ChangeScene(loadingScreen, 1);
+        _animationsController.ChangeScene(_loadingScreen, 1);
     }
 
     public void LoadGame()
     {
-        AnimationsController.instance.ChangeScene(loadingScreen);
+        _animationsController.ChangeScene(_loadingScreen);
     }
 
     public void QuitGame()
 
     {
+#if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+#else
         Application.Quit();
+#endif
     }
 }

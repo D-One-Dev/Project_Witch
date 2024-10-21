@@ -37,6 +37,7 @@ public class PlayerMovement : IInitializable, ITickable
     [Inject(Id = "PlayerInstaller")]
     private readonly MonoInstaller _playerInstaller;
 
+    private AnimationsController _animationsController;
     private Controls _controls;
     private float _lastGroundedTime;
     private bool _isLandingSoundPlayed;
@@ -46,10 +47,11 @@ public class PlayerMovement : IInitializable, ITickable
     private bool _canDash = true;
 
     [Inject]
-    public void Construct(Controls controls, CharacterController characterController)
+    public void Construct(Controls controls, CharacterController characterController, AnimationsController animationsController)
     {
         _controls = controls;
         _characterController = characterController;
+        _animationsController = animationsController;
 
         _controls.Gameplay.Shift.started += ctx => _shift = true;
         _controls.Gameplay.Shift.canceled += ctx => _shift = false;
@@ -112,8 +114,8 @@ public class PlayerMovement : IInitializable, ITickable
     {
         if (_canDash)
         {
-            AnimationsController.instance.Cooldown(_dashIcon, _dashCooldownTime, _effectDisabledSprite, _effectEnabledSprite);
-            AnimationsController.instance.CameraFOVChange(_cam.GetComponent<Camera>(), this);
+            _animationsController.Cooldown(_dashIcon, _dashCooldownTime, _effectDisabledSprite, _effectEnabledSprite);
+            _animationsController.CameraFOVChange(_cam.GetComponent<Camera>(), this);
             _canDash = false;
             _playerInstaller.StartCoroutine(DashCooldown());
         }
