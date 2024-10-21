@@ -9,10 +9,22 @@ EditorBuildSettings:
     path: Assets/Scenes/Mike/MainMenu.unity
     guid: a66b7dff42b93ce40bcd3c4a1d2f202d
   - enabled: 1
-    path: Assets/Scenes/Mike/1Mike.unity
-    guid: 5311b3901eb615e4cbb1acd526106429
+    path: Assets/Scenes/Mike/1MIKE.unity
+    guid: 2b67a7464688424479e50c4843183b46
   - enabled: 1
-    path: Assets/Scenes/Mike/2Mike.unity
+    path: Assets/Scenes/Mike/2MIKE.unity
+    guid: b21c16ad7de35684a9f28be72d6a7c1f
+  - enabled: 1
+    path: Assets/Scenes/Mike/3MIKE.unity
+    guid: a560b90fddf73104fa59115943b9f44d
+  - enabled: 1
+    path: Assets/Scenes/Mike/4MIKE.unity
+    guid: 417a03b315cf32d44907e9d32651bbb0
+  - enabled: 0
+    path: Assets/Scenes/Mike/OLD/1Mike.unity
+    guid: 5311b3901eb615e4cbb1acd526106429
+  - enabled: 0
+    path: Assets/Scenes/Mike/OLD/2Mike.unity
     guid: f87ca8f0fc79ec5449c23648be1eda35
   - enabled: 0
     path: Assets/Scenes/Mike/NEWNEW2.unity

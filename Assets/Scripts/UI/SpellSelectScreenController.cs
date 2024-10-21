@@ -24,6 +24,7 @@ public class SpellSelectScreenController : MonoBehaviour
     public void Construct(NewSpellCaster newSpellCaster, AnimationsController animationsController)
     {
         _newSpellCaster = newSpellCaster;
+        _animationsController = animationsController;
     }
 
     private void Awake()
