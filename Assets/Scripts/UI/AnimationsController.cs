@@ -5,10 +5,8 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using Zenject;
 
-public class AnimationsController : MonoBehaviour
+public class AnimationsController
 {
-    public static AnimationsController instance;
-
     private AsyncOperation sceneLoadOperation;
 
     private SavesController _savesController;
@@ -17,11 +15,6 @@ public class AnimationsController : MonoBehaviour
     public void Construct(SavesController savesController)
     {
         _savesController = savesController;
-    }
-
-    private void Awake()
-    {
-        instance = this;
     }
 
     public void ClickButton(GameObject button)
@@ -82,7 +75,7 @@ public class AnimationsController : MonoBehaviour
 
     public void ChangeScene(GameObject loadingScreen)
     {
-        int sceneID = _savesController.CurrentSceneID;
+        int sceneID = _savesController.GetSceneID();
         loadingScreen.SetActive(true);
         sceneLoadOperation = SceneManager.LoadSceneAsync(sceneID);
         sceneLoadOperation.allowSceneActivation = false;

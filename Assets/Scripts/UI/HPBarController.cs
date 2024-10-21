@@ -1,27 +1,28 @@
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
-public class HPBarController : MonoBehaviour
+public class HPBarController
 {
-    [SerializeField] private Image hpBar;
-    [SerializeField] private RectTransform hpBarParent;
-    [SerializeField] private float smoothness;
-    [SerializeField] private Image[] hpFlasks;
+    [Inject(Id = "PlayerHealthBar")]
+    private readonly Image _playerHealthBar;
+    [Inject(Id = "PlayerHealthBarParent")]
+    private readonly RectTransform _playerHealthBarParent;
 
-    public static HPBarController instance;
-
+    private AnimationsController _animationsController;
     private float _barTarget;
 
-    private void Awake()
+    [Inject]
+    public void Construct(AnimationsController animationsController)
     {
-        instance = this;
+        _animationsController = animationsController;
     }
 
     public void UpdateFill(int maxHp, int currentHp)
     {
         _barTarget = currentHp / (float) maxHp;
-        if (hpBar.fillAmount > _barTarget)
-            AnimationsController.instance.UpdateBar(hpBar, _barTarget, hpBarParent, true);
-        else AnimationsController.instance.UpdateBar(hpBar, _barTarget, hpBarParent, false);
+        if (_playerHealthBar.fillAmount > _barTarget)
+            _animationsController.UpdateBar(_playerHealthBar, _barTarget, _playerHealthBarParent, true);
+        else _animationsController.UpdateBar(_playerHealthBar, _barTarget, _playerHealthBarParent, false);
     }
 }

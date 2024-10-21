@@ -13,10 +13,13 @@ public class PlayerInteraction : MonoBehaviour
     private InGameHint _currentHint;
     private bool _isHintActive;
 
+    private AnimationsController _animationsController;
+
     [Inject]
-    public void Construct(Controls controls)
+    public void Construct(Controls controls, AnimationsController animationsController)
     {
         _controls = controls;
+        _animationsController = animationsController;
 
         _controls.Gameplay.Interact.performed += ctx => Interact();
         PlayerHealth.OnPlayerDeath += OnDisable;
@@ -37,7 +40,7 @@ public class PlayerInteraction : MonoBehaviour
         if(_currentHint != null && !_isHintActive)
         {
             _hintText.text = _currentHint.hintText;
-            AnimationsController.instance.FadeInScreen(_hintScreen);
+            _animationsController.FadeInScreen(_hintScreen);
             _isHintActive = true;
         }
     }
@@ -58,7 +61,7 @@ public class PlayerInteraction : MonoBehaviour
             _currentHint.Deactivate();
             _currentHint = null;
             _isHintActive = false;
-            AnimationsController.instance.FadeOutScreen(_hintScreen);
+            _animationsController.FadeOutScreen(_hintScreen);
         }
     }
 }

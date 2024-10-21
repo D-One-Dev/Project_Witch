@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using Zenject;
 
 public class EntityHealth : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class EntityHealth : MonoBehaviour
     [SerializeField] protected DamageType damageVulnerabilityType;
     [SerializeField] protected float surfaceDamageCooldownTime;
 
+    protected AnimationsController _animationsController;
+
     protected bool isDead;
 
     protected Coroutine surfaceDamageCoroutine = null;
@@ -17,6 +20,12 @@ public class EntityHealth : MonoBehaviour
     public UnityEvent OnDeath;
     public event HealthChanged OnHealthChanged;
     public delegate void HealthChanged(int health, int originHealth);
+
+    [Inject]
+    public void Construct(AnimationsController animationsController)
+    {
+        _animationsController = animationsController;
+    }
 
     private void Start()
     {
@@ -45,7 +54,7 @@ public class EntityHealth : MonoBehaviour
             SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
             if (sr != null)
             {
-                AnimationsController.instance.DamageEnemy(GetComponentInChildren<SpriteRenderer>());
+                _animationsController.DamageEnemy(GetComponentInChildren<SpriteRenderer>());
             }
         }
         else
@@ -65,7 +74,7 @@ public class EntityHealth : MonoBehaviour
             if (health - damage > 0)
             {
                 health -= damage;
-                AnimationsController.instance.DamageEnemy(GetComponentInChildren<SpriteRenderer>());
+                _animationsController.DamageEnemy(GetComponentInChildren<SpriteRenderer>());
             }
 
             else

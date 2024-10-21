@@ -1,16 +1,15 @@
-using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 namespace UI
 {
-    public class BossHealthUI : MonoBehaviour
+    public class BossHealthUI
     {
-        [SerializeField] private Image hpBar;
-
-        public static BossHealthUI Instance;
-
-        private void Awake() => Instance = this;
-
-        public void ChangeHpBarValue(float value) => hpBar.fillAmount = value;
+        [Inject(Id = "BossHealthBar")]
+        private readonly Image _bossHealthBar;
+        public void ChangeHpBarValue(float value)
+        {
+            _bossHealthBar.fillAmount = value;
+        }
     }
 }

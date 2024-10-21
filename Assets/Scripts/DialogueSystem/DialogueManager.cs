@@ -16,11 +16,13 @@ public class DialogueManager
     private Queue<AudioClip> _audioPhrases;
     private Dialogue _currentDialogue = null;
     private Controls _controls;
+    private AnimationsController _animationsController;
 
     [Inject]
-    public void Construct(Controls controls)
+    public void Construct(Controls controls, AnimationsController animationsController)
     {
         _controls = controls;
+        _animationsController = animationsController;
 
         PlayerHealth.OnPlayerDeath += DisableControls;
         _controls.Gameplay.Interact.performed += ctx => Trigger();
@@ -41,7 +43,7 @@ public class DialogueManager
 
             if (_textPhrases == null)
             {
-                AnimationsController.instance.FadeInScreen(_dialogueScreen);
+                _animationsController.FadeInScreen(_dialogueScreen);
                 _textPhrases = new Queue<string>();
                 _audioPhrases = new Queue<AudioClip>();
                 for (int i = 0; i < text.Length; i++)
@@ -67,7 +69,7 @@ public class DialogueManager
 
     private void EndDialogue()
     {
-        AnimationsController.instance.FadeOutScreen(_dialogueScreen);
+        _animationsController.FadeOutScreen(_dialogueScreen);
         _textPhrases = null;
         _audioPhrases = null;
     }

@@ -18,8 +18,10 @@ public class SpellSelectScreenController : MonoBehaviour
 
     private NewSpellCaster _newSpellCaster;
 
+    private AnimationsController _animationsController;
+
     [Inject]
-    public void Construct(NewSpellCaster newSpellCaster)
+    public void Construct(NewSpellCaster newSpellCaster, AnimationsController animationsController)
     {
         _newSpellCaster = newSpellCaster;
     }
@@ -68,7 +70,7 @@ public class SpellSelectScreenController : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            AnimationsController.instance.FadeInScreen(spellSelectScreen);
+            _animationsController.FadeInScreen(spellSelectScreen);
             GlobalGamePause.instance.isGamePaused = true;
             isSpellScreenActive = true;
         }
@@ -76,7 +78,7 @@ public class SpellSelectScreenController : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            AnimationsController.instance.FadeOutScreen(spellSelectScreen);
+            _animationsController.FadeOutScreen(spellSelectScreen);
             GlobalGamePause.instance.isGamePaused = false;
             GlobalGamePause.instance.FixedUpdate();
             _newSpellCaster.ClearCastList();
@@ -98,7 +100,7 @@ public class SpellSelectScreenController : MonoBehaviour
         if (currentSpell != null)
         {
             _newSpellCaster.LeftSpell = currentSpell;
-            AnimationsController.instance.ClickButton(currentCard);
+            _animationsController.ClickButton(currentCard);
             _newSpellCaster.UpdateSpellIcons();
         }
     }
@@ -108,7 +110,7 @@ public class SpellSelectScreenController : MonoBehaviour
         if (currentSpell != null)
         {
             _newSpellCaster.RightSpell = currentSpell;
-            AnimationsController.instance.ClickButton(currentCard);
+            _animationsController.ClickButton(currentCard);
             _newSpellCaster.UpdateSpellIcons();
         }
     }
@@ -127,7 +129,7 @@ public class SpellSelectScreenController : MonoBehaviour
         if (currentEffect != null)
         {
             _newSpellCaster.LeftEffect = currentEffect;
-            AnimationsController.instance.ClickButton(currentCard);
+            _animationsController.ClickButton(currentCard);
             _newSpellCaster.UpdateSpellIcons();
         }
     }
@@ -137,7 +139,7 @@ public class SpellSelectScreenController : MonoBehaviour
         if (currentEffect != null)
         {
             _newSpellCaster.RightEffect = currentEffect;
-            AnimationsController.instance.ClickButton(currentCard);
+            _animationsController.ClickButton(currentCard);
             _newSpellCaster.UpdateSpellIcons();
         }
     }

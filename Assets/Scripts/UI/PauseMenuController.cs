@@ -1,6 +1,6 @@
-using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Zenject;
 
 public class PauseMenuController : MonoBehaviour
 {
@@ -10,7 +10,13 @@ public class PauseMenuController : MonoBehaviour
     private bool isPauseActive;
     private Controls _controls;
 
-    private Tween pauseScreenFadeOutTween;
+    private AnimationsController _animationsController;
+
+    [Inject]
+    public void Construct(AnimationsController animationsController)
+    {
+        _animationsController = animationsController;
+    }
 
     private void Awake()
     {
@@ -34,18 +40,18 @@ public class PauseMenuController : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            AnimationsController.instance.FadeInScreen(pauseScreen);
+            _animationsController.FadeInScreen(pauseScreen);
             GlobalGamePause.instance.isGamePaused = true;
             isPauseActive = true;
         }
         else
         {
-            if(settingsScreen.activeSelf) AnimationsController.instance.FadeOutScreen(settingsScreen);
+            if(settingsScreen.activeSelf) _animationsController.FadeOutScreen(settingsScreen);
             else if (isPauseActive)
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
-                AnimationsController.instance.FadeOutScreen(pauseScreen);
+                _animationsController.FadeOutScreen(pauseScreen);
                 GlobalGamePause.instance.isGamePaused = false;
                 GlobalGamePause.instance.FixedUpdate();
                 isPauseActive = false;
@@ -57,11 +63,11 @@ public class PauseMenuController : MonoBehaviour
 
     public void Quit()
     {
-        AnimationsController.instance.ChangeScene(loadingScreen, 0);
+        _animationsController.ChangeScene(loadingScreen, 0);
     }
 
     public void RestartLevel()
     {
-        AnimationsController.instance.ChangeScene(loadingScreen, SceneManager.GetActiveScene().buildIndex);
+        _animationsController.ChangeScene(loadingScreen, SceneManager.GetActiveScene().buildIndex);
     }
 }

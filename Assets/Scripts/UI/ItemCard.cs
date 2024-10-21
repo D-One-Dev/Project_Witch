@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using Zenject;
 
 public class ItemCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
@@ -15,6 +16,15 @@ public class ItemCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     [SerializeField] private TMP_Text itemNameText;
     [SerializeField] private Image itemIconImage;
+
+    private AnimationsController _animationsController;
+
+    [Inject]
+    public void Construct(AnimationsController animationsController)
+    {
+        _animationsController = animationsController;
+    }
+
     private void Start()
     {
         itemNameText.text = itemName;
@@ -23,13 +33,13 @@ public class ItemCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        AnimationsController.instance.SpellCardEnter(gameObject);
+        _animationsController.SpellCardEnter(gameObject);
         ShopUIController.instance.SetCurrentItem(item, gameObject.GetComponentInChildren<Image>().gameObject, this);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        AnimationsController.instance.SpellCardExit(gameObject);
+        _animationsController.SpellCardExit(gameObject);
         ShopUIController.instance.ClearCurrentItem();
     }
 }

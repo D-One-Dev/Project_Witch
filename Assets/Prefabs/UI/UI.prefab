@@ -247,7 +247,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1040387021375803969}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AnimationsController, Assembly-CSharp
         m_MethodName: FadeOutScreen
         m_Mode: 2
@@ -3162,13 +3162,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1040387021375803969}
-        m_TargetAssemblyTypeName: AnimationsController, Assembly-CSharp
-        m_MethodName: FadeOutScreen
-        m_Mode: 2
+      - m_Target: {fileID: 3725246945569362492}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
-          m_ObjectArgument: {fileID: 3725246945569362492}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3691,17 +3691,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1040387021375803969}
-        m_TargetAssemblyTypeName: AnimationsController, Assembly-CSharp
-        m_MethodName: FadeInScreen
-        m_Mode: 2
+      - m_Target: {fileID: 3725246945569362492}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
-          m_ObjectArgument: {fileID: 3725246945569362492}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &1345884298773283038
 GameObject:
@@ -12526,10 +12526,6 @@ GameObject:
   - component: {fileID: 1342584860419136121}
   - component: {fileID: 4309456029439965669}
   - component: {fileID: 4457520541513602240}
-  - component: {fileID: 1040387021375803969}
-  - component: {fileID: 671393804552165925}
-  - component: {fileID: 1055073539143876509}
-  - component: {fileID: 7871167840446461091}
   - component: {fileID: 2834671419686277650}
   - component: {fileID: 7370039290908690936}
   - component: {fileID: 3648110035989774140}
@@ -12642,63 +12638,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &1040387021375803969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5028087485225606441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d23f6d81194344f46b1011d7a004dccb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &671393804552165925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5028087485225606441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69961c0baca2240408b8ed4a6a4c27a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manaBar: {fileID: 7150598098970251196}
-  manaBarParent: {fileID: 4100516789793266822}
-  smoothness: 0.5
-  manaFlasks: []
---- !u!114 &1055073539143876509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5028087485225606441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8ce1722b460bc64f9b0c1a4d0ba360c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hpBar: {fileID: 9112369853107766199}
-  hpBarParent: {fileID: 7218364005586346600}
-  smoothness: 0.5
-  hpFlasks: []
---- !u!114 &7871167840446461091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5028087485225606441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca446a31f04143f2ab1bc2af554ebec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hpBar: {fileID: 0}
 --- !u!114 &2834671419686277650
 MonoBehaviour:
   m_ObjectHideFlags: 0

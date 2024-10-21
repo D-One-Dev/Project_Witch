@@ -6,11 +6,13 @@ public class NextSceneTrigger : MonoBehaviour
     [SerializeField] private int nextSceneID;
     [SerializeField] private GameObject loadingScreen;
     private SavesController _savesController;
+    private AnimationsController _animationsController;
 
     [Inject]
-    public void Construct(SavesController savesController)
+    public void Construct(SavesController savesController, AnimationsController animationsController)
     {
         _savesController = savesController;
+        _animationsController = animationsController;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -20,7 +22,7 @@ public class NextSceneTrigger : MonoBehaviour
             _savesController.CurrentSceneID = nextSceneID;
             _savesController.Save();
             _savesController.ResetPlayerPos();
-            AnimationsController.instance.ChangeScene(loadingScreen, nextSceneID);
+            _animationsController.ChangeScene(loadingScreen, nextSceneID);
         }
     }
 }

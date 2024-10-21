@@ -19,11 +19,14 @@ public class ShopUIController : MonoBehaviour
 
     private NewSpellCaster _newSpellCaster;
 
+    private AnimationsController _animationsController;
+
     [Inject]
-    public void Construct(PlayerMoney playerMoney, NewSpellCaster newSpellCaster)
+    public void Construct(PlayerMoney playerMoney, NewSpellCaster newSpellCaster, AnimationsController animationsController)
     {
         _playerMoney = playerMoney;
         _newSpellCaster = newSpellCaster;
+        _animationsController = animationsController;
     }
 
     private void Awake()
@@ -63,7 +66,7 @@ public class ShopUIController : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            AnimationsController.instance.FadeInScreen(shopScreen);
+            _animationsController.FadeInScreen(shopScreen);
             GlobalGamePause.instance.isGamePaused = true;
             isShopScreenActive = true;
         }
@@ -71,7 +74,7 @@ public class ShopUIController : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            AnimationsController.instance.FadeOutScreen(shopScreen);
+            _animationsController.FadeOutScreen(shopScreen);
             GlobalGamePause.instance.isGamePaused = false;
             GlobalGamePause.instance.FixedUpdate();
             _newSpellCaster.ClearCastList();
@@ -95,14 +98,14 @@ public class ShopUIController : MonoBehaviour
         {
             if(_playerMoney.CheckPurchaseAbility(currentCard.GetComponent<ItemCard>().cost))
             {
-                AnimationsController.instance.ClickButton(currentCardUI);
+                _animationsController.ClickButton(currentCardUI);
                 currentItem.OnBuy();
                 _playerMoney.ChangeBalance(-currentCard.GetComponent<ItemCard>().cost);
             }
             else
             {
                 Debug.LogFormat("Can't afford " + currentCard.itemName);
-                AnimationsController.instance.ShakeBar(currentCardUI.GetComponent<RectTransform>());
+                _animationsController.ShakeBar(currentCardUI.GetComponent<RectTransform>());
             }
         }
     }
