@@ -31,6 +31,10 @@ namespace Projectiles
         protected virtual void Start()
         {
             rb = GetComponent<Rigidbody>();
+        }
+
+        protected virtual void OnEnable()
+        {
             StartCoroutine(Life());
             ParticleEffectScale = transform.localScale;
         }

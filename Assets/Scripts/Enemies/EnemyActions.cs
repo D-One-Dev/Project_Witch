@@ -2,6 +2,7 @@ using System.Collections;
 using Enemies.EnemyUnitBase;
 using UnityEngine;
 using UnityEngine.AI;
+using Zenject;
 
 namespace Enemies
 {
@@ -137,6 +138,8 @@ namespace Enemies
             {
                 _isAbleToTeleport = false;
                 
+                _teleportEffect();
+                
                 float angle = Random.Range(0, 360);
 
                 Vector3 targetPosition = new Vector3
@@ -146,8 +149,6 @@ namespace Enemies
                 };
 
                 enemy.Transform.position = targetPosition;
-
-                _teleportEffect();
 
                 enemy.EnemyUnit.StartCoroutine(TeleportCooldown());
             }

@@ -84,8 +84,8 @@ namespace Enemies.EnemyUnits
 
         protected void SpawnPillarObj()
         {
-            Vector3 position = new Vector3(Player.Player.Instance.transform.position.x, 0.02f, Player.Player.Instance.transform.position.z);
-            Instantiate(pillarObj, position, pillarObj.transform.rotation);
+            Vector3 position = new Vector3(_player.position.x, 0.02f, _player.position.z);
+            _container.InstantiatePrefab(pillarObj, position, pillarObj.transform.rotation, null);
         }
 
         /*private IEnumerator SpawningPillarObj()
@@ -103,7 +103,7 @@ namespace Enemies.EnemyUnits
             {
                 yield return new WaitForSeconds(0.1f);
                 Vector3 randomPosition = new Vector3(shootingPoint.position.x + Random.Range(-1f, 1f), shootingPoint.position.y + Random.Range(-1f, 1f), shootingPoint.position.z);
-                Instantiate(rockObj, randomPosition, shootingPoint.rotation);
+                _container.InstantiatePrefab(rockObj, randomPosition, shootingPoint.rotation, null);
             }
         }
 
