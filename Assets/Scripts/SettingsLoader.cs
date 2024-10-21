@@ -1,12 +1,20 @@
 using UnityEngine;
 using UnityEngine.Audio;
+using Zenject;
 using static SavesController;
 
 public class SettingsLoader : MonoBehaviour
 {
     [SerializeField] private AudioMixerGroup mixer;
+    private SavesController _savesController;
 
     public static SettingsLoader Instance;
+
+    [Inject]
+    public void Construct(SavesController savesController)
+    {
+        _savesController = savesController;
+    }
 
     private void Awake()
     {
@@ -15,7 +23,7 @@ public class SettingsLoader : MonoBehaviour
 
     private void Start()
     {
-        UpdateSettings(SavesController.instance.LoadSettings());
+        UpdateSettings(_savesController.LoadSettings());
     }
 
     public void UpdateSettings(SettingsFile file)

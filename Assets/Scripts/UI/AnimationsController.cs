@@ -3,12 +3,22 @@ using UnityEngine.UI;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
 using TMPro;
+using Zenject;
 
 public class AnimationsController : MonoBehaviour
 {
     public static AnimationsController instance;
 
     private AsyncOperation sceneLoadOperation;
+
+    private SavesController _savesController;
+
+    [Inject]
+    public void Construct(SavesController savesController)
+    {
+        _savesController = savesController;
+    }
+
     private void Awake()
     {
         instance = this;
@@ -72,7 +82,7 @@ public class AnimationsController : MonoBehaviour
 
     public void ChangeScene(GameObject loadingScreen)
     {
-        int sceneID = SavesController.instance.currentSceneID;
+        int sceneID = _savesController.CurrentSceneID;
         loadingScreen.SetActive(true);
         sceneLoadOperation = SceneManager.LoadSceneAsync(sceneID);
         sceneLoadOperation.allowSceneActivation = false;

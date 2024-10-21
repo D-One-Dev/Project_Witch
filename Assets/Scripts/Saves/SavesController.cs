@@ -4,15 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-public class SavesController : MonoBehaviour
+public class SavesController : IInitializable
 {
-    [SerializeField] private GameObject player;
-    [SerializeField] private Image savingIconImage;
-    public int currentSceneID;
-    public static SavesController instance;
+    public int CurrentSceneID;
+
+    [Inject(Id = "PlayerTransform")]
+    private readonly Transform _playerTransform;
+    [Inject(Id = "SaveIconImage")]
+    private readonly Image _savingIconImage;
 
     private PlayerMoney _playerMoney;
-
     private NewSpellCaster _newSpellCaster;
 
     [Inject]
@@ -22,14 +23,9 @@ public class SavesController : MonoBehaviour
         _newSpellCaster = newSpellCaster;
     }
 
-    private void Awake()
+    public void Initialize()
     {
-        instance = this;
-    }
-
-    private void Start()
-    {
-        if(player != null) Load();
+        if(_playerTransform != null) Load();
         else LoadSceneID();
     }
     private class SaveFile
@@ -57,11 +53,11 @@ public class SavesController : MonoBehaviour
 
     public void Save()
     {
-        AnimationsController.instance.ImageInOutFade(savingIconImage);
+        AnimationsController.instance.ImageInOutFade(_savingIconImage);
         SaveFile file = new SaveFile();
-        file.sceneID = currentSceneID;
-        file.playerPosition = player.transform.position;
-        file.playerRotation = player.transform.localRotation;
+        file.sceneID = CurrentSceneID;
+        file.playerPosition = _playerTransform.position;
+        file.playerRotation = _playerTransform.localRotation;
         file.leftSpell = _newSpellCaster.LeftSpell;
         file.rightSpell = _newSpellCaster.RightSpell;
         file.leftEffect = _newSpellCaster.LeftEffect;
@@ -75,9 +71,9 @@ public class SavesController : MonoBehaviour
     public void ResetPlayerPos()
     {
         SaveFile file = new SaveFile();
-        file.sceneID = currentSceneID;
+        file.sceneID = CurrentSceneID;
         file.playerPosition = Vector3.zero;
-        file.playerRotation = player.transform.localRotation;
+        file.playerRotation = _playerTransform.localRotation;
         file.leftSpell = _newSpellCaster.LeftSpell;
         file.rightSpell = _newSpellCaster.RightSpell;
         file.leftEffect = _newSpellCaster.LeftEffect;
@@ -94,13 +90,13 @@ public class SavesController : MonoBehaviour
         {
             string json = File.ReadAllText(Application.dataPath + "/save.savefile");
             SaveFile file = JsonUtility.FromJson<SaveFile>(json);
-            currentSceneID = file.sceneID;
+            CurrentSceneID = file.sceneID;
             if(file.playerPosition != Vector3.zero)
             {
-                player.GetComponent<CharacterController>().enabled = false;
-                player.transform.position = file.playerPosition;
-                player.transform.localRotation = file.playerRotation;
-                player.GetComponent<CharacterController>().enabled = true;
+                _playerTransform.gameObject.GetComponent<CharacterController>().enabled = false;
+                _playerTransform.position = file.playerPosition;
+                _playerTransform.localRotation = file.playerRotation;
+                _playerTransform.gameObject.GetComponent<CharacterController>().enabled = true;
             }
             _newSpellCaster.LeftSpell = file.leftSpell;
             _newSpellCaster.RightSpell = file.rightSpell;
@@ -117,7 +113,7 @@ public class SavesController : MonoBehaviour
         {
             string json = File.ReadAllText(Application.dataPath + "/save.savefile");
             SaveFile file = JsonUtility.FromJson<SaveFile>(json);
-            currentSceneID = file.sceneID;
+            CurrentSceneID = file.sceneID;
         }
     }
 

@@ -49160,6 +49160,7 @@ GameObject:
   - component: {fileID: 1078004258}
   - component: {fileID: 1078004259}
   - component: {fileID: 1078004260}
+  - component: {fileID: 1078004261}
   m_Layer: 0
   m_Name: System
   m_TagString: Untagged
@@ -49184,6 +49185,7 @@ MonoBehaviour:
   - {fileID: 1078004258}
   - {fileID: 1078004259}
   - {fileID: 1078004260}
+  - {fileID: 1078004261}
   _installerPrefabs: []
   _autoRun: 1
   OnPreInstall:
@@ -49289,6 +49291,7 @@ MonoBehaviour:
   deathScreen: {fileID: 1168546348}
   dialogueScreen: {fileID: 280139071}
   dialogueText: {fileID: 280139070}
+  saveIconImage: {fileID: 280139067}
   leftSpellIcon: {fileID: 2123092047}
   rightSpellIcon: {fileID: 319323969}
   leftEffectIcon: {fileID: 953429220}
@@ -49323,6 +49326,18 @@ MonoBehaviour:
   rightSpell: {fileID: 11400000, guid: 4ef05c7d89fd545439fbe154445a46c0, type: 2}
   leftEffect: {fileID: 11400000, guid: d9cfc28c11392ad4cacfe913abe3b01a, type: 2}
   rightEffect: {fileID: 11400000, guid: 0ba98c0a383de2340a26ac4f7fe7e267, type: 2}
+--- !u!114 &1078004261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078004255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b0db1cd2f6c6e44963586536d312a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1079189864 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9b04cbcbc6f67fa4881ee1e8ea144c0b,

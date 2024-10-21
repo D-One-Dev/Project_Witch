@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using VolFx;
+using Zenject;
 using static SavesController;
 
 public class SettingsScreenController : MonoBehaviour
@@ -18,6 +19,7 @@ public class SettingsScreenController : MonoBehaviour
     [SerializeField] private TMP_Dropdown windowTypeDropdown;
     [SerializeField] private TMP_Dropdown VSyncDropdown;
 
+    private SavesController _savesController;
     private int soundVolume = -1;
     private int musicVolume = -1;
     private int graphics = -1;
@@ -25,6 +27,12 @@ public class SettingsScreenController : MonoBehaviour
     private int textLanguage = -1;
     private int windowType = -1;
     private int VSync = -1;
+
+    [Inject]
+    public void Construct(SavesController savesController)
+    {
+        _savesController = savesController;
+    }
 
     private void OnEnable()
     {
@@ -76,12 +84,12 @@ public class SettingsScreenController : MonoBehaviour
 
     public void SaveSettings()
     {
-        SavesController.instance.SaveSettings(soundVolume, musicVolume, graphics, voiceLanguage, textLanguage, windowType, VSync);
+        _savesController.SaveSettings(soundVolume, musicVolume, graphics, voiceLanguage, textLanguage, windowType, VSync);
     }
 
     public void LoadSettings()
     {
-        SettingsFile file = SavesController.instance.LoadSettings();
+        SettingsFile file = _savesController.LoadSettings();
         if(file != null)
         {
             soundVolume = file.soundVolume;
