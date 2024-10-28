@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2bb22c9e-477d-4693-a9de-a4d3f027e6dc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Models/Books.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1Blue2_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1Blue2_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1Blue_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1Blue_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1Brown2_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1Brown2_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1Brown_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1Brown_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1Green2_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1Green2_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1Green3_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1Green3_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1Green4_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1Green4_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1Green_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1Green_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1Red_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1Red_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/Aseprite_BookCollection1_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1 2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1 3.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1 4.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1 5.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1 5.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1 6.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1 6.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1 7.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1 7.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1 8.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1 8.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Stand 1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Stand 1/Aseprite_BookStand1_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Stand 1/Aseprite_BookStand1_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Stand 1/Aseprite_BookStand1_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Stand 1/Aseprite_BookStand1_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Stand 1/BookStand1.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book Stand 1/BookStand1.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/Aseprite_Book1Blue_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/Aseprite_Book1Blue_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/Aseprite_Book1BrownV2_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/Aseprite_Book1BrownV2_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/Aseprite_Book1Brown_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/Aseprite_Book1Brown_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/Aseprite_Book1Green_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/Aseprite_Book1Green_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/Aseprite_Book1Swamp_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/Aseprite_Book1Swamp_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/Aseprite_Book1_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/Aseprite_Book1_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/Book1.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/Book1.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/BookBlue.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/BookBlue.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/BookBrown.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/BookBrown.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/BookBrownV2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/BookBrownV2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/BookGreen.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/BookGreen.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/BookSwamp.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/Book1/BookSwamp.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/BookAboutPoison.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/BookAboutPoison/Aseprite_BookAboutPoison_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/BookAboutPoison/Aseprite_BookAboutPoison_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/BookAboutPoison/Aseprite_BookAboutPoison_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/BookAboutPoison/Aseprite_BookAboutPoison_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/BookAboutPoison/BookAboutPoison.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Books/BookAboutPoison/BookAboutPoison.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/Bottle1.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/Bottle1.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/Bottle1WithoutLiquid.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/Bottle1WithoutLiquid.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/Bottle2.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/Bottle2.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/Bottle2WithoutLiquid.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/Bottle2WithoutLiquid.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/cork 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/cork 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/cork.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/cork.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/glass 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/glass 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/glass 2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/glass 2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/glass.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/glass.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/liquid 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/liquid 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/liquid 2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/liquid 2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/liquid 3.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/liquid 3.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/liquid.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/Bottle1/liquid.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/BottlePoison.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/BottlePoison/BottlePoison.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/BottlePoison/BottlePoison.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/BottlePoison/cork.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/BottlePoison/cork.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/BottlePoison/glass.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/BottlePoison/glass.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/BottlePoison/liquid.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/BottlePoison/liquid.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/BottlePoison/liquid2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/BottlePoison/liquid2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/BottlePoison/winding.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bottles/BottlePoison/winding.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush4/V2.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush4/V2/BigBush4V2.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush4/V2/BigBush4V2.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush4/V2/BigBush4V2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush4/V2/BigBush4V2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush4/V2/leafs4.1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush4/V2/leafs4.1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush5.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush5/BigBush5.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush5/BigBush5.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush5/branch_newv6.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush5/branch_newv6.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush5/branch_newv6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush5/branch_newv6.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush5/leafsExtended.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush5/leafsExtended.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush5/leafsExtended.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush5/leafsExtended.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/FlowerBush1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/FlowerBush1/FlowerBush1.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/FlowerBush1/FlowerBush1.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/FlowerBush1/grass_higherv2flowerV2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/FlowerBush1/grass_higherv2flowerV2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/FlowerBush1/grass_higherv2flowerV2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Bushes/FlowerBush1/grass_higherv2flowerV2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/CaveEnvironment/CaveBush1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/CaveEnvironment/CaveBush1/Aseprite_CaveBush1_EM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/CaveEnvironment/CaveBush1/Aseprite_CaveBush1_EM.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/CaveEnvironment/CaveBush1/Aseprite_CaveBush1_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/CaveEnvironment/CaveBush1/Aseprite_CaveBush1_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/CaveEnvironment/CaveBush1/Aseprite_CaveBush1_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/CaveEnvironment/CaveBush1/Aseprite_CaveBush1_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/CaveEnvironment/CaveBush1/CaveBush1.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/CaveEnvironment/CaveBush1/CaveBush1.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/CaveEnvironment/CaveBush1/CaveBush1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/CaveEnvironment/CaveBush1/CaveBush1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/CaveEnvironment/CaveBush1/leafs_5.2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/CaveEnvironment/CaveBush1/leafs_5.2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/CaveEnvironment/CaveBush1/leafs_5.2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/CaveEnvironment/CaveBush1/leafs_5.2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal/Aseprite_StandWithCrystalV2_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal/Aseprite_StandWithCrystalV2_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal/Aseprite_StandWithCrystal_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal/Aseprite_StandWithCrystal_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal/Aseprite_StandWithCrystal_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal/Aseprite_StandWithCrystal_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal/StandWithCrystal 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal/StandWithCrystal 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal/StandWithCrystal.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal/StandWithCrystal.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal/StandWithCrystal.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal/StandWithCrystal.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Aseprite_StandWithCrystal2_Green_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Aseprite_StandWithCrystal2_Green_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Aseprite_StandWithCrystal2_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Aseprite_StandWithCrystal2_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Aseprite_StandWithCrystal2_Pink_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Aseprite_StandWithCrystal2_Pink_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Aseprite_StandWithCrystal2_Red_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Aseprite_StandWithCrystal2_Red_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Aseprite_StandWithCrystal2_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Aseprite_StandWithCrystal2_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Aseprite_StandWithCrystal2_Yellow_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Aseprite_StandWithCrystal2_Yellow_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Crystal 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Crystal 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Crystal 2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Crystal 2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Crystal 3.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Crystal 3.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Crystal.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Crystal.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Crystal2.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Crystal2.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Crystal_Green.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Crystal_Green.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Crystal_Pink.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Crystal_Pink.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Crystal_Red.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Crystal_Red.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Crystal_Yellow.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/Crystal_Yellow.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/StandWithCrystal2.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/StandWithCrystal2.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/StandWithCrystal2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/StandWithCrystal2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/StandWithCrystal2_Green.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/StandWithCrystal2_Green.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/StandWithCrystal2_Pink.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/StandWithCrystal2_Pink.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/StandWithCrystal2_Red.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/StandWithCrystal2_Red.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/StandWithCrystal2_Yellow.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Crystals/StandWithCrystal2/StandWithCrystal2_Yellow.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench2.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench2/Aseprite_Bench2_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench2/Aseprite_Bench2_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench2/Aseprite_Bench2_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench2/Aseprite_Bench2_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench2/Bench2.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench2/Bench2.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Stump1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Stump1/Aseprite_Axe_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Stump1/Aseprite_Axe_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Stump1/Aseprite_Axe_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Stump1/Aseprite_Axe_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Stump1/Aseprite_Stump1_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Stump1/Aseprite_Stump1_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Stump1/Aseprite_Stump1_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Stump1/Aseprite_Stump1_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Stump1/Stump1.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Stump1/Stump1.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_RackForBox2_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_RackForBox2_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_RackForBox2_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_RackForBox2_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_RackForBox_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_RackForBox_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_RackForBox_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_RackForBox_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryHallOfPortalsP2_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryHallOfPortalsP2_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryHallOfPortalsP2_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryHallOfPortalsP2_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryHallOfPortals_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryHallOfPortals_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryHallOfPortals_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryHallOfPortals_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryHallOfPortals_V2_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryHallOfPortals_V2_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart10_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart10_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart10_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart10_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart11_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart11_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart11_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart11_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart4M1_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart4M1_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart4M1_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart4M1_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart4M2_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart4M2_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart4M2_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart4M2_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart5_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart5_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart5_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart5_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart6_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart6_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart6_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart6_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart7_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart7_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart7_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart7_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart9_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart9_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart9_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart9_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatorySafeP1_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatorySafeP1_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatorySafeP1_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatorySafeP1_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Aseprite_Casket_Green_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Aseprite_Casket_Green_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Aseprite_Casket_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Aseprite_Casket_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Aseprite_Casket_Pink_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Aseprite_Casket_Pink_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Aseprite_Casket_Red_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Aseprite_Casket_Red_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Aseprite_Casket_Yellow_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Aseprite_Casket_Yellow_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Casket.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Casket.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Casket_Green.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Casket_Green.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Casket_Pink.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Casket_Pink.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Casket_RED.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Casket_RED.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Casket_Yellow.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Casket/Casket_Yellow.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Arch.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Arch/Aseprite_IE_Arch_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Arch/Aseprite_IE_Arch_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Arch/Aseprite_IE_Arch_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Arch/Aseprite_IE_Arch_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Arch/IE_Arch.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Arch/IE_Arch.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Column.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Column/Aseprite_IE_Column_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Column/Aseprite_IE_Column_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Column/Aseprite_IE_Column_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Column/Aseprite_IE_Column_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Column/IE_Column.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Column/IE_Column.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Column/IE_Column2.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Column/IE_Column2.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp1/Aseprite_IE_Lamp1P2_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp1/Aseprite_IE_Lamp1P2_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp1/Aseprite_IE_Lamp1_EM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp1/Aseprite_IE_Lamp1_EM.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp1/Aseprite_IE_Lamp1_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp1/Aseprite_IE_Lamp1_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp1/Aseprite_IE_Lamp1_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp1/Aseprite_IE_Lamp1_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp1/IE_Lamp1.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp1/IE_Lamp1.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp1/IE_Lamp1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp1/IE_Lamp1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp1/IE_Lamp1C2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp1/IE_Lamp1C2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/Aseprite_IE_Lamp2P2O_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/Aseprite_IE_Lamp2P2O_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/Aseprite_IE_Lamp2P2_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/Aseprite_IE_Lamp2P2_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/Aseprite_IE_Lamp2_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/Aseprite_IE_Lamp2_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/Aseprite_IE_Lamp2_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/Aseprite_IE_Lamp2_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/IE_Lamp2.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/IE_Lamp2.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/IE_Lamp2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/IE_Lamp2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/IE_Lamp2G 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/IE_Lamp2G 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/IE_Lamp2G.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/IE_Lamp2G.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/IE_Lamp2P2 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/IE_Lamp2P2 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/IE_Lamp2P2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Lamp2/IE_Lamp2P2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Portal.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Portal/IE_Portal.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Portal/IE_Portal.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Table.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Table/Aseprite_IE_Table_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Table/Aseprite_IE_Table_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Table/Aseprite_IE_Table_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Table/Aseprite_IE_Table_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Table/IE_Table.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Internal_environment/IE_Table/IE_Table.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/TOHofP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/TOHofP.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/TOHofP_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/TOHofP_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/TheObservatoryHallOfPortalsFloor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/TheObservatoryHallOfPortalsFloor.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/TheObservatoryHallOfPortalsFloor_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/TheObservatoryHallOfPortalsFloor_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/TheObservatoryHallOfPortalsFloor_V2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/TheObservatoryHallOfPortalsFloor_V2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/TheObservatoryHallOfPortalsFloor_V3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/TheObservatoryHallOfPortalsFloor_V3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/metal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/TheObservatory/metal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree1/leafs4.1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree1/leafs4.1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree1/leafs4.1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree1/leafs4.1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree2/Tree2V2.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree2/Tree2V2/Aseprite_Tree2_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree2/Tree2V2/Aseprite_Tree2_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree2/Tree2V2/Aseprite_Tree2_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree2/Tree2V2/Aseprite_Tree2_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree2/Tree2V2/Tree2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree2/Tree2V2/Tree2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree2/Tree2V2/Tree2V2.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree2/Tree2V2/Tree2V2.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree2/Tree2V2/leafs4.1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree2/Tree2V2/leafs4.1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree2/Tree2V2/leafs4.1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree2/Tree2V2/leafs4.1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/Aseprite_Tree4_Norms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/Aseprite_Tree4_Norms.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/Aseprite_Tree4_TEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/Aseprite_Tree4_TEX.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/Tree4.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/Tree4.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/Tree4T.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/Tree4T.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/branch_newv4.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/branch_newv4.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/branch_newv4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/branch_newv4.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/branch_newv5.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/branch_newv5.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/branch_newv5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/branch_newv5.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/branch_newv6.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/branch_newv6.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/branch_newv6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/branch_newv6.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/leafs4.1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/leafs4.1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/leafs4.1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Models/Trees/Tree4/leafs4.1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Plugins/Zenject/OptionalExtras/ReflectionBaking/Zenject-ReflectionBaking.csproj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Plugins/Zenject/OptionalExtras/Signals/Zenject-Signals.csproj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Plugins/Zenject/Source/Zenject.csproj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Prefabs/FlowerBush1.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Prefabs/FlowerBush1.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Prefabs/Tree2V2.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Prefabs/Tree2V2.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Prefabs/Tree4T.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Prefabs/Tree4T.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/1.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/1.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/2.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/2.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mike/3MIKE.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mike/3MIKE.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mike/4MIKE.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mike/4MIKE.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mike/OLD.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mike/OLD/1Mike.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mike/OLD/1Mike.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mike/OLD/2Mike.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Mike/OLD/2Mike.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Volodya/OLD.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Volodya/OLD/1.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Volodya/OLD/1.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Volodya/OLD/2.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Volodya/OLD/2.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Volodya/OLD/3.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Volodya/OLD/3.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Volodya/OLD/4.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Volodya/OLD/4.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Terrain/grass_shortv4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Terrain/grass_shortv4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Bushes/BigBush2/BigBush2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Bushes/BigBush2/BigBush2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Bushes/BigBush3/BigBush3_lods.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Bushes/BigBush3/BigBush3_lods.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1 2.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Bushes/BigBush4/BigBush4_lods.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Bushes/BigBush4/BigBush4_lods.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1 4.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Bushes/Bush3/Bushv3_lods.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Bushes/Bush3/Bushv3_lods.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1 1.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Bushes/Bush4/Bushv4_lods.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Bushes/Bush4/Bushv4_lods.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Books/Book Collection1/BookCollection1 3.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Bushes/Bush5/Bushv5_lods.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Bushes/Bush5/Bushv5_lods.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/ClotOfMucus/ClotOfMucus.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/ClotOfMucus/ClotOfMucus.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/ClotOfMucus/ClotOfMucusCore.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/ClotOfMucus/ClotOfMucusCore.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench1.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench/Aseprite_Bench1_Norms.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench1/Aseprite_Bench1_Norms.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench/Aseprite_Bench1_Norms.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench1/Aseprite_Bench1_Norms.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench/Aseprite_Bench1_TEX.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench1/Aseprite_Bench1_TEX.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench/Aseprite_Bench1_TEX.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench1/Aseprite_Bench1_TEX.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench/Bench1.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench1/Bench1.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench/Bench1.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench1/Bench1.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench/Bench1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench1/Bench1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench/Bench1.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench1/Bench1.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench/Bench1_lods.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench1/Bench1_lods.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench/Bench1_lods.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Interior and furniture/Bench1/Bench1_lods.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart3_Norms.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart3_Norms.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart3_TEX.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/TheObservatory/Aseprite_TheObservatoryPart3_TEX.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/TheObservatory/TheObservatory.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/TheObservatory/TheObservatory.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/TreeRoot/leafs4.1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/TreeRoot/leafs4.1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/TreeRoot/leafs4.2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/TreeRoot/leafs4.2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/TreeRoot/leafsExtended.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/TreeRoot/leafsExtended.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree1/Tree1Phase1/leafs4.1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree1/Tree1Phase1/leafs4.1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree1/Tree1Phase1/leafs4.2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree1/Tree1Phase1/leafs4.2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree1/Tree1Phase1/leafs4.3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree1/Tree1Phase1/leafs4.3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree1/Tree1Phase2/leafs_5.1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree1/Tree1Phase2/leafs_5.1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree1/Tree1Phase2/leafs_5.2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree1/Tree1Phase2/leafs_5.2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree1/Tree1Phase2/leafs_5.3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree1/Tree1Phase2/leafs_5.3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree1/leafs1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree1/leafs1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree2/Tree2Simplified.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree2/Tree2Simplified.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree2/leafs.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree2/leafs.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree3/Tree3Simplified/leafs0.2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree3/Tree3Simplified/leafs0.2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree3/leafs0.2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree3/leafs0.2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree5/Tree5Phase1/leafs4.1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree5/Tree5Phase1/leafs4.1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree5/Tree5Phase1/leafs4.2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree5/Tree5Phase1/leafs4.2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree5/Tree5Phase1/leafs4.3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree5/Tree5Phase1/leafs4.3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree5/Tree5Phase2/leafs_5.1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree5/Tree5Phase2/leafs_5.1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree5/Tree5Phase2/leafs_5.2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree5/Tree5Phase2/leafs_5.2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree5/Tree5Phase2/leafs_5.3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree5/Tree5Phase2/leafs_5.3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree6/leafs4.1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree6/leafs4.1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree6/leafs4.3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree6/leafs4.3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Models/Trees/Tree6/leafs_5.3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Models/Trees/Tree6/leafs_5.3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New Terrain 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../New Terrain 2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../New Terrain.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prefabs/BigBush4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../Prefabs/BigBush4.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prefabs/SwampTree2Empty.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../Prefabs/SwampTree2Empty.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prefabs/SwampTree4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../Prefabs/SwampTree4.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prefabs/SwampTree5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../Prefabs/SwampTree5.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prefabs/UI/UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../Prefabs/UI/UI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/1.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/2.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2N.unity" beforeDir="false" afterPath="$PROJECT_DIR$/old/2N.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2N.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/old/2N.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mike/1Mike.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Mike/1Mike.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mike/1Mike.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Mike/1Mike.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mike/2Mike.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Mike/2Mike.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mike/2Mike.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Mike/2Mike.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Volodya/1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Volodya/1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Volodya/1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Volodya/1.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Volodya/2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Volodya/2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Volodya/2.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Volodya/2.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Volodya/3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Volodya/3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Volodya/3.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Volodya/3.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Volodya/4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Volodya/4.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Volodya/4.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Volodya/4.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Scripts/Installers/PlayerInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Scripts/Installers/PlayerInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Scripts/UI/SpellSelectScreenController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Scripts/UI/SpellSelectScreenController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Terrain/New Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../Terrain/New Terrain.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Terrain/TerrainData_531854f3-b112-4e73-8b07-819edbd968d5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../Terrain/TerrainData_531854f3-b112-4e73-8b07-819edbd968d5.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Terrain/TerrainData_54ff451f-4b65-430c-a75b-c44d06fbd670.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../Terrain/TerrainData_54ff451f-4b65-430c-a75b-c44d06fbd670.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Terrain/TerrainData_68e9ab2c-bfc8-4961-b833-1b1e79323f83.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../Terrain/TerrainData_68e9ab2c-bfc8-4961-b833-1b1e79323f83.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Terrain/TerrainData_6e6af6e4-1a0f-4f35-8881-5c6356ceba30.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../Terrain/TerrainData_6e6af6e4-1a0f-4f35-8881-5c6356ceba30.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Terrain/TerrainData_a16de872-f7f8-420e-a8e0-969f913ead4c.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../Terrain/TerrainData_a16de872-f7f8-420e-a8e0-969f913ead4c.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Terrain/TerrainData_b48d976b-13fb-460d-ae44-9edce335ad98.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../Terrain/TerrainData_b48d976b-13fb-460d-ae44-9edce335ad98.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Terrain/TerrainData_e89f6a1e-c387-41e5-a379-5d7248036910.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../Terrain/TerrainData_e89f6a1e-c387-41e5-a379-5d7248036910.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Terrain/TerrainData_ff38516b-978a-40c1-9ad3-8a7d260fd46c.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../Terrain/TerrainData_ff38516b-978a-40c1-9ad3-8a7d260fd46c.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TerrainData_b1fdbf31-a1f3-4e31-8682-8faa65f5ec07.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../TerrainData_b1fdbf31-a1f3-4e31-8682-8faa65f5ec07.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../settings.savefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../settings.savefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2nnarlylu8xrMSw45A9CGId1IeC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Owl\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Owl\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\Owl\\AppData\\Local\\Symbols\\src"
+    ]
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bb22c9e-477d-4693-a9de-a4d3f027e6dc" name="Changes" comment="" />
+      <created>1729611497738</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729611497738</updated>
+      <workItem from="1729611499906" duration="34000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
