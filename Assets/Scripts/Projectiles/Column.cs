@@ -13,6 +13,7 @@ namespace Projectiles
 
         [SerializeField] private float timeForAppear = 0.3f;
         [SerializeField] private float appearStep = 0.1f;
+        [SerializeField] private float endPosition = 0.35f;
         [SerializeField] private bool isColumnAnimDisappearing;
         [SerializeField] private bool isColumnDisappearWithEffect;
         [SerializeField] private bool isColumnAppearWithRandomPosition;
@@ -48,9 +49,8 @@ namespace Projectiles
         private IEnumerator Appear()
         {
             yield return new WaitForSeconds(timeForAppear);
-
-            float endPosition = 0.35f;
-            if (isColumnAppearWithRandomPosition) endPosition = Random.Range(0.25f, 0.45f);
+            
+            if (isColumnAppearWithRandomPosition) endPosition = Random.Range(endPosition - 0.1f, endPosition + 0.1f);
 
             while (transform.position.y < endPosition)
             {
