@@ -11,5 +11,7 @@ public class SystemInstaller : MonoInstaller
         this.Container.Bind<AnimationsController>()
             .FromNew()
             .AsSingle();
+
+
     }
 }

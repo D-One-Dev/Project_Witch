@@ -11,6 +11,7 @@ public class PlayerInstaller : MonoInstaller
     [SerializeField] private float gravity;
     [SerializeField] private Transform cam;
     [SerializeField] private AudioSource playerAudioSource;
+    [SerializeField] private AudioSource dialogueAudioSource;
     [SerializeField] private AudioClip jumpSound;
     [SerializeField] private float dashDistance;
     [SerializeField] private float dashCooldownTime;
@@ -59,6 +60,10 @@ public class PlayerInstaller : MonoInstaller
         this.Container.Bind<AudioSource>()
             .WithId("PlayerAudioSource")
             .FromInstance(playerAudioSource)
+            .AsTransient();
+        this.Container.Bind<AudioSource>()
+            .WithId("DialogueAudioSource")
+            .FromInstance(dialogueAudioSource)
             .AsTransient();
         this.Container.Bind<AudioClip>()
             .WithId("JumpSound")

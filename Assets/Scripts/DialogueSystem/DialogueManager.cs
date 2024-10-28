@@ -1,32 +1,30 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using Zenject;
 
-public class DialogueManager
+public abstract class DialogueManager
 {
     [Inject(Id = "DialogueScreen")]
-    private readonly GameObject _dialogueScreen;
+    protected readonly GameObject _dialogueScreen;
     [Inject(Id = "DialogueText")]
-    private readonly TMP_Text _dialogueText;
-    [Inject(Id = "PlayerAudioSource")]
-    private readonly AudioSource _audioSource;
+    protected readonly TMP_Text _dialogueText;
+    [Inject(Id = "DialogueAudioSource")]
+    protected readonly AudioSource _audioSource;
+    [Inject(Id = "UIInstaller")]
+    protected readonly MonoInstaller _installer;
 
-    private Queue<string> _textPhrases;
-    private Queue<AudioClip> _audioPhrases;
-    private Dialogue _currentDialogue = null;
-    private Controls _controls;
-    private AnimationsController _animationsController;
+    protected Queue<string> _textPhrases;
+    protected Queue<AudioClip> _audioPhrases;
+    protected Queue<float> _phrasesDelays;
+    protected Dialogue _currentDialogue = null;
+    protected AnimationsController _animationsController;
 
     [Inject]
-    public void Construct(Controls controls, AnimationsController animationsController)
+    public void Construct(AnimationsController animationsController)
     {
-        _controls = controls;
         _animationsController = animationsController;
-
-        PlayerHealth.OnPlayerDeath += DisableControls;
-        _controls.Gameplay.Interact.performed += ctx => Trigger();
-        _controls.Enable();
     }
 
     public void Trigger()
@@ -35,9 +33,15 @@ public class DialogueManager
         {
             string[] text = _currentDialogue.pharses;
             AudioClip[] audio = _currentDialogue.audio;
+            float[] delays = _currentDialogue.phraseDelays;
             if (text.Length != audio.Length)
             {
                 Debug.LogError("Text amount and audio amount are not equal");
+                return;
+            }
+            if (text.Length != delays.Length)
+            {
+                Debug.LogError("Text amount and delays amount are not equal");
                 return;
             }
 
@@ -46,17 +50,20 @@ public class DialogueManager
                 _animationsController.FadeInScreen(_dialogueScreen);
                 _textPhrases = new Queue<string>();
                 _audioPhrases = new Queue<AudioClip>();
+                _phrasesDelays = new Queue<float>();
                 for (int i = 0; i < text.Length; i++)
                 {
                     _textPhrases.Enqueue(text[i]);
                     _audioPhrases.Enqueue(audio[i]);
+                    _phrasesDelays.Enqueue(delays[i]);
                 }
             }
             DisplayPhrase();
+            if (_phrasesDelays.Count > 0) _installer.StartCoroutine(OnPhraseEnd(_phrasesDelays.Dequeue()));
         }
     }
 
-    private void DisplayPhrase()
+    protected void DisplayPhrase()
     {
         if (_textPhrases.Count == 0) EndDialogue();
         else
@@ -67,7 +74,7 @@ public class DialogueManager
         }
     }
 
-    private void EndDialogue()
+    protected void EndDialogue()
     {
         _animationsController.FadeOutScreen(_dialogueScreen);
         _textPhrases = null;
@@ -80,13 +87,10 @@ public class DialogueManager
         EndDialogue();
     }
 
-    private void DisableControls()
-    {
-        _controls.Disable();
-    }
-
     public void SetDialogue(Dialogue dialogue)
     {
         _currentDialogue = dialogue;
     }
+
+    protected abstract IEnumerator OnPhraseEnd(float delayTime);
 }

@@ -39,6 +39,7 @@ public class Chest : MonoBehaviour
             _playerMoney.ChangeBalance(moneyAmount);
             icon.SetActive(false);
             animator.SetTrigger("Open");
+            isActive = false;
         }
     }
 

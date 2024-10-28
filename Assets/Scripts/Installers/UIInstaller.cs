@@ -30,6 +30,11 @@ public class UIInstaller : MonoInstaller
 
     public override void InstallBindings()
     {
+        this.Container.Bind<MonoInstaller>()
+            .WithId("UIInstaller")
+            .FromInstance(this)
+            .AsTransient();
+
         this.Container.Bind<GameObject>()
             .WithId("InGameHintScreen")
             .FromInstance(inGameHintScreen)
@@ -87,6 +92,13 @@ public class UIInstaller : MonoInstaller
             .AsTransient();
 
         this.Container.Bind<DialogueManager>()
+            .WithId("InteractiveDialogueManager")
+            .To<InteractiveDialogueManager>()
+            .FromNew()
+            .AsSingle();
+        this.Container.Bind<DialogueManager>()
+            .WithId("InternalDialogueManager")
+            .To<InternalDialogueManager>()
             .FromNew()
             .AsSingle();
 
