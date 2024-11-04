@@ -96,11 +96,6 @@ public class UIInstaller : MonoInstaller
             .To<InteractiveDialogueManager>()
             .FromNew()
             .AsSingle();
-        this.Container.Bind<DialogueManager>()
-            .WithId("InternalDialogueManager")
-            .To<InternalDialogueManager>()
-            .FromNew()
-            .AsSingle();
 
         this.Container.Bind<Image>()
             .WithId("SaveIconImage")

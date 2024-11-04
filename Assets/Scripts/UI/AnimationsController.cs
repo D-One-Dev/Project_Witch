@@ -93,21 +93,26 @@ public class AnimationsController
 
     public void CameraFOVChange(Camera cam, PlayerMovement playerMovement)
     {
-        float defaultFOV = cam.fieldOfView;
-        cam.DOFieldOfView(defaultFOV * 2f, .1f).SetUpdate(UpdateType.Normal, true).OnKill(() =>
+        float defaultFOV = 0f;
+        if(cam != null) defaultFOV = cam.fieldOfView;
+        if (cam != null) cam.DOFieldOfView(defaultFOV * 2f, .1f).SetUpdate(UpdateType.Normal, true).OnKill(() =>
         {
             if (playerMovement != null) playerMovement.DoDash();
-            cam.DOFieldOfView(defaultFOV, .1f).SetEase(Ease.OutElastic);
+            if (cam != null) cam.DOFieldOfView(defaultFOV, .1f).SetEase(Ease.OutElastic);
         });
     }
 
     public void Cooldown(Image icon, float cooldownTime, Sprite disabledSprite, Sprite enabledSprite)
     {
-        icon.sprite = disabledSprite;
-        icon.DOFillAmount(0f, .1f).OnKill(() => { icon.DOFillAmount(1f, cooldownTime - .1f).OnKill(() =>
+        if(icon != null) icon.sprite = disabledSprite;
+        if (icon != null) icon.DOFillAmount(0f, .1f).OnKill(() => {
+            if (icon != null) icon.DOFillAmount(1f, cooldownTime - .1f).OnKill(() =>
         {
-            icon.sprite = enabledSprite;
-            icon.rectTransform.DOScale(.75f, .1f).OnKill(() => icon.rectTransform.DOScale(1f, .1f));
+            if (icon != null)
+            {
+                icon.sprite = enabledSprite;
+                icon.rectTransform.DOScale(.75f, .1f).OnKill(() => {if (icon != null) icon.rectTransform.DOScale(1f, .1f); });
+            }
         });});
 
     }

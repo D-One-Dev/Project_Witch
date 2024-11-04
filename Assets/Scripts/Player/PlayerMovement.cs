@@ -147,4 +147,14 @@ public class PlayerMovement : IInitializable, ITickable
     {
         _controls.Disable();
     }
+
+    public void EnableDash()
+    {
+        _controls.Gameplay.Dash.performed += ctx => Dash();
+    }
+
+    public void DisableDash()
+    {
+        _controls.Gameplay.Dash.performed -= ctx => Dash();
+    }
 }
