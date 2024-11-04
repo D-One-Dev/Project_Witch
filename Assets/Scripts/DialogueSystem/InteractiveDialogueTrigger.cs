@@ -4,7 +4,7 @@ using Zenject;
 public class InteractiveDialogueTrigger : MonoBehaviour
 {
     [SerializeField] private GameObject interactIcon;
-    [SerializeField] private Dialogue dialogue;
+    [SerializeField] private DialogueHolder dialogue;
     [Inject(Id = "InteractiveDialogueManager")]
     private readonly DialogueManager _dialogueManager;
 
@@ -21,6 +21,7 @@ public class InteractiveDialogueTrigger : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             interactIcon.SetActive(false);
+            dialogue.ResetDialogue();
             _dialogueManager.LeaveDialogue();
         }
     }

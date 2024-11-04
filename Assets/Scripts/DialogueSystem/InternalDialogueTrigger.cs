@@ -1,18 +1,14 @@
 using UnityEngine;
-using Zenject;
 
 public class InternalDialogueTrigger : MonoBehaviour
 {
-    [SerializeField] private Dialogue dialogue;
-    [Inject(Id = "InternalDialogueManager")]
-    private readonly DialogueManager _dialogueManager;
+    [SerializeField] private DialogueHolder holder;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            _dialogueManager.SetDialogue(dialogue);
-            _dialogueManager.Trigger();
+            holder.StartDialogue();
             this.gameObject.GetComponent<BoxCollider>().enabled = false;
         }
     }

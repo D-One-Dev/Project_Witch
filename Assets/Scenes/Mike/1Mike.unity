@@ -25028,6 +25028,7 @@ MonoBehaviour:
   gravity: -15
   cam: {fileID: 1409665189}
   playerAudioSource: {fileID: 507796329}
+  dialogueAudioSource: {fileID: 0}
   jumpSound: {fileID: 8300000, guid: 846ce0fcc05e065479c5f36e2ca7f828, type: 3}
   dashDistance: 10
   dashCooldownTime: 3
@@ -30074,6 +30075,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261656300406694993, guid: ba9debf91ac2ac4448390166b6ca5936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6757541114668812479, guid: ba9debf91ac2ac4448390166b6ca5936,
         type: 3}
