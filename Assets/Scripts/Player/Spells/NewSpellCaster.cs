@@ -380,8 +380,13 @@ public class NewSpellCaster : IInitializable, ITickable
             _manaRefillCoroutine = _spellsInstaller.StartCoroutine(RefillMana());
         }
     }
+    
+    public void EnableControls()
+    {
+        _controls.Enable();
+    }
 
-    private void DisableControls()
+    public void DisableControls()
     {
         _controls.Disable();
     }

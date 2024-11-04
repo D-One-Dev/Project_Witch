@@ -36,7 +36,6 @@ namespace Enemies
             
             for (int i = 1; i < 3; i++)
             {
-                yield return null;
                 GameObject newColumn = Instantiate(column[Random.Range(0, column.Length)], transform.position, Quaternion.identity);
                 
                 newColumn.transform.position = new Vector3(newColumn.transform.position.x + 10.2f * i,
@@ -45,12 +44,13 @@ namespace Enemies
             
             for (int i = 1; i < 3; i++)
             {
-                yield return null;
                 GameObject newColumn = Instantiate(column[Random.Range(0, column.Length)], transform.position, Quaternion.identity);
                 
                 newColumn.transform.position = new Vector3(newColumn.transform.position.x - 10.2f * i,
                     column[0].transform.position.y, newColumn.transform.position.z);
             }
+            
+            yield return null;
         }
     }
 }
