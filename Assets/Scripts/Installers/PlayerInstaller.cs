@@ -1,3 +1,4 @@
+using Player;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -6,6 +7,9 @@ public class PlayerInstaller : MonoInstaller
 {
     [SerializeField] private CharacterController characterController;
     [SerializeField] private Transform playerTransform;
+    
+    [SerializeField] private Telekinesis telekinesis;
+    
     [SerializeField] private float movementSpeed;
     [SerializeField] private float jumpSpeed;
     [SerializeField] private float gravity;
@@ -23,6 +27,7 @@ public class PlayerInstaller : MonoInstaller
     [SerializeField] private float defaultMouseSens;
     [SerializeField] private AudioClip[] playerFootstepsDefault, playerFootstepsStone, playerFootstepsGrass;
     [SerializeField] private LayerMask collisionLayerMask;
+    
     public override void InstallBindings()
     {
         this.Container.Bind<Controls>()
@@ -135,6 +140,16 @@ public class PlayerInstaller : MonoInstaller
             .AsTransient();
 
         this.Container.BindInterfacesAndSelfTo<PlayerFootsteps>()
+            .FromNew()
+            .AsSingle()
+            .NonLazy();
+        
+        this.Container.Bind<Telekinesis>()
+            .WithId("Telekinesis")
+            .FromInstance(telekinesis)
+            .AsSingle();
+        
+        this.Container.Bind<AdditionalSkillsManager>()
             .FromNew()
             .AsSingle()
             .NonLazy();

@@ -152,6 +152,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""V"",
+                    ""type"": ""Button"",
+                    ""id"": ""d430c786-4cf2-41f3-a4a4-e0aa8cd34690"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -352,6 +361,17 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""T"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2093eb43-0df7-4936-bbf3-c916e2e87670"",
+                    ""path"": ""<Keyboard>/v"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""V"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -374,6 +394,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Gameplay_Interact = m_Gameplay.FindAction("Interact", throwIfNotFound: true);
         m_Gameplay_Dash = m_Gameplay.FindAction("Dash", throwIfNotFound: true);
         m_Gameplay_T = m_Gameplay.FindAction("T", throwIfNotFound: true);
+        m_Gameplay_V = m_Gameplay.FindAction("V", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -449,6 +470,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_Interact;
     private readonly InputAction m_Gameplay_Dash;
     private readonly InputAction m_Gameplay_T;
+    private readonly InputAction m_Gameplay_V;
     public struct GameplayActions
     {
         private @Controls m_Wrapper;
@@ -467,6 +489,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @Interact => m_Wrapper.m_Gameplay_Interact;
         public InputAction @Dash => m_Wrapper.m_Gameplay_Dash;
         public InputAction @T => m_Wrapper.m_Gameplay_T;
+        public InputAction @V => m_Wrapper.m_Gameplay_V;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -518,6 +541,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @T.started += instance.OnT;
             @T.performed += instance.OnT;
             @T.canceled += instance.OnT;
+            @V.started += instance.OnV;
+            @V.performed += instance.OnV;
+            @V.canceled += instance.OnV;
         }
 
         private void UnregisterCallbacks(IGameplayActions instance)
@@ -564,6 +590,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @T.started -= instance.OnT;
             @T.performed -= instance.OnT;
             @T.canceled -= instance.OnT;
+            @V.started -= instance.OnV;
+            @V.performed -= instance.OnV;
+            @V.canceled -= instance.OnV;
         }
 
         public void RemoveCallbacks(IGameplayActions instance)
@@ -597,5 +626,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnInteract(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
         void OnT(InputAction.CallbackContext context);
+        void OnV(InputAction.CallbackContext context);
     }
 }
