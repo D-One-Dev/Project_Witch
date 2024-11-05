@@ -11,6 +11,11 @@ public class DialogueLine : DialogueBase
     [SerializeField] private float delayBetweenCharacters;
     [SerializeField] private float delayBetweenLines;
 
+    [Header("Text Animation Parameters")]
+    [SerializeField] private TextAnimator.AnimationType animationType;
+    [SerializeField] private float timeScale;
+    [SerializeField] private float magnitude;
+
     private Coroutine _lineAppearCoroutine;
 
     public void StartLine(MonoBehaviour monoBeh, TMP_Text dialogueText)
@@ -36,5 +41,10 @@ public class DialogueLine : DialogueBase
     public void ResetLine()
     {
         IsFinished = false;
+    }
+
+    public (TextAnimator.AnimationType, float, float) GetAnimationParameters()
+    {
+        return (animationType, timeScale, magnitude);
     }
 }
