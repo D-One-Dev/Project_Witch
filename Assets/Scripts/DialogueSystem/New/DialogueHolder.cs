@@ -14,11 +14,13 @@ public class DialogueHolder : MonoBehaviour
 
     private DialogueLine _currentLine;
     private AnimationsController _animationsController;
+    private TextAnimator _textAnimator;
 
     [Inject]
-    public void Construct(AnimationsController animationsController)
+    public void Construct(AnimationsController animationsController, TextAnimator textAnimator)
     {
         _animationsController = animationsController;
+        _textAnimator = textAnimator;
     }
     private IEnumerator DialogueSequence()
     {
@@ -26,6 +28,7 @@ public class DialogueHolder : MonoBehaviour
         {
             _currentLine = line;
             _currentLine.StartLine(this, dialogueText);
+            _textAnimator.SetAnimation(_currentLine.GetAnimationParameters());
             yield return new WaitUntil(() => _currentLine.IsFinished);
         }
 

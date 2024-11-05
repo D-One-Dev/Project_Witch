@@ -12164,7 +12164,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56
+  m_fontSize: 64
   m_fontSizeBase: 48
   m_fontWeight: 400
   m_enableAutoSizing: 0
@@ -12635,12 +12635,12 @@ RectTransform:
   - {fileID: 6623737089481479141}
   - {fileID: 3697107467763168452}
   - {fileID: 8898618274098890895}
+  - {fileID: 79893269150767837}
+  - {fileID: 5106961924729322076}
   - {fileID: 7922994137035887558}
   - {fileID: 1100999573149301076}
   - {fileID: 8467608331313760009}
   - {fileID: 1336195324749410771}
-  - {fileID: 5106961924729322076}
-  - {fileID: 79893269150767837}
   - {fileID: 5686892047357781916}
   - {fileID: 8360836010537908523}
   - {fileID: 7203489060447081141}

@@ -17,6 +17,7 @@ public class UIInstaller : MonoInstaller
     [SerializeField] private RectTransform playerHealthBarParent;
     [SerializeField] private Image playerManaBar;
     [SerializeField] private RectTransform playerManaBarParent;
+    [SerializeField] private Gradient rainbow;
 
     [Header("Spells UI")]
     [SerializeField] private GameObject leftSpellIcon;
@@ -134,5 +135,15 @@ public class UIInstaller : MonoInstaller
         this.Container.Bind<ManaBarController>()
             .FromNew()
             .AsSingle();
+
+        this.Container.BindInterfacesAndSelfTo<TextAnimator>()
+            .FromNew()
+            .AsSingle()
+            .NonLazy();
+
+        this.Container.Bind<Gradient>()
+            .WithId("Rainbow")
+            .FromInstance(rainbow)
+            .AsTransient();
     }
 }
