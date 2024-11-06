@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using VolFx;
 using Zenject;
-using static SavesController;
+using Lean.Localization;
 
 public class SettingsScreenController : MonoBehaviour
 {
@@ -42,14 +42,14 @@ public class SettingsScreenController : MonoBehaviour
     public void OnSoundVolumeChanged()
     {
         soundVolume = soundSlider.value.RoundToInt();
-        soundText.text = "sounds: " + soundVolume;
+        soundText.text = LeanLocalization.GetTranslationText("SoundSetting") + soundVolume;
         SaveSettings();
     }
 
     public void OnMusicVolumeChanged()
     {
         musicVolume = musicSlider.value.RoundToInt();
-        musicText.text = "music: " + musicVolume;
+        musicText.text = LeanLocalization.GetTranslationText("MusicSetting") + musicVolume;
         SaveSettings();
     }
 
@@ -67,6 +67,20 @@ public class SettingsScreenController : MonoBehaviour
     public void OnTextLanguageChanged()
     {
         textLanguage = textLanguageDropdown.value;
+        switch (textLanguage)
+        {
+            case 0:
+                LeanLocalization.SetCurrentLanguageAll("Russian");
+                break;
+            case 1:
+                LeanLocalization.SetCurrentLanguageAll("English");
+                break;
+            default:
+                LeanLocalization.SetCurrentLanguageAll("English");
+                break;
+        }
+        soundText.text = LeanLocalization.GetTranslationText("SoundSetting") + soundVolume;
+        musicText.text = LeanLocalization.GetTranslationText("MusicSetting") + musicVolume;
         SaveSettings();
     }
 
@@ -89,7 +103,7 @@ public class SettingsScreenController : MonoBehaviour
 
     public void LoadSettings()
     {
-        SettingsFile file = _savesController.LoadSettings();
+        SavesController.SettingsFile file = _savesController.LoadSettings();
         if(file != null)
         {
             soundVolume = file.soundVolume;
