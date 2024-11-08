@@ -5,8 +5,8 @@ public class Effect : ScriptableObject
 {
     public virtual int ManaCost { get; }
 
-    public virtual string EffectName { get; }
-    public virtual string EffectDescription { get; }
+    public virtual string EffectNameTag { get; }
+    public virtual string EffectDescriptionTag { get; }
 
     public Sprite EffectIcon;
     public virtual void Activate(List<GameObject> projectiles) {}

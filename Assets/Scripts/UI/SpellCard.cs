@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Zenject;
+using Lean.Localization;
 
 public class SpellCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
@@ -20,7 +21,7 @@ public class SpellCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     private void Start()
     {
-        spellNameText.text = spell.name;
+        spellNameText.text = LeanLocalization.GetTranslationText(spell.spellNameTag);
         spellIconImage.sprite = spell.spellIcon;
     }
 
