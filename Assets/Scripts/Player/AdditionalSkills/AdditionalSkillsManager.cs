@@ -21,12 +21,12 @@ namespace Player
             _newSpellCaster = newSpellCaster;
             _playerMovement = playerMovement;
             
-            _controls.Gameplay.V.performed += ctx => TelekinesisActivate();
+            _controls.Gameplay.V.performed += ctx => _telekinesis.OnVClick();
 
             controls.Enable();
         }
 
-        private void TelekinesisActivate()
+        public void TelekinesisActivate()
         {
             Debug.Log("bruh");
             _telekinesis.EnableControls();
