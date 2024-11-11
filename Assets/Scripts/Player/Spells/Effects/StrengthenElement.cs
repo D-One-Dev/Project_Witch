@@ -7,8 +7,8 @@ public class StrengthenElement : Effect
 {
     public override int ManaCost { get { return 30; } }
 
-    public override string EffectName { get { return "Strengthen element"; } }
-    public override string EffectDescription { get { return "Increases damage to vulnurable enemies but decreases damage to resistant enemies"; } }
+    public override string EffectNameTag { get { return "StrengthenElementEffect"; } }
+    public override string EffectDescriptionTag { get { return "StrengthenElementDescription"; } }
     public override void Activate(List<GameObject> projectiles)
     {
         foreach (GameObject projectile in projectiles)

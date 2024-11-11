@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Zenject;
+using Lean.Localization;
 
 public class EffectCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
@@ -20,7 +21,7 @@ public class EffectCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
 
     private void Start()
     {
-        effectNameText.text = effect.EffectName;
+        effectNameText.text = LeanLocalization.GetTranslationText(effect.EffectNameTag);
         effectIconImage.sprite = effect.EffectIcon;
     }
 

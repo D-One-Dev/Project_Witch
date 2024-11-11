@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class InGameHint : MonoBehaviour
 {
-    [TextArea]
-    public string hintText;
+    public string hintTag;
     [SerializeField] private GameObject hintIcon;
 
     public void Activate()

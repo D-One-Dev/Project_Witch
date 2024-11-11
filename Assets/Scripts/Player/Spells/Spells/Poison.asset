@@ -16,7 +16,6 @@ MonoBehaviour:
   objectPrefabs:
   - {fileID: 3667364072069247562, guid: ac3c7842078147d4c95a30cda95ee1e0, type: 3}
   manaCost: 50
-  spellName: Poison
-  spellDescription: Launches a poisonous projectile which leaves a damaging puddle
-    if hit the enemy
+  spellNameTag: PosionSpell
+  spellDescriptionTag: PosionSpellDescription
   spellIcon: {fileID: 21300000, guid: 4b2a8b317647b584ba91935f8917cb56, type: 3}
