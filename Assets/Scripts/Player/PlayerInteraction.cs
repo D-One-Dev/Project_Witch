@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using Zenject;
+using Lean.Localization;
 
 public class PlayerInteraction : MonoBehaviour
 {
@@ -39,7 +40,8 @@ public class PlayerInteraction : MonoBehaviour
     {
         if(_currentHint != null && !_isHintActive)
         {
-            _hintText.text = _currentHint.hintText;
+            _hintText.text = LeanLocalization.GetTranslationText(_currentHint.hintTag);
+            //_hintText.text = _currentHint.hintText;
             _animationsController.FadeInScreen(_hintScreen);
             _isHintActive = true;
         }

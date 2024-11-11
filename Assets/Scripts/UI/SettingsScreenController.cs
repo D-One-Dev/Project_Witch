@@ -34,6 +34,11 @@ public class SettingsScreenController : MonoBehaviour
         _savesController = savesController;
     }
 
+    private void Start()
+    {
+        LoadSettings();
+    }
+
     private void OnEnable()
     {
         LoadSettings();
@@ -114,8 +119,8 @@ public class SettingsScreenController : MonoBehaviour
             windowType = file.windowType;
             VSync = file.VSync;
 
-            if (soundText) soundText.text = "sounds: " + soundVolume;
-            if (musicText) musicText.text = "music: " + musicVolume;
+            if (soundText) soundText.text = LeanLocalization.GetTranslationText("SoundSetting") + soundVolume;
+            if (musicText) musicText.text = LeanLocalization.GetTranslationText("MusicSetting") + musicVolume;
 
             if (soundSlider) soundSlider.value = soundVolume;
             if (musicSlider) musicSlider.value = musicVolume;

@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using Zenject;
+using Lean.Localization;
 
 public class SpellSelectScreenController : MonoBehaviour
 {
@@ -91,9 +92,9 @@ public class SpellSelectScreenController : MonoBehaviour
     {
         currentSpell = spell;
         currentCard = spellCard;
-        spellNameText.text = spell.name;
-        spellDescriptionText.text = spell.spellDescription;
-        spellCostText.text = "Mana cost: " + spell.manaCost;
+        spellNameText.text = LeanLocalization.GetTranslationText(spell.spellNameTag);
+        spellDescriptionText.text = LeanLocalization.GetTranslationText(spell.spellDescriptionTag);
+        spellCostText.text = LeanLocalization.GetTranslationText("ManaCost") + spell.manaCost;
     }
 
     private void SetLeftSpell()
@@ -120,9 +121,9 @@ public class SpellSelectScreenController : MonoBehaviour
     {
         currentEffect = effect;
         currentCard = effectCard;
-        spellNameText.text = effect.EffectName;
-        spellDescriptionText.text = effect.EffectDescription;
-        spellCostText.text = "Mana cost: " + effect.ManaCost;
+        spellNameText.text = LeanLocalization.GetTranslationText(effect.EffectNameTag);
+        spellDescriptionText.text = LeanLocalization.GetTranslationText(effect.EffectDescriptionTag);
+        spellCostText.text = LeanLocalization.GetTranslationText("ManaCost") + effect.ManaCost;
     }
 
     private void SetLeftEffect()
