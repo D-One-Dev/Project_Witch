@@ -30,7 +30,6 @@ namespace Player
             _controls = controls;
             _additionalSkillsManager = additionalSkillsManager;
             
-            _controls.Gameplay.LMB.performed += ctx => OnLMBClick();
             _controls.Gameplay.RMB.performed += ctx => OnRMBClick();
             
             controls.Enable();
@@ -44,7 +43,7 @@ namespace Player
             }
         }
 
-        private void OnLMBClick()
+        public void OnVClick()
         {
             if (heldObj == null)
             {
@@ -82,6 +81,7 @@ namespace Player
 
         private void PickupObject(GameObject pickObj)
         {
+            _additionalSkillsManager.TelekinesisActivate();
             pickObj.TryGetComponent<Rigidbody>(out var pickObjRB);
             pickObj.TryGetComponent<PickableObject>(out var pickObjCharacteristic);
 
