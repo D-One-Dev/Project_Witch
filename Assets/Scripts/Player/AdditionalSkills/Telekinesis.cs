@@ -23,6 +23,8 @@ namespace Player
         
         private AdditionalSkillsManager _additionalSkillsManager;
         private Controls _controls;
+        [Inject(Id = "Camera")]
+        private readonly Transform _camera;
 
         [Inject]
         public void Construct(Controls controls, AdditionalSkillsManager additionalSkillsManager)
@@ -112,7 +114,7 @@ namespace Player
         private void ThrowObject()
         {
             DropObject();
-            heldObjRB.AddForce(transform.forward * throwForce);
+            heldObjRB.AddForce(_camera.forward * throwForce);
         }
 
         public void EnableControls()
