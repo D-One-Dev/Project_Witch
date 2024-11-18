@@ -10,7 +10,7 @@ namespace Player
 
         [SerializeField] private LayerMask _layermask;
 
-        private GameObject heldObj;
+        public GameObject heldObj;
         private Rigidbody heldObjRB;
 
         [Header("Physics Parameters")] [SerializeField]
@@ -24,6 +24,8 @@ namespace Player
         private AdditionalSkillsManager _additionalSkillsManager;
         private Controls _controls;
 
+        public Transform objectForRaycast;
+        
         [Inject]
         public void Construct(Controls controls, AdditionalSkillsManager additionalSkillsManager)
         {
@@ -49,8 +51,7 @@ namespace Player
             {
                 RaycastHit hit;
 
-                if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit,
-                        pickupRange, _layermask))
+                if (Physics.Raycast(objectForRaycast.position, objectForRaycast.forward, out hit, pickupRange, _layermask))
                 {
                     PickupObject(hit.transform.gameObject);
                 }
