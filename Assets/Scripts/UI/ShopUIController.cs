@@ -23,7 +23,7 @@ public class ShopUIController : MonoBehaviour
 
     private AnimationsController _animationsController;
 
-    private (ShopItem, bool)[] _itemsDict;
+    private (ShopItem, bool)[] _itemsArray;
 
     [Inject]
     public void Construct(PlayerMoney playerMoney, NewSpellCaster newSpellCaster, AnimationsController animationsController, SavesController savesController)
@@ -42,7 +42,6 @@ public class ShopUIController : MonoBehaviour
 
         _controls.Gameplay.T.performed += ctx =>
         {
-            SetItemsDict();
             TriggerShopScreen();
         };
 
@@ -108,6 +107,17 @@ public class ShopUIController : MonoBehaviour
                 _animationsController.ClickButton(currentCardUI);
                 currentItem.OnBuy();
                 _playerMoney.ChangeBalance(-currentCard.GetComponent<ItemCard>().cost);
+
+
+                for (int i = 0; i < items.Length; i++)
+                {
+                    if (_itemsArray[i].Item1.GetType() == currentItem.GetType())
+                    {
+                        _itemsArray[i].Item2 = false;
+                        break;
+                    }
+                }
+                UpdateShopItemsUI();
             }
             else
             {
@@ -124,31 +134,40 @@ public class ShopUIController : MonoBehaviour
 
     private void SetItemsDict()
     {
-        _itemsDict = new (ShopItem, bool)[items.Length];
+        _itemsArray = new (ShopItem, bool)[items.Length];
         if(_savesController.LoadShopItems() == null)
         {
             for(int i = 0; i < items.Length; i++)
             {
-                _itemsDict[i] = (items[i].GetComponent<ShopItem>(), false);
+                _itemsArray[i] = (items[i].GetComponent<ShopItem>(), true);
             }
-            _savesController.SaveShopItems(_itemsDict);
         }
         else
         {
-            _itemsDict = _savesController.LoadShopItems().shopItems;
+            _itemsArray = _savesController.LoadShopItems().shopItems;
         }
+        UpdateShopItemsUI();
+    }
+
+    private void UpdateShopItemsUI()
+    {
         foreach (GameObject item in items)
         {
             ShopItem shopItem = item.GetComponent<ShopItem>();
-            foreach (var a in _itemsDict)
+            foreach (var a in _itemsArray)
             {
-                if(a.Item1.GetType() == shopItem.GetType())
+                if (a.Item1.GetType() == shopItem.GetType())
                 {
-                    if(a.Item2) item.SetActive(true);
+                    if (a.Item2) item.SetActive(true);
                     else item.SetActive(false);
                     break;
                 }
             }
         }
+    }
+
+    public (ShopItem, bool)[] GetItemsArray()
+    {
+        return _itemsArray;
     }
 }

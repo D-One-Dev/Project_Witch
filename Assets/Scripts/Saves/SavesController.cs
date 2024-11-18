@@ -18,14 +18,16 @@ public class SavesController : IInitializable
     private PlayerMoney _playerMoney;
     private NewSpellCaster _newSpellCaster;
     private AnimationsController _animationsController;
+    private ShopUIController _shopUIController;
     private static readonly fsSerializer _serializer = new fsSerializer();
 
     [Inject]
-    public void Construct(PlayerMoney playerMoney, NewSpellCaster newSpellCaster, AnimationsController animationsController)
+    public void Construct(PlayerMoney playerMoney, NewSpellCaster newSpellCaster, AnimationsController animationsController, ShopUIController shopUIController)
     {
         _playerMoney = playerMoney;
         _newSpellCaster = newSpellCaster;
         _animationsController = animationsController;
+        _shopUIController = shopUIController;
     }
 
     public void Initialize()
@@ -79,6 +81,8 @@ public class SavesController : IInitializable
 
         string json = JsonUtility.ToJson(file);
         File.WriteAllText(Application.dataPath + "/save.savefile", json);
+
+        SaveShopItems(_shopUIController.GetItemsArray());
     }
 
     public void ResetPlayerPos()
