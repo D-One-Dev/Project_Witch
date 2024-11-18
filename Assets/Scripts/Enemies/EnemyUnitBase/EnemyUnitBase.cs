@@ -1,4 +1,5 @@
 using System;
+using Enemies.EnemyActions;
 using UnityEngine;
 using UnityEngine.AI;
 using Zenject;
@@ -17,6 +18,8 @@ namespace Enemies.EnemyUnitBase
         
         protected bool _playerInSightRange, _playerInAttackRange;
 
+        private bool _isDead;
+
         [Inject(Id = "PlayerTransform")]
         protected readonly Transform _player;
         
@@ -25,7 +28,6 @@ namespace Enemies.EnemyUnitBase
         protected Enemy _enemy;
         
         protected IAction _currentAction;
-        
         protected IAction _walkAction, _chaseAction, _attackAction;
 
         private void Start()
@@ -39,6 +41,8 @@ namespace Enemies.EnemyUnitBase
 
         private void Update()
         {
+            if (_isDead) return;
+            
             _playerInSightRange = Physics.CheckSphere(transform.position, sightRange, playerLayer);
             _playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, playerLayer);
             
@@ -57,6 +61,11 @@ namespace Enemies.EnemyUnitBase
         private void SetAction(IAction newAction)
         {
             _currentAction = newAction ?? throw new NullReferenceException(nameof(newAction), null);
+        }
+
+        public virtual void Death()
+        {
+            _isDead = true;
         }
 
         private void OnDrawGizmosSelected()
