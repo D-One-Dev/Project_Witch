@@ -18,11 +18,13 @@ public class ItemCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     [SerializeField] private Image itemIconImage;
 
     private AnimationsController _animationsController;
+    private ShopUIController _shopUIController;
 
     [Inject]
-    public void Construct(AnimationsController animationsController)
+    public void Construct(AnimationsController animationsController, ShopUIController shopUIController)
     {
         _animationsController = animationsController;
+        _shopUIController = shopUIController;
     }
 
     private void Start()

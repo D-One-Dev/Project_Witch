@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Zenject;
+using FullSerializer;
 
 public class SavesController : IInitializable
 {
@@ -17,6 +18,7 @@ public class SavesController : IInitializable
     private PlayerMoney _playerMoney;
     private NewSpellCaster _newSpellCaster;
     private AnimationsController _animationsController;
+    private static readonly fsSerializer _serializer = new fsSerializer();
 
     [Inject]
     public void Construct(PlayerMoney playerMoney, NewSpellCaster newSpellCaster, AnimationsController animationsController)
@@ -31,7 +33,7 @@ public class SavesController : IInitializable
         if(_playerTransform != null) Load();
         else GetSceneID();
     }
-    private class SaveFile
+    public class SaveFile
     {
         public int sceneID;
         public Vector3 playerPosition;
@@ -53,6 +55,12 @@ public class SavesController : IInitializable
         public int VSync;
     }
 
+    public class ShopItemsFile
+    {
+        public (ShopItem, bool)[] shopItems;
+    }
+
+
 
     public void Save()
     {
@@ -68,6 +76,7 @@ public class SavesController : IInitializable
         file.rightEffect = _newSpellCaster.RightEffect;
         file.money = _playerMoney.Balance;
         file.currentTask = TaskUI.Instance.currentTask;
+
         string json = JsonUtility.ToJson(file);
         File.WriteAllText(Application.dataPath + "/save.savefile", json);
     }
@@ -88,7 +97,7 @@ public class SavesController : IInitializable
         File.WriteAllText(Application.dataPath + "/save.savefile", json);
     }
 
-    public void Load()
+    public SaveFile Load()
     {
         if(File.Exists(Application.dataPath + "/save.savefile"))
         {
@@ -108,7 +117,9 @@ public class SavesController : IInitializable
             _newSpellCaster.RightEffect = file.rightEffect;
             _playerMoney.SetBalance(file.money);
             TaskUI.Instance.ChangeTask(file.currentTask);
+            return file;
         }
+        return null;
     }
 
     public int GetSceneID()
@@ -120,7 +131,6 @@ public class SavesController : IInitializable
             CurrentSceneID = file.sceneID;
             return CurrentSceneID;
         }
-
         return 0;
     }
 
@@ -153,6 +163,27 @@ public class SavesController : IInitializable
         {
             string json = File.ReadAllText(Application.dataPath + "/settings.savefile");
             SettingsFile file = JsonUtility.FromJson<SettingsFile>(json);
+            return file;
+        }
+        return null;
+    }
+
+    public void SaveShopItems((ShopItem, bool)[] items)
+    {
+        ShopItemsFile file = new ShopItemsFile();
+        file.shopItems = items;
+        _serializer.TrySerialize(file, out fsData data);
+        File.WriteAllText(Application.dataPath + "/shopItems.savefile", data.ToString());
+    }
+
+    public ShopItemsFile LoadShopItems()
+    {
+        if (File.Exists(Application.dataPath + "/shopItems.savefile"))
+        {
+            string json = File.ReadAllText(Application.dataPath + "/shopItems.savefile");
+            fsData data = fsJsonParser.Parse(json);
+            ShopItemsFile file = null;
+            _serializer.TryDeserialize(data, ref file);
             return file;
         }
         return null;

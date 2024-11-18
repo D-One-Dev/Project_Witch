@@ -18,6 +18,7 @@ public class UIInstaller : MonoInstaller
     [SerializeField] private Image playerManaBar;
     [SerializeField] private RectTransform playerManaBarParent;
     [SerializeField] private Gradient rainbow;
+    [SerializeField] private ShopUIController shopUIController;
 
     [Header("Spells UI")]
     [SerializeField] private GameObject leftSpellIcon;
@@ -145,5 +146,10 @@ public class UIInstaller : MonoInstaller
             .WithId("Rainbow")
             .FromInstance(rainbow)
             .AsTransient();
+
+        this.Container.Bind<ShopUIController>()
+            .FromInstance(shopUIController)
+            .AsSingle()
+            .NonLazy();
     }
 }

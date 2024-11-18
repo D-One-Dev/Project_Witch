@@ -6,10 +6,12 @@ public class ShopUIController : MonoBehaviour
 {
     [SerializeField] private GameObject shopScreen;
     [SerializeField] private TMP_Text itemNameText, itemDescriptionText, itemCostText;
+    [SerializeField] private GameObject[] items;
     private Controls _controls;
     private ShopItem currentItem;
     private GameObject currentCardUI;
     private ItemCard currentCard;
+    private SavesController _savesController;
 
     private bool isShopScreenActive;
 
@@ -21,12 +23,16 @@ public class ShopUIController : MonoBehaviour
 
     private AnimationsController _animationsController;
 
+    private (ShopItem, bool)[] _itemsDict;
+
     [Inject]
-    public void Construct(PlayerMoney playerMoney, NewSpellCaster newSpellCaster, AnimationsController animationsController)
+    public void Construct(PlayerMoney playerMoney, NewSpellCaster newSpellCaster, AnimationsController animationsController, SavesController savesController)
     {
         _playerMoney = playerMoney;
         _newSpellCaster = newSpellCaster;
         _animationsController = animationsController;
+        _savesController = savesController;
+        SetItemsDict();
     }
 
     private void Awake()
@@ -36,6 +42,7 @@ public class ShopUIController : MonoBehaviour
 
         _controls.Gameplay.T.performed += ctx =>
         {
+            SetItemsDict();
             TriggerShopScreen();
         };
 
@@ -113,5 +120,35 @@ public class ShopUIController : MonoBehaviour
     public void ClearCurrentItem()
     {
         currentItem = null;
+    }
+
+    private void SetItemsDict()
+    {
+        _itemsDict = new (ShopItem, bool)[items.Length];
+        if(_savesController.LoadShopItems() == null)
+        {
+            for(int i = 0; i < items.Length; i++)
+            {
+                _itemsDict[i] = (items[i].GetComponent<ShopItem>(), false);
+            }
+            _savesController.SaveShopItems(_itemsDict);
+        }
+        else
+        {
+            _itemsDict = _savesController.LoadShopItems().shopItems;
+        }
+        foreach (GameObject item in items)
+        {
+            ShopItem shopItem = item.GetComponent<ShopItem>();
+            foreach (var a in _itemsDict)
+            {
+                if(a.Item1.GetType() == shopItem.GetType())
+                {
+                    if(a.Item2) item.SetActive(true);
+                    else item.SetActive(false);
+                    break;
+                }
+            }
+        }
     }
 }
