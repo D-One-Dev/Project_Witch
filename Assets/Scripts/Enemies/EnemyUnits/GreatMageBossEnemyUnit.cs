@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Enemies.EnemyActions;
 using Enemies.EnemyUnitBase;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -24,6 +25,7 @@ namespace Enemies.EnemyUnits
         private Transform _centerPoint;
 
         private List<IAction> _actions = new();
+        private IAction _deathAction;
 
         private void OnEnable() => GetComponent<EnemyBossHealth>().OnHealthChanged += HealthUpdate;
 
@@ -43,6 +45,8 @@ namespace Enemies.EnemyUnits
             //_actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnNewProjectTile));
             //_actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnPillarObj));
             _actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnPillarWave));
+
+            _deathAction = new Death("isDead");
 
             StartCoroutine(BossActionUpdate());
         }
@@ -136,6 +140,14 @@ namespace Enemies.EnemyUnits
             }
             
             BossStateUpdate();
+        }
+
+        public override void Death()
+        {
+            base.Death();
+            StopAllCoroutines();
+            _agent.baseOffset = 0.73f;
+            _currentAction = _deathAction;
         }
 
         private void BossStateUpdate()

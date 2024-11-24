@@ -99,7 +99,7 @@ public class EntityHealth : MonoBehaviour
     {
         isDead = true;
         OnDeath.Invoke();
-        if (gameObject.TryGetComponent<EnemyMoneyCost>(out EnemyMoneyCost component)) component.DropMoney();
+        if (gameObject.TryGetComponent(out EnemyMoneyCost component)) component.DropMoney();
         Destroy(gameObject);
     }
 }
