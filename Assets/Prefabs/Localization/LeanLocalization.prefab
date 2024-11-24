@@ -52,6 +52,171 @@ MonoBehaviour:
   - Language: English
     Text: Russian
     Object: {fileID: 0}
+--- !u!1 &175060742560178754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7444797483227740554}
+  - component: {fileID: 649774759641443747}
+  m_Layer: 0
+  m_Name: Cave_Awakening-P1_Thief-Phrase-5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7444797483227740554
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175060742560178754}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &649774759641443747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175060742560178754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u042F...\u044F \u043D\u0435 \u043F\u043E\u043D\u0438\u043C\u0430\u044E..."
+    Object: {fileID: 0}
+  - Language: English
+    Text: awgawgag
+    Object: {fileID: 0}
+--- !u!1 &373882072655315622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4875221540017956867}
+  - component: {fileID: 1833904377942324010}
+  m_Layer: 0
+  m_Name: Village_MainDialogue-P1_Thief-P-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4875221540017956867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373882072655315622}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1833904377942324010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373882072655315622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u0418 \u0447\u0442\u043E \u0436\u0435 \u0434\u0430\u043B\u044C\u0448\u0435?
+      \u042F \u0442\u0430\u043A \u0438 \u043E\u0441\u0442\u0430\u043D\u0443\u0441\u044C
+      \u0433\u043E\u043B\u043E\u0441\u043E\u043C \u0432 \u0442\u0432\u043E\u0435\u0439
+      \u0433\u043E\u043B\u043E\u0432\u0435? \u041A\u0430\u043A\u0430\u044F \u0443
+      \u0442\u0435\u0431\u044F \u0446\u0435\u043B\u044C?"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
+--- !u!1 &387850186030581028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4068335157131516687}
+  - component: {fileID: 3907096243253915027}
+  m_Layer: 0
+  m_Name: Cave_Awakening-P3_Alex-Phrase-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4068335157131516687
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387850186030581028}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3907096243253915027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387850186030581028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=\"red\">\u041D\u0435 \u0443\u043C\u0435\u043B\u0430, \u043D\u043E
+      \u0443 \u043C\u0435\u043D\u044F \u0442\u0432\u043E\u044F \u0434\u0443\u0448\u0430,
+      \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u044F \u0438\u043C\u0435\u044E
+      \u0434\u043E\u0441\u0442\u0443\u043F \u043A\u043E \u0432\u0441\u0435\u043C
+      \u0442\u0432\u043E\u0438\u043C \u0432\u043E\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u043D\u0438\u044F\u043C
+      \u0438\u0437 \u0436\u0438\u0437\u043D\u0438"
+    Object: {fileID: 0}
+  - Language: English
+    Text: awgwgawg
+    Object: {fileID: 0}
 --- !u!1 &597323254367746603
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,6 +586,113 @@ MonoBehaviour:
     Text: Launches a poisonous projectile which leaves a damaging puddle if hit the
       enemy
     Object: {fileID: 0}
+--- !u!1 &1155458992682350455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8294563161718205071}
+  - component: {fileID: 2129787352006487449}
+  m_Layer: 0
+  m_Name: Village_MeetingWithAnElder_Elder-P-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8294563161718205071
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155458992682350455}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2129787352006487449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155458992682350455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=\"blue\">\u0421\u0442\u043E\u044F\u0442\u044C! \u0421\u0442\u0440\u0430\u0436\u0430
+      \u043E\u043F\u043E\u0432\u0435\u0441\u0442\u0438\u043B\u0430 \u043D\u0430\u0441
+      \u043E \u0441\u0431\u0435\u0436\u0430\u0432\u0448\u0435\u0439 \u0432\u0435\u0434\u044C\u043C\u0435
+      \u0432 \u0442\u0435\u043B\u0435 \u0432\u043E\u0440\u0430"
+    Object: {fileID: 0}
+  - Language: English
+    Text: awgawga
+    Object: {fileID: 0}
+--- !u!1 &1283549008727986402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3809184457554876850}
+  - component: {fileID: 2131923381095743509}
+  m_Layer: 0
+  m_Name: Village_MeetingWithAnElder_Thief-P-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3809184457554876850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283549008727986402}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2131923381095743509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283549008727986402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u041E\u043D \u0437\u0430\u043F\u0435\u0440 \u043D\u0430\u0441!"
+    Object: {fileID: 0}
+  - Language: English
+    Text: gwawgawg
+    Object: {fileID: 0}
 --- !u!1 &1686883978467366478
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,6 +797,61 @@ MonoBehaviour:
   - Language: English
     Text: Strengthen element
     Object: {fileID: 0}
+--- !u!1 &2351978445404050777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6037375511005548722}
+  - component: {fileID: 757683797460454578}
+  m_Layer: 0
+  m_Name: Cave_Awakening-P1_Thief-Phrase-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6037375511005548722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351978445404050777}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &757683797460454578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351978445404050777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u0427\u0442\u043E...\u0447\u0442\u043E \u0442\u044B \u0441\u0434\u0435\u043B\u0430\u043B\u0430?
+      \u042F \u043D\u0435 \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u044E \u0440\u0443\u043A
+      \u0438 \u043D\u043E\u0433, \u0447\u0442\u043E \u0442\u044B \u0441\u0434\u0435\u043B\u0430\u043B
+      \u0441\u043E \u043C\u043D\u043E\u0439?"
+    Object: {fileID: 0}
+  - Language: English
+    Text: gagagwa
+    Object: {fileID: 0}
 --- !u!1 &2548276856474913070
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,6 +903,218 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: Acting language
+    Object: {fileID: 0}
+--- !u!1 &2603381829036599349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4016668494266971299}
+  - component: {fileID: 8199718127508730237}
+  m_Layer: 0
+  m_Name: Village_AfterKillingTheElder_Alex-P-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4016668494266971299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2603381829036599349}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8199718127508730237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2603381829036599349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=\"red\">\u042F...\u044F \u0432\u0441\u0451 \u0443\u0437\u043D\u0430\u043B\u0430!
+      \u041D\u0443\u0436\u043D\u043E \u0443\u0445\u043E\u0434\u0438\u0442\u044C,
+      \u043F\u043E\u043A\u0430 \u043D\u0435 \u043F\u0440\u0438\u0448\u043B\u0430
+      \u0441\u0442\u0440\u0430\u0436\u0430 \u043C\u043E\u0435\u0433\u043E \u043E\u0442\u0446\u0430"
+    Object: {fileID: 0}
+  - Language: English
+    Text: wgagagwa
+    Object: {fileID: 0}
+--- !u!1 &2623640419522574960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 271101136657874778}
+  - component: {fileID: 5219453923909924535}
+  m_Layer: 0
+  m_Name: Cave_Awakening-P1_Alex-Phrase-3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &271101136657874778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2623640419522574960}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5219453923909924535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2623640419522574960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=\"red\">\u0418 \u0432\u0441\u0451 \u043F\u043E \u043D\u043E\u0432\u043E\u0439..."
+    Object: {fileID: 0}
+  - Language: English
+    Text: awgagawg
+    Object: {fileID: 0}
+--- !u!1 &2669016351343501593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4892703649530437683}
+  - component: {fileID: 1943424326488806735}
+  m_Layer: 0
+  m_Name: Cave_Awakening-P3_Alex-Phrase-5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4892703649530437683
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2669016351343501593}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1943424326488806735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2669016351343501593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=\"red\">\u0421\u043B\u0438\u0448\u043A\u043E\u043C \u043C\u043D\u043E\u0433\u043E
+      \u0432\u043E\u043F\u0440\u043E\u0441\u043E\u0432 \u0434\u043B\u044F \u043C\u0435\u0440\u0442\u0432\u0435\u0446\u0430"
+    Object: {fileID: 0}
+  - Language: English
+    Text: gawgaw
+    Object: {fileID: 0}
+--- !u!1 &2837168262472394841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6767571203401513132}
+  - component: {fileID: 1783749622678022837}
+  m_Layer: 0
+  m_Name: Cave_Awakening-P2_Alex-Phrase-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6767571203401513132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2837168262472394841}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1783749622678022837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2837168262472394841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=\"red\">(\u0431\u043B\u0430 \u0431\u043B\u0430 \u0431\u043B\u0430)+-"
+    Object: {fileID: 0}
+  - Language: English
+    Text: awgagwagw
     Object: {fileID: 0}
 --- !u!1 &3008176189071348864
 GameObject:
@@ -629,6 +1168,59 @@ MonoBehaviour:
   - Language: English
     Text: Low
     Object: {fileID: 0}
+--- !u!1 &3052515213706322725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3122144521509270271}
+  - component: {fileID: 5358707239425886322}
+  m_Layer: 0
+  m_Name: Village_MainDialogue-P1_Alex-P-4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3122144521509270271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3052515213706322725}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5358707239425886322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3052515213706322725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=\"red\">\u041D\u0430\u0434\u0435\u044E\u0441\u044C, \u0434\u043E
+      \u044D\u0442\u043E\u0433\u043E \u043D\u0435 \u0434\u043E\u0439\u0434\u0451\u0442"
+    Object: {fileID: 0}
+  - Language: English
+    Text: gwagagwag
+    Object: {fileID: 0}
 --- !u!1 &3207620968013728014
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,6 +1273,61 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: Launches a fireball
+    Object: {fileID: 0}
+--- !u!1 &3258138499286852778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3836946506346334849}
+  - component: {fileID: 2886055361442763920}
+  m_Layer: 0
+  m_Name: Cave_Awakening-P3_Thief-Phrase-4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3836946506346334849
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258138499286852778}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2886055361442763920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258138499286852778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u041D\u0435 \u043D\u0430\u0447\u0438\u043D\u0430\u0435\u0448\u044C
+      \u043B\u0438 \u0442\u044B \u043F\u0443\u0442\u0430\u0442\u044C \u0441\u0432\u043E\u0438
+      \u0432\u043E\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u043D\u0438\u044F \u0441
+      \u0447\u0443\u0436\u0438\u043C\u0438?"
+    Object: {fileID: 0}
+  - Language: English
+    Text: agwag
     Object: {fileID: 0}
 --- !u!1 &3341983588928112781
 GameObject:
@@ -813,6 +1460,27 @@ Transform:
   - {fileID: 9168582061903887015}
   - {fileID: 6627061321004145705}
   - {fileID: 7339090890416817823}
+  - {fileID: 8770911176580677429}
+  - {fileID: 6037375511005548722}
+  - {fileID: 271101136657874778}
+  - {fileID: 4374726937983283479}
+  - {fileID: 7444797483227740554}
+  - {fileID: 3726314357171546250}
+  - {fileID: 6767571203401513132}
+  - {fileID: 6027270032951198378}
+  - {fileID: 4068335157131516687}
+  - {fileID: 1121223526601544588}
+  - {fileID: 3836946506346334849}
+  - {fileID: 4892703649530437683}
+  - {fileID: 4875221540017956867}
+  - {fileID: 1137277718242540953}
+  - {fileID: 1309848263067694649}
+  - {fileID: 3122144521509270271}
+  - {fileID: 4016668494266971299}
+  - {fileID: 1155285040435775546}
+  - {fileID: 8294563161718205071}
+  - {fileID: 3809184457554876850}
+  - {fileID: 189118800134935973}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3361877429124737769
@@ -883,6 +1551,62 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: Alex is dead
+    Object: {fileID: 0}
+--- !u!1 &3391691447222235147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1155285040435775546}
+  - component: {fileID: 3704041329051738809}
+  m_Layer: 0
+  m_Name: Village_AfterKillingTheElder_Elder-P-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1155285040435775546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3391691447222235147}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3704041329051738809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3391691447222235147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=\"blue\">\u0423\u0431\u0438\u0439\u0446\u0430! \u041A\u043E\u0440\u043E\u043B\u044C
+      \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E \u043F\u043E\u0441\u0442\u0443\u043F\u0438\u043B,
+      \u0447\u0442\u043E \u0438\u0437\u043E\u043B\u0438\u0440\u043E\u0432\u0430\u043B
+      \u0442\u0430\u043A\u043E\u0435 \u0447\u0443\u0434\u043E\u0432\u0438\u0449\u0435
+      \u043E\u0442 \u0446\u0438\u0432\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u0438"
+    Object: {fileID: 0}
+  - Language: English
+    Text: wgagawg
     Object: {fileID: 0}
 --- !u!1 &3468229576699818295
 GameObject:
@@ -1092,6 +1816,64 @@ MonoBehaviour:
   - Language: English
     Text: Size increase
     Object: {fileID: 0}
+--- !u!1 &4000145429229304846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1121223526601544588}
+  - component: {fileID: 5563048684332647401}
+  m_Layer: 0
+  m_Name: Cave_Awakening-P3_Thief-Phrase-3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1121223526601544588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4000145429229304846}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5563048684332647401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4000145429229304846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u0422\u043E \u0435\u0441\u0442\u044C \u043F\u043E\u043B\u0433\u043E\u0442\u0438\u0432
+      \u0447\u044C\u044E-\u0442\u043E \u0434\u0443\u0448\u0443, \u0442\u044B \u043F\u043E\u043B\u0443\u0447\u0430\u0435\u0448\u044C
+      \u0432\u0441\u0435 \u0435\u0433\u043E \u043D\u0430\u0432\u044B\u043A\u0438,
+      \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\u0441\u0442\u0438 \u0438 \u0444\u0430\u043A\u0442\u0438\u0447\u0435\u0441\u043A\u0438
+      \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u0435\u0448\u044C, \u0431\u0443\u0434\u0442\u043E
+      \u043F\u0440\u043E\u0436\u0438\u043B\u0430 \u0446\u0435\u043B\u0443\u044E \u0436\u0438\u0437\u043D\u044C
+      \u0437\u0430 \u043D\u0435\u0433\u043E?"
+    Object: {fileID: 0}
+  - Language: English
+    Text: awgagaga
+    Object: {fileID: 0}
 --- !u!1 &4047066080985451701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1249,6 +2031,61 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: Pause
+    Object: {fileID: 0}
+--- !u!1 &4204898582889049157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4374726937983283479}
+  - component: {fileID: 3099109873323968035}
+  m_Layer: 0
+  m_Name: Cave_Awakening-P1_Thief-Phrase-4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4374726937983283479
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4204898582889049157}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3099109873323968035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4204898582889049157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u0427\u0442\u043E \u0437\u043D\u0430\u0447\u0438\u0442
+      \u043F\u043E \u043D\u043E\u0432\u043E\u0439? \u0421\u0442\u043E\u0439, \u0442\u0430\u043A
+      \u0442\u044B \u0435\u0449\u0451 \u0436\u0438\u0432\u0430?\u0422\u0430 \u043B\u0435\u0433\u0435\u043D\u0434\u0430
+      \u043F\u0440\u043E (...)+-"
+    Object: {fileID: 0}
+  - Language: English
+    Text: awgawg
     Object: {fileID: 0}
 --- !u!1 &4491410814532297178
 GameObject:
@@ -1411,6 +2248,60 @@ MonoBehaviour:
   - Language: English
     Text: Launches an ice shard
     Object: {fileID: 0}
+--- !u!1 &5146469689102390067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6027270032951198378}
+  - component: {fileID: 2841040273389089286}
+  m_Layer: 0
+  m_Name: Cave_Awakening-P3_Thief-Phrase-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6027270032951198378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5146469689102390067}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2841040273389089286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5146469689102390067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u041A\u0430\u043A \u044D\u0442\u043E...\u0442\u044B \u0442\u043E\u0436\u0435
+      \u0443\u043C\u0435\u0435\u0448\u044C \u0432\u0437\u043B\u0430\u043C\u044B\u0442\u044C
+      \u0437\u0430\u043C\u043A\u0438?"
+    Object: {fileID: 0}
+  - Language: English
+    Text: agwawgagwa
+    Object: {fileID: 0}
 --- !u!1 &5190161221413337756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,6 +2353,59 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: Russian
     Text: "\u0421\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u043C\u0430\u043D\u044B: "
+    Object: {fileID: 0}
+--- !u!1 &5265827243317799348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1309848263067694649}
+  - component: {fileID: 8882512795030996230}
+  m_Layer: 0
+  m_Name: Village_MainDialogue-P1_Thief-P-3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1309848263067694649
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5265827243317799348}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8882512795030996230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5265827243317799348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u0418\u0445 \u0442\u044B \u0442\u043E\u0436\u0435 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u0435\u0448\u044C
+      \u0443\u0431\u0438\u0442\u044C?"
+    Object: {fileID: 0}
+  - Language: English
+    Text: gwagagwaga
     Object: {fileID: 0}
 --- !u!1 &5280789248875880271
 GameObject:
@@ -1833,6 +2777,61 @@ MonoBehaviour:
   - Language: English
     Text: Off
     Object: {fileID: 0}
+--- !u!1 &6451630803889470530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 189118800134935973}
+  - component: {fileID: 7607547259851894833}
+  m_Layer: 0
+  m_Name: Village_MeetingWithAnElder_Alex-P-3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &189118800134935973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6451630803889470530}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7607547259851894833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6451630803889470530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=\"red\">\u0427\u0442\u043E\u0436, \u044F \u043D\u0438 \u0445\u043E\u0442\u0435\u043B\u0430
+      \u043D\u0438\u043A\u043E\u0433\u043E \u0443\u0431\u0438\u0432\u0430\u0442\u044C,
+      \u043D\u043E \u043F\u043E\u0445\u043E\u0434\u0443 \u043F\u0440\u0438\u0434\u0451\u0442\u0441\u044F
+      \u0441\u0434\u0435\u043B\u0430\u0442\u044C \u0438\u0441\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435"
+    Object: {fileID: 0}
+  - Language: English
+    Text: gwagawg
+    Object: {fileID: 0}
 --- !u!1 &6551171095924296385
 GameObject:
   m_ObjectHideFlags: 0
@@ -1944,6 +2943,63 @@ MonoBehaviour:
     Text: "<color=red>well, of course, how did I suddenly manage to approach 3, you
       are supposedly late, so that it doesn\u2019t seem like you didn\u2019t want
       to approach at all))"
+    Object: {fileID: 0}
+--- !u!1 &6617279019496857129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1137277718242540953}
+  - component: {fileID: 6275037731688498511}
+  m_Layer: 0
+  m_Name: Village_MainDialogue-P1_Alex-P-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1137277718242540953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6617279019496857129}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6275037731688498511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6617279019496857129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=\"red\">\u0414\u043B\u044F \u043D\u0430\u0447\u0430\u043B\u0430
+      \u043C\u043D\u0435 \u043D\u0443\u0436\u043D\u043E \u043F\u043E\u043D\u044F\u0442\u044C
+      \u0433\u0434\u0435 \u043C\u044B. \u042F \u0432\u0438\u0436\u0443 \u043F\u043E\u0441\u0435\u043B\u0435\u043D\u0438\u0435,
+      \u043C\u043D\u0435 \u043D\u0443\u0436\u043D\u043E \u043E\u043F\u0440\u043E\u0441\u0438\u0442\u044C
+      \u0436\u0438\u0442\u0435\u043B\u0435\u0439 \u0438 \u0443\u0437\u043D\u0430\u0442\u044C
+      \u0433\u0434\u0435 \u043C\u044B \u0441\u0435\u0439\u0447\u0430\u0441 \u043D\u0430\u0445\u043E\u0434\u0438\u043C\u0441\u044F"
+    Object: {fileID: 0}
+  - Language: English
+    Text: gwagwagwa
     Object: {fileID: 0}
 --- !u!1 &6732053349895035975
 GameObject:
@@ -2101,6 +3157,61 @@ MonoBehaviour:
   - Language: English
     Text: Credits
     Object: {fileID: 0}
+--- !u!1 &7642645004433607490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3726314357171546250}
+  - component: {fileID: 6293726620903012727}
+  m_Layer: 0
+  m_Name: Cave_Awakening-P2_Thief-Phrase-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3726314357171546250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7642645004433607490}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6293726620903012727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7642645004433607490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u041F\u0440\u043E\u0448\u043B\u043E \u0441\u0442\u043E\u043B\u044C\u043A\u043E
+      \u043B\u0435\u0442, \u0442\u044B \u043F\u043E\u043C\u043D\u0438\u0448\u044C
+      \u043A\u0430\u043A \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F
+      \u043C\u0430\u0433\u0438\u0435\u0439?"
+    Object: {fileID: 0}
+  - Language: English
+    Text: awgagwgaw
+    Object: {fileID: 0}
 --- !u!1 &7767102184411190524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2152,6 +3263,60 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: Fire
+    Object: {fileID: 0}
+--- !u!1 &7821528019613590873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8770911176580677429}
+  - component: {fileID: 2130322554767768597}
+  m_Layer: 0
+  m_Name: Cave_Awakening-P1_Alex-Phrase-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8770911176580677429
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7821528019613590873}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2130322554767768597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7821528019613590873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=\"red\">\u0425\u0445...\u043C\u043C..\u044D\u0442\u043E \u0436\u0435
+      \u043D\u0430\u0434\u043E \u0431\u044B\u043B\u043E \u0434\u043E\u0434\u0443\u043C\u0430\u0442\u044C\u0441\u044F
+      \u043F\u0440\u044B\u0433\u043D\u0443\u0442\u044C \u0432 \u043F\u0440\u043E\u043F\u0430\u0441\u0442\u044C..."
+    Object: {fileID: 0}
+  - Language: English
+    Text: gawgagagwa
     Object: {fileID: 0}
 --- !u!1 &7946292836585397136
 GameObject:
