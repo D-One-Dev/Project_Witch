@@ -206,7 +206,7 @@ MonoBehaviour:
       m_Calls: []
   lifeTime: 15
   lifeTimeAfterCollide: 15
-  damage: 10
+  damage: 20
   damageType: 2
   targetAimView: {fileID: 1774267915423354737, guid: f96628eb86c317d4393f74e0750365d0,
     type: 3}
@@ -214,6 +214,8 @@ MonoBehaviour:
     type: 3}
   timeForAppear: 0.3
   appearStep: 0.1
+  endPosition: 0.35
   isColumnAnimDisappearing: 0
-  isColumnAppearWithEffect: 1
+  isColumnDisappearWithEffect: 0
+  isColumnAppearWithRandomPosition: 0
   effectsScale: 10

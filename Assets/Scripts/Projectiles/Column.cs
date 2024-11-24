@@ -30,6 +30,7 @@ namespace Projectiles
             StartCoroutine(DestroyTargetAimView());
             
             if (targetAimView != null) _targetAimViewCache = Instantiate(targetAimView, transform.position, targetAimView.transform.rotation);
+            
             transform.position = new Vector3(transform.position.x, -10f, transform.position.z);
 
             if (!isColumnDisappearWithEffect)

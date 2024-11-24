@@ -10,16 +10,26 @@ namespace Enemies.EnemyUnits
     [RequireComponent(typeof(EnemyBossHealth))]
     public class GreatMageBossEnemyUnit : ShootingEnemyUnitBase
     {
+        [Header("Variables")]
         [SerializeField] private float[] timeBetweenBossActions;
         [SerializeField] private float currentTimeBetweenBossActions;
-        [SerializeField] private GameObject centerPointPrefab;
-        [SerializeField] private GameObject rockObj;
-        [SerializeField] private GameObject pillarObj;
-        [SerializeField] private GameObject teleportEffect;
         
+        [Header("Additional references")]
+        [SerializeField] private GameObject centerPointPrefab;
+        [SerializeField] private GameObject teleportEffect;
+        [SerializeField] private GameObject lightEffect;
+        [SerializeField] private GameObject shieldSphere;
+        [SerializeField] private GameObject shieldSphereEffect;
         [SerializeField] private GameObject pillarWaveSpawner;
         private GameObject _pillarWaveSpawnerCache;
+        
+        [Header("Projectiles")]
+        [SerializeField] private GameObject rockObj;
+        [SerializeField] private GameObject iceObj;
+        [SerializeField] private GameObject icyRockObj;
+        [SerializeField] private GameObject pillarObj;
 
+        private int _previousState = 1;
         private int _currentState;
         
         private Transform _centerPoint;
@@ -39,11 +49,12 @@ namespace Enemies.EnemyUnits
 
             currentTimeBetweenBossActions = timeBetweenBossActions[0];
             
-            //_actions.Add(new WalkInRadius(walkPointRange, _centerPoint));
-            //_actions.Add(new TeleportationInRadius(walkPointRange, _centerPoint, SpawnTeleportEffect));
-            //_actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking1", SpawnMultipleProjectTiles));
-            //_actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnNewProjectTile));
-            //_actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnPillarObj));
+            _actions.Add(new WalkInRadius(walkPointRange, _centerPoint));
+            _actions.Add(new TeleportationInRadius(walkPointRange, _centerPoint, SpawnTeleportEffect));
+            _actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnIceProjectTile));
+            _actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnIcyRockProjectTile));
+            _actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking1", SpawnMultipleProjectTiles));
+            _actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnPillarObj));
             _actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnPillarWave));
 
             _deathAction = new Death("isDead");
@@ -53,10 +64,41 @@ namespace Enemies.EnemyUnits
 
         private void SpawnTeleportEffect() => Instantiate(teleportEffect, transform.position, Quaternion.identity);
 
+        protected void SpawnIceProjectTile()
+        {
+            currentProjectTile = iceObj;
+            SpawnNewProjectTile();
+        }
+        
+        protected void SpawnIcyRockProjectTile()
+        {
+            currentProjectTile = icyRockObj;
+            SpawnNewProjectTile();
+        }
+
+        protected void SpawnMultipleProjectTiles() => StartCoroutine(SpawningMultipleProjectTiles());
+
+        private IEnumerator SpawningMultipleProjectTiles()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                yield return new WaitForSeconds(0.1f);
+                Vector3 randomPosition = new Vector3(shootingPoint.position.x + Random.Range(-1f, 1f), shootingPoint.position.y + Random.Range(-1f, 1f), shootingPoint.position.z);
+                _container.InstantiatePrefab(rockObj, randomPosition, shootingPoint.rotation, null);
+            }
+        }
+        
+        protected void SpawnPillarObj()
+        {
+            Vector3 position = new Vector3(_player.position.x, 0.02f, _player.position.z);
+            _container.InstantiatePrefab(pillarObj, position, pillarObj.transform.rotation, null);
+        }
+        
         protected void SpawnPillarWave()
         {
             if (_pillarWaveSpawnerCache != null) return;
             
+            StopCoroutine(Levitation());
             StartCoroutine(Levitation());
             
             float randomAngleDegrees = 90;
@@ -85,32 +127,7 @@ namespace Enemies.EnemyUnits
                 yield return null;
             }
         }
-
-        protected void SpawnPillarObj()
-        {
-            Vector3 position = new Vector3(_player.position.x, 0.02f, _player.position.z);
-            _container.InstantiatePrefab(pillarObj, position, pillarObj.transform.rotation, null);
-        }
-
-        /*private IEnumerator SpawningPillarObj()
-        {
-            Vector3 position = new Vector3(Player.Player.Instance.transform.position.x, -10f, Player.Player.Instance.transform.position.z);
-            yield return new WaitForSeconds(0.4f);
-            Instantiate(pillarObj, position, pillarObj.transform.rotation);
-        }*/
-
-        protected void SpawnMultipleProjectTiles() => StartCoroutine(SpawningMultipleProjectTiles());
-
-        private IEnumerator SpawningMultipleProjectTiles()
-        {
-            for (int i = 0; i < 3; i++)
-            {
-                yield return new WaitForSeconds(0.1f);
-                Vector3 randomPosition = new Vector3(shootingPoint.position.x + Random.Range(-1f, 1f), shootingPoint.position.y + Random.Range(-1f, 1f), shootingPoint.position.z);
-                _container.InstantiatePrefab(rockObj, randomPosition, shootingPoint.rotation, null);
-            }
-        }
-
+        
         protected override void CheckState() {}
 
         private IEnumerator BossActionUpdate()
@@ -138,8 +155,12 @@ namespace Enemies.EnemyUnits
                     _currentState = 3;
                     break;
             }
-            
-            BossStateUpdate();
+
+            if (_previousState != _currentState)
+            {
+                BossStateUpdate();
+                _previousState = _currentState;
+            }
         }
 
         public override void Death()
@@ -148,6 +169,7 @@ namespace Enemies.EnemyUnits
             StopAllCoroutines();
             _agent.baseOffset = 0.73f;
             _currentAction = _deathAction;
+            lightEffect.SetActive(false);
         }
 
         private void BossStateUpdate()
@@ -160,9 +182,13 @@ namespace Enemies.EnemyUnits
                 case 2:
                     currentTimeBetweenBossActions = timeBetweenBossActions[2];
                     _actions[1] = new TeleportationInRadius(walkPointRange, 1, _centerPoint, SpawnTeleportEffect);
+                    lightEffect.SetActive(true);
+                    _currentAction = _actions[1];
+                    print("state 2");
                     break;
                 case 3:
                     currentTimeBetweenBossActions = timeBetweenBossActions[3];
+                    print("state 3");
                     break;
             }
         }

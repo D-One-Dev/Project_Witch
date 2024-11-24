@@ -181,14 +181,14 @@ MonoBehaviour:
       m_Calls: []
   lifeTime: 1.35
   lifeTimeAfterCollide: 1
-  damage: 10
+  damage: 28
   damageType: 2
   targetAimView: {fileID: 1774267915423354737, guid: f96628eb86c317d4393f74e0750365d0,
     type: 3}
   explosionEffect: {fileID: 3721022018611559325, guid: 3c57deb902f5c594c9d94e287b88b9f9,
     type: 3}
   timeForAppear: 0.01
-  appearStep: 0.1
+  appearStep: 0.14
   endPosition: -0.25
   isColumnAnimDisappearing: 1
   isColumnDisappearWithEffect: 0

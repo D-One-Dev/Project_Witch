@@ -14,5 +14,11 @@ namespace Enemies
         }
 
         public override void UpdateUI() => _bossHealthUI.ChangeHpBarValue((float) health / OriginHealth);
+
+        protected override void Death()
+        {
+            isDead = true;
+            OnDeath.Invoke();
+        }
     }
 }

@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace Enemies.EnemyActions
 {
     public class Idle : IAction
@@ -17,6 +19,7 @@ namespace Enemies.EnemyActions
         public void PerformAction(Enemy enemy)
         {
             enemy.Animator.SetTrigger(_isDeadTriggerKey);
+            Debug.Log("death trigger key");
         }
     }
 }

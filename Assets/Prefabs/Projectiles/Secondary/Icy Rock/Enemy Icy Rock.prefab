@@ -171,7 +171,7 @@ MonoBehaviour:
         m_CallState: 2
   lifeTime: 30
   lifeTimeAfterCollide: 0
-  damage: 10
+  damage: 15
   damageType: 2
   targetLockRadius: 7.5
   ignoreTag: Enemy

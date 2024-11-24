@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 using Zenject;
 
 namespace Enemies.EnemyUnitBase
 {
     public abstract class ShootingEnemyUnitBase : EnemyUnitBase
     {
-        [SerializeField] protected GameObject projectTile;
+        [FormerlySerializedAs("projectTile")] [SerializeField] protected GameObject currentProjectTile;
 
         protected DiContainer _container;
         public delegate void SpawnProjectTile();
@@ -20,7 +21,7 @@ namespace Enemies.EnemyUnitBase
 
         protected void SpawnNewProjectTile()
         {
-            _container.InstantiatePrefab(projectTile, shootingPoint.position, shootingPoint.rotation, null);
+            _container.InstantiatePrefab(currentProjectTile, shootingPoint.position, shootingPoint.rotation, null);
         }
     }
 }

@@ -9,6 +9,7 @@ namespace Enemies.EnemyUnitBase
     [RequireComponent(typeof(NavMeshAgent))]
     public abstract class EnemyUnitBase : MonoBehaviour
     {
+        [Header("Enemy Unit Base Parameters")]
         [SerializeField] protected Animator animator;
         [SerializeField] protected LayerMask playerLayer, groundLayer;
         
@@ -17,8 +18,6 @@ namespace Enemies.EnemyUnitBase
         [SerializeField] protected float sightRange, attackRange;
         
         protected bool _playerInSightRange, _playerInAttackRange;
-
-        private bool _isDead;
 
         [Inject(Id = "PlayerTransform")]
         protected readonly Transform _player;
@@ -41,8 +40,6 @@ namespace Enemies.EnemyUnitBase
 
         private void Update()
         {
-            if (_isDead) return;
-            
             _playerInSightRange = Physics.CheckSphere(transform.position, sightRange, playerLayer);
             _playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, playerLayer);
             
@@ -65,7 +62,6 @@ namespace Enemies.EnemyUnitBase
 
         public virtual void Death()
         {
-            _isDead = true;
         }
 
         private void OnDrawGizmosSelected()

@@ -23,10 +23,20 @@ PrefabInstance:
       propertyPath: InitialModule.startLifetime.scalar
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7467590472830034473, guid: 049909671dc31e24c9c5bf4e95c43cec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7564462548551422009, guid: 049909671dc31e24c9c5bf4e95c43cec,
         type: 3}
       propertyPath: m_Name
       value: Ice
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564462548551422009, guid: 049909671dc31e24c9c5bf4e95c43cec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8376853591899637470, guid: 049909671dc31e24c9c5bf4e95c43cec,
         type: 3}
@@ -201,7 +211,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 80532301e6b6ef844960d9c2edb32960,
         type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -307,9 +317,10 @@ MonoBehaviour:
       m_Calls: []
   lifeTime: 10
   lifeTimeAfterCollide: 0
-  damage: 10
+  damage: 11
   damageType: 2
   targetLockRadius: 7.5
+  ignoreTag: 
   speed: 40
   isHoming: 0
   isElementStrengthened: 0
