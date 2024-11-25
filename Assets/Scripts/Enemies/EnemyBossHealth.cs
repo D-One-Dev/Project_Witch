@@ -19,6 +19,7 @@ namespace Enemies
         {
             isDead = true;
             OnDeath.Invoke();
+            if (gameObject.TryGetComponent(out EnemyMoneyCost component)) component.DropMoney();
         }
     }
 }

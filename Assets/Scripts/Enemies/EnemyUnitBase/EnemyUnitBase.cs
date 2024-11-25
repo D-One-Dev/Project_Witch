@@ -18,10 +18,11 @@ namespace Enemies.EnemyUnitBase
         [SerializeField] protected float sightRange, attackRange;
         
         protected bool _playerInSightRange, _playerInAttackRange;
+        protected bool _isDead;
 
         [Inject(Id = "PlayerTransform")]
         protected readonly Transform _player;
-        
+
         protected NavMeshAgent _agent;
 
         protected Enemy _enemy;
@@ -50,6 +51,8 @@ namespace Enemies.EnemyUnitBase
 
         protected virtual void CheckState()
         {
+            if (_isDead) return;
+            
             if (!_playerInSightRange && !_playerInAttackRange) SetAction(_walkAction);
             else if (_playerInSightRange && !_playerInAttackRange) SetAction(_chaseAction);
             else if (_playerInSightRange && _playerInAttackRange) SetAction(_attackAction);
@@ -62,6 +65,7 @@ namespace Enemies.EnemyUnitBase
 
         public virtual void Death()
         {
+            _isDead = true;
         }
 
         private void OnDrawGizmosSelected()
