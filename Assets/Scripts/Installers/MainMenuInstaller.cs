@@ -38,5 +38,9 @@ public class MainMenuInstaller : MonoInstaller
         this.Container.Bind<AnimationsController>()
             .FromNew()
             .AsSingle();
+
+        this.Container.Bind<ShopUIController>()
+            .FromInstance(null)
+            .AsSingle();
     }
 }

@@ -15,6 +15,7 @@ public class SpellsInstaller : MonoInstaller
     [SerializeField] private Spell icyRockSpell;
     [SerializeField] private Spell poisonedFireballSpell;
     [SerializeField] private Spell poisonedRockSpell;
+    [SerializeField] private Spell poisonedShardSpell;
 
     [Header("Current Spells and Effects")]
     [SerializeReference] public Spell leftSpell;
@@ -65,6 +66,10 @@ public class SpellsInstaller : MonoInstaller
         this.Container.Bind<Spell>()
             .WithId("PoisonedRockSpell")
             .FromInstance(poisonedRockSpell)
+            .AsTransient();
+        this.Container.Bind<Spell>()
+            .WithId("PosionedShardSpell")
+            .FromInstance(poisonedShardSpell)
             .AsTransient();
 
         this.Container.Bind<Spell>()

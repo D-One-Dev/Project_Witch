@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using Zenject;
 
 public class DialogueHolder : MonoBehaviour
@@ -11,10 +13,13 @@ public class DialogueHolder : MonoBehaviour
     [Inject(Id = "DialogueScreen")]
     protected readonly GameObject _dialogueScreen;
     [SerializeField] private DialogueLine[] dialogues;
+    [SerializeField] private OnDialogueEndEvent onDialogueEndAction = new OnDialogueEndEvent();
 
     private DialogueLine _currentLine;
     private AnimationsController _animationsController;
     private TextAnimator _textAnimator;
+    [Serializable]
+    private class OnDialogueEndEvent : UnityEvent { }
 
     [Inject]
     public void Construct(AnimationsController animationsController, TextAnimator textAnimator)
@@ -32,6 +37,8 @@ public class DialogueHolder : MonoBehaviour
             yield return new WaitUntil(() => _currentLine.IsFinished);
         }
 
+        Debug.Log("Dialogue End");
+        onDialogueEndAction.Invoke();
         IsDialogueActive = false;
         ResetDialogue();
         _animationsController.FadeOutScreen(_dialogueScreen);
