@@ -159,7 +159,44 @@ namespace Enemies.EnemyActions
         public void PerformAction(Enemy enemy)
         {
             enemy.Agent.SetDestination(_player.position);
+            
+            if (enemy.Animator.enabled == false) enemy.Animator.enabled = true;
             enemy.Animator.SetTrigger(IsWalking);
+        }
+    }
+    
+    public class ChaseWithTrigger : IAction
+    {
+        private readonly Transform _player;
+        private static readonly int IsWalking = Animator.StringToHash("isWalking");
+        public delegate void ChaseTrigger();
+
+        private readonly ChaseTrigger _chaseTriggerFunc;
+
+        private bool _isFirstTrigger = true;
+
+        public ChaseWithTrigger(Transform player, ChaseTrigger chaseTriggerFunc)
+        {
+            _player = player;
+            _chaseTriggerFunc = chaseTriggerFunc;
+        }
+
+        public void PerformAction(Enemy enemy)
+        {
+            enemy.Agent.SetDestination(_player.position);
+
+            if (enemy.Animator.enabled == false)
+            {
+                enemy.Animator.enabled = true;
+            }
+            
+            enemy.Animator.SetTrigger(IsWalking);
+
+            if (_isFirstTrigger)
+            {
+                _chaseTriggerFunc();
+                _isFirstTrigger = false;
+            }
         }
     }
 }

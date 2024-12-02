@@ -48,28 +48,59 @@ namespace Enemies.EnemyActions
         }
     }
 
-    public class ShootingAttack : Attack
+    public class CallAttack : Attack
     {
-        private readonly ShootingEnemyUnitBase.SpawnProjectTile _spawnProjectTile;
+        public delegate void AttackCall();
+
+        private readonly AttackCall _beforeAttackCall;
+        private readonly AttackCall _attackCall;
+
+        private readonly float _timeForAttack;
         
-        public ShootingAttack(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey,
-            ShootingEnemyUnitBase.SpawnProjectTile spawnProjectTile) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
+        public CallAttack(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
         {
-            _spawnProjectTile = spawnProjectTile;
+            _attackCall = attackCall;
+        }
+        
+        public CallAttack(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall, AttackCall beforeAttackCall) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
+        {
+            _attackCall = attackCall;
+            _beforeAttackCall = beforeAttackCall;
+        }
+        
+        public CallAttack(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall, float timeForAttack) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
+        {
+            _attackCall = attackCall;
+            _timeForAttack = timeForAttack;
         }
 
         protected override void DoAttack()
         {
-            var shootingEnemyUnit = (ShootingEnemyUnitBase) Enemy.EnemyUnit;
-            shootingEnemyUnit.shootingPoint.LookAt(Player);
-            
+            _beforeAttackCall?.Invoke();
             Enemy.EnemyUnit.StartCoroutine(Attacking());
         }
-
+        
         protected IEnumerator Attacking()
         {
-            yield return new WaitForSeconds(Enemy.Animator.GetCurrentAnimatorClipInfo(0).Length + 0.1f);
-            _spawnProjectTile();
+            if (_timeForAttack == 0)
+                yield return new WaitForSeconds(Enemy.Animator.GetCurrentAnimatorClipInfo(0).Length + 0.1f);
+            else yield return new WaitForSeconds(_timeForAttack);
+            
+            _attackCall();
+        }
+    }
+    
+    public class ShootingAttack : CallAttack
+    {
+        public ShootingAttack(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall) : base(player, timeBetweenAttacks, isAttackingTriggerKey, attackCall)
+        {
+        }
+        
+        protected override void DoAttack()
+        {
+            base.DoAttack();
+            var shootingEnemyUnit = (ShootingEnemyUnitBase) Enemy.EnemyUnit;
+            shootingEnemyUnit.shootingPoint.LookAt(Player);
         }
     }
 }
