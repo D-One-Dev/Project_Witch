@@ -1,3 +1,4 @@
+using HealthSystem;
 using Projectiles;
 using UnityEngine;
 
@@ -9,7 +10,7 @@ public class FireballProjectile : Projectile
         Collider[] enemies = Physics.OverlapSphere(transform.position, transform.localScale.x * areaDamageRadius, targetLayer);
         foreach (Collider enemy in enemies)
         {
-            enemy.gameObject.GetComponent<EntityHealth>().TakeDamage(damage / 2, damageType, isElementStrengthened);
+            enemy.gameObject.GetComponent<IDamageable>().TakeDamage(damage / 2, damageType, isElementStrengthened);
         }
     }
 
