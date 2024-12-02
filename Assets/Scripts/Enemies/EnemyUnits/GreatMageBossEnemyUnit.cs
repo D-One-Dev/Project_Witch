@@ -59,7 +59,16 @@ namespace Enemies.EnemyUnits
 
             _deathAction = new Death("isDead");
 
+            _currentAction = new Idle();
+
+            StartCoroutine(StartingBoss());
+        }
+
+        private IEnumerator StartingBoss()
+        {
+            yield return new WaitForSeconds(7);
             StartCoroutine(BossActionUpdate());
+            shieldSphere.SetActive(true);
         }
 
         private void SpawnTeleportEffect() => Instantiate(teleportEffect, transform.position, Quaternion.identity);

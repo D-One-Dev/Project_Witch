@@ -132,13 +132,14 @@ GameObject:
   - component: {fileID: 1934487535773307660}
   - component: {fileID: 3900603004876353328}
   - component: {fileID: 631793022318173581}
+  - component: {fileID: 7396516227681968829}
   m_Layer: 8
   m_Name: GreatMage
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3205840142885680567
 Transform:
   m_ObjectHideFlags: 0
@@ -231,6 +232,7 @@ MonoBehaviour:
   damageResistType: 0
   damageVulnerabilityType: 0
   surfaceDamageCooldownTime: 0.5
+  isDestroyAfterDead: 1
   OnDeath:
     m_PersistentCalls:
       m_Calls:
@@ -246,6 +248,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  partOfColliderTriggers: []
 --- !u!114 &631793022318173581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,6 +295,28 @@ MonoBehaviour:
     type: 3}
   pillarObj: {fileID: 8474811592475035810, guid: 7975faa0acfede141b238b0f8ae5cf33,
     type: 3}
+--- !u!114 &7396516227681968829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000746035825119568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32ba588bbb0a4e65955e0eeaca1d5026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsRb:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &2452247405508033398
 GameObject:
   m_ObjectHideFlags: 0

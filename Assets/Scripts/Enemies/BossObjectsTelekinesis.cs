@@ -23,7 +23,7 @@ namespace Enemies
             {
                 for (int i = 0; i < objectsRb.Length; i++)
                 {
-                    objectsRb[i].transform.position = new Vector3(objectsRb[i].transform.position.x, objectsRb[i].transform.position.y + 0.1f, objectsRb[i].transform.position.z);
+                    objectsRb[i].transform.position = new Vector3(objectsRb[i].transform.position.x, objectsRb[i].transform.position.y + 0.25f, objectsRb[i].transform.position.z);
                     yield return new WaitForSeconds(0.001f);
                 }
             }
