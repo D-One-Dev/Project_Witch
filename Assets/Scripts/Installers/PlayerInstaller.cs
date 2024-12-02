@@ -27,6 +27,8 @@ public class PlayerInstaller : MonoInstaller
     [SerializeField] private float defaultMouseSens;
     [SerializeField] private AudioClip[] playerFootstepsDefault, playerFootstepsStone, playerFootstepsGrass;
     [SerializeField] private LayerMask collisionLayerMask;
+    [SerializeField] private float timeToStartHeal;
+    [SerializeField] private float healSpeed;
     
     public override void InstallBindings()
     {
@@ -153,5 +155,15 @@ public class PlayerInstaller : MonoInstaller
             .FromNew()
             .AsSingle()
             .NonLazy();
+
+        this.Container.Bind<float>()
+            .WithId("TimeToStartHeal")
+            .FromInstance(timeToStartHeal)
+            .AsTransient();
+
+        this.Container.Bind<float>()
+            .WithId("HealSpeed")
+            .FromInstance(healSpeed)
+            .AsTransient();
     }
 }

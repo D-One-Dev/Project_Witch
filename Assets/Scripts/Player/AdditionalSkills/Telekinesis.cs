@@ -25,14 +25,19 @@ namespace Player
         private Controls _controls;
         [Inject(Id = "Camera")]
         private readonly Transform _camera;
+        [Inject(Id = "TelekinesisIcon")]
+        private GameObject _telekinesisIcon;
 
         public Transform objectForRaycast;
+
+        private AnimationsController _animationsController;
         
         [Inject]
-        public void Construct(Controls controls, AdditionalSkillsManager additionalSkillsManager)
+        public void Construct(Controls controls, AdditionalSkillsManager additionalSkillsManager, AnimationsController animationsController)
         {
             _controls = controls;
             _additionalSkillsManager = additionalSkillsManager;
+            _animationsController = animationsController;
             
             _controls.Gameplay.RMB.performed += ctx => OnRMBClick();
             
@@ -49,6 +54,7 @@ namespace Player
 
         public void OnVClick()
         {
+            _animationsController.ClickButton(_telekinesisIcon);
             if (heldObj == null)
             {
                 RaycastHit hit;
