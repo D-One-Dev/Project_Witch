@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8fc4cec5e088964cae176e60c7fb09f, type: 3}
+  m_Name: Poisoned Shard
+  m_EditorClassIdentifier: 
+  Type: 0
+  objectPrefabs:
+  - {fileID: 6658851618858588500, guid: 931aaa663f490344f9f312cda81760c1, type: 3}
+  manaCost: 0
+  spellNameTag: 
+  spellDescriptionTag: 
+  spellIcon: {fileID: 0}

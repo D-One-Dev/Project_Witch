@@ -19,6 +19,7 @@ public class UIInstaller : MonoInstaller
     [SerializeField] private RectTransform playerManaBarParent;
     [SerializeField] private Gradient rainbow;
     [SerializeField] private ShopUIController shopUIController;
+    [SerializeField] private GameObject telekinesisIcon;
 
     [Header("Spells UI")]
     [SerializeField] private GameObject leftSpellIcon;
@@ -151,5 +152,10 @@ public class UIInstaller : MonoInstaller
             .FromInstance(shopUIController)
             .AsSingle()
             .NonLazy();
+
+        this.Container.Bind<GameObject>()
+            .WithId("TelekinesisIcon")
+            .FromInstance(telekinesisIcon)
+            .AsTransient();
     }
 }

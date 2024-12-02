@@ -69,12 +69,13 @@ public class EntityHealth : MonoBehaviour, IDamageable
             print(other);
         }
     }
-    
-    public void TakeDamage(int damage, DamageType damageType, bool isElementStrengthened)
+
+
+    public virtual void TakeDamage(int damage, DamageType damageType, bool isElementStrengthened)
     {
         int coef = isElementStrengthened ? 4 : 2;
-        if (damageResistType == damageType) damage /= coef;
-        else if (damageVulnerabilityType == damageType) damage *= coef;
+        if((damageResistType & damageType) != DamageType.None) damage /= coef;
+        if ((damageVulnerabilityType & damageType) != DamageType.None) damage *= coef;
         if (health - damage > 0)
         {
             health -= damage;
