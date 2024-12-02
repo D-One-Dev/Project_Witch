@@ -416,7 +416,7 @@ MonoBehaviour:
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 1
   m_Cameras: []
-  m_RendererIndex: -1
+  m_RendererIndex: 1
   m_VolumeLayerMask:
     serializedVersion: 2
     m_Bits: 0
@@ -884,9 +884,11 @@ MonoBehaviour:
   damageResistType: 0
   damageVulnerabilityType: 0
   surfaceDamageCooldownTime: 0.5
+  isDestroyAfterDead: 1
   OnDeath:
     m_PersistentCalls:
       m_Calls: []
+  partOfColliderTriggers: []
 --- !u!114 &5774953289710239808
 MonoBehaviour:
   m_ObjectHideFlags: 0

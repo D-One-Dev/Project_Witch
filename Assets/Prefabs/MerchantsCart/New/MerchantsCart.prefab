@@ -101,7 +101,7 @@ PrefabInstance:
     - target: {fileID: 6835227568148743282, guid: 18932657444693c488e862986ccc31e9,
         type: 3}
       propertyPath: dialogues.Array.data[0].lineTag
-      value: TestHint
+      value: MerchantDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 6835227568148743282, guid: 18932657444693c488e862986ccc31e9,
         type: 3}
