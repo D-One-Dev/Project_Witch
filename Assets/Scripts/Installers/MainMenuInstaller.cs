@@ -6,8 +6,16 @@ public class MainMenuInstaller : MonoInstaller
 {
     [SerializeField] private GameObject loadingScreen;
     [SerializeField] private Button loadGameButton;
+
+    [SerializeField] private SettingsLoader settingsLoader;
+    
     public override void InstallBindings()
     {
+        this.Container.Bind<SettingsLoader>()
+            .FromInstance(settingsLoader)
+            .AsTransient()
+            .NonLazy();
+        
         this.Container.Bind<GameObject>()
             .WithId("LoadingScreen")
             .FromInstance(loadingScreen)

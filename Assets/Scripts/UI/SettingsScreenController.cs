@@ -1,3 +1,4 @@
+using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -108,8 +109,11 @@ public class SettingsScreenController : MonoBehaviour
 
     public void LoadSettings()
     {
+        if (!File.Exists(Application.dataPath + "/settings.savefile")) _savesController.SaveSettings(50, 50, 3, 0, 0, 0, 0);
+        
         SavesController.SettingsFile file = _savesController.LoadSettings();
-        if(file != null)
+        
+        if (file != null)
         {
             soundVolume = file.soundVolume;
             musicVolume = file.musicVolume;

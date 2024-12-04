@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Mike/MainMenu.unity
     guid: a66b7dff42b93ce40bcd3c4a1d2f202d
   - enabled: 0
@@ -50,6 +50,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Mike/PERFORMANCETEST.unity
     guid: 9a68eb396a61a8e4198e6b6e17f6aea6
+  - enabled: 1
+    path: Assets/Scenes/MAIN/MainMenu.unity
+    guid: 8a6b02264751352468ebccdc52c4c81b
   - enabled: 1
     path: Assets/Scenes/MAIN/1.unity
     guid: 702c477eda6fc7a4f8edc313475c4886

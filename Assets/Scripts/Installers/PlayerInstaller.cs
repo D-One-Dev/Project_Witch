@@ -30,8 +30,15 @@ public class PlayerInstaller : MonoInstaller
     [SerializeField] private float timeToStartHeal;
     [SerializeField] private float healSpeed;
     
+    [SerializeField] private SettingsLoader settingsLoader;
+    
     public override void InstallBindings()
     {
+        this.Container.Bind<SettingsLoader>()
+            .FromInstance(settingsLoader)
+            .AsTransient()
+            .NonLazy();
+        
         this.Container.Bind<Controls>()
             .FromNew()
             .AsTransient();

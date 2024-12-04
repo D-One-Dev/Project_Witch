@@ -19,15 +19,17 @@ public class SavesController : IInitializable
     private NewSpellCaster _newSpellCaster;
     private AnimationsController _animationsController;
     private ShopUIController _shopUIController;
+    private SettingsLoader _settingsLoader;
     private static readonly fsSerializer _serializer = new fsSerializer();
 
     [Inject]
-    public void Construct(PlayerMoney playerMoney, NewSpellCaster newSpellCaster, AnimationsController animationsController, ShopUIController shopUIController)
+    public void Construct(PlayerMoney playerMoney, NewSpellCaster newSpellCaster, AnimationsController animationsController, ShopUIController shopUIController, SettingsLoader settingsLoader)
     {
         _playerMoney = playerMoney;
         _newSpellCaster = newSpellCaster;
         _animationsController = animationsController;
         _shopUIController = shopUIController;
+        _settingsLoader = settingsLoader;
     }
 
     public void Initialize()
@@ -142,11 +144,11 @@ public class SavesController : IInitializable
     {
         SettingsFile file = new SettingsFile();
         if (file.soundVolume != -1) file.soundVolume = soundVolume;
-        else file.soundVolume = 100;
+        else file.soundVolume = 50;
         if (file.musicVolume != -1) file.musicVolume = musicVolume;
-        else file.musicVolume = 100;
+        else file.musicVolume = 50;
         if (file.graphics != -1) file.graphics = graphics;
-        else file.graphics = 2;
+        else file.graphics = 3;
         if (file.voiceLanguage != -1) file.voiceLanguage = voiceLanguage;
         else file.voiceLanguage = 1;
         if (file.textLanguage != -1) file.textLanguage = textLanguage;
@@ -158,7 +160,7 @@ public class SavesController : IInitializable
         string json = JsonUtility.ToJson(file);
         File.WriteAllText(Application.dataPath + "/settings.savefile", json);
 
-        SettingsLoader.Instance.UpdateSettings(file);
+        _settingsLoader.UpdateSettings(file);
     }
 
     public SettingsFile LoadSettings()

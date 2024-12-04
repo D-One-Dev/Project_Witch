@@ -10,10 +10,14 @@ namespace Enemies.EnemyUnits
         [Header("Golem parameters")]
         [SerializeField] private GameObject centerPointPrefab;
         [SerializeField] private BoxCollider[] attackAreas;
+
+        [SerializeField] private BoxCollider explosionAttackArea;
         
         [SerializeField] private GameObject explosion;
-        [SerializeField] private GameObject explosionEffect;
-        
+        [SerializeField] private GameObject[] explosionEffects;
+        [SerializeField] private GameObject explosionSphereEffect;
+        [SerializeField] private Transform explosionPoint;
+
         private List<IAction> _attackActions = new();
         
         private IAction _deathAction;
@@ -56,9 +60,24 @@ namespace Enemies.EnemyUnits
         private void Explode()
         {
             Explosion explosionScr = Instantiate(explosion, transform.position, Quaternion.identity).GetComponent<Explosion>();
-            explosionScr.explosionScale = 50;
+            explosionScr.explosionScale = 70;
 
-            Instantiate(explosionEffect, transform.position, Quaternion.identity).transform.localScale = new Vector3(10, 10, 10);
+            for (int i = 0; i < explosionEffects.Length; i++)
+            {
+                Instantiate(explosionEffects[i], transform.position, Quaternion.identity).transform.localScale = new Vector3(10, 10, 10);
+            }
+            
+            Instantiate(explosionSphereEffect, explosionPoint.position, Quaternion.identity);
+
+            StopCoroutine(ActivateExplosionAttackArea());
+            StartCoroutine(ActivateExplosionAttackArea());
+        }
+
+        private IEnumerator ActivateExplosionAttackArea()
+        {
+            explosionAttackArea.enabled = true;
+            yield return new WaitForSeconds(0.1f);
+            explosionAttackArea.enabled = false;
         }
 
         private void ActivateAttackArea()

@@ -200,6 +200,7 @@ MonoBehaviour:
   damage: 60
   damageType: 4
   targetLockRadius: 7.5
+  ignoreTag: 
   speed: 30
   isHoming: 0
   isElementStrengthened: 0

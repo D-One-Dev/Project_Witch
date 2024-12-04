@@ -22,6 +22,8 @@ namespace Enemies.EnemyUnits
         [SerializeField] private GameObject shieldSphereEffect;
         [SerializeField] private GameObject pillarWaveSpawner;
         private GameObject _pillarWaveSpawnerCache;
+
+        [SerializeField] private AudioClip bossTheme;
         
         [Header("Projectiles")]
         [SerializeField] private GameObject rockObj;
@@ -68,7 +70,9 @@ namespace Enemies.EnemyUnits
         {
             yield return new WaitForSeconds(7);
             StartCoroutine(BossActionUpdate());
+            MusicController.Instance.ChangeMusic(bossTheme);
             shieldSphere.SetActive(true);
+            shieldSphereEffect.SetActive(false);
         }
 
         private void SpawnTeleportEffect() => Instantiate(teleportEffect, transform.position, Quaternion.identity);
@@ -179,6 +183,8 @@ namespace Enemies.EnemyUnits
             _agent.baseOffset = 0.73f;
             _currentAction = _deathAction;
             lightEffect.SetActive(false);
+            shieldSphere.SetActive(false);
+            MusicController.Instance.DisableMusic();
         }
 
         private void BossStateUpdate()

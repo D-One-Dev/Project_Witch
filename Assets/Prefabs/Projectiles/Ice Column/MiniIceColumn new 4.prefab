@@ -181,7 +181,7 @@ MonoBehaviour:
       m_Calls: []
   lifeTime: 1.35
   lifeTimeAfterCollide: 1
-  damage: 28
+  damage: 55
   damageType: 2
   targetAimView: {fileID: 1774267915423354737, guid: f96628eb86c317d4393f74e0750365d0,
     type: 3}
