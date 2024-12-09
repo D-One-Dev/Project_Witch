@@ -24,6 +24,9 @@ namespace Enemies.EnemyUnits
         private GameObject _pillarWaveSpawnerCache;
 
         [SerializeField] private AudioClip bossTheme;
+
+        [SerializeField] private GameObject defeatTrigger;
+        [SerializeField] private GameObject[] dropParts;
         
         [Header("Projectiles")]
         [SerializeField] private GameObject rockObj;
@@ -53,11 +56,11 @@ namespace Enemies.EnemyUnits
             
             _actions.Add(new WalkInRadius(walkPointRange, _centerPoint));
             _actions.Add(new TeleportationInRadius(walkPointRange, _centerPoint, SpawnTeleportEffect));
-            _actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnIceProjectTile));
-            _actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnIcyRockProjectTile));
-            _actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking1", SpawnMultipleProjectTiles));
-            _actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnPillarObj));
-            _actions.Add(new ShootingAttack(_player, timeBetweenAttacks, "isAttacking2", SpawnPillarWave));
+            _actions.Add(new ShootingAttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", SpawnIceProjectTile));
+            _actions.Add(new ShootingAttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", SpawnIcyRockProjectTile));
+            _actions.Add(new ShootingAttackWithCallback(_player, timeBetweenAttacks, "isAttacking1", SpawnMultipleProjectTiles));
+            _actions.Add(new ShootingAttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", SpawnPillarObj));
+            _actions.Add(new ShootingAttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", SpawnPillarWave));
 
             _deathAction = new Death("isDead");
 
@@ -70,7 +73,7 @@ namespace Enemies.EnemyUnits
         {
             yield return new WaitForSeconds(7);
             StartCoroutine(BossActionUpdate());
-            MusicController.Instance.ChangeMusic(bossTheme);
+            MusicController.Instance.ChangeMusicWithoutFade(bossTheme);
             shieldSphere.SetActive(true);
             shieldSphereEffect.SetActive(false);
         }
@@ -185,6 +188,17 @@ namespace Enemies.EnemyUnits
             lightEffect.SetActive(false);
             shieldSphere.SetActive(false);
             MusicController.Instance.DisableMusic();
+            defeatTrigger.SetActive(true);
+        }
+
+        public void Absorption()
+        {
+            for (int i = 0; i < dropParts.Length; i++)
+            {
+                Instantiate(dropParts[i], transform.position, Quaternion.identity);
+            }
+            
+            Destroy(gameObject);
         }
 
         private void BossStateUpdate()

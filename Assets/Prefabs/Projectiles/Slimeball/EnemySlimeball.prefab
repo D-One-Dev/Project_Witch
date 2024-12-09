@@ -161,7 +161,7 @@ MonoBehaviour:
   damageType: 0
   targetLockRadius: 7.5
   ignoreTag: 
-  speed: 12
+  speed: 25
   isHoming: 0
   isElementStrengthened: 0
   rotationSpeed: 2.5

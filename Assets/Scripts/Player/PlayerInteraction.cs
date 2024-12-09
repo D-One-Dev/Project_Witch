@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using Zenject;
 using Lean.Localization;
+using UI;
 
 public class PlayerInteraction : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class PlayerInteraction : MonoBehaviour
 
     private InGameHint _currentHint;
     private bool _isHintActive;
+
+    private InteractWithGameObject _currentInteractWithGJ;
 
     private AnimationsController _animationsController;
 
@@ -45,6 +48,11 @@ public class PlayerInteraction : MonoBehaviour
             _animationsController.FadeInScreen(_hintScreen);
             _isHintActive = true;
         }
+
+        if (_currentInteractWithGJ != null)
+        {
+            _currentInteractWithGJ.Interact();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -53,6 +61,11 @@ public class PlayerInteraction : MonoBehaviour
         {
             _currentHint = other.GetComponent<InGameHint>();
             _currentHint.Activate();
+        }
+        else if (other.gameObject.CompareTag("DefaultFInteraction"))
+        {
+            _currentInteractWithGJ = other.GetComponent<InteractWithGameObject>();
+            _currentInteractWithGJ.Activate();
         }
     }
 
@@ -64,6 +77,12 @@ public class PlayerInteraction : MonoBehaviour
             _currentHint = null;
             _isHintActive = false;
             _animationsController.FadeOutScreen(_hintScreen);
+        }
+        
+        if (other.gameObject.CompareTag("DefaultFInteraction") && _currentInteractWithGJ != null)
+        {
+            _currentInteractWithGJ.Deactivate();
+            _currentInteractWithGJ = null;
         }
     }
 }
