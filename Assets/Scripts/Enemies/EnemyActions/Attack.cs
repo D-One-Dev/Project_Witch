@@ -48,7 +48,7 @@ namespace Enemies.EnemyActions
         }
     }
 
-    public class CallAttack : Attack
+    public class AttackWithCallback : Attack
     {
         public delegate void AttackCall();
 
@@ -57,18 +57,18 @@ namespace Enemies.EnemyActions
 
         private readonly float _timeForAttack;
         
-        public CallAttack(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
+        public AttackWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
         {
             _attackCall = attackCall;
         }
         
-        public CallAttack(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall, AttackCall beforeAttackCall) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
+        public AttackWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall, AttackCall beforeAttackCall) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
         {
             _attackCall = attackCall;
             _beforeAttackCall = beforeAttackCall;
         }
         
-        public CallAttack(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall, float timeForAttack) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
+        public AttackWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall, float timeForAttack) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
         {
             _attackCall = attackCall;
             _timeForAttack = timeForAttack;
@@ -90,9 +90,9 @@ namespace Enemies.EnemyActions
         }
     }
     
-    public class ShootingAttack : CallAttack
+    public class ShootingAttackWithCallback : AttackWithCallback
     {
-        public ShootingAttack(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall) : base(player, timeBetweenAttacks, isAttackingTriggerKey, attackCall)
+        public ShootingAttackWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall) : base(player, timeBetweenAttacks, isAttackingTriggerKey, attackCall)
         {
         }
         

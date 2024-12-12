@@ -48,7 +48,8 @@ namespace Enemies.EnemyActions
         
         private bool IsPointOnNavMesh(Vector3 position) => NavMesh.SamplePosition(position, out NavMeshHit hit, 1f, NavMesh.AllAreas);
     }
-
+    
+    
     public class WalkInRadius : IAction
     {
         private readonly Transform _centerPoint;

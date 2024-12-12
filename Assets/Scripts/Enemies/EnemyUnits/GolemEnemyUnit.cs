@@ -30,12 +30,12 @@ namespace Enemies.EnemyUnits
             _walkAction = new Idle();
             _chaseAction = new ChaseWithTrigger(_player, ActivateGolem);
             
-            _attackAction = new CallAttack(_player, timeBetweenAttacks, "isAttacking2", DeactivateAttackArea, ActivateAttackArea);
+            _attackAction = new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", DeactivateAttackArea, ActivateAttackArea);
 
             _deathAction = new Death("isDead");
 
-            _attackActions.Add(new CallAttack(_player, timeBetweenAttacks, "isAttacking2", DeactivateAttackArea, ActivateAttackArea));
-            _attackActions.Add(new CallAttack(_player, timeBetweenAttacks, "isAttacking1", Explode));
+            _attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", DeactivateAttackArea, ActivateAttackArea));
+            _attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking1", Explode));
 
             animator.enabled = false;
 
