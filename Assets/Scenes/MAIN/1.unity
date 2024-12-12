@@ -8,8 +8,9 @@ OcclusionCullingSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: 702c477eda6fc7a4f8edc313475c4886
+  m_OcclusionCullingData: {fileID: 36300000, guid: 7136f18bb6861954eb73063b47a3c8a1,
+    type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -208,7 +209,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &9968499
 MonoBehaviour:
@@ -392,6 +393,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -792,7 +798,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &24964109
 MonoBehaviour:
@@ -977,6 +983,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1034,7 +1045,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &38196180
 Transform:
@@ -1151,6 +1162,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveOre1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffcc8d53ec7d5ec429ed942f01ff79c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1278,6 +1294,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1400,6 +1421,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stolagmit1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9e102fc231a41214493c11c4a50d9a36,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1497,6 +1523,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveOre1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffcc8d53ec7d5ec429ed942f01ff79c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1698,6 +1729,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1791,6 +1827,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveOre1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffcc8d53ec7d5ec429ed942f01ff79c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1890,6 +1931,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TreeRoot2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b03bc69e5e89beb42b0c7eee11cb0e16,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1915,7 +1961,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &76483727
 MonoBehaviour:
@@ -2059,7 +2105,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &82383878
 Transform:
@@ -2185,6 +2231,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b4ac149dc9c54c468c3aea71ecb30ef,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2216,7 +2267,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &98714519
 MonoBehaviour:
@@ -2406,6 +2457,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b4ac149dc9c54c468c3aea71ecb30ef,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2503,6 +2559,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2688,6 +2749,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2786,6 +2852,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2865,6 +2936,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForLiquids2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 66c141b9cc57da4469676201ed5012a6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2920,7 +2996,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &127205206
 MonoBehaviour:
@@ -3105,6 +3181,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3198,6 +3279,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3354,6 +3440,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1V2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e030c44e22e47dc42af67f2bc9d6875e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3442,6 +3533,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1V2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e030c44e22e47dc42af67f2bc9d6875e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3536,6 +3632,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3634,6 +3735,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3934,6 +4040,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4033,6 +4144,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b4ac149dc9c54c468c3aea71ecb30ef,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4125,6 +4241,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe39ca819a1d0ba4c87ba8372a6d354c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4224,6 +4345,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4251,7 +4377,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &177606088
 MonoBehaviour:
@@ -4608,6 +4734,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b4ac149dc9c54c468c3aea71ecb30ef,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4667,7 +4798,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &190514376
 MonoBehaviour:
@@ -4880,6 +5011,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4974,6 +5110,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5067,6 +5208,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveOre1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffcc8d53ec7d5ec429ed942f01ff79c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5166,6 +5312,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5193,7 +5344,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &203914777
 MonoBehaviour:
@@ -5378,6 +5529,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5495,6 +5651,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe39ca819a1d0ba4c87ba8372a6d354c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5587,6 +5748,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1V2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e030c44e22e47dc42af67f2bc9d6875e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5682,6 +5848,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LargeGlowingBerry2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1fbdc2da202ed5f42bcec0056ef32519,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5774,6 +5945,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheFlatPart1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b5cf84e7f4c390e499ba1cb8d92b1167,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5872,6 +6048,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveBush1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 469ab74096bdae94a866600e1b902cc1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5993,6 +6174,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6087,6 +6273,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6179,6 +6370,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TreeRoot2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b03bc69e5e89beb42b0c7eee11cb0e16,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6270,6 +6466,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveRivet2 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6369,6 +6570,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveRivet2 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6462,6 +6668,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 1934984997461576237, guid: cd2aa61d98b41cd4898d2e55218b67c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6549,6 +6760,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6648,6 +6864,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6741,6 +6962,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6951,6 +7177,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7044,6 +7275,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveRivet2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7143,6 +7379,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7240,6 +7481,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TreeRoot1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 675b20a2f6dae534e8b492503a93f349,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7401,6 +7647,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7527,6 +7778,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveBush1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 469ab74096bdae94a866600e1b902cc1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7618,6 +7874,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveRivet2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7750,6 +8011,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b4ac149dc9c54c468c3aea71ecb30ef,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7847,6 +8113,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8006,6 +8277,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveP2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a6242b07e39a7e549aa45f9c918b90f0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8097,6 +8373,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8288,6 +8569,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveOre1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffcc8d53ec7d5ec429ed942f01ff79c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8386,6 +8672,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LargeGlowingBerry2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1fbdc2da202ed5f42bcec0056ef32519,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8417,7 +8708,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &397537356
 MonoBehaviour:
@@ -8602,6 +8893,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TreeRoot1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 675b20a2f6dae534e8b492503a93f349,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8699,6 +8995,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8820,6 +9121,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8913,6 +9219,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveBush1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 469ab74096bdae94a866600e1b902cc1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9140,6 +9451,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveBush1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 469ab74096bdae94a866600e1b902cc1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9339,6 +9655,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TreeRoot2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b03bc69e5e89beb42b0c7eee11cb0e16,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9513,6 +9834,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9702,6 +10028,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveP1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5322d64fb033cd8439c760f205d4d10d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9856,6 +10187,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9883,7 +10219,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &491140962
 MonoBehaviour:
@@ -10194,6 +10530,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveRivet1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a3d354df90014574a8b816682096a2eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10287,7 +10628,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &533113658
 MonoBehaviour:
@@ -10471,6 +10812,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveRivet2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10737,6 +11083,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1V2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e030c44e22e47dc42af67f2bc9d6875e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10904,7 +11255,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &566095726
 MonoBehaviour:
@@ -11022,7 +11373,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &567540972
 MonoBehaviour:
@@ -11206,6 +11557,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveRivet2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11394,6 +11750,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe39ca819a1d0ba4c87ba8372a6d354c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11713,6 +12074,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11864,7 +12230,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &609027721
 Transform:
@@ -12070,6 +12436,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1V2 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e030c44e22e47dc42af67f2bc9d6875e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12283,6 +12654,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe39ca819a1d0ba4c87ba8372a6d354c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12312,7 +12688,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &647251416
 Transform:
@@ -12416,6 +12792,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12507,6 +12888,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12602,6 +12988,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12695,6 +13086,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12800,6 +13196,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12897,6 +13298,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stolagmit1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9e102fc231a41214493c11c4a50d9a36,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12996,6 +13402,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13094,6 +13505,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13191,6 +13607,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13469,6 +13890,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stolagmit1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9e102fc231a41214493c11c4a50d9a36,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13567,6 +13993,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13658,6 +14089,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveRivet2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13868,6 +14304,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13987,6 +14428,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14169,6 +14615,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14261,6 +14712,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheFlatPart1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b5cf84e7f4c390e499ba1cb8d92b1167,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14359,6 +14815,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveOre1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffcc8d53ec7d5ec429ed942f01ff79c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14531,6 +14992,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14653,6 +15119,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveP3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03afd4d802d135742ae34733d2bf6cd1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14745,6 +15216,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TreeRoot1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 675b20a2f6dae534e8b492503a93f349,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14804,7 +15280,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &787329183
 MonoBehaviour:
@@ -15045,6 +15521,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveBush1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 469ab74096bdae94a866600e1b902cc1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15137,6 +15618,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TreeRoot2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b03bc69e5e89beb42b0c7eee11cb0e16,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15224,6 +15710,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1V2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e030c44e22e47dc42af67f2bc9d6875e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15249,7 +15740,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &805671326
 Transform:
@@ -15413,7 +15904,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &811630990
 Transform:
@@ -15567,7 +16058,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &828100547
 MonoBehaviour:
@@ -15847,6 +16338,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveRivet2 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15945,6 +16441,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TreeRoot1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 675b20a2f6dae534e8b492503a93f349,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16036,6 +16537,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1 (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16152,7 +16658,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &884719649
 Transform:
@@ -16345,6 +16851,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16438,6 +16949,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveBush1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 469ab74096bdae94a866600e1b902cc1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16558,6 +17074,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16690,6 +17211,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b4ac149dc9c54c468c3aea71ecb30ef,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16787,6 +17313,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stolagmit1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9e102fc231a41214493c11c4a50d9a36,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16886,6 +17417,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveRivet2 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16984,6 +17520,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17077,6 +17618,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveBush1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 469ab74096bdae94a866600e1b902cc1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17263,6 +17809,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17328,7 +17879,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &989278218
 MonoBehaviour:
@@ -17513,6 +18064,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17622,7 +18178,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &998667564
 Transform:
@@ -17738,6 +18294,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe39ca819a1d0ba4c87ba8372a6d354c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17835,6 +18396,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17962,6 +18528,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveRivet2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18059,6 +18630,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveRivet2 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18191,6 +18767,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveRivet2 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18341,6 +18922,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1V2 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e030c44e22e47dc42af67f2bc9d6875e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18434,6 +19020,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TreeRoot1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 675b20a2f6dae534e8b492503a93f349,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18584,6 +19175,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1V2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e030c44e22e47dc42af67f2bc9d6875e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18677,6 +19273,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18774,6 +19375,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForLiquids2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 66c141b9cc57da4469676201ed5012a6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18867,6 +19473,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1 (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19029,6 +19640,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TreeRoot1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 675b20a2f6dae534e8b492503a93f349,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19234,6 +19850,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveOre1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffcc8d53ec7d5ec429ed942f01ff79c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19331,6 +19952,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19454,6 +20080,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19576,6 +20207,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LargeGlowingBerry2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1fbdc2da202ed5f42bcec0056ef32519,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19635,7 +20271,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &1124358591
 MonoBehaviour:
@@ -19854,6 +20490,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TreeRoot1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 675b20a2f6dae534e8b492503a93f349,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19945,6 +20586,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveRivet2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20358,6 +21004,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LargeGlowingBerry2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1fbdc2da202ed5f42bcec0056ef32519,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20440,6 +21091,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ForLiquids2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 66c141b9cc57da4469676201ed5012a6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20535,6 +21191,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20628,6 +21289,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1 (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20785,6 +21451,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20913,6 +21584,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveP4
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1861598ad35451f4397ecf40753f3af8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21032,6 +21708,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21159,6 +21840,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21252,6 +21938,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveOre1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffcc8d53ec7d5ec429ed942f01ff79c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21356,6 +22047,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b4ac149dc9c54c468c3aea71ecb30ef,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21454,6 +22150,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TreeRoot2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b03bc69e5e89beb42b0c7eee11cb0e16,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21545,6 +22246,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TreeRoot2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b03bc69e5e89beb42b0c7eee11cb0e16,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21700,6 +22406,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stolagmit1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9e102fc231a41214493c11c4a50d9a36,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21825,6 +22536,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TreeRoot1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 675b20a2f6dae534e8b492503a93f349,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21980,6 +22696,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22073,6 +22794,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TreeRoot1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 675b20a2f6dae534e8b492503a93f349,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22198,6 +22924,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b4ac149dc9c54c468c3aea71ecb30ef,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22381,6 +23112,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveOre1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffcc8d53ec7d5ec429ed942f01ff79c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22478,6 +23214,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22697,6 +23438,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22795,6 +23541,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22890,6 +23641,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1V2 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e030c44e22e47dc42af67f2bc9d6875e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22978,6 +23734,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1V2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e030c44e22e47dc42af67f2bc9d6875e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23072,6 +23833,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TreeRoot1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 675b20a2f6dae534e8b492503a93f349,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23170,6 +23936,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveBush1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 469ab74096bdae94a866600e1b902cc1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23464,6 +24235,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23573,6 +24349,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b4ac149dc9c54c468c3aea71ecb30ef,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23671,6 +24452,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stolagmit1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9e102fc231a41214493c11c4a50d9a36,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23768,6 +24554,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24277,6 +25068,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24376,6 +25172,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b4ac149dc9c54c468c3aea71ecb30ef,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24468,6 +25269,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1V2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e030c44e22e47dc42af67f2bc9d6875e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24641,6 +25447,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1V2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e030c44e22e47dc42af67f2bc9d6875e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24735,6 +25546,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveBush1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 469ab74096bdae94a866600e1b902cc1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24760,7 +25576,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &1470186935
 MonoBehaviour:
@@ -25009,6 +25825,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25102,6 +25923,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stolagmit1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9e102fc231a41214493c11c4a50d9a36,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25229,6 +26055,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25331,6 +26162,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b4ac149dc9c54c468c3aea71ecb30ef,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25616,6 +26452,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stolagmit1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9e102fc231a41214493c11c4a50d9a36,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25713,6 +26554,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: barrel1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 29aea2a1888f04843971e19f407cd48b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25812,6 +26658,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25843,7 +26694,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &1517198811
 MonoBehaviour:
@@ -26056,6 +26907,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stolagmit1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9e102fc231a41214493c11c4a50d9a36,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26154,6 +27010,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1V2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e030c44e22e47dc42af67f2bc9d6875e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26277,6 +27138,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26388,6 +27254,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26521,6 +27392,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveOre1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffcc8d53ec7d5ec429ed942f01ff79c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26614,6 +27490,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stolagmit1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9e102fc231a41214493c11c4a50d9a36,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26781,6 +27662,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26874,6 +27760,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1 (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27058,6 +27949,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27255,6 +28151,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27433,6 +28334,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TreeRoot2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b03bc69e5e89beb42b0c7eee11cb0e16,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27515,6 +28421,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveDoor (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1934984997461576237, guid: cd2aa61d98b41cd4898d2e55218b67c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27536,7 +28447,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &1692777902
 MonoBehaviour:
@@ -27716,6 +28627,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe39ca819a1d0ba4c87ba8372a6d354c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27888,6 +28804,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stolagmit1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9e102fc231a41214493c11c4a50d9a36,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28009,6 +28930,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe39ca819a1d0ba4c87ba8372a6d354c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28040,7 +28966,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &1745029624
 MonoBehaviour:
@@ -28520,6 +29446,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28726,6 +29657,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28819,6 +29755,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28980,6 +29921,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29077,6 +30023,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveRivet2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29239,6 +30190,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveDoor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1934984997461576237, guid: cd2aa61d98b41cd4898d2e55218b67c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29321,6 +30277,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TheFlatPart1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b5cf84e7f4c390e499ba1cb8d92b1167,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29419,6 +30380,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveOre1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffcc8d53ec7d5ec429ed942f01ff79c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29520,6 +30486,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LargeGlowingBerry2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1fbdc2da202ed5f42bcec0056ef32519,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29611,7 +30582,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1813199314
 Transform:
@@ -29730,6 +30701,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29829,6 +30805,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b4ac149dc9c54c468c3aea71ecb30ef,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29927,6 +30908,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30020,6 +31006,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1 (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30120,6 +31111,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b4ac149dc9c54c468c3aea71ecb30ef,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30218,6 +31214,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30315,6 +31316,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveRivet2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30470,6 +31476,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveRivet2 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30568,6 +31579,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveRivet2 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30665,6 +31681,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TreeRoot1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 675b20a2f6dae534e8b492503a93f349,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30846,6 +31867,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveRiver
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3888bc42171570346b2056dfc4436368,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30939,6 +31965,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31037,6 +32068,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31267,6 +32303,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31508,6 +32549,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stolagmit1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9e102fc231a41214493c11c4a50d9a36,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31639,6 +32685,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveBush1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 469ab74096bdae94a866600e1b902cc1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31788,6 +32839,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stolagmit1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9e102fc231a41214493c11c4a50d9a36,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31920,6 +32976,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32008,6 +33069,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1V2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e030c44e22e47dc42af67f2bc9d6875e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32136,6 +33202,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveOre1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffcc8d53ec7d5ec429ed942f01ff79c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32442,6 +33513,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32543,6 +33619,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe39ca819a1d0ba4c87ba8372a6d354c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32640,6 +33721,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32763,6 +33849,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32860,6 +33951,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveDoor (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8a4e006782f455048b1cf58602a56486,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32987,6 +34083,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33080,6 +34181,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33203,6 +34309,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33322,6 +34433,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a605685570a58984ebfd97dd44692e52,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33448,6 +34564,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LargeGlowingBerry2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1fbdc2da202ed5f42bcec0056ef32519,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33625,6 +34746,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlowingSprout1 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33746,6 +34872,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveRivet2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33922,6 +35053,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GlowingSprout1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c141aa0500826804bb44594de476d657,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34364,6 +35500,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaveRivet2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34462,6 +35603,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrel1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 29aea2a1888f04843971e19f407cd48b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34559,6 +35705,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TreeRoot1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 675b20a2f6dae534e8b492503a93f349,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34833,6 +35984,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b4ac149dc9c54c468c3aea71ecb30ef,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34930,6 +36086,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveRivet2 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35121,6 +36282,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b4ac149dc9c54c468c3aea71ecb30ef,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35218,6 +36384,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CaveRivet2 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 570a96a80750bda409eb573c1c664a15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
