@@ -36,7 +36,7 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 1
+  m_ReflectionIntensity: 0
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
@@ -99,8 +99,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: faf07788c8594ad48a1de461c7128a10,
-    type: 2}
+  m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -7078,7 +7077,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6c117fd68dedc0a419c992a8690c4c09, type: 2}
+      objectReference: {fileID: 2100000, guid: eeb739968308e8d4db68edde5730bfca, type: 2}
     - target: {fileID: 7905592933893239211, guid: 543b072eea7ddf14aaa4373c77698857,
         type: 3}
       propertyPath: m_Name
@@ -10989,7 +10988,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6c117fd68dedc0a419c992a8690c4c09, type: 2}
+      objectReference: {fileID: 2100000, guid: eeb739968308e8d4db68edde5730bfca, type: 2}
     - target: {fileID: 7905592933893239211, guid: 543b072eea7ddf14aaa4373c77698857,
         type: 3}
       propertyPath: m_Name
@@ -14205,7 +14204,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6c117fd68dedc0a419c992a8690c4c09, type: 2}
+      objectReference: {fileID: 2100000, guid: eeb739968308e8d4db68edde5730bfca, type: 2}
     - target: {fileID: 7905592933893239211, guid: 543b072eea7ddf14aaa4373c77698857,
         type: 3}
       propertyPath: m_Name
@@ -14516,7 +14515,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6c117fd68dedc0a419c992a8690c4c09, type: 2}
+      objectReference: {fileID: 2100000, guid: eeb739968308e8d4db68edde5730bfca, type: 2}
     - target: {fileID: 7905592933893239211, guid: 543b072eea7ddf14aaa4373c77698857,
         type: 3}
       propertyPath: m_Name
@@ -16199,7 +16198,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 126563e767baf444d8d080a5cbe52a5d, type: 2}
+  sharedProfile: {fileID: 11400000, guid: d6028f2edc5d07a4e8e781ab8469fe7e, type: 2}
 --- !u!4 &832575519
 Transform:
   m_ObjectHideFlags: 0
@@ -24016,9 +24015,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5993577750189901392, guid: 543b072eea7ddf14aaa4373c77698857,
         type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dc21b0bb5e4c1b840ba19ec9da6d0299,
+        type: 3}
+    - target: {fileID: 5993577750189901392, guid: 543b072eea7ddf14aaa4373c77698857,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6c117fd68dedc0a419c992a8690c4c09, type: 2}
+      objectReference: {fileID: 2100000, guid: eeb739968308e8d4db68edde5730bfca, type: 2}
     - target: {fileID: 6337231212163837571, guid: 543b072eea7ddf14aaa4373c77698857,
         type: 3}
       propertyPath: m_IsActive

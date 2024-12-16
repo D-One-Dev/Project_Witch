@@ -3,7 +3,12 @@ guid: e030c44e22e47dc42af67f2bc9d6875e
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GlowingSprout1V2
+    second: {fileID: 2100000, guid: 02fb11e99082bb641869f7dec302e55b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
