@@ -13,6 +13,8 @@ namespace Enemies
 
         public void CreatePuddle()
         {
+            if (mainTransform.localScale.x <= 3) return;
+            
             RaycastHit hit;
             if (Physics.Raycast(spawnTransform.position, Vector3.down, out hit, Mathf.Infinity, lm))
             {

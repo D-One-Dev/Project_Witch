@@ -16,6 +16,7 @@ namespace Enemies.EnemyUnitBase
         [SerializeField] protected float walkPointRange;
         [SerializeField] protected float timeBetweenAttacks;
         [SerializeField] protected float sightRange, attackRange;
+        public GameObject deathParticles;
         
         protected bool _playerInSightRange, _playerInAttackRange;
         protected bool _isDead;
@@ -66,6 +67,12 @@ namespace Enemies.EnemyUnitBase
         public virtual void Death()
         {
             _isDead = true;
+
+            if (deathParticles != null)
+            {
+                Instantiate(deathParticles, transform.position, Quaternion.identity);
+                //print("spawnedEffect");
+            }
         }
 
         private void OnDrawGizmosSelected()

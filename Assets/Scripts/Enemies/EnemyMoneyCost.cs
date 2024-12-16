@@ -17,4 +17,9 @@ public class EnemyMoneyCost : MonoBehaviour
     {
         _playerMoney.ChangeBalance(moneyCost);
     }
+
+    public void SetMoneyCost(int newMoneyCost)
+    {
+        if (newMoneyCost >= 0) moneyCost = newMoneyCost;
+    }
 }

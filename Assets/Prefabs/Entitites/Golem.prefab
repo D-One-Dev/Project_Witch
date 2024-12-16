@@ -340,6 +340,7 @@ MonoBehaviour:
   timeBetweenAttacks: 2
   sightRange: 50
   attackRange: 10
+  deathParticles: {fileID: 0}
   centerPointPrefab: {fileID: 1577745875905826404, guid: 2921fc2d05116c1429307d7e965bba33,
     type: 3}
   attackAreas:
@@ -353,6 +354,8 @@ MonoBehaviour:
   explosionSphereEffect: {fileID: 3667364072069247562, guid: b9d322f488142f0449c0a13e46ac4a3b,
     type: 3}
   explosionPoint: {fileID: 7105081703396378441}
+  laserBeam: {fileID: 2121257395508586386, guid: 375b1681620c7ab4facfd1b97d4ffd5d,
+    type: 3}
 --- !u!1 &3116553362670739068
 GameObject:
   m_ObjectHideFlags: 0
