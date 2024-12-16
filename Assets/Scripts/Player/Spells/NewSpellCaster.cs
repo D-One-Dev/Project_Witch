@@ -28,6 +28,8 @@ public class NewSpellCaster : IInitializable, ITickable
     private readonly Spell _poisonedFireballSpell;
     [Inject(Id = "PoisonedRockSpell")]
     private readonly Spell _poisonedRockSpell;
+    [Inject(Id = "PosionedShardSpell")]
+    private readonly Spell _poisonedShardSpell;
 
     [Inject(Id = "LeftSpell")]
     public Spell LeftSpell;
@@ -296,6 +298,13 @@ public class NewSpellCaster : IInitializable, ITickable
                     else if ((spell1Type == SpellType.Earth && spell2Type == SpellType.Poison) || (spell1Type == SpellType.Poison && spell2Type == SpellType.Earth))
                     {
                         outputSpells.Add(_poisonedRockSpell);
+                        _spells.RemoveAt(i);
+                        _spells.RemoveAt(j - 1);
+                    }
+
+                    else if ((spell1Type == SpellType.Poison && spell2Type == SpellType.Ice) || (spell1Type == SpellType.Ice && spell2Type == SpellType.Poison))
+                    {
+                        outputSpells.Add(_poisonedShardSpell);
                         _spells.RemoveAt(i);
                         _spells.RemoveAt(j - 1);
                     }

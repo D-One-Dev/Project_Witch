@@ -277,7 +277,7 @@ MonoBehaviour:
       m_Calls: []
   lifeTime: 30
   lifeTimeAfterCollide: 0
-  damage: 15
+  damage: 25
   damageType: 1
   targetLockRadius: 7.5
   ignoreTag: 

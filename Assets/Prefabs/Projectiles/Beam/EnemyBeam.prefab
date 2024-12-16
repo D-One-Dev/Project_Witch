@@ -150,14 +150,14 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 128
-  targetTag: Player
+  targetTag: 
   deathParticles: {fileID: 0}
   onDestroy:
     m_PersistentCalls:
       m_Calls: []
   lifeTime: 0.3
   lifeTimeAfterCollide: 0.3
-  damage: 5
+  damage: 30
   damageType: 1
 --- !u!120 &-8039418785698403024
 LineRenderer:

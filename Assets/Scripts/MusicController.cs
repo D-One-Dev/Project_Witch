@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class MusicController : MonoBehaviour
 {
-    public static MusicController instance;
+    public static MusicController Instance;
     [SerializeField] private AudioSource musicSource;
 
     private void Awake()
     {
-        instance = this;
+        Instance = this;
     }
 
     public void ChangeMusic(AudioClip track)
@@ -17,7 +17,19 @@ public class MusicController : MonoBehaviour
         {
             musicSource.clip = track;
             musicSource.Play();
-            musicSource.DOFade(0f, 1f).SetUpdate(UpdateType.Normal, true);
+            musicSource.DOFade(1f, 1f).SetUpdate(UpdateType.Normal, true);
         });
+    }
+    
+    public void ChangeMusicWithoutFade(AudioClip track)
+    {
+        musicSource.Stop();
+        musicSource.clip = track;
+        musicSource.Play();
+    }
+    
+    public void DisableMusic()
+    {
+        musicSource.DOFade(0f, 1f).SetUpdate(UpdateType.Normal, true);
     }
 }

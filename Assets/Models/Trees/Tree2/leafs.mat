@@ -48,6 +48,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -86,9 +90,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AO: 2.4
     - _AlphaClip: 1
     - _AlphaCutoff: 0.5
     - _AlphaToMask: 1
+    - _BaseLight: 0.35
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
@@ -106,6 +112,7 @@ Material:
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
+    - _Occlusion: 7.5
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _QueueControl: 0
@@ -114,10 +121,12 @@ Material:
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _SquashAmount: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
     - _UVSec: 0
+    - _WindQuality: 0
     - _WindSpeed: 1.02
     - _WindStrength: 0.5
     - _WorkflowMode: 1
@@ -126,7 +135,10 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
     - _WindDirection: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &743817387035140973

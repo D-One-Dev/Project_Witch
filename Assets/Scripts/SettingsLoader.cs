@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 using Zenject;
@@ -21,8 +22,9 @@ public class SettingsLoader : MonoBehaviour
         Instance = this;
     }
 
-    private void Start()
+    private IEnumerator Start()
     {
+        yield return new WaitForSeconds(0.1f);
         UpdateSettings(_savesController.LoadSettings());
     }
 

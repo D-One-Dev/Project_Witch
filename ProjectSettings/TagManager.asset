@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - DamagingSurface
   - Sound_Grass
+  - DefaultFInteraction
   layers:
   - Default
   - TransparentFX
@@ -24,6 +25,7 @@ TagManager:
   - Obstacle
   - Explosion
   - Objects
+  - OnlyPlayerCollide
   - 
   - 
   - 
@@ -39,8 +41,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Trees
   - HLOD
   m_SortingLayers:
   - name: Default

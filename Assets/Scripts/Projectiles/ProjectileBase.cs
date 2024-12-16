@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using HealthSystem;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -41,7 +42,7 @@ namespace Projectiles
 
         protected void GiveDamage(GameObject targetObj, bool isElementStrengthened)
         {
-            if (targetObj.TryGetComponent(out EntityHealth entityHealth)) entityHealth.TakeDamage(damage, damageType, isElementStrengthened);
+            if (targetObj.TryGetComponent(out IDamageable entityHealth)) entityHealth.TakeDamage(damage, damageType, isElementStrengthened);
             StartCoroutine(Destroying());
         }
 
