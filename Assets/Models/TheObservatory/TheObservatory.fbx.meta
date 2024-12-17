@@ -3,7 +3,127 @@ guid: b636609608914504d8b467dfe57f182a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IE_DoorClosed
+    second: {fileID: 2100000, guid: a973608fdfbe35b4198db574987c2a18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RackForBox
+    second: {fileID: 2100000, guid: 3f8e2db3bf4066b4ba73e6d870fd1782, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RackForBox2
+    second: {fileID: 2100000, guid: 0e98ea2250c0dea4299ee0a5424f25eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatory1
+    second: {fileID: 2100000, guid: 1db54213f2a6e474a8b26533dbc33ddc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryHallOfPortals
+    second: {fileID: 2100000, guid: b26bcceff0e3e014cb963964b9776087, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryHallOfPortalsFence
+    second: {fileID: 2100000, guid: 13cfc20c3d99f714dafd921cb4e527fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryHallOfPortalsFloor
+    second: {fileID: 2100000, guid: f07e4c8883fe58b4b865c39f08d3ae1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryHallOfPortalsFloorP2
+    second: {fileID: 2100000, guid: 82613ea0f22a24044b5a0c20c850d9b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryHallOfPortalsFloorP3
+    second: {fileID: 2100000, guid: ba415b93f69612a47a76294414dc79a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryHallOfPortalsP2
+    second: {fileID: 2100000, guid: 03caab58488d4dc4c9deab1aa5243939, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryHallOfPortalsP3
+    second: {fileID: 2100000, guid: 75266e5d619848e42995cebe4183d38c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryPart10
+    second: {fileID: 2100000, guid: 13bad54da68ef1f47859c00339976974, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryPart11
+    second: {fileID: 2100000, guid: 3a8f3f5692888d64387b29e6cf73e1af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryPart12P1
+    second: {fileID: 2100000, guid: 3427b35e2432c7e498f58e9695d0e269, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryPart12P2
+    second: {fileID: 2100000, guid: ae4415a85d143cd49bd26b817e080087, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryPart2
+    second: {fileID: 2100000, guid: f952fdf2ce9f79240ba96b9feb1069e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryPart3
+    second: {fileID: 2100000, guid: 74d1be684e40c5247b33d64a0284de78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryPart4M1
+    second: {fileID: 2100000, guid: a0074efa07466074b9870f240d767b85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryPart4M2
+    second: {fileID: 2100000, guid: 6d13a05729d244a4ca9f38fe7cf79006, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryPart5
+    second: {fileID: 2100000, guid: 48d6ed68c252a7b44ac2ede509dd93c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryPart6
+    second: {fileID: 2100000, guid: d5ef2faeda7816342918fb7d4464221c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryPart7
+    second: {fileID: 2100000, guid: deb44f576cdb4704e840358d5d28189e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatoryPart9
+    second: {fileID: 2100000, guid: f0f5c581380be2f40bcb27cc31ae8e70, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheObservatorySafeP1
+    second: {fileID: 2100000, guid: d62f5bf1995f7d4499786f5eddd7d597, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -41,10 +161,10 @@ ModelImporter:
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importPhysicalCameras: 1
-    importVisibility: 1
-    importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
@@ -78,7 +198,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 1
+  importAnimation: 0
   humanDescription:
     serializedVersion: 3
     human: []
@@ -97,7 +217,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
