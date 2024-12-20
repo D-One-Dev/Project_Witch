@@ -106710,7 +106710,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alex
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6824615014190972719, guid: ff335b61aa0ccf5418a425b0fa1722b2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

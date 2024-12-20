@@ -42,11 +42,18 @@ public class AnimationsController
         screen.GetComponent<CanvasGroup>().DOKill();
         screen.GetComponent<CanvasGroup>().alpha = 0f;
         screen.SetActive(true);
-        screen.GetComponent<CanvasGroup>().DOFade(1f, .5f).SetUpdate(UpdateType.Normal, true);
+        screen.GetComponent<CanvasGroup>().DOFade(1f, .5f).SetUpdate(UpdateType.Normal, true).OnKill(() =>
+        {
+            screen.GetComponent<CanvasGroup>().alpha = 1f;
+        });
     }
     public void FadeOutScreen(GameObject screen)
     {
-        screen.GetComponent<CanvasGroup>().DOFade(0f, .5f).SetUpdate(UpdateType.Normal, true).OnComplete(() => {screen.SetActive(false);});
+        screen.GetComponent<CanvasGroup>().DOFade(0f, .5f).SetUpdate(UpdateType.Normal, true).OnKill(() =>
+        {
+            screen.SetActive(false);
+            screen.GetComponent<CanvasGroup>().alpha = 0f;
+        });
     }
 
     public void SpellCardEnter(GameObject spellCard)
