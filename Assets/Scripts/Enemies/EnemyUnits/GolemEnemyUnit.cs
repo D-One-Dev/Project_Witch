@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Enemies.EnemyActions;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Enemies.EnemyUnits
 {
@@ -18,10 +19,6 @@ namespace Enemies.EnemyUnits
         [SerializeField] private GameObject explosionSphereEffect;
         [SerializeField] private Transform explosionPoint;
 
-        [SerializeField] private GameObject laserBeam;
-
-        private GameObject _currentBeam;
-
         private List<IAction> _attackActions = new();
         
         private IAction _deathAction;
@@ -34,13 +31,13 @@ namespace Enemies.EnemyUnits
             _walkAction = new Idle();
             _chaseAction = new ChaseWithTrigger(_player, ActivateGolem);
             
-            _attackAction = new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking3", DespawnLaser, SpawnLaser, "ATTACK3");
+            _attackAction = new Attack(_player, timeBetweenAttacks, "isAttacking3");
 
             _deathAction = new Death("isDead");
 
             //_attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking1", Explode));
             //_attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", DeactivateAttackArea, ActivateAttackArea));
-            _attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking3", DespawnLaser, SpawnLaser, "ATTACK3"));
+            _attackActions.Add(new Attack(_player, timeBetweenAttacks, "isAttacking3"));
 
             StartCoroutine(UpdateAttack());
         }
@@ -59,21 +56,6 @@ namespace Enemies.EnemyUnits
             animator.SetTrigger("isAwake");
             _centerPoint = Instantiate(centerPointPrefab, transform.position, Quaternion.identity).transform;
             _walkAction = new WalkInRadius(walkPointRange, _centerPoint);
-        }
-
-        private void SpawnLaser() => StartCoroutine(SpawningLaser());
-
-        private IEnumerator SpawningLaser()
-        {
-            yield return new WaitForSeconds(2);
-            _currentBeam = Instantiate(laserBeam, explosionPoint.position, Quaternion.identity);
-            _currentBeam.transform.parent = explosionPoint.transform; 
-        }
-
-        private void DespawnLaser()
-        {
-            Destroy(_currentBeam);
-            print("despawn");
         }
         
         private void Explode()

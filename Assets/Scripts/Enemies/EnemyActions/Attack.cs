@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Enemies.EnemyActions
 {
-    public abstract class Attack : IAction
+    public abstract class AttackBase : IAction
     {
         protected readonly float TimeBetweenAttacks;
         protected readonly Transform Player;
@@ -14,7 +14,7 @@ namespace Enemies.EnemyActions
         private bool _isAbleToAttack = true;
         private readonly string _isAttacking;
 
-        protected Attack(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey)
+        protected AttackBase(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey)
         {
             Player = player;
             TimeBetweenAttacks = timeBetweenAttacks;
@@ -47,33 +47,29 @@ namespace Enemies.EnemyActions
             _isAbleToAttack = true;
         }
     }
-
-    public class AttackWithCallback : Attack
+    
+    public class Attack : AttackBase
     {
-        public delegate void AttackCall();
+        private float _timeForAttack;
 
-        private readonly AttackCall _beforeAttackCall;
-        private readonly AttackCall _attackCall;
-
-        private readonly float _timeForAttack;
+        private readonly string _animationName;
         
-        public AttackWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
+        public Attack(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey,
+            string animationName = "", float timeForAttack = 0) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
         {
-            _attackCall = attackCall;
+            _animationName = animationName;
+            _timeForAttack = timeForAttack;
         }
-        
-        public AttackWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall, AttackCall beforeAttackCall, string animationName = "") : base(player, timeBetweenAttacks, isAttackingTriggerKey)
+
+        protected override void DoAttack()
         {
-            _attackCall = attackCall;
-            _beforeAttackCall = beforeAttackCall;
-            
-            if (animationName != "")
+            if (_animationName != "")
             {
-                /*RuntimeAnimatorController ac = Enemy.Animator.runtimeAnimatorController;
+                RuntimeAnimatorController ac = Enemy.Animator.runtimeAnimatorController;
                 
                 for (int i = 0; i < ac.animationClips.Length; i++)
                 {
-                    if (ac.animationClips[i].name == animationName)
+                    if (ac.animationClips[i].name == _animationName)
                     {
                         _timeForAttack = ac.animationClips[i].length;
                     }
@@ -81,21 +77,72 @@ namespace Enemies.EnemyActions
                     {
                         _timeForAttack = Enemy.Animator.GetNextAnimatorClipInfo(0).Length;
                     }
-                }*/
+                }
                 
                 _timeForAttack = Enemy.Animator.GetNextAnimatorClipInfo(0).Length;
             }
+            
+            Enemy.EnemyUnit.StartCoroutine(Attacking());
         }
         
-        public AttackWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall, float timeForAttack) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
+        protected IEnumerator Attacking()
+        {
+            if (_timeForAttack == 0)
+                yield return new WaitForSeconds(Enemy.Animator.GetCurrentAnimatorClipInfo(0).Length + 0.1f);
+            else yield return new WaitForSeconds(_timeForAttack);
+        }
+    }
+
+    public class AttackBaseWithCallback : AttackBase
+    {
+        public delegate void AttackCall();
+
+        private readonly AttackCall _beforeAttackCall;
+        private readonly AttackCall _attackCall;
+
+        private float _timeForAttack;
+
+        private readonly string _animationName;
+        
+        public AttackBaseWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey,
+            AttackCall beforeAttackCall) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
+        {
+            _beforeAttackCall = beforeAttackCall;
+        }
+        
+        public AttackBaseWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey,
+            AttackCall attackCall, AttackCall beforeAttackCall, string animationName = "", float timeForAttack = 0) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
         {
             _attackCall = attackCall;
+            _beforeAttackCall = beforeAttackCall;
+
+            _animationName = animationName;
             _timeForAttack = timeForAttack;
         }
 
         protected override void DoAttack()
         {
             _beforeAttackCall?.Invoke();
+            
+            if (_animationName != "")
+            {
+                RuntimeAnimatorController ac = Enemy.Animator.runtimeAnimatorController;
+                
+                for (int i = 0; i < ac.animationClips.Length; i++)
+                {
+                    if (ac.animationClips[i].name == _animationName)
+                    {
+                        _timeForAttack = ac.animationClips[i].length;
+                    }
+                    else
+                    {
+                        _timeForAttack = Enemy.Animator.GetNextAnimatorClipInfo(0).Length;
+                    }
+                }
+                
+                _timeForAttack = Enemy.Animator.GetNextAnimatorClipInfo(0).Length;
+            }
+            
             Enemy.EnemyUnit.StartCoroutine(Attacking());
         }
         
@@ -105,13 +152,13 @@ namespace Enemies.EnemyActions
                 yield return new WaitForSeconds(Enemy.Animator.GetCurrentAnimatorClipInfo(0).Length + 0.1f);
             else yield return new WaitForSeconds(_timeForAttack);
             
-            _attackCall();
+            _attackCall?.Invoke();
         }
     }
     
-    public class ShootingAttackWithCallback : AttackWithCallback
+    public class ShootingAttackBaseWithCallback : AttackBaseWithCallback
     {
-        public ShootingAttackWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall) : base(player, timeBetweenAttacks, isAttackingTriggerKey, attackCall)
+        public ShootingAttackBaseWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall) : base(player, timeBetweenAttacks, isAttackingTriggerKey, attackCall)
         {
         }
         
