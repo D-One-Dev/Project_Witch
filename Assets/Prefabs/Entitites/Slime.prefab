@@ -318,6 +318,8 @@ MonoBehaviour:
   timeBetweenAttacks: 1.2
   sightRange: 25
   attackRange: 10
+  deathParticles: {fileID: 939204241929003246, guid: 33dcaba7a38de5341b8755bac199c6dd,
+    type: 3}
   currentProjectTile: {fileID: 2121257395508586386, guid: 649a3f2322c93af41afb7cbabf39a4bd,
     type: 3}
   shootingPoint: {fileID: 8183338547608636007}
@@ -333,9 +335,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e58f12a3f64d67a136e417b16ead3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSlimeBoss: 0
   enemyUnitPrefab: {fileID: 5447957759790275937}
   maxScale: 10
   minScale: 3
+  enemyMoneyCost: {fileID: -7817591372974908882}
 --- !u!54 &2989615449676862619
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -382,7 +386,19 @@ MonoBehaviour:
   isDestroyAfterDead: 1
   OnDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6005669255076667988}
+        m_TargetAssemblyTypeName: Enemies.EnemyUnitBase.EnemyUnitBase, Assembly-CSharp
+        m_MethodName: Death
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   partOfColliderTriggers: []
 --- !u!1 &6413699631846388303
 GameObject:

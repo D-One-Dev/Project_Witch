@@ -4977,7 +4977,7 @@ MonoBehaviour:
   damageRadius: 2.5
   enemies:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   damage: 60
 --- !u!1 &5374175850795007341
 GameObject:

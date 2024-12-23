@@ -150,7 +150,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 128
-  targetTag: 
+  targetTag: Player
   deathParticles: {fileID: 0}
   onDestroy:
     m_PersistentCalls:

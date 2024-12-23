@@ -15,10 +15,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Mike/OLD/2Mike.unity
     guid: f87ca8f0fc79ec5449c23648be1eda35
   - enabled: 0
-    path: Assets/Scenes/Mike/OLD/3MIKE.unity
+    path: Assets/Scenes/Mike/3MIKE.unity
     guid: a560b90fddf73104fa59115943b9f44d
   - enabled: 0
-    path: Assets/Scenes/Mike/OLD/4MIKE.unity
+    path: Assets/Scenes/Mike/4MIKE.unity
     guid: 417a03b315cf32d44907e9d32651bbb0
   - enabled: 0
     path: Assets/Scenes/Mike/OLD/1Mike.unity
@@ -48,7 +48,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Mike/MikeTest.unity
     guid: db3abac8b24ee3541b87f19e5ada987b
   - enabled: 0
-    path: Assets/Scenes/Mike/OLD/PERFORMANCETEST.unity
+    path: Assets/Scenes/Mike/PERFORMANCETEST.unity
     guid: 9a68eb396a61a8e4198e6b6e17f6aea6
   - enabled: 1
     path: Assets/Scenes/MAIN/MainMenu.unity

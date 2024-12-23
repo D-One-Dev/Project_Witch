@@ -18,6 +18,10 @@ namespace Enemies.EnemyUnits
         [SerializeField] private GameObject explosionSphereEffect;
         [SerializeField] private Transform explosionPoint;
 
+        [SerializeField] private GameObject laserBeam;
+
+        private GameObject _currentBeam;
+
         private List<IAction> _attackActions = new();
         
         private IAction _deathAction;
@@ -34,8 +38,9 @@ namespace Enemies.EnemyUnits
 
             _deathAction = new Death("isDead");
 
-            _attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", DeactivateAttackArea, ActivateAttackArea));
-            _attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking1", Explode));
+            //_attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking1", Explode));
+            //_attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", DeactivateAttackArea, ActivateAttackArea));
+            _attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking3", DespawnLaser, SpawnLaser));
 
             animator.enabled = false;
 
@@ -55,6 +60,21 @@ namespace Enemies.EnemyUnits
         {
             _centerPoint = Instantiate(centerPointPrefab, transform.position, Quaternion.identity).transform;
             _walkAction = new WalkInRadius(walkPointRange, _centerPoint);
+        }
+
+        private void SpawnLaser() => StartCoroutine(SpawningLaser());
+
+        private IEnumerator SpawningLaser()
+        {
+            yield return new WaitForSeconds(2);
+            _currentBeam = Instantiate(laserBeam, explosionPoint.position, Quaternion.identity);
+            _currentBeam.transform.parent = explosionPoint.transform; 
+        }
+
+        private void DespawnLaser()
+        {
+            Destroy(_currentBeam);
+            print("despawn");
         }
         
         private void Explode()
