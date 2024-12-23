@@ -31,6 +31,7 @@ public class PlayerInstaller : MonoInstaller
     [SerializeField] private float healSpeed;
     
     [SerializeField] private SettingsLoader settingsLoader;
+    [SerializeField] private AudioClip dashSound;
     
     public override void InstallBindings()
     {
@@ -171,6 +172,11 @@ public class PlayerInstaller : MonoInstaller
         this.Container.Bind<float>()
             .WithId("HealSpeed")
             .FromInstance(healSpeed)
+            .AsTransient();
+            
+        this.Container.Bind<AudioClip>()
+            .WithId("DashSound")
+            .FromInstance(dashSound)
             .AsTransient();
     }
 }

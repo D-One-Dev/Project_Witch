@@ -175,10 +175,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e62a43c2d5aa067479a27fa9341b0f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: -7336036059123915699}
   targetLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   targetTag: Enemy
   deathParticles: {fileID: 4834426850347794042, guid: 258f19da5444a2b41b789af2200a5007,
     type: 3}
@@ -190,10 +189,11 @@ MonoBehaviour:
   damage: 80
   damageType: 3
   targetLockRadius: 7.5
+  ignoreTag: 
   speed: 20
   isHoming: 0
   isElementStrengthened: 0
-  rotationSpeed: 15
+  rotationSpeed: 2.5
 --- !u!4 &7835657565209081059 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5aaa7375c2a49424fa92bf9f3494b851,

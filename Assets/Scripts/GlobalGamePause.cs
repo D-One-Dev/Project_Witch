@@ -19,4 +19,16 @@ public class GlobalGamePause : MonoBehaviour
         if (Time.timeScale == 0f) _characterController.enabled = false;
         else _characterController.enabled = true;
     }
+
+    public void SetPause(bool state)
+    {
+        isGamePaused = state;
+        FixedUpdate();
+    }
+
+    public void HideCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
 }

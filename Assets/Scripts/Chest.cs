@@ -7,6 +7,8 @@ public class Chest : MonoBehaviour
     [SerializeField] private ParticleSystem[] particles;
     [SerializeField] private GameObject icon;
     [SerializeField] private int moneyAmount;
+    [SerializeField] private AudioClip[] clips;
+    [SerializeField] private SoundBase soundBase;
     private bool isActive;
     private Controls controls;
     private PlayerMoney _playerMoney;
@@ -39,6 +41,7 @@ public class Chest : MonoBehaviour
             _playerMoney.ChangeBalance(moneyAmount);
             icon.SetActive(false);
             animator.SetTrigger("Open");
+            soundBase.PlaySoundWithRandomPitch(clips[Random.Range(0, clips.Length)]);
             isActive = false;
         }
     }

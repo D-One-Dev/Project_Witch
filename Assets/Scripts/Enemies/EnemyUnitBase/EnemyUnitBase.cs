@@ -68,6 +68,9 @@ namespace Enemies.EnemyUnitBase
         {
             _isDead = true;
 
+            DeathSound deathSound = GetComponentInChildren<DeathSound>();
+            if(deathSound != null) deathSound.PlayDeathSound();
+
             if (deathParticles != null)
             {
                 Instantiate(deathParticles, transform.position, Quaternion.identity);

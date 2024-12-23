@@ -4,6 +4,8 @@ public class DoorTrigger : MonoBehaviour
 {
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject icon;
+    [SerializeField] private AudioClip[] clips;
+    [SerializeField] private SoundBase soundBase;
     private bool isActive;
     private Controls controls;
 
@@ -28,6 +30,7 @@ public class DoorTrigger : MonoBehaviour
         {
             icon.SetActive(false);
             animator.SetTrigger("Open");
+            soundBase.PlaySoundWithRandomPitch(clips[Random.Range(0, clips.Length)]);
             Destroy(this);
         }
     }

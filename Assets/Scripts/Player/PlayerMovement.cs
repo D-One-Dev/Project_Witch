@@ -36,6 +36,8 @@ public class PlayerMovement : IInitializable, ITickable
     private readonly Sprite _effectEnabledSprite;
     [Inject(Id = "PlayerInstaller")]
     private readonly MonoInstaller _playerInstaller;
+    [Inject(Id = "DashSound")]
+    private readonly AudioClip _dashSound;
 
     private AnimationsController _animationsController;
     private Controls _controls;
@@ -116,6 +118,8 @@ public class PlayerMovement : IInitializable, ITickable
         {
             _animationsController.Cooldown(_dashIcon, _dashCooldownTime, _effectDisabledSprite, _effectEnabledSprite);
             _animationsController.CameraFOVChange(_cam.GetComponent<Camera>(), this);
+            SoundBase soundBase = _playerTransform.gameObject.GetComponentInChildren<SoundBase>();
+            if(soundBase != null) soundBase.PlaySoundWithRandomPitch(_dashSound);
             _canDash = false;
             _playerInstaller.StartCoroutine(DashCooldown());
         }
