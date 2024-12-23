@@ -62,10 +62,29 @@ namespace Enemies.EnemyActions
             _attackCall = attackCall;
         }
         
-        public AttackWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall, AttackCall beforeAttackCall) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
+        public AttackWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall, AttackCall beforeAttackCall, string animationName = "") : base(player, timeBetweenAttacks, isAttackingTriggerKey)
         {
             _attackCall = attackCall;
             _beforeAttackCall = beforeAttackCall;
+            
+            if (animationName != "")
+            {
+                /*RuntimeAnimatorController ac = Enemy.Animator.runtimeAnimatorController;
+                
+                for (int i = 0; i < ac.animationClips.Length; i++)
+                {
+                    if (ac.animationClips[i].name == animationName)
+                    {
+                        _timeForAttack = ac.animationClips[i].length;
+                    }
+                    else
+                    {
+                        _timeForAttack = Enemy.Animator.GetNextAnimatorClipInfo(0).Length;
+                    }
+                }*/
+                
+                _timeForAttack = Enemy.Animator.GetNextAnimatorClipInfo(0).Length;
+            }
         }
         
         public AttackWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall, float timeForAttack) : base(player, timeBetweenAttacks, isAttackingTriggerKey)

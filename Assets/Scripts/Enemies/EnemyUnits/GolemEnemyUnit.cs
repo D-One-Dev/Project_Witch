@@ -34,15 +34,13 @@ namespace Enemies.EnemyUnits
             _walkAction = new Idle();
             _chaseAction = new ChaseWithTrigger(_player, ActivateGolem);
             
-            _attackAction = new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", DeactivateAttackArea, ActivateAttackArea);
+            _attackAction = new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking3", DespawnLaser, SpawnLaser, "ATTACK3");
 
             _deathAction = new Death("isDead");
 
             //_attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking1", Explode));
             //_attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", DeactivateAttackArea, ActivateAttackArea));
-            _attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking3", DespawnLaser, SpawnLaser));
-
-            animator.enabled = false;
+            _attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking3", DespawnLaser, SpawnLaser, "ATTACK3"));
 
             StartCoroutine(UpdateAttack());
         }
@@ -58,6 +56,7 @@ namespace Enemies.EnemyUnits
 
         private void ActivateGolem()
         {
+            animator.SetTrigger("isAwake");
             _centerPoint = Instantiate(centerPointPrefab, transform.position, Quaternion.identity).transform;
             _walkAction = new WalkInRadius(walkPointRange, _centerPoint);
         }
