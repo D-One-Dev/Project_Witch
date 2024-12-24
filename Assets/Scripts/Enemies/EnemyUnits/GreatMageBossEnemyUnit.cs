@@ -56,11 +56,11 @@ namespace Enemies.EnemyUnits
             
             _actions.Add(new WalkInRadius(walkPointRange, _centerPoint));
             _actions.Add(new TeleportationInRadius(walkPointRange, _centerPoint, SpawnTeleportEffect));
-            _actions.Add(new ShootingAttackBaseWithCallback(_player, timeBetweenAttacks, "isAttacking2", SpawnIceProjectTile));
-            _actions.Add(new ShootingAttackBaseWithCallback(_player, timeBetweenAttacks, "isAttacking2", SpawnIcyRockProjectTile));
-            _actions.Add(new ShootingAttackBaseWithCallback(_player, timeBetweenAttacks, "isAttacking1", SpawnMultipleProjectTiles));
-            _actions.Add(new ShootingAttackBaseWithCallback(_player, timeBetweenAttacks, "isAttacking2", SpawnPillarObj));
-            _actions.Add(new ShootingAttackBaseWithCallback(_player, timeBetweenAttacks, "isAttacking2", SpawnPillarWave));
+            _actions.Add(new ShootingAttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", SpawnIceProjectTile));
+            _actions.Add(new ShootingAttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", SpawnIcyRockProjectTile));
+            _actions.Add(new ShootingAttackWithCallback(_player, timeBetweenAttacks, "isAttacking1", SpawnMultipleProjectTiles));
+            _actions.Add(new ShootingAttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", SpawnPillarObj));
+            _actions.Add(new ShootingAttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", SpawnPillarWave));
 
             _deathAction = new Death("isDead");
 

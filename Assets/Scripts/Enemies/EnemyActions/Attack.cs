@@ -47,7 +47,7 @@ namespace Enemies.EnemyActions
             _isAbleToAttack = true;
         }
     }
-    
+
     public class Attack : AttackBase
     {
         private float _timeForAttack;
@@ -78,8 +78,6 @@ namespace Enemies.EnemyActions
                         _timeForAttack = Enemy.Animator.GetNextAnimatorClipInfo(0).Length;
                     }
                 }
-                
-                _timeForAttack = Enemy.Animator.GetNextAnimatorClipInfo(0).Length;
             }
             
             Enemy.EnemyUnit.StartCoroutine(Attacking());
@@ -93,25 +91,24 @@ namespace Enemies.EnemyActions
         }
     }
 
-    public class AttackBaseWithCallback : AttackBase
+    public class AttackWithCallback : AttackBase
     {
         public delegate void AttackCall();
 
         private readonly AttackCall _beforeAttackCall;
         private readonly AttackCall _attackCall;
-
+        
         private float _timeForAttack;
-
         private readonly string _animationName;
         
-        public AttackBaseWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey,
+        public AttackWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey,
             AttackCall beforeAttackCall) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
         {
             _beforeAttackCall = beforeAttackCall;
         }
         
-        public AttackBaseWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey,
-            AttackCall attackCall, AttackCall beforeAttackCall, string animationName = "", float timeForAttack = 0) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
+        public AttackWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey,
+            AttackCall beforeAttackCall, AttackCall attackCall, string animationName = "", float timeForAttack = 0) : base(player, timeBetweenAttacks, isAttackingTriggerKey)
         {
             _attackCall = attackCall;
             _beforeAttackCall = beforeAttackCall;
@@ -139,8 +136,6 @@ namespace Enemies.EnemyActions
                         _timeForAttack = Enemy.Animator.GetNextAnimatorClipInfo(0).Length;
                     }
                 }
-                
-                _timeForAttack = Enemy.Animator.GetNextAnimatorClipInfo(0).Length;
             }
             
             Enemy.EnemyUnit.StartCoroutine(Attacking());
@@ -148,17 +143,25 @@ namespace Enemies.EnemyActions
         
         protected IEnumerator Attacking()
         {
+            Debug.Log("attack " + Enemy.Animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
             if (_timeForAttack == 0)
-                yield return new WaitForSeconds(Enemy.Animator.GetCurrentAnimatorClipInfo(0).Length + 0.1f);
+                yield return new WaitForSeconds(Enemy.Animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
             else yield return new WaitForSeconds(_timeForAttack);
+            
             
             _attackCall?.Invoke();
         }
     }
     
-    public class ShootingAttackBaseWithCallback : AttackBaseWithCallback
+    public class ShootingAttackWithCallback : AttackWithCallback
     {
-        public ShootingAttackBaseWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey, AttackCall attackCall) : base(player, timeBetweenAttacks, isAttackingTriggerKey, attackCall)
+        public ShootingAttackWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey,
+            AttackCall beforeAttackCall) : base(player, timeBetweenAttacks, isAttackingTriggerKey, beforeAttackCall)
+        {
+        }
+
+        public ShootingAttackWithCallback(Transform player, float timeBetweenAttacks, string isAttackingTriggerKey,
+            AttackCall beforeAttackCall, AttackCall attackCall, string animationName = "", float timeForAttack = 0) : base(player, timeBetweenAttacks, isAttackingTriggerKey, beforeAttackCall, attackCall, animationName, timeForAttack)
         {
         }
         

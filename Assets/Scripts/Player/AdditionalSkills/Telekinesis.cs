@@ -44,7 +44,7 @@ namespace Player
             controls.Enable();
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             if (!_controls.Gameplay.RMB.IsPressed() && heldObj != null)
             {

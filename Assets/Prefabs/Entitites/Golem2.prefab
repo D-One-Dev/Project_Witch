@@ -91,6 +91,30 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4723795573150327012}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5290903106e0a9b4d86fc59badc68807,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5570800639169745688}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5290903106e0a9b4d86fc59badc68807,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4032219555509668544}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5290903106e0a9b4d86fc59badc68807,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4673966335889795854}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5290903106e0a9b4d86fc59badc68807,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8908896615596005499}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5290903106e0a9b4d86fc59badc68807,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7758825292311393310}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5290903106e0a9b4d86fc59badc68807,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2545720578563499825}
   m_SourcePrefab: {fileID: 100100000, guid: 5290903106e0a9b4d86fc59badc68807, type: 3}
 --- !u!1 &6389813193643379930 stripped
 GameObject:
@@ -119,3 +143,134 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5570800639169745688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6389813193643379930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfd9c23bceeef40438605628b377565d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneyCost: 200
+--- !u!195 &4032219555509668544
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6389813193643379930}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.025187075
+  m_Speed: 40
+  m_Acceleration: 5
+  avoidancePriority: 50
+  m_AngularSpeed: 200
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.05
+  m_BaseOffset: 0.018
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &4673966335889795854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6389813193643379930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b56d44616bcb654082304d051e6331c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500
+  damageResistType: 6
+  damageVulnerabilityType: 8
+  surfaceDamageCooldownTime: 0.5
+  isDestroyAfterDead: 0
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Enemies.EnemyUnits.GolemEnemyUnit, Assembly-CSharp
+        m_MethodName: Death
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  partOfColliderTriggers: []
+--- !u!114 &8908896615596005499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6389813193643379930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c0732722bc47b88a8c7668207a0c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 4723795573150327012}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  walkPointRange: 20
+  timeBetweenAttacks: 2
+  sightRange: 50
+  attackRange: 10
+  deathParticles: {fileID: 0}
+  rushCooldown: 15
+--- !u!114 &7758825292311393310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6389813193643379930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a8cd9c9f98a4f87a0e92bac4e3ef19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: Player
+  damage: 10
+  damageType: 3
+  isAttackWhileStaying: 1
+  cooldownForAttackWhileStaying: 0.5
+--- !u!135 &2545720578563499825
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6389813193643379930}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.029028416
+  m_Center: {x: -0.0015513945, y: 0.000026540756, z: 0}

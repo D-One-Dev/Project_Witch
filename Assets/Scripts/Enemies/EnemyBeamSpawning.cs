@@ -13,29 +13,39 @@ namespace Enemies
         
         public void SpawnLaser()
         {
-            _currentBeams = new List<GameObject>();
+            /*_currentBeams = new List<GameObject>();
             
             for (int i = 0; i < point.Length; i++)
             {
                 _currentBeams.Add(Instantiate(laserBeam, point[i].position, Quaternion.FromToRotation(point[i].forward, point[i].position)));
                 _currentBeams[i].transform.parent = point[i].transform;
                 _currentBeams[i].SetActive(false);
-            }
+            }*/
         }
 
         public void ActivateLaser()
         {
-            for (int i = 0; i < _currentBeams.Count; i++)
+            /*for (int i = 0; i < _currentBeams.Count; i++)
             {
                 _currentBeams[i].SetActive(true);
+            }*/
+
+            for (int i = 0; i < point.Length; i++)
+            {
+                point[i].gameObject.SetActive(true);
             }
         }
 
         public void DespawnLaser()
         {
-            for (int i = 0; i < _currentBeams.Count; i++)
+            /*for (int i = 0; i < _currentBeams.Count; i++)
             {
                 Destroy(_currentBeams[i]);
+            }*/
+            
+            for (int i = 0; i < point.Length; i++)
+            {
+                point[i].gameObject.SetActive(false);
             }
         }
     }

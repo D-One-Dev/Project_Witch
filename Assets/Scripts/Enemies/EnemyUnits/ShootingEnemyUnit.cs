@@ -11,7 +11,7 @@ namespace Enemies.EnemyUnits
             _walkAction = new Walk(walkPointRange, groundLayer);
             _chaseAction = new Chase(_player);
             
-            _attackAction = new ShootingAttackBaseWithCallback(_player, timeBetweenAttacks, "isAttacking", SpawnNewProjectTile);
+            _attackAction = new ShootingAttackWithCallback(_player, timeBetweenAttacks, "isAttacking", SpawnNewProjectTile);
         }
     }
 }
