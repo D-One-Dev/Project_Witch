@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -8,6 +9,7 @@ public class MainMenuInstaller : MonoInstaller
     [SerializeField] private Button loadGameButton;
 
     [SerializeField] private SettingsLoader settingsLoader;
+    [SerializeField] private TMP_Text buildVersionText;
     
     public override void InstallBindings()
     {
@@ -50,5 +52,15 @@ public class MainMenuInstaller : MonoInstaller
         this.Container.Bind<ShopUIController>()
             .FromInstance(null)
             .AsSingle();
+
+        this.Container.Bind<TMP_Text>()
+            .WithId("BuildVersionText")
+            .FromInstance(buildVersionText)
+            .AsTransient();
+
+        this.Container.BindInterfacesAndSelfTo<BuildVersion>()
+            .FromNew()
+            .AsSingle()
+            .NonLazy();
     }
 }
