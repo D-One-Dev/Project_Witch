@@ -4,7 +4,7 @@ using UnityEngine;
 public class CollisionSound : SoundBase
 {
     [SerializeField] private AudioClip[] clips;
-    [SerializeField] private float startDelay;
+    [SerializeField] private float startDelay = 2;
     private bool canPlay;
     private void Start()
     {
