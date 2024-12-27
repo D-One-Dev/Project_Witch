@@ -6,6 +6,7 @@ public class SpriteRotator : MonoBehaviour
     [Inject(Id = "PlayerTransform")]
     private readonly Transform _playerTransform;
     [SerializeField] private SpriteRenderer _SR;
+    [SerializeField] private Transform spriteTransform;
     [Space]
     [SerializeField] private Sprite frontSprite;
     [SerializeField] private Sprite backSprite;
@@ -22,6 +23,7 @@ public class SpriteRotator : MonoBehaviour
 
     private void Start()
     {
+        if(spriteTransform == null) spriteTransform = transform;
         if(_playerTransform == null)
         {
             Debug.LogErrorFormat("Player transform on " + GetComponentInParent<Transform>().gameObject.name + " not set");
@@ -37,11 +39,11 @@ public class SpriteRotator : MonoBehaviour
     {
         if(_playerTransform != null)
         {
-            transform.LookAt(_playerTransform.position);
-            transform.localEulerAngles = new Vector3(0f, transform.localEulerAngles.y, 0f);
+            spriteTransform.LookAt(_playerTransform.position);
+            spriteTransform.localEulerAngles = new Vector3(0f, spriteTransform.localEulerAngles.y, 0f);
             if (_SR != null)
             {
-                float angle = transform.localEulerAngles.y;
+                float angle = spriteTransform.localEulerAngles.y;
                 {
                     if (angle <= 45f || angle > 315f)
                     {

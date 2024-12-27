@@ -108,6 +108,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1814666643222403590}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8e87d0425fe2d104d943a97d42f36fca,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4418815815703955372}
   m_SourcePrefab: {fileID: 100100000, guid: 8e87d0425fe2d104d943a97d42f36fca, type: 3}
 --- !u!1 &3667364072069247562 stripped
 GameObject:
@@ -195,6 +199,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4418815815703955372}
+        m_TargetAssemblyTypeName: DeathSound, Assembly-CSharp
+        m_MethodName: PlayDeathSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   lifeTime: 30
   lifeTimeAfterCollide: 0
   damage: 60
@@ -223,3 +239,22 @@ MonoBehaviour:
   lm:
     serializedVersion: 2
     m_Bits: 1
+--- !u!114 &4418815815703955372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3667364072069247562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09fa7739b404fbd4f8a274cc14f5337b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minPitch: 0.75
+  maxPitch: 1.25
+  AS: {fileID: 0}
+  deathSoundPrefab: {fileID: 3084744284918088881, guid: ff6cd3cf866ab5c49bff333f9f194aea,
+    type: 3}
+  clips:
+  - {fileID: 8300000, guid: 307f324de298dde4eba84a7d88df6b5a, type: 3}

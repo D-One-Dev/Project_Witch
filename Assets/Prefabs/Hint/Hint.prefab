@@ -252,7 +252,6 @@ GameObject:
   - component: {fileID: 3767248181683628927}
   - component: {fileID: 7994455718456976813}
   - component: {fileID: 2042935403839193290}
-  - component: {fileID: 8859593923941700037}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -343,27 +342,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8859593923941700037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6337231212163837571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7213c8afe8fc2924980d7db007ec6637, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _SR: {fileID: 0}
-  frontSprite: {fileID: 0}
-  backSprite: {fileID: 0}
-  leftSprite: {fileID: 0}
-  rightSprite: {fileID: 0}
-  frontN: {fileID: 0}
-  backN: {fileID: 0}
-  leftN: {fileID: 0}
-  rightN: {fileID: 0}
 --- !u!1 &7905592933893239211
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,6 +354,7 @@ GameObject:
   - component: {fileID: 8339838057601777523}
   - component: {fileID: 433371491102738256}
   - component: {fileID: 3253628865105218630}
+  - component: {fileID: 7503890887008854398}
   m_Layer: 0
   m_Name: Hint
   m_TagString: Hint
@@ -443,3 +422,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintTag: 
   hintIcon: {fileID: 6337231212163837571}
+--- !u!114 &7503890887008854398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7905592933893239211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7213c8afe8fc2924980d7db007ec6637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _SR: {fileID: 0}
+  spriteTransform: {fileID: 2641192925857384378}
+  frontSprite: {fileID: 0}
+  backSprite: {fileID: 0}
+  leftSprite: {fileID: 0}
+  rightSprite: {fileID: 0}
+  frontN: {fileID: 0}
+  backN: {fileID: 0}
+  leftN: {fileID: 0}
+  rightN: {fileID: 0}

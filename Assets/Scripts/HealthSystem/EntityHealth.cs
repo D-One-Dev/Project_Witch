@@ -100,20 +100,21 @@ public class EntityHealth : MonoBehaviour, IDamageable
         if (surfaceDamageCoroutine == null)
         {
             surfaceDamageCoroutine = StartCoroutine(SurfaceDamageCooldown());
-            if (health - damage > 0)
-            {
-                health -= damage;
-                _animationsController.DamageEnemy(GetComponentInChildren<SpriteRenderer>());
-            }
+        //     if (health - damage > 0)
+        //     {
+        //         health -= damage;
+        //         _animationsController.DamageEnemy(GetComponentInChildren<SpriteRenderer>());
+        //     }
 
-            else
-            {
-                health = 0;
-                if (!isDead) Death();
-            }
+        //     else
+        //     {
+        //         health = 0;
+        //         if (!isDead) Death();
+        //     }
+            TakeDamage(damage, DamageType.None, false);
         }
 
-        UpdateUI();
+        // UpdateUI();
     }
 
     private IEnumerator SurfaceDamageCooldown()
