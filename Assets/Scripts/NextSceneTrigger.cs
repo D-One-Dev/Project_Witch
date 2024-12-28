@@ -17,12 +17,15 @@ public class NextSceneTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            _savesController.CurrentSceneID = nextSceneID;
-            _savesController.Save();
-            _savesController.ResetPlayerPos();
-            _animationsController.ChangeScene(loadingScreen, nextSceneID);
-        }
+        if (other.gameObject.CompareTag("Player")) TriggerNextScene();
+    }
+
+    public void TriggerNextScene()
+    {
+        _savesController.CurrentSceneID = nextSceneID;
+        _savesController.Save();
+        Debug.Log(loadingScreen);
+        _savesController.ResetPlayerPos();
+        _animationsController.ChangeScene(loadingScreen, nextSceneID);
     }
 }

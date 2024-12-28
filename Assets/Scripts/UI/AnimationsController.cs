@@ -86,6 +86,7 @@ public class AnimationsController
         loadingScreen.SetActive(true);
         sceneLoadOperation = SceneManager.LoadSceneAsync(sceneID);
         sceneLoadOperation.allowSceneActivation = false;
+        //Debug.Log(loadingScreen.GetComponent<CanvasGroup>());
         loadingScreen.GetComponent<CanvasGroup>().DOFade(1f, .5f).SetUpdate(UpdateType.Normal, true).OnComplete(() =>
         {
             Time.timeScale = 1f;

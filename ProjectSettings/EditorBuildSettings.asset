@@ -84,6 +84,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Mike/MainMenu.unity
     guid: d8b2d89fc338f7949add6ffb519efc6c
   - enabled: 1
+    path: Assets/Scenes/Mike/StartCutscene.unity
+    guid: 5dbad5f46ec30df449ff7735531705d2
+  - enabled: 1
     path: Assets/Scenes/Mike/1.unity
     guid: 63b9575d3630af84daea7c721a496e1b
   - enabled: 1

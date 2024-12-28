@@ -9737,6 +9737,7 @@ RectTransform:
   - {fileID: 6623737089481479141}
   - {fileID: 3697107467763168452}
   - {fileID: 8898618274098890895}
+  - {fileID: 3260819684522842209}
   - {fileID: 79893269150767837}
   - {fileID: 5106961924729322076}
   - {fileID: 7922994137035887558}
@@ -9744,7 +9745,6 @@ RectTransform:
   - {fileID: 8467608331313760009}
   - {fileID: 1336195324749410771}
   - {fileID: 5686892047357781916}
-  - {fileID: 3260819684522842209}
   - {fileID: 8360836010537908523}
   - {fileID: 7203489060447081141}
   m_Father: {fileID: 0}
@@ -12570,7 +12570,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &79893269150767837
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12589,8 +12589,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 75}
-  m_SizeDelta: {x: 0, y: 150}
+  m_AnchoredPosition: {x: 0, y: 105}
+  m_SizeDelta: {x: 0, y: 210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4596206120449874905
 CanvasRenderer:
@@ -17966,6 +17966,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Black Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802166172364754782, guid: 26bc7ed59cfda6e44849f04dceda6330,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

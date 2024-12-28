@@ -68,23 +68,34 @@ public class SavesController : IInitializable
 
     public void Save()
     {
-        _animationsController.ImageInOutFade(_savingIconImage);
+        if(_savingIconImage != null) _animationsController.ImageInOutFade(_savingIconImage);
         SaveFile file = new SaveFile();
         //file.sceneID = CurrentSceneID;
         file.sceneID = SceneManager.GetActiveScene().buildIndex;
-        file.playerPosition = _playerTransform.position;
-        file.playerRotation = _playerTransform.localRotation;
-        file.leftSpell = _newSpellCaster.LeftSpell;
-        file.rightSpell = _newSpellCaster.RightSpell;
-        file.leftEffect = _newSpellCaster.LeftEffect;
-        file.rightEffect = _newSpellCaster.RightEffect;
-        file.money = _playerMoney.Balance;
-        file.currentTask = TaskUI.Instance.currentTask;
-
+        if(_playerTransform != null)
+        {
+            file.playerPosition = _playerTransform.position;
+            file.playerRotation = _playerTransform.localRotation;
+        }
+        if(_newSpellCaster != null)
+        {
+            file.leftSpell = _newSpellCaster.LeftSpell;
+            file.rightSpell = _newSpellCaster.RightSpell;
+            file.leftEffect = _newSpellCaster.LeftEffect;
+            file.rightEffect = _newSpellCaster.RightEffect;
+        }
+        if(_playerMoney != null)
+        {
+            file.money = _playerMoney.Balance;
+        }
+        if(TaskUI.Instance != null)
+        {
+            file.currentTask = TaskUI.Instance.currentTask;
+        }
         string json = JsonUtility.ToJson(file);
         File.WriteAllText(Application.dataPath + "/save.savefile", json);
 
-        SaveShopItems(_shopUIController.GetItemsArray());
+        if(_shopUIController != null) SaveShopItems(_shopUIController.GetItemsArray());
     }
 
     public void ResetPlayerPos()
@@ -92,13 +103,25 @@ public class SavesController : IInitializable
         SaveFile file = new SaveFile();
         file.sceneID = CurrentSceneID;
         file.playerPosition = Vector3.zero;
-        file.playerRotation = _playerTransform.localRotation;
-        file.leftSpell = _newSpellCaster.LeftSpell;
-        file.rightSpell = _newSpellCaster.RightSpell;
-        file.leftEffect = _newSpellCaster.LeftEffect;
-        file.rightEffect = _newSpellCaster.RightEffect;
-        file.money = _playerMoney.Balance;
-        file.currentTask = TaskUI.Instance.currentTask;
+        if(_playerTransform != null)
+        {
+            file.playerRotation = _playerTransform.localRotation;
+        }
+        if(_newSpellCaster != null)
+        {
+            file.leftSpell = _newSpellCaster.LeftSpell;
+            file.rightSpell = _newSpellCaster.RightSpell;
+            file.leftEffect = _newSpellCaster.LeftEffect;
+            file.rightEffect = _newSpellCaster.RightEffect;
+        }
+        if(_playerMoney != null)
+        {
+            file.money = _playerMoney.Balance;
+        }
+        if(TaskUI.Instance != null)
+        {
+            file.currentTask = TaskUI.Instance.currentTask;
+        }
         string json = JsonUtility.ToJson(file);
         File.WriteAllText(Application.dataPath + "/save.savefile", json);
     }
@@ -117,10 +140,10 @@ public class SavesController : IInitializable
                 _playerTransform.localRotation = file.playerRotation;
                 _playerTransform.gameObject.GetComponent<CharacterController>().enabled = true;
             }
-            _newSpellCaster.LeftSpell = file.leftSpell;
-            _newSpellCaster.RightSpell = file.rightSpell;
-            _newSpellCaster.LeftEffect = file.leftEffect;
-            _newSpellCaster.RightEffect = file.rightEffect;
+            if(file.leftSpell != null) _newSpellCaster.LeftSpell = file.leftSpell;
+            if(file.rightSpell != null) _newSpellCaster.RightSpell = file.rightSpell;
+            if(file.leftEffect != null) _newSpellCaster.LeftEffect = file.leftEffect;
+            if(file.rightEffect != null) _newSpellCaster.RightEffect = file.rightEffect;
             _playerMoney.SetBalance(file.money);
             TaskUI.Instance.ChangeTask(file.currentTask);
             return file;

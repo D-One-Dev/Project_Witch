@@ -582,6 +582,63 @@ MonoBehaviour:
   - Language: English
     Text: Text language
     Object: {fileID: 0}
+--- !u!1 &1035059793121108681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 742451905366813387}
+  - component: {fileID: 7359288084619822114}
+  m_Layer: 0
+  m_Name: StartCutsceneDialogue16
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &742451905366813387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035059793121108681}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7359288084619822114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035059793121108681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u0421\u043F\u0443\u0441\u0442\u044F \u0441\u0442\u043E\u043B\u044C\u043A\u043E
+      \u043B\u0435\u0442 \u044F \u043D\u0430\u043A\u043E\u043D\u0435\u0446 \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u0430
+      \u0448\u0430\u043D\u0441 \u0432\u044B\u0431\u0440\u0430\u0442\u044C\u0441\u044F.
+      \u041D\u0443\u0436\u043D\u043E \u0431\u044B\u043B\u043E \u0434\u0435\u0439\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C
+      \u0431\u044B\u0441\u0442\u0440\u043E."
+    Object: {fileID: 0}
+  - Language: English
+    Text: After all these years, I finally had a chance to get out. I had to act
+      fast.
+    Object: {fileID: 0}
 --- !u!1 &1044955877665009814
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,6 +966,69 @@ MonoBehaviour:
   - Language: English
     Text: gwawgawg
     Object: {fileID: 0}
+--- !u!1 &1330832336030687156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7516015870743213817}
+  - component: {fileID: 3996290525939896234}
+  m_Layer: 0
+  m_Name: StartCutsceneDialogue13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7516015870743213817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330832336030687156}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3996290525939896234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330832336030687156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u041F\u0440\u043E\u0431\u0440\u0430\u0442\u044C\u0441\u044F
+      \u0432 \u0437\u0430\u043C\u043E\u043A \u0431\u044B\u043B\u043E \u043D\u0435
+      \u0442\u0430\u043A\u043E\u0439 \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u043E\u0439
+      \u0434\u043B\u044F \u043E\u043F\u044B\u0442\u043D\u043E\u0433\u043E \u0432\u043E\u0440\u0430
+      \u043D\u0430\u0432\u0440\u043E\u0434\u0435 \u043C\u0435\u043D\u044F. \u0423\u0436\u0435
+      \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439 \u043D\u043E\u0447\u044C\u044E
+      \u044F \u0431\u044B\u043B \u0432 \u043F\u043E\u0434\u0432\u0430\u043B\u0435
+      \u0437\u0430\u043C\u043A\u0430, \u0438 \u0432 \u043E\u0434\u043D\u043E\u043C
+      \u0438\u0437 \u043A\u043E\u0440\u0438\u0434\u043E\u0440\u043E\u0432 \u044F
+      \u043D\u0430\u0448\u0435\u043B, \u0447\u0442\u043E \u0438\u0441\u043A\u0430\u043B."
+    Object: {fileID: 0}
+  - Language: English
+    Text: <color=#005500>Getting into the castle was no big deal for an experienced
+      thief like me. The next night I was in the castle basement, and in one of the
+      corridors I found what I was looking for.
+    Object: {fileID: 0}
 --- !u!1 &1376166199035438469
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,6 +1140,61 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: 
+    Object: {fileID: 0}
+--- !u!1 &1480939403147324838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7353981190526145280}
+  - component: {fileID: 8975745277625095791}
+  m_Layer: 0
+  m_Name: StartCutsceneDialogue6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7353981190526145280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480939403147324838}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8975745277625095791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480939403147324838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#ad8015>\u0421\u0442\u043E\u043B\u044C\u043A\u043E \u0435\u0439
+      \u0432\u0441\u0435\u0433\u043E \u0441\u0434\u0435\u043B\u0430\u0442\u044C \u043F\u0440\u0438\u0448\u043B\u043E\u0441\u044C,
+      \u043D\u043E \u0432 \u0438\u0442\u043E\u0433\u0435 \u0448\u043B\u044F\u043F\u0443
+      \u043E\u043D\u0430 \u0441\u043E\u0437\u0434\u0430\u043B\u0430."
+    Object: {fileID: 0}
+  - Language: English
+    Text: <color=#ad8015>She had to do so much, but in the end she created the hat.
     Object: {fileID: 0}
 --- !u!1 &1686883978467366478
 GameObject:
@@ -1450,6 +1625,68 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: gagagwa
+    Object: {fileID: 0}
+--- !u!1 &2362173777531708977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6387948985569012173}
+  - component: {fileID: 1226618647440771990}
+  m_Layer: 0
+  m_Name: StartCutsceneDialogue2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6387948985569012173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2362173777531708977}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1226618647440771990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2362173777531708977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#ad8015>\u0412\u0441\u0451 \u043D\u0430\u0447\u0430\u043B\u043E\u0441\u044C
+      \u0434\u0430\u0432\u043D\u043E, \u0442\u043E\u0433\u0434\u0430 \u0443 \u043B\u044E\u0434\u0430
+      \u0435\u0449\u0451 \u0441\u0442\u043E\u043B\u044C\u043A\u043E \u0435\u0434\u044B
+      \u0431\u044B\u043B\u043E, \u0447\u0442\u043E \u043B\u0438\u0448\u043D\u0435\u0435
+      \u043A\u0443\u0440\u0430\u043C \u043D\u0430 \u0441\u044A\u0435\u0434\u0435\u043D\u044C\u0435
+      \u043E\u0442\u0434\u0430\u0432\u0430\u043B\u0438. \u0412 \u043E\u0431\u0449\u0435\u043C,
+      \u0440\u043E\u0434\u0438\u043B\u0430\u0441\u044C \u0443 \u043A\u043E\u0440\u043E\u043B\u044F
+      \u0441 \u043A\u043E\u0440\u043E\u043B\u0435\u0432\u043E\u0439 \u0434\u043E\u0447\u044C,
+      \u0437\u0432\u0430\u043B\u0438 \u0435\u0451 \u0410\u043B\u0435\u043A\u0441."
+    Object: {fileID: 0}
+  - Language: English
+    Text: <color=#ad8015>It all started a long time ago, when people still had so
+      much food that they gave the extra to the chickens to eat. Anyway, the king
+      and queen had a daughter, named Alex.
     Object: {fileID: 0}
 --- !u!1 &2395414748908782132
 GameObject:
@@ -2215,6 +2452,68 @@ MonoBehaviour:
   - Language: English
     Text: gwagagwag
     Object: {fileID: 0}
+--- !u!1 &3181731667510201725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 574133389772021900}
+  - component: {fileID: 4465348156279594458}
+  m_Layer: 0
+  m_Name: StartCutsceneDialogue11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &574133389772021900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3181731667510201725}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4465348156279594458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3181731667510201725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#ad8015>\u0421 \u0442\u0440\u0443\u0434\u043E\u043C \u0410\u043B\u0435\u043A\u0441
+      \u043F\u043E\u0439\u043C\u0430\u043B\u0438 \u0438 \u0437\u0430\u043A\u0440\u044B\u043B\u0438
+      \u0433\u0434\u0435-\u0442\u043E \u0432 \u043F\u043E\u0434\u0432\u0430\u043B\u0430\u0445
+      \u0437\u0430\u043C\u043A\u0430, \u043E\u0447\u0435\u0440\u0435\u0434\u043D\u043E\u0435
+      \u0435\u0451 \u0442\u0435\u043B\u043E \u0432\u0441\u043A\u043E\u0440\u0435
+      \u0437\u0430\u0447\u0430\u0445\u043B\u043E, \u0438 \u0441 \u0442\u0435\u0445
+      \u043F\u043E\u0440 \u043E\u043D\u0430 \u0442\u0430\u043A \u0438 \u0437\u0430\u043F\u0435\u0440\u0442\u0430
+      \u0432\u043D\u0443\u0442\u0440\u0438 \u044D\u0442\u043E\u0439 \u043F\u0440\u043E\u043A\u043B\u044F\u0442\u043E\u0439
+      \u0448\u043B\u044F\u043F\u044B."
+    Object: {fileID: 0}
+  - Language: English
+    Text: <color=#ad8015>With difficulty Alex was caught and locked away somewhere
+      in the castle's cellars, another of her bodies soon languished, and she's been
+      locked inside that cursed hat ever since.
+    Object: {fileID: 0}
 --- !u!1 &3207620968013728014
 GameObject:
   m_ObjectHideFlags: 0
@@ -2573,6 +2872,23 @@ Transform:
   - {fileID: 7905752493048838856}
   - {fileID: 8096510829782489500}
   - {fileID: 4780432248560112264}
+  - {fileID: 3376730825449299029}
+  - {fileID: 6387948985569012173}
+  - {fileID: 5999347364985526305}
+  - {fileID: 6122446914316279408}
+  - {fileID: 6902891305092294474}
+  - {fileID: 7353981190526145280}
+  - {fileID: 1580144339084437659}
+  - {fileID: 6704450130004733139}
+  - {fileID: 5902208802992439460}
+  - {fileID: 8944277409840775584}
+  - {fileID: 574133389772021900}
+  - {fileID: 6841522135741185387}
+  - {fileID: 7516015870743213817}
+  - {fileID: 4860075590256338532}
+  - {fileID: 633532314589598365}
+  - {fileID: 742451905366813387}
+  - {fileID: 58981631332493783}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3361877429124737769
@@ -2587,7 +2903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 806f0696300aeac44a0e17efee222854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLanguage: Russian
+  currentLanguage: English
   detectLanguage: 1
   defaultLanguage: English
   saveLoad: 1
@@ -3414,6 +3730,68 @@ MonoBehaviour:
   - Language: English
     Text: awgawg
     Object: {fileID: 0}
+--- !u!1 &4226596290867316683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6122446914316279408}
+  - component: {fileID: 5275726774364023934}
+  m_Layer: 0
+  m_Name: StartCutsceneDialogue4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6122446914316279408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4226596290867316683}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5275726774364023934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4226596290867316683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#ad8015>\u0418 \u0431\u044B\u043B\u043E \u0432\u0441\u0451 \u0445\u043E\u0440\u043E\u0448\u043E,
+      \u0434\u0430 \u0442\u043E\u043B\u044C\u043A\u043E \u0432\u043E\u0442 \u043A\u043E\u0440\u043E\u043B\u0435\u0432\u0430
+      \u043A\u0430\u043A\u043E\u0439-\u0442\u043E \u0447\u0443\u0434\u043D\u043E\u0439
+      \u0445\u0432\u043E\u0440\u044C\u044E \u0437\u0430\u0431\u043E\u043B\u0435\u043B\u0430,
+      \u0434\u0430 \u0442\u0430\u043A\u043E\u0439, \u043A\u0430\u043A\u043E\u0439
+      \u043D\u0438 \u043E\u0434\u0438\u043D \u043C\u0435\u0441\u0442\u043D\u044B\u0439
+      \u0437\u043D\u0430\u0445\u0430\u0440\u044C \u0438 \u0432 \u0433\u043B\u0430\u0437\u0430
+      \u0442\u043E \u043D\u0435 \u0432\u0438\u0434\u0435\u043B, \u0447\u0451\u0440\u0442
+      \u0435\u0433\u043E \u0437\u043D\u0430\u0435\u0442, \u043A\u0430\u043A \u043B\u0435\u0447\u0438\u0442\u044C."
+    Object: {fileID: 0}
+  - Language: English
+    Text: <color=#ad8015>And everything was fine, but the queen fell ill with some
+      strange disease, one that no local doctor has ever seen, and no one knows how
+      to treat it.
+    Object: {fileID: 0}
 --- !u!1 &4491410814532297178
 GameObject:
   m_ObjectHideFlags: 0
@@ -3854,6 +4232,68 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: Launches an ice shard
+    Object: {fileID: 0}
+--- !u!1 &4940325703346539067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5902208802992439460}
+  - component: {fileID: 3223352204188008574}
+  m_Layer: 0
+  m_Name: StartCutsceneDialogue9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5902208802992439460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4940325703346539067}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3223352204188008574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4940325703346539067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#ad8015>\u0410\u043B\u0435\u043A\u0441 \u0438\u0437 \u0433\u043E\u0440\u043E\u0434\u0430
+      \u0441\u0431\u0435\u0436\u0430\u043B\u0430, \u0434\u043E\u043B\u0433\u043E
+      \u0441\u043A\u0438\u0442\u0430\u043B\u0430\u0441\u044C \u043F\u043E \u043E\u043A\u0440\u0435\u0441\u0442\u043D\u043E\u0441\u0442\u044F\u043C,
+      \u043A\u043E\u0433\u0434\u0430 \u0442\u0435\u043B\u043E \u0435\u0435 \u0440\u0430\u0441\u0441\u044B\u043F\u0430\u0442\u044C\u0441\u044F
+      \u043D\u0430\u0447\u0430\u043B\u043E, \u043F\u0440\u0438\u0448\u043B\u043E\u0441\u044C
+      \u0435\u0439 \u043D\u0435 \u0435\u0434\u0438\u043D\u043E\u0436\u0434\u044B
+      \u043D\u0430\u043F\u0430\u0434\u0430\u0442\u044C \u043D\u0430 \u043F\u0440\u043E\u0441\u0442\u044B\u0445
+      \u043F\u0443\u0442\u043D\u0438\u043A\u043E\u0432, \u0447\u0442\u043E\u0431
+      \u043D\u043E\u0432\u043E\u0435 \u0442\u0435\u043B\u043E \u0437\u0430\u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C."
+    Object: {fileID: 0}
+  - Language: English
+    Text: <color=#ad8015>Alex ran away from the city, wandered around for a long
+      time, when her body began to fall apart, she had to repeatedly attack ordinary
+      travelers to get a new body.
     Object: {fileID: 0}
 --- !u!1 &4998245621871597202
 GameObject:
@@ -4454,6 +4894,136 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: Size decrase
+    Object: {fileID: 0}
+--- !u!1 &5670185332954601487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3376730825449299029}
+  - component: {fileID: 4837440335341175249}
+  m_Layer: 0
+  m_Name: StartCutsceneDialogue1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3376730825449299029
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5670185332954601487}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4837440335341175249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5670185332954601487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#ad8015>\u0417\u043D\u0430\u0447\u0438\u0442, \u043D\u0430 \u043F\u043E\u043B\u044F\u0445
+      \u0441\u043D\u043E\u0432\u0430 \u043D\u0435\u0443\u0440\u043E\u0436\u0430\u0439?
+      \u0425\u043C... \u0427\u0451\u0440\u0442, \u0442\u0430\u043A \u0438 \u0441
+      \u0433\u043E\u043B\u043E\u0434\u0443 \u043F\u043E\u0434\u043E\u0445\u043D\u0443\u0442\u044C
+      \u043D\u0435\u0434\u043E\u043B\u0433\u043E. \u0421 \u0442\u0435\u0445 \u043F\u043E\u0440,
+      \u043A\u0430\u043A \u043A\u043E\u0440\u043E\u043B\u044C \u043F\u043E\u0442\u0435\u0440\u044F\u043B
+      \u0436\u0435\u043D\u0443 \u0438 \u0434\u043E\u0447\u044C, \u043A\u0430\u0436\u0434\u044B\u0439
+      \u043D\u043E\u0432\u044B\u0439 \u0433\u043E\u0434 \u0442\u043E\u043B\u044C\u043A\u043E
+      \u0445\u0443\u0436\u0435 \u043F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0435\u0433\u043E...
+      \u0422\u0430\u043A \u0432\u044B \u043F\u0440\u0430\u0432\u0434\u0430 \u043D\u0435
+      \u0441\u043B\u044B\u0448\u0430\u043B\u0438 \u044D\u0442\u0443 \u0438\u0441\u0442\u043E\u0440\u0438\u044E?
+      \u0427\u0442\u043E \u0436, \u043F\u0440\u0438\u0434\u0451\u0442\u0441\u044F
+      \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u0430\u0442\u044C..."
+    Object: {fileID: 0}
+  - Language: English
+    Text: <color=#ad8015>So the fields are failing again? Hmm. Damn, we'll starve
+      to death. Ever since the King lost his wife and daughter, every new year has
+      been worse than the last... So you really haven't heard the story? Well, seems
+      like I'll have to tell it.
+    Object: {fileID: 0}
+--- !u!1 &5841310555495016241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1580144339084437659}
+  - component: {fileID: 6752408793583970349}
+  m_Layer: 0
+  m_Name: StartCutsceneDialogue7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1580144339084437659
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5841310555495016241}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6752408793583970349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5841310555495016241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#ad8015>\u0427\u0442\u043E\u0431 \u043D\u0435 \u043F\u043E\u0434\u0432\u0435\u0440\u0433\u0430\u0442\u044C
+      \u043C\u0430\u0442\u044C \u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442\u0438,
+      \u0440\u0435\u0448\u0438\u043B\u0430 \u0441\u043D\u0430\u0447\u0430\u043B\u0430
+      \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u043D\u0430 \u0441\u0435\u0431\u0435.
+      \u0422\u043E\u043B\u044C\u043A\u043E \u043E\u043A\u0430\u0437\u0430\u043B\u043E\u0441\u044C,
+      \u0447\u0442\u043E \u0448\u043B\u044F\u043F\u0430 \u0442\u043E \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u0430
+      \u0445\u043E\u0442\u044C \u0438 \u0441\u043F\u0430\u0441\u0430\u0435\u0442
+      \u043E\u0442 \u0441\u043C\u0435\u0440\u0442\u0438, \u043D\u043E \u0442\u043E\u043B\u044C\u043A\u043E
+      \u0443\u0447\u0430\u0441\u0442\u044C \u044D\u0442\u0430 \u0435\u0449\u0451
+      \u0445\u0443\u0436\u0435, \u0447\u0435\u043C \u0441\u043C\u0435\u0440\u0442\u044C."
+    Object: {fileID: 0}
+  - Language: English
+    Text: <color=#ad8015>So as not to put her mother in danger, she decided to test
+      it on herself first. But it turned out that though the hat could save a man
+      from death, but the fate was even worse than death.
     Object: {fileID: 0}
 --- !u!1 &5899883493846719843
 GameObject:
@@ -5059,6 +5629,65 @@ MonoBehaviour:
   - Language: English
     Text: Rock
     Object: {fileID: 0}
+--- !u!1 &6861093985979657354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5999347364985526305}
+  - component: {fileID: 2158039807455906893}
+  m_Layer: 0
+  m_Name: StartCutsceneDialogue3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5999347364985526305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6861093985979657354}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2158039807455906893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6861093985979657354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#ad8015>\u0421 \u0440\u0430\u043D\u043D\u0438\u0445 \u043B\u0435\u0442
+      \u0443\u0432\u043B\u0435\u043A\u043B\u0430\u0441\u044C \u043E\u043D\u0430 \u043C\u0430\u0433\u0438\u0435\u0439,
+      \u043A \u0441\u043E\u0432\u0435\u0440\u0448\u0435\u043D\u043D\u043E\u043B\u0435\u0442\u0438\u044E
+      \u0443\u0436\u0435 \u0442\u0430\u043A\u043E\u0435 \u0441\u043E\u0442\u0432\u043E\u0440\u0438\u0442\u044C
+      \u043C\u043E\u0433\u043B\u0430, \u0447\u0442\u043E \u0438 \u043D\u0435 \u043A\u0430\u0436\u0434\u044B\u0439
+      \u043C\u0430\u0433 \u0441\u043C\u043E\u0436\u0435\u0442."
+    Object: {fileID: 0}
+  - Language: English
+    Text: <color=#ad8015>She was interested in magic from an early age, and by the
+      time she reached adulthood she could do things that not every magician can
+      do.
+    Object: {fileID: 0}
 --- !u!1 &7184165426667114304
 GameObject:
   m_ObjectHideFlags: 0
@@ -5110,6 +5739,75 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: On
+    Object: {fileID: 0}
+--- !u!1 &7222232045069080043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6704450130004733139}
+  - component: {fileID: 3270816202957613067}
+  m_Layer: 0
+  m_Name: StartCutsceneDialogue8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6704450130004733139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7222232045069080043}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3270816202957613067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7222232045069080043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#ad8015>\u0428\u043B\u044F\u043F\u0430 \u0437\u0430\u043A\u043B\u044E\u0447\u0430\u0435\u0442
+      \u0434\u0443\u0448\u0443 \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u0430 \u0432
+      \u0441\u0435\u0431\u0435, \u0438 \u0442\u043E\u0442 \u043E\u0441\u0442\u0430\u0435\u0442\u0441\u044F
+      \u043D\u0430\u0432\u0441\u0435\u0433\u0434\u0430 \u0432 \u043D\u0435\u0439
+      \u0437\u0430\u043F\u0435\u0440\u0442. \u0410 \u0442\u0435\u043B\u043E \u0431\u0435\u0437
+      \u0434\u0443\u0448\u0438 \u0432\u0441\u043A\u043E\u0440\u0435 \u0440\u0430\u0441\u0441\u044B\u043F\u0430\u0442\u044C\u0441\u044F
+      \u043D\u0430\u0447\u0438\u043D\u0430\u0435\u0442, \u0438 \u0441\u043F\u0430\u0441\u0442\u0438\u0441\u044C
+      \u043C\u043E\u0436\u043D\u043E, \u0442\u043E\u043B\u044C\u043A\u043E \u043D\u0430\u0434\u0435\u0432
+      \u0448\u043B\u044F\u043F\u0443 \u043D\u0430 \u0434\u0440\u0443\u0433\u043E\u0433\u043E
+      \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u0430, \u0442\u043E\u0433\u0434\u0430
+      \u0442\u0435\u043B\u043E \u0435\u0433\u043E \u0437\u0430\u0431\u0435\u0440\u0435\u0442
+      \u0438\u0437\u043D\u0430\u0447\u0430\u043B\u044C\u043D\u044B\u0439 \u0445\u043E\u0437\u044F\u0438\u043D
+      \u0448\u043B\u044F\u043F\u044B, \u0430 \u0434\u0443\u0448\u0430 \u0435\u0433\u043E
+      \u0442\u0430\u043A\u0436\u0435 \u043D\u0430\u0432\u0441\u0435\u0433\u0434\u0430
+      \u043E\u0441\u0442\u0430\u043D\u0435\u0442\u0441\u044F \u0437\u0430\u043F\u0435\u0440\u0442\u043E\u0439."
+    Object: {fileID: 0}
+  - Language: English
+    Text: <color=#ad8015>The hat encloses one's soul, and the person remains forever
+      trapped. A body without a soul soon begins to fall apart, and one can be saved
+      only by putting the hat on another person, then his body will be taken away
+      by the original owner of the hat, and his soul will also remain locked up forever.
     Object: {fileID: 0}
 --- !u!1 &7334186129329378596
 GameObject:
@@ -5168,6 +5866,69 @@ MonoBehaviour:
     Text: "C - \u0442\u0435\u043B\u0435\u043F\u043E\u0440\u0442, \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442
       \u0443\u0432\u043E\u0440\u0430\u0447\u0438\u0432\u044B\u0432\u0430\u0442\u044C\u0441\u044F
       \u043E\u0442 \u0432\u0430\u0440\u0436\u0435\u0441\u043A\u0438\u0445 \u0430\u0442\u0430\u043A"
+    Object: {fileID: 0}
+--- !u!1 &7487850897878754761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6841522135741185387}
+  - component: {fileID: 6416133968958705756}
+  m_Layer: 0
+  m_Name: StartCutsceneDialogue12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6841522135741185387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7487850897878754761}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6416133968958705756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7487850897878754761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#ad8015>\u0412\u0435\u0441\u044C \u0433\u043E\u0440\u043E\u0434
+      \u0442\u043E\u0433\u0434\u0430 \u0432 \u0448\u043E\u043A\u0435 \u0431\u044B\u043B.
+      \u041A\u043E\u0440\u043E\u043B\u044C \u0442\u0430\u043A \u043F\u043E\u0441\u043B\u0435
+      \u044D\u0442\u043E\u0433\u043E \u0438 \u043D\u0435 \u043E\u043F\u0440\u0430\u0432\u0438\u043B\u0441\u044F,
+      \u0442\u0430\u043A \u0435\u0449\u0451 \u0438 \u043A\u043E\u0440\u043E\u043B\u0435\u0432\u0430
+      \u0432\u0441\u043A\u043E\u0440\u0435 \u0441\u043A\u043E\u043D\u0447\u0430\u043B\u0430\u0441\u044C,
+      \u043B\u0435\u043A\u0430\u0440\u0441\u0442\u0432\u043E \u0442\u0430\u043A \u043D\u0430\u0439\u0442\u0438
+      \u0438 \u043D\u0435 \u0441\u043C\u043E\u0433\u043B\u0438. \u0414\u0430 \u0443\u0436,
+      \u043D\u0438\u043A\u043E\u043C\u0443 \u0442\u0430\u043A\u043E\u0439 \u0441\u0443\u0434\u044C\u0431\u044B
+      \u043D\u0435 \u043F\u043E\u0436\u0435\u043B\u0430\u0435\u0448\u044C..."
+    Object: {fileID: 0}
+  - Language: English
+    Text: <color=#ad8015>The whole town was in shock. The king never recovered from
+      that, and the queen died soon after, as they couldn't find a cure. Yea, you
+      wouldn't wish that on anyone.
     Object: {fileID: 0}
 --- !u!1 &7530171115594752007
 GameObject:
@@ -5711,6 +6472,71 @@ MonoBehaviour:
   - Language: English
     Text: 
     Object: {fileID: 0}
+--- !u!1 &8290517454625481788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6902891305092294474}
+  - component: {fileID: 4473586056943246443}
+  m_Layer: 0
+  m_Name: StartCutsceneDialogue5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6902891305092294474
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8290517454625481788}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4473586056943246443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8290517454625481788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#ad8015>\u0410\u043B\u0435\u043A\u0441 \u043A\u0430\u043A \u0443\u0437\u043D\u0430\u043B\u0430,
+      \u0432\u0441\u0435 \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0438
+      \u043F\u0435\u0440\u0435\u0440\u044B\u043B\u0430, \u043A\u0430\u0436\u0434\u0443\u044E
+      \u043A\u043D\u0438\u0433\u0443 \u043F\u0440\u043E\u0447\u0438\u0442\u0430\u043B\u0430,
+      \u0447\u0442\u043E\u0431 \u043B\u0435\u043A\u0430\u0440\u0441\u0442\u0432\u043E
+      \u043D\u0430\u0439\u0442\u0438. \u0418 \u043D\u0430\u043A\u043E\u043D\u0435\u0446
+      \u0432 \u043E\u0434\u043D\u043E\u0439 \u0438\u0437 \u043A\u043D\u0438\u0433
+      \u043F\u0440\u043E\u0447\u043B\u0430, \u0447\u0442\u043E \u043C\u043E\u0436\u043D\u043E
+      \u044F\u043A\u043E\u0431\u044B \u0442\u0430\u043A\u0443\u044E \u0448\u043B\u044F\u043F\u0443
+      \u0441\u043E\u0437\u0434\u0430\u0442\u044C, \u043A\u043E\u0442\u043E\u0440\u0430\u044F
+      \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u0430 \u043E\u0442 \u0441\u043C\u0435\u0440\u0442\u0438
+      \u0443\u0431\u0435\u0440\u0435\u0447\u044C \u043C\u043E\u0436\u0435\u0442."
+    Object: {fileID: 0}
+  - Language: English
+    Text: <color=#ad8015>When Alex found out, she searched all the libraries, read
+      every book to find a cure. And finally in one of the books she read that it
+      was possible to create a hat that could save a person from death.
+    Object: {fileID: 0}
 --- !u!1 &8364840064980852263
 GameObject:
   m_ObjectHideFlags: 0
@@ -5814,6 +6640,59 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: 'music: '
+    Object: {fileID: 0}
+--- !u!1 &8425455769655271941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 58981631332493783}
+  - component: {fileID: 3671464481287103599}
+  m_Layer: 0
+  m_Name: StartCutsceneDialogue17
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &58981631332493783
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8425455769655271941}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3671464481287103599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8425455769655271941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u0427\u0442\u043E \u0436, \u0434\u0440\u0443\u0433\u043E\u0433\u043E
+      \u0432\u044B\u0445\u043E\u0434\u0430 \u043D\u0435 \u0431\u044B\u043B\u043E."
+    Object: {fileID: 0}
+  - Language: English
+    Text: Well, there was no other choice.
     Object: {fileID: 0}
 --- !u!1 &8524544755849016174
 GameObject:
@@ -6148,6 +7027,184 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: 
+    Object: {fileID: 0}
+--- !u!1 &8805552284706666370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 633532314589598365}
+  - component: {fileID: 8238281684971885988}
+  m_Layer: 0
+  m_Name: StartCutsceneDialogue15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &633532314589598365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8805552284706666370}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8238281684971885988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8805552284706666370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u042F \u043F\u043E\u0447\u0443\u0432\u0441\u0442\u0432\u043E\u0432\u0430\u043B,
+      \u0431\u0443\u0434\u0442\u043E \u0434\u0443\u0448\u0430 \u043C\u043E\u044F
+      \u043F\u043E\u043A\u0438\u043D\u0443\u043B\u0430 \u0442\u0435\u043B\u043E,
+      \u0430 \u0432\u043C\u0435\u0441\u0442\u043E \u043D\u0435\u0451 \u0442\u0435\u043B\u043E\u043C
+      \u0437\u0430\u0432\u043B\u0430\u0434\u0435\u043B \u043A\u0442\u043E-\u0442\u043E
+      \u0434\u0440\u0443\u0433\u043E\u0439. \u0422\u0435\u043F\u0435\u0440\u044C
+      \u044F \u043C\u043E\u0433 \u043B\u0438\u0448\u044C \u043D\u0430\u0431\u043B\u044E\u0434\u0430\u0442\u044C."
+    Object: {fileID: 0}
+  - Language: English
+    Text: <color=#005500>I felt as if my soul had left my body and someone else had
+      taken over. Now I could only watch.
+    Object: {fileID: 0}
+--- !u!1 &8879103589657978635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4860075590256338532}
+  - component: {fileID: 6813803465772816131}
+  m_Layer: 0
+  m_Name: StartCutsceneDialogue14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4860075590256338532
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8879103589657978635}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6813803465772816131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8879103589657978635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u042F \u0441\u0445\u0432\u0430\u0442\u0438\u043B \u0448\u043B\u044F\u043F\u0443,
+      \u0438 \u043A\u043E\u0433\u0434\u0430 \u044F \u0443\u0436\u0435 \u0431\u044B\u043B
+      \u0433\u043E\u0442\u043E\u0432 \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0442\u044C\u0441\u044F,
+      \u0438\u0437-\u0437\u0430 \u0443\u0433\u043B\u0430 \u0432\u044B\u0448\u0435\u043B
+      \u0441\u0442\u0440\u0430\u0436\u043D\u0438\u043A. \u041C\u043D\u0435 \u043F\u0440\u0438\u0448\u043B\u043E\u0441\u044C
+      \u0431\u0435\u0436\u0430\u0442\u044C, \u0432 \u0441\u0443\u043C\u0430\u0442\u043E\u0445\u0435
+      \u044F \u0437\u0430\u0431\u044B\u043B \u043E\u0431 \u0438\u0441\u0442\u043E\u0440\u0438\u0438
+      \u0441\u043E \u0448\u043B\u044F\u043F\u043E\u0439, \u0438 \u043D\u0430\u0434\u0435\u043B
+      \u0435\u0451 \u043D\u0430 \u0441\u0435\u0431\u044F..."
+    Object: {fileID: 0}
+  - Language: English
+    Text: <color=#005500>I grabbed the hat, and when I was ready to go back, a guard
+      came around the corner. I had to run, and in the commotion I forgot about the
+      story of the hat, and put it on myself...
+    Object: {fileID: 0}
+--- !u!1 &8915917269205538103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8944277409840775584}
+  - component: {fileID: 8979613557370872253}
+  m_Layer: 0
+  m_Name: StartCutsceneDialogue10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8944277409840775584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8915917269205538103}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8979613557370872253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8915917269205538103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#ad8015>\u041A\u043E\u0440\u043E\u043B\u044C \u043A\u0430\u043A
+      \u043E\u0431 \u044D\u0442\u043E\u043C \u0443\u0437\u043D\u0430\u043B, \u043F\u0440\u0438\u043A\u0430\u0437\u0430\u043B
+      \u0435\u0451 \u0441\u0445\u0432\u0430\u0442\u0438\u0442\u044C \u0438 \u0438\u0437\u043E\u043B\u0438\u0440\u043E\u0432\u0430\u0442\u044C,
+      \u0447\u0442\u043E\u0431 \u0442\u0430 \u0435\u0449\u0451 \u0431\u043E\u043B\u044C\u0448\u0438\u0445
+      \u0431\u0435\u0434 \u043D\u0435 \u043D\u0430\u0442\u0432\u043E\u0440\u0438\u043B\u0430."
+    Object: {fileID: 0}
+  - Language: English
+    Text: <color=#ad8015>When the king heard about it, he ordered her to be seized
+      and isolated, so she wouldn't do any more harm.
     Object: {fileID: 0}
 --- !u!1001 &2435901132893010517
 PrefabInstance:
