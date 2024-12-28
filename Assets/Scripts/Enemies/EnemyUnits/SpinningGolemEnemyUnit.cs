@@ -10,18 +10,30 @@ namespace Enemies.EnemyUnits
         
         private static readonly int IsRushing = Animator.StringToHash("isRushing");
 
+        private IAction defaultChaseAction;
+
+        private IAction _deathAction;
+
         private float _defaultAcceleration;
 
         protected override void InitEnemy()
         {
             _enemy = new Enemy(_agent, transform, animator, this);
             _walkAction = new Idle();
-            _chaseAction = new ChaseWithTrigger(_player, () => StartCoroutine(UpdateAttackState()));
-            _attackAction = new Chase(_player);
-
-            _defaultAcceleration = _agent.acceleration;
             
-            StartCoroutine(UpdateAttackState());
+            _chaseAction = new ChaseWithTrigger(_player, () =>
+            {
+                StartCoroutine(UpdateAttackState());
+                animator.SetTrigger("isAwake");
+                SetDefaultAttackMode();
+            });
+
+            _attackAction = new Idle();
+            
+            _deathAction = new Death("isDead");
+
+            defaultChaseAction = new Chase(_player);
+            _defaultAcceleration = _agent.acceleration;
         }
 
         private IEnumerator UpdateAttackState()
@@ -51,8 +63,16 @@ namespace Enemies.EnemyUnits
 
         private void SetDefaultAttackMode()
         {
-            _chaseAction = new Chase(_player);
-            _attackAction = new Chase(_player);
+            _chaseAction = defaultChaseAction;
+            _attackAction = defaultChaseAction;
+        }
+        
+        public override void Death()
+        {
+            base.Death();
+            StopAllCoroutines();
+            _currentAction = _deathAction;
+            _agent.enabled = false;
         }
     }
 }
