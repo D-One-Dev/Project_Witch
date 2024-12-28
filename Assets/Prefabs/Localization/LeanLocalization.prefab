@@ -52,6 +52,60 @@ MonoBehaviour:
   - Language: English
     Text: Russian
     Object: {fileID: 0}
+--- !u!1 &153803784589021900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8096510829782489500}
+  - component: {fileID: 5199131667960328462}
+  m_Layer: 0
+  m_Name: GolemP1_Main-P3_Elder-8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8096510829782489500
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153803784589021900}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5199131667960328462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153803784589021900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#00195F>\u0410\u0430\u0430\u0430, \u043C\u044B \u0442\u0435\u0431\u0435
+      \u043C\u0435\u0448\u0430\u0435\u043C \u2026 \u0447\u0448\u0448\u0448, \u043C\u043E\u043B\u0447\u0438\u043C
+      \u043C\u043E\u043B\u0447\u0438\u043C \u2026 \u0445\u0430-\u0445\u0430"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
 --- !u!1 &175060742560178754
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,7 +153,7 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "<color=#005500>\u042F...\u044F \u043D\u0435 \u043F\u043E\u043D\u0438\u043C\u0430\u044E..."
+    Text: "<color=#005500>\u041D\u043E...\u044F \u043D\u0435 \u043F\u043E\u043D\u0438\u043C\u0430\u044E..."
     Object: {fileID: 0}
   - Language: English
     Text: awgawgag
@@ -207,11 +261,10 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "<color=\"red\">\u041D\u0435 \u0443\u043C\u0435\u043B\u0430, \u043D\u043E
-      \u0443 \u043C\u0435\u043D\u044F \u0442\u0432\u043E\u044F \u0434\u0443\u0448\u0430,
-      \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u044F \u0438\u043C\u0435\u044E
-      \u0434\u043E\u0441\u0442\u0443\u043F \u043A\u043E \u0432\u0441\u0435\u043C
-      \u0442\u0432\u043E\u0438\u043C \u0432\u043E\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u043D\u0438\u044F\u043C
+    Text: "\u041D\u0435 \u0443\u043C\u0435\u043B\u0430, \u043D\u043E \u0443 \u043C\u0435\u043D\u044F
+      \u0442\u0432\u043E\u044F \u0434\u0443\u0448\u0430, \u043F\u043E\u044D\u0442\u043E\u043C\u0443
+      \u044F \u0438\u043C\u0435\u044E \u0434\u043E\u0441\u0442\u0443\u043F \u043A\u043E
+      \u0432\u0441\u0435\u043C \u0442\u0432\u043E\u0438\u043C \u0432\u043E\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u043D\u0438\u044F\u043C
       \u0438\u0437 \u0436\u0438\u0437\u043D\u0438"
     Object: {fileID: 0}
   - Language: English
@@ -529,6 +582,65 @@ MonoBehaviour:
   - Language: English
     Text: Text language
     Object: {fileID: 0}
+--- !u!1 &1044955877665009814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2691097324357412972}
+  - component: {fileID: 2860003702350031638}
+  m_Layer: 0
+  m_Name: Observatory_Main-P3_Elder-3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2691097324357412972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044955877665009814}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2860003702350031638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044955877665009814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#00195F>\u0418\u0442\u0430\u043A. \u041E\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043E\u0440\u0438\u044F
+      \u0434\u0430\u0432\u043D\u043E \u0437\u0430\u0431\u0440\u043E\u0448\u0435\u043D\u0430
+      \u0442.\u043A. \u0432\u0441\u0435 \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u0442\u0435\u043B\u0438
+      \u043F\u043E\u0441\u0435\u043B\u0438\u043B\u0438\u0441\u044C \u0432 \u0433\u043E\u0440\u043E\u0434\u0435.
+      \u0417\u0430 \u044D\u0442\u0438 10 \u043B\u0435\u0442 \u041D\u043E\u0434\u0448\u0438\u0440
+      \u0441\u0442\u0430\u043B \u0431\u043E\u043B\u0435\u0435 \u0446\u0435\u043D\u0442\u0440\u0430\u043B\u0438\u0437\u043E\u0432\u0430\u043D\u043D\u044B\u043C.
+      \u0418 \u0441\u0430\u043C\u043E \u0441\u043E\u0431\u043E\u0439 \u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B
+      \u043C\u044B \u0442\u0443\u0442 \u043D\u0435 \u043D\u0430\u0439\u0434\u0451\u043C"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
 --- !u!1 &1111889802155172202
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,6 +698,58 @@ MonoBehaviour:
     Text: Launches a poisonous projectile which leaves a damaging puddle if hit the
       enemy
     Object: {fileID: 0}
+--- !u!1 &1118222201596206191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8099656241803406043}
+  - component: {fileID: 977293173927658639}
+  m_Layer: 0
+  m_Name: Observatory_Main-P1_Thief-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8099656241803406043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118222201596206191}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &977293173927658639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118222201596206191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u0414\u043E\u0448\u043B\u0438 \u0434\u043E \u0447\u0435\u0433\u043E?"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
 --- !u!1 &1155458992682350455
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,13 +797,65 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "<color=\"blue\">\u0421\u0442\u043E\u044F\u0442\u044C! \u0421\u0442\u0440\u0430\u0436\u0430
+    Text: "<color=#00195F>\u0421\u0442\u043E\u044F\u0442\u044C! \u0421\u0442\u0440\u0430\u0436\u0430
       \u043E\u043F\u043E\u0432\u0435\u0441\u0442\u0438\u043B\u0430 \u043D\u0430\u0441
       \u043E \u0441\u0431\u0435\u0436\u0430\u0432\u0448\u0435\u0439 \u0432\u0435\u0434\u044C\u043C\u0435
       \u0432 \u0442\u0435\u043B\u0435 \u0432\u043E\u0440\u0430"
     Object: {fileID: 0}
   - Language: English
     Text: awgawga
+    Object: {fileID: 0}
+--- !u!1 &1280241531798495214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7658195550783253561}
+  - component: {fileID: 7185925914470029437}
+  m_Layer: 0
+  m_Name: Observatory_Main-P1_Alex-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7658195550783253561
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280241531798495214}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7185925914470029437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280241531798495214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u041F\u043E\u0447\u0442\u0438 \u0434\u043E\u0448\u043B\u0438"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
     Object: {fileID: 0}
 --- !u!1 &1283549008727986402
 GameObject:
@@ -693,6 +909,118 @@ MonoBehaviour:
   - Language: English
     Text: gwawgawg
     Object: {fileID: 0}
+--- !u!1 &1376166199035438469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7696593967699347924}
+  - component: {fileID: 3070988592118373121}
+  m_Layer: 0
+  m_Name: Observatory_Main-P3_Alex-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7696593967699347924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376166199035438469}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3070988592118373121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376166199035438469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u0415\u0433\u043E \u0437\u0434\u0435\u0441\u044C \u043D\u0435\u0442.
+      \u0417\u0434\u0435\u0441\u044C \u043D\u0435\u0442 \u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u0430,
+      \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u043D\u0443\u0436\u0435\u043D \u0434\u043B\u044F
+      \u0430\u043A\u0442\u0438\u0432\u0430\u0446\u0438\u0438 \u043E\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043E\u0440\u0438\u0438,
+      \u0431\u0435\u0437 \u043D\u0435\u0433\u043E \u043C\u044B \u043D\u0435 \u0441\u043C\u043E\u0436\u0435\u043C
+      \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043F\u043E\u0440\u0442\u0430\u043B\u044B"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
+--- !u!1 &1391654629416375840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3272832122211116572}
+  - component: {fileID: 547167691215879641}
+  m_Layer: 0
+  m_Name: GolemP1_Main-P3_Thief-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3272832122211116572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391654629416375840}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &547167691215879641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391654629416375840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u041F\u043E\u0447\u0435\u043C\u0443 \u0431\u044B \u043D\u0430\u043C
+      \u043F\u0440\u043E\u0441\u0442\u043E \u043D\u0435 \u0432\u0437\u044F\u0442\u044C
+      \u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u044B \u043B\u0435\u0436\u0430\u0449\u0438\u0435
+      \u043D\u0430 \u0437\u0435\u043C\u043B\u0435?"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
 --- !u!1 &1686883978467366478
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,6 +1073,168 @@ MonoBehaviour:
   - Language: English
     Text: Launches a rock
     Object: {fileID: 0}
+--- !u!1 &1702106929143320586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 179238754726630212}
+  - component: {fileID: 5642817440274667667}
+  m_Layer: 0
+  m_Name: GolemP1_Main-P1_Alex-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &179238754726630212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702106929143320586}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5642817440274667667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702106929143320586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u041C\u044B \u0443\u0436\u0435 \u0440\u044F\u0434\u043E\u043C"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
+--- !u!1 &1806406904891007551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 650681360782852364}
+  - component: {fileID: 2289948840534984459}
+  m_Layer: 0
+  m_Name: GolemP1_Main-P3_Thief-5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &650681360782852364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806406904891007551}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2289948840534984459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806406904891007551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u0415\u0441\u043B\u0438 \u043E\u043D\u0430 \u0432\u0441\u0451
+      \u0437\u043D\u0430\u0435\u0442 \u043E \u043D\u0430\u0441, \u043F\u043E\u0447\u0435\u043C\u0443
+      \u043C\u044B \u043D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u0437\u043D\u0430\u0435\u043C
+      \u043E \u043D\u0435\u0439?"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
+--- !u!1 &1909012849421822816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2416466058946912816}
+  - component: {fileID: 3795428882915693867}
+  m_Layer: 0
+  m_Name: Observatory_Main-P3_Alex-1P2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2416466058946912816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909012849421822816}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3795428882915693867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909012849421822816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u041B\u0430\u0434\u043D\u043E, \u043D\u0443\u0436\u043D\u043E \u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C
+      \u0437\u0434\u0435\u0441\u044C \u0432\u0441\u0451, \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E
+      \u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B \u043F\u0440\u043E\u0441\u0442\u043E
+      \u043A\u0443\u0434\u0430-\u043D\u0438\u0431\u0443\u0434\u044C \u043F\u043E\u043B\u043E\u0436\u0438\u043B\u0438\r"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
 --- !u!1 &1954441631301627695
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +1286,115 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: Strengthen element
+    Object: {fileID: 0}
+--- !u!1 &2141972633235815403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6273299033956680790}
+  - component: {fileID: 4262347319476501857}
+  m_Layer: 0
+  m_Name: Observatory_Main-P2_Thief-4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6273299033956680790
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141972633235815403}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4262347319476501857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141972633235815403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u041A\u0430\u043A \u0442\u044B \u0432\u0441\u0451 \u0437\u043D\u0430\u2026\u0430\u0430\u0430,
+      \u0443 \u0442\u0435\u0431\u044F \u0436\u0435 \u043C\u043E\u0438 \u0432\u043E\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u043D\u0438\u044F\u2026"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
+--- !u!1 &2304927573615736856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7648840583714647009}
+  - component: {fileID: 3826593591027694235}
+  m_Layer: 0
+  m_Name: Observatory_Main-P3_Elder-4P2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7648840583714647009
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2304927573615736856}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3826593591027694235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2304927573615736856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#00195F>\u0418 \u0431\u044B\u043B\u043E \u0440\u0435\u0448\u0435\u043D\u043E
+      \u043D\u0430\u0447\u0430\u0442\u044C \u0441\u0442\u0440\u043E\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u043E
+      \xAB\u043F\u043E\u0440\u0442\u0430\u043B\u0438\u0442\u0435\u043D\u043E\u0432\xBB,
+      \u0432 \u043E\u0434\u043D\u043E\u043C \u0438\u0437 \u043A\u043E\u0442\u043E\u0440\u044B\u0445
+      \u043C\u044B \u0441\u0435\u0439\u0447\u0430\u0441 \u0438 \u043D\u0430\u0445\u043E\u0434\u0438\u043C\u0441\u044F"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
     Object: {fileID: 0}
 --- !u!1 &2351978445404050777
 GameObject:
@@ -852,6 +1451,120 @@ MonoBehaviour:
   - Language: English
     Text: gagagwa
     Object: {fileID: 0}
+--- !u!1 &2395414748908782132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4373774328826214154}
+  - component: {fileID: 9029248533288782092}
+  m_Layer: 0
+  m_Name: GolemP1_Main-P2_Elder-4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4373774328826214154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2395414748908782132}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9029248533288782092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2395414748908782132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#00195F>\u041D\u0435 \u0441\u0430\u043C\u043E\u0435 \u0441\u0442\u0440\u0430\u043D\u043D\u043E\u0435
+      \u0438\u0437 \u0442\u043E\u0433\u043E, \u0447\u0442\u043E \u0442\u0435\u0431\u044F
+      \u0436\u0434\u0451\u0442."
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
+--- !u!1 &2457913635253727273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4960496944972533524}
+  - component: {fileID: 5348220396988444939}
+  m_Layer: 0
+  m_Name: Observatory_Main-P2_Alex-3P2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4960496944972533524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2457913635253727273}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5348220396988444939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2457913635253727273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u0410 \u0435\u0449\u0451 \u044F \u043D\u0435 \u043F\u043E\u043D\u0438\u043C\u0430\u044E,
+      \u043F\u043E\u0447\u0435\u043C\u0443 \u0442\u044B \u043D\u0435 \u0443\u0437\u043D\u0430\u0432\u0430\u043B
+      \u043D\u0438\u043A\u0430\u043A\u0438\u0445 \u043F\u043E\u0434\u0440\u043E\u0431\u043D\u043E\u0441\u0442\u0435\u0439
+      \u0438 \u0434\u0443\u043C\u0430\u043B, \u0447\u0442\u043E \u043C\u043E\u0436\u043D\u043E
+      \u0442\u0430\u043A \u043F\u0440\u043E\u0441\u0442\u043E \u043F\u0440\u0438\u043F\u043B\u044B\u0442\u044C
+      \u043D\u0430 \u043E\u0441\u0442\u0440\u043E\u0432 \u0432\u043E\u043B\u0448\u0435\u0431\u043D\u0438\u043A\u043E\u0432
+      \u0438 \u0443\u043A\u0440\u0430\u0441\u0442\u044C \u044F\u043A\u043E\u0431\u044B
+      \u043D\u0435 \u043F\u043E\u0434\u043E\u0437\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u0443\u044E
+      \u0437\u0430\u043F\u0435\u0440\u0442\u0443\u044E \u0448\u043B\u044F\u043F\u0443.\r"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
 --- !u!1 &2534885069748715040
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,14 +1613,11 @@ MonoBehaviour:
   entries:
   - Language: Russian
     Text: "\u041D\u0430\u0436\u043C\u0438 \u0438\u043B\u0438 \u0437\u0430\u0436\u043C\u0438
-      \u043B\u043A\u043C \u0438\u043B\u0438 \u043F\u043A\u043C \u0434\u043B\u044F
+      \u041B\u041A\u041C \u0438\u043B\u0438 \u041F\u041A\u041C \u0434\u043B\u044F
       \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F
       \u043E\u0441\u043D\u043E\u0432\u043D\u044B\u0445 \u0437\u0430\u043A\u043B\u0438\u043D\u0430\u043D\u0438\u0439,
       \u043D\u0430\u0436\u043C\u0438 Q \u0438\u043B\u0438 E \u0434\u043B\u044F \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F
-      \u044D\u0444\u0444\u0435\u043A\u0442\u043E\u0432. \u0417\u0430\u043A\u043B\u0438\u043D\u0430\u043D\u0438\u044F
-      \u0438 \u044D\u0444\u0444\u0435\u043A\u0442\u044B \u043C\u043E\u0436\u043D\u043E
-      \u043A\u043E\u043C\u0431\u0438\u043D\u0438\u0440\u043E\u0432\u0430\u0442\u044C,
-      \u0447\u0442\u043E \u043E\u0447\u0435\u043D\u044C \u0432\u0430\u0436\u043D\u043E!"
+      \u044D\u0444\u0444\u0435\u043A\u0442\u043E\u0432"
     Object: {fileID: 0}
   - Language: English
     Text: "\u041D\u0430\u0436\u043C\u0438 \u0438\u043B\u0438 \u0437\u0430\u0436\u043C\u0438
@@ -1019,7 +1729,7 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "<color=\"red\">\u042F...\u044F \u0432\u0441\u0451 \u0443\u0437\u043D\u0430\u043B\u0430!
+    Text: "\u042F...\u044F \u0432\u0441\u0451 \u0443\u0437\u043D\u0430\u043B\u0430!
       \u041D\u0443\u0436\u043D\u043E \u0443\u0445\u043E\u0434\u0438\u0442\u044C,
       \u043F\u043E\u043A\u0430 \u043D\u0435 \u043F\u0440\u0438\u0448\u043B\u0430
       \u0441\u0442\u0440\u0430\u0436\u0430 \u043C\u043E\u0435\u0433\u043E \u043E\u0442\u0446\u0430"
@@ -1074,7 +1784,7 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "<color=\"red\">\u0418 \u0432\u0441\u0451 \u043F\u043E \u043D\u043E\u0432\u043E\u0439..."
+    Text: "\u0418 \u0432\u0441\u0451 \u043F\u043E \u043D\u043E\u0432\u043E\u0439..."
     Object: {fileID: 0}
   - Language: English
     Text: awgagawg
@@ -1126,11 +1836,65 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "<color=\"red\">\u0421\u043B\u0438\u0448\u043A\u043E\u043C \u043C\u043D\u043E\u0433\u043E
+    Text: "\u0421\u043B\u0438\u0448\u043A\u043E\u043C \u043C\u043D\u043E\u0433\u043E
       \u0432\u043E\u043F\u0440\u043E\u0441\u043E\u0432 \u0434\u043B\u044F \u043C\u0435\u0440\u0442\u0432\u0435\u0446\u0430"
     Object: {fileID: 0}
   - Language: English
     Text: gawgaw
+    Object: {fileID: 0}
+--- !u!1 &2713308378502083465
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4780432248560112264}
+  - component: {fileID: 8781313714976404357}
+  m_Layer: 0
+  m_Name: GolemP1_Fighting_Alex-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4780432248560112264
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2713308378502083465}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8781313714976404357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2713308378502083465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u0410 \u0432\u043E\u0442 \u0438 \u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B.
+      \u041F\u043E\u043F\u0440\u043E\u0448\u0443 \u0432\u0430\u0441 \u0437\u0430\u043C\u043E\u043B\u0447\u0430\u0442\u044C
+      \u0438 \u043D\u0435 \u043C\u0435\u0448\u0430\u0442\u044C \u043C\u043D\u0435."
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
     Object: {fileID: 0}
 --- !u!1 &2833736228526930473
 GameObject:
@@ -1235,10 +1999,116 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "<color=\"red\">(\u0431\u043B\u0430 \u0431\u043B\u0430 \u0431\u043B\u0430)+-"
+    Text: "(\u0431\u043B\u0430 \u0431\u043B\u0430 \u0431\u043B\u0430)+-"
     Object: {fileID: 0}
   - Language: English
     Text: awgagwagw
+    Object: {fileID: 0}
+--- !u!1 &2840965817392467319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1722892932127804225}
+  - component: {fileID: 1962387814244693108}
+  m_Layer: 0
+  m_Name: GolemP1_Main-P2_Thief-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1722892932127804225
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2840965817392467319}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1962387814244693108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2840965817392467319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u042D\u0442\u043E \u0433\u043E\u043B\u0435\u043C?"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
+--- !u!1 &2957325284486471838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3419193307165391162}
+  - component: {fileID: 483765358198956639}
+  m_Layer: 0
+  m_Name: Observatory_Main-P3_Thief-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3419193307165391162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2957325284486471838}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &483765358198956639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2957325284486471838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u041F\u043E\u0441\u0442\u043E\u0439\u0442\u0435, \u043C\u044B
+      \u0436\u0435 \u0432 \u043E\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043E\u0440\u0438\u0438,
+      \u043A\u0430\u043A\u0438\u0435 \u043F\u043E\u0440\u0442\u0430\u043B\u044B?"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
     Object: {fileID: 0}
 --- !u!1 &3008176189071348864
 GameObject:
@@ -1339,8 +2209,8 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "<color=\"red\">\u041D\u0430\u0434\u0435\u044E\u0441\u044C, \u0434\u043E
-      \u044D\u0442\u043E\u0433\u043E \u043D\u0435 \u0434\u043E\u0439\u0434\u0451\u0442"
+    Text: "\u041D\u0430\u0434\u0435\u044E\u0441\u044C, \u0434\u043E \u044D\u0442\u043E\u0433\u043E
+      \u043D\u0435 \u0434\u043E\u0439\u0434\u0451\u0442"
     Object: {fileID: 0}
   - Language: English
     Text: gwagagwag
@@ -1553,7 +2423,9 @@ MonoBehaviour:
   entries:
   - Language: Russian
     Text: "\u041D\u0430\u0436\u043C\u0438 Tab \u0434\u043B\u044F \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F
-      \u043C\u0435\u043D\u044E \u0432\u044B\u0431\u043E\u0440\u0430 \u0437\u0430\u043A\u043B\u0438\u043D\u0430\u043D\u0438\u0439"
+      \u043C\u0435\u043D\u044E \u0432\u044B\u0431\u043E\u0440\u0430 \u0437\u0430\u043A\u043B\u0438\u043D\u0430\u043D\u0438\u0439.
+      \u0412 \u044D\u0442\u043E\u0442 \u043C\u043E\u043C\u0435\u043D\u0442 \u0438\u0433\u0440\u0430
+      \u0432\u0441\u0442\u0430\u0451\u0442 \u043D\u0430 \u043F\u0430\u0443\u0437\u0443"
     Object: {fileID: 0}
   - Language: English
     Text: "\u041D\u0430\u0436\u043C\u0438 Tab \u0434\u043B\u044F \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F
@@ -1638,6 +2510,15 @@ Transform:
   - {fileID: 9168582061903887015}
   - {fileID: 6627061321004145705}
   - {fileID: 7339090890416817823}
+  - {fileID: 1226834245709872342}
+  - {fileID: 7973906199048456746}
+  - {fileID: 9109895173521247516}
+  - {fileID: 8652064372208146432}
+  - {fileID: 5340657365320810580}
+  - {fileID: 2036865705773443455}
+  - {fileID: 8887806844310535043}
+  - {fileID: 6075496726461989190}
+  - {fileID: 2568907526478691189}
   - {fileID: 8770911176580677429}
   - {fileID: 6037375511005548722}
   - {fileID: 271101136657874778}
@@ -1654,19 +2535,44 @@ Transform:
   - {fileID: 1137277718242540953}
   - {fileID: 1309848263067694649}
   - {fileID: 3122144521509270271}
-  - {fileID: 4016668494266971299}
-  - {fileID: 1155285040435775546}
   - {fileID: 8294563161718205071}
   - {fileID: 3809184457554876850}
   - {fileID: 189118800134935973}
-  - {fileID: 1226834245709872342}
-  - {fileID: 7973906199048456746}
-  - {fileID: 9109895173521247516}
-  - {fileID: 8652064372208146432}
-  - {fileID: 2036865705773443455}
-  - {fileID: 6075496726461989190}
-  - {fileID: 2568907526478691189}
-  - {fileID: 5340657365320810580}
+  - {fileID: 4016668494266971299}
+  - {fileID: 1155285040435775546}
+  - {fileID: 7658195550783253561}
+  - {fileID: 8099656241803406043}
+  - {fileID: 1276497612979861205}
+  - {fileID: 5034349521614968832}
+  - {fileID: 1611980555804757584}
+  - {fileID: 4960496944972533524}
+  - {fileID: 6273299033956680790}
+  - {fileID: 4950860354522220416}
+  - {fileID: 7696593967699347924}
+  - {fileID: 2416466058946912816}
+  - {fileID: 3419193307165391162}
+  - {fileID: 2691097324357412972}
+  - {fileID: 3047571057753719678}
+  - {fileID: 7648840583714647009}
+  - {fileID: 3017931468353087775}
+  - {fileID: 5336604524662531679}
+  - {fileID: 4929350255804563662}
+  - {fileID: 6299009953281787231}
+  - {fileID: 179238754726630212}
+  - {fileID: 7217628697801838809}
+  - {fileID: 1722892932127804225}
+  - {fileID: 3576079231389361353}
+  - {fileID: 8709701019469176328}
+  - {fileID: 4373774328826214154}
+  - {fileID: 3272832122211116572}
+  - {fileID: 7894520013809553597}
+  - {fileID: 3574497412144224890}
+  - {fileID: 1831522269519974105}
+  - {fileID: 650681360782852364}
+  - {fileID: 1519313655501286798}
+  - {fileID: 7905752493048838856}
+  - {fileID: 8096510829782489500}
+  - {fileID: 4780432248560112264}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3361877429124737769
@@ -1785,7 +2691,7 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "<color=\"blue\">\u0423\u0431\u0438\u0439\u0446\u0430! \u041A\u043E\u0440\u043E\u043B\u044C
+    Text: "<color=#00195F>\u0423\u0431\u0438\u0439\u0446\u0430! \u041A\u043E\u0440\u043E\u043B\u044C
       \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E \u043F\u043E\u0441\u0442\u0443\u043F\u0438\u043B,
       \u0447\u0442\u043E \u0438\u0437\u043E\u043B\u0438\u0440\u043E\u0432\u0430\u043B
       \u0442\u0430\u043A\u043E\u0435 \u0447\u0443\u0434\u043E\u0432\u0438\u0449\u0435
@@ -1845,6 +2751,66 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: Quit
+    Object: {fileID: 0}
+--- !u!1 &3667212188172826908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5336604524662531679}
+  - component: {fileID: 8197325684822890938}
+  m_Layer: 0
+  m_Name: Observatory_Swamp_Elder-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5336604524662531679
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3667212188172826908}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8197325684822890938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3667212188172826908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#00195F>\u041E\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043E\u0440\u0438\u044F
+      \u0437\u0430\u0431\u0440\u043E\u0448\u0435\u043D\u0430, \u0430 \u0436\u0438\u0442\u0435\u043B\u0438
+      \u043F\u0435\u0440\u0435\u0441\u0435\u043B\u0438\u043B\u0438\u0441\u044C \u0432
+      \u0433\u043E\u0440\u043E\u0434. \u0411\u043E\u043B\u043E\u0442\u043E \u0431\u044B\u043B\u043E
+      \u043D\u0435\u043A\u043E\u043C\u0443 \u0441\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0442\u044C
+      \u0438 \u0433\u0430\u0434\u043A\u0438\u0435 \u0441\u043B\u0438\u0437\u043D\u0438
+      \u0432\u0441\u0451 \u0443\u043D\u0438\u0447\u0442\u043E\u0436\u0438\u043B\u0438
+      \u0438 \u0440\u0430\u0441\u0442\u0430\u0449\u0438\u043B\u0438 \u043F\u043E
+      \u0441\u0432\u043E\u0438\u043C \u043D\u043E\u0440\u0430\u043C."
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
     Object: {fileID: 0}
 --- !u!1 &3678282051395291840
 GameObject:
@@ -1949,6 +2915,61 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: Back
+    Object: {fileID: 0}
+--- !u!1 &3687127548949746591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3576079231389361353}
+  - component: {fileID: 6532665652007843885}
+  m_Layer: 0
+  m_Name: GolemP1_Main-P2_Alex-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3576079231389361353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3687127548949746591}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6532665652007843885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3687127548949746591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u0422\u043E\u043B\u044C\u043A\u043E \u0435\u0433\u043E \u0447\u0430\u0441\u0442\u044C.
+      \u0427\u0435\u043C \u0431\u043B\u0438\u0436\u0435 \u043C\u044B \u043A \u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u0443,
+      \u0442\u0435\u043C \u0441\u0438\u043B\u044C\u043D\u0435\u0435 \u043E\u043D
+      \u0434\u0430\u0451\u0442 \u043D\u0430\u043C \u043E\u0442\u043F\u043E\u0440"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
     Object: {fileID: 0}
 --- !u!1 &3794651445639707172
 GameObject:
@@ -2232,6 +3253,60 @@ MonoBehaviour:
   - Language: English
     Text: English
     Object: {fileID: 0}
+--- !u!1 &4144406190159000758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6299009953281787231}
+  - component: {fileID: 7510992371715690673}
+  m_Layer: 0
+  m_Name: Observatory_Inspection-P2_Alex-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6299009953281787231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4144406190159000758}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7510992371715690673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4144406190159000758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u0411\u0435\u0437 \u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u0430
+      \u043C\u044B \u043D\u0435 \u0441\u043C\u043E\u0436\u0435\u043C \u0434\u0430\u0436\u0435
+      \u043F\u043E\u0434\u043D\u044F\u0442\u044C \u0440\u0435\u0448\u0451\u0442\u043A\u0443\u2026"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
 --- !u!1 &4168559031466307047
 GameObject:
   m_ObjectHideFlags: 0
@@ -2332,9 +3407,9 @@ MonoBehaviour:
   entries:
   - Language: Russian
     Text: "<color=#005500>\u0427\u0442\u043E \u0437\u043D\u0430\u0447\u0438\u0442
-      \u043F\u043E \u043D\u043E\u0432\u043E\u0439? \u0421\u0442\u043E\u0439, \u0442\u0430\u043A
-      \u0442\u044B \u0435\u0449\u0451 \u0436\u0438\u0432\u0430?\u0422\u0430 \u043B\u0435\u0433\u0435\u043D\u0434\u0430
-      \u043F\u0440\u043E (...)+-"
+      \u043F\u043E \u043D\u043E\u0432\u043E\u0439? \u0421\u0442\u043E\u0439, \u044F
+      \u0437\u043D\u0430\u044E \u0442\u0435\u0431\u044F. \u0422\u0430\u043A \u0442\u044B
+      \u0435\u0449\u0451 \u0436\u0438\u0432\u0430?"
     Object: {fileID: 0}
   - Language: English
     Text: awgawg
@@ -2446,6 +3521,286 @@ MonoBehaviour:
   - Language: Russian
     Text: "\u0412\u0435\u0440\u0442\u0438\u043A\u0430\u043B\u044C\u043D\u0430\u044F
       \u0441\u0438\u043D\u0445\u0440\u043E\u043D\u0438\u0437\u0430\u0446\u0438\u044F"
+    Object: {fileID: 0}
+--- !u!1 &4525656563107218327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3047571057753719678}
+  - component: {fileID: 4128457793787732408}
+  m_Layer: 0
+  m_Name: Observatory_Main-P3_Elder-4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3047571057753719678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4525656563107218327}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4128457793787732408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4525656563107218327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#00195F>\u041E\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043E\u0440\u0438\u044F
+      \u043D\u0430\u0445\u043E\u0434\u0438\u043B\u0430\u0441\u044C \u0434\u0430\u043B\u0435\u043A\u043E
+      \u043E\u0442 \u0433\u043E\u0440\u043E\u0434\u0430 \u0438 \u043D\u0435 \u0432\u0441\u0435
+      \u0432\u043E\u043B\u0448\u0435\u0431\u043D\u0438\u043A\u0438 \u0436\u0438\u0432\u0443\u0442
+      \u043D\u0430 \u044D\u0442\u043E\u043C \u043E\u0441\u0442\u0440\u043E\u0432\u0435,
+      \u043D\u0430\u043C \u043D\u0443\u0436\u043D\u043E \u0431\u044B\u043B\u043E
+      \u0447\u0442\u043E-\u0442\u043E \u0442\u0430\u043A\u043E\u0435, \u0447\u0442\u043E
+      \u043C\u043E\u0433\u043B\u043E \u0431\u044B \u0440\u0435\u0448\u0438\u0442\u044C
+      \u0432\u044B\u0448\u0435\u043F\u0435\u0440\u0435\u0447\u0438\u0441\u043B\u0435\u043D\u043D\u044B\u0435
+      \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u044B"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
+--- !u!1 &4579422066929754127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8709701019469176328}
+  - component: {fileID: 3533187164382037943}
+  m_Layer: 0
+  m_Name: GolemP1_Main-P2_Thief-3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8709701019469176328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4579422066929754127}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3533187164382037943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4579422066929754127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u041A\u0440\u0438\u0441\u0442\u0430\u043B\u043B \u0434\u0430\u0451\u0442
+      \u043D\u0430\u043C \u043E\u0442\u043F\u043E\u0440? \u0417\u0432\u0443\u0447\u0438\u0442
+      \u0441\u0442\u0440\u0430\u043D\u043D\u043E."
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
+--- !u!1 &4746663219652705590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4929350255804563662}
+  - component: {fileID: 7429854705026863781}
+  m_Layer: 0
+  m_Name: Observatory_Inspection-P1_Alex-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4929350255804563662
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4746663219652705590}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7429854705026863781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4746663219652705590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u0425\u043C\u043C, \u0430 \u0437\u0434\u0435\u0441\u044C \u0435\u0449\u0451
+      \u043E\u0441\u0442\u0430\u043B\u043E\u0441\u044C \u0447\u0442\u043E-\u0442\u043E
+      \u043F\u043E\u043B\u0435\u0437\u043D\u043E\u0435"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
+--- !u!1 &4813315853162822733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1276497612979861205}
+  - component: {fileID: 8830009303003349349}
+  m_Layer: 0
+  m_Name: Observatory_Main-P2_Alex-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1276497612979861205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4813315853162822733}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8830009303003349349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4813315853162822733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u0410 \u0432\u043E\u0442 \u0438 \u043E\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043E\u0440\u0438\u044F,
+      \u0441\u043A\u043E\u0440\u043E \u043C\u044B \u043F\u043E\u043A\u0438\u043D\u0435\u043C
+      \u044D\u0442\u043E\u0442 \u043E\u0441\u0442\u0440\u043E\u0432"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
+--- !u!1 &4831643172063252163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8887806844310535043}
+  - component: {fileID: 1423461471353209223}
+  m_Layer: 0
+  m_Name: Hint6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8887806844310535043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4831643172063252163}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1423461471353209223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4831643172063252163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u042D\u0442\u043E \u043E\u0434\u0438\u043D \u0438\u0437 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u0438\u0445
+      \u0432\u0438\u0434\u043E\u0432 \u0441\u0443\u043D\u0434\u0443\u043A\u043E\u0432,
+      \u0437\u0430 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u0435 \u043A\u043E\u0442\u043E\u0440\u044B\u0445
+      \u0442\u044B \u043F\u043E\u043B\u0443\u0447\u0430\u0435\u0448\u044C \u043C\u043E\u043D\u0435\u0442\u044B.
+      \u041E\u0431\u044B\u0447\u043D\u043E \u0441\u0443\u043D\u0434\u0443\u043A\u0438
+      \u0433\u0434\u0435-\u0442\u043E \u0441\u043F\u0440\u044F\u0442\u0430\u043D\u044B"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
     Object: {fileID: 0}
 --- !u!1 &4915764784054702286
 GameObject:
@@ -2610,6 +3965,59 @@ MonoBehaviour:
   - Language: English
     Text: agwawgagwa
     Object: {fileID: 0}
+--- !u!1 &5165115334223800901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7217628697801838809}
+  - component: {fileID: 7733815735388606530}
+  m_Layer: 0
+  m_Name: GolemP1_Main-P1_Thief-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7217628697801838809
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5165115334223800901}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7733815735388606530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5165115334223800901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u041F\u043E\u0447\u0435\u043C\u0443 \u0442\u0443\u0442
+      \u0432\u0441\u0451 \u0442\u0430\u043A\u043E\u0435\u2026\u0441\u0442\u0440\u0430\u043D\u043D\u043E\u0435?"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
 --- !u!1 &5190161221413337756
 GameObject:
   m_ObjectHideFlags: 0
@@ -2767,6 +4175,65 @@ MonoBehaviour:
   - Language: English
     Text: Settings
     Object: {fileID: 0}
+--- !u!1 &5452455191454657310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1831522269519974105}
+  - component: {fileID: 8346570920991298616}
+  m_Layer: 0
+  m_Name: GolemP1_Main-P3_Elder-4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1831522269519974105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5452455191454657310}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8346570920991298616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5452455191454657310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#00195F>\u0410\u0445, \u044F \u0442\u0435\u0431\u044F \u043E\u0431\u0438\u0434\u0435\u043B?
+      \u0410 \u0447\u0442\u043E \u0434\u0435\u043B\u0430\u0442\u044C \u043D\u0430\u043C?
+      \u0418 \u043D\u0435 \u0445\u043E\u0447\u0435\u0448\u044C \u043B\u0438  \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u0430\u0442\u044C
+      \u043C\u043D\u0435 \u0438 \u0420\u044D\u0439\u043A\u0443 \u0447\u0442\u043E
+      \u043F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u043E \u0441 \u043F\u0440\u043E\u0448\u043B\u044B\u043C\u0438
+      \u0434\u0443\u0448\u0430\u043C\u0438, \u0434\u043E \u0442\u043E\u0433\u043E
+      \u043A\u0430\u043A \u0442\u0435\u0431\u044F \u043F\u043E\u0439\u043C\u0430\u043B
+      \u043A\u043E\u0440\u043E\u043B\u044C?"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
 --- !u!1 &5533975118568982263
 GameObject:
   m_ObjectHideFlags: 0
@@ -2818,6 +4285,123 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: 'sounds: '
+    Object: {fileID: 0}
+--- !u!1 &5555363211795043217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7894520013809553597}
+  - component: {fileID: 3363831455607089469}
+  m_Layer: 0
+  m_Name: GolemP1_Main-P3_Elder-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7894520013809553597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5555363211795043217}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3363831455607089469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5555363211795043217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#00195F>\u041E\u043D\u0438 \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0438\u0435
+      \u0438 \u043A \u0442\u043E\u043C\u0443 \u0436\u0435 \u043F\u043E\u0447\u0442\u0438
+      \u0443\u0442\u0440\u0430\u0442\u0438\u043B\u0438 \u0432\u0441\u044E \u0441\u0432\u043E\u044E
+      \u0441\u0438\u043B\u0443. \u0412 \u0446\u0435\u043D\u0442\u0440\u0435, \u043A\u0443\u0434\u0430
+      \u043D\u0430\u043F\u0440\u0430\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0432\u0435\u0434\u044C\u043C\u0430,
+      \u043D\u0430\u0445\u043E\u0434\u044F\u0442\u0441\u044F \u0441\u0430\u043C\u044B\u0435
+      \u043C\u043E\u0449\u043D\u044B\u0435 \u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u044B,
+      \u0442\u043E\u043B\u044C\u043A\u043E \u043E\u043D\u0438 \u0430\u043A\u0442\u0438\u0432\u0438\u0440\u0443\u044E\u0442
+      \u043E\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043E\u0440\u0438\u044E"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
+--- !u!1 &5561412107921196048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1519313655501286798}
+  - component: {fileID: 8054905489784655792}
+  m_Layer: 0
+  m_Name: GolemP1_Main-P3_Elder-6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1519313655501286798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5561412107921196048}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8054905489784655792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5561412107921196048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#00195F>\u0422\u043E\u043B\u044C\u043A\u043E \u043D\u043E\u0441\u0438\u0442\u0435\u043B\u044C
+      \u0438\u043C\u0435\u0435\u0442 \u0434\u043E\u0441\u0442\u0443\u043F \u043A
+      \u0432\u043E\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u043D\u0438\u044F\u043C
+      \u0434\u0440\u0443\u0433\u0438\u0445 \u0434\u0443\u0448. \u0410 \u043E\u043D\u0430
+      - \u043F\u0435\u0440\u0432\u0430\u044F \u0434\u0443\u0448\u0430 \u0437\u0430\u0442\u043E\u0447\u0435\u043D\u043D\u0430\u044F
+      \u0432 \u0448\u043B\u044F\u043F\u0435"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
     Object: {fileID: 0}
 --- !u!1 &5565611758714529795
 GameObject:
@@ -2918,9 +4502,14 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "\u0421\u043F\u0440\u0430\u0432\u0430 \u0435\u0441\u0442\u044C \u0431\u043E\u043B\u043E\u0442\u043E
-      \u0438 \u043B\u043E\u0433\u043E\u0432\u043E \u043E\u0433\u0440\u043E\u043C\u043D\u043E\u0433\u043E
-      \u0441\u043B\u0438\u0437\u043D\u044F"
+    Text: "\u0417\u0430\u043A\u043B\u0438\u043D\u0430\u043D\u0438\u044F \u0438 \u044D\u0444\u0444\u0435\u043A\u0442\u044B
+      \u043C\u043E\u0436\u043D\u043E \u043A\u043E\u043C\u0431\u0438\u043D\u0438\u0440\u043E\u0432\u0430\u0442\u044C,
+      \u0447\u0442\u043E \u043E\u0447\u0435\u043D\u044C \u0432\u0430\u0436\u043D\u043E!
+      \u041D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u043F\u043E\u043F\u0440\u043E\u0431\u0443\u0439
+      \u043D\u0430\u0436\u0430\u0442\u044C \u041B\u041A\u041C \u0438 \u041F\u041A\u041C
+      \u043E\u0434\u043D\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u043E, \u0447\u0442\u043E\u0431\u044B
+      \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u044B\u0439
+      \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442"
     Object: {fileID: 0}
   - Language: English
     Text: "\u0421\u043F\u0440\u0430\u0432\u0430 \u0435\u0441\u0442\u044C \u0431\u043E\u043B\u043E\u0442\u043E
@@ -2978,6 +4567,59 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: Graphics
+    Object: {fileID: 0}
+--- !u!1 &6181402348238929437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5034349521614968832}
+  - component: {fileID: 7807802458227511927}
+  m_Layer: 0
+  m_Name: Observatory_Main-P2_Thief-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5034349521614968832
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6181402348238929437}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7807802458227511927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6181402348238929437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u0417\u0430\u0447\u0435\u043C \u043D\u0430\u043C \u0435\u0433\u043E
+      \u043F\u043E\u043A\u0438\u0434\u0430\u0442\u044C?"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
     Object: {fileID: 0}
 --- !u!1 &6196607124867960967
 GameObject:
@@ -3188,7 +4830,7 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "<color=\"red\">\u0427\u0442\u043E\u0436, \u044F \u043D\u0435 \u0445\u043E\u0442\u0435\u043B\u0430
+    Text: "\u0427\u0442\u043E\u0436, \u044F \u043D\u0435 \u0445\u043E\u0442\u0435\u043B\u0430
       \u043D\u0438\u043A\u043E\u0433\u043E \u0443\u0431\u0438\u0432\u0430\u0442\u044C,
       \u043D\u043E \u043F\u043E\u0445\u043E\u0436\u0435 \u043F\u0440\u0438\u0434\u0451\u0442\u0441\u044F
       \u0441\u0434\u0435\u043B\u0430\u0442\u044C \u0438\u0441\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435"
@@ -3355,9 +4997,9 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "<color=\"red\">\u0414\u043B\u044F \u043D\u0430\u0447\u0430\u043B\u0430
-      \u043C\u043D\u0435 \u043D\u0443\u0436\u043D\u043E \u043F\u043E\u043D\u044F\u0442\u044C
-      \u0433\u0434\u0435 \u043C\u044B. \u042F \u0432\u0438\u0436\u0443 \u043F\u043E\u0441\u0435\u043B\u0435\u043D\u0438\u0435,
+    Text: "\u0414\u043B\u044F \u043D\u0430\u0447\u0430\u043B\u0430 \u043C\u043D\u0435
+      \u043D\u0443\u0436\u043D\u043E \u043F\u043E\u043D\u044F\u0442\u044C \u0433\u0434\u0435
+      \u043C\u044B. \u042F \u0432\u0438\u0436\u0443 \u043F\u043E\u0441\u0435\u043B\u0435\u043D\u0438\u0435,
       \u043C\u043D\u0435 \u043D\u0443\u0436\u043D\u043E \u043E\u043F\u0440\u043E\u0441\u0438\u0442\u044C
       \u0436\u0438\u0442\u0435\u043B\u0435\u0439 \u0438 \u0443\u0437\u043D\u0430\u0442\u044C
       \u0433\u0434\u0435 \u043C\u044B \u0441\u0435\u0439\u0447\u0430\u0441 \u043D\u0430\u0445\u043E\u0434\u0438\u043C\u0441\u044F"
@@ -3518,7 +5160,9 @@ MonoBehaviour:
   - Language: Russian
     Text: "C - \u0442\u0435\u043B\u0435\u043F\u043E\u0440\u0442, \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442
       \u0443\u0432\u043E\u0440\u0430\u0447\u0438\u0432\u044B\u0432\u0430\u0442\u044C\u0441\u044F
-      \u043E\u0442 \u0432\u0430\u0440\u0436\u0435\u0441\u043A\u0438\u0445 \u0430\u0442\u0430\u043A"
+      \u043E\u0442 \u0432\u0440\u0430\u0436\u0435\u0441\u043A\u0438\u0445 \u0430\u0442\u0430\u043A
+      \u0438 \u043F\u0440\u0435\u043E\u0434\u043E\u043B\u0435\u0432\u0430\u0442\u044C
+      \u043F\u0440\u0435\u043F\u044F\u0442\u0441\u0442\u0432\u0438\u044F"
     Object: {fileID: 0}
   - Language: English
     Text: "C - \u0442\u0435\u043B\u0435\u043F\u043E\u0440\u0442, \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442
@@ -3576,6 +5220,59 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: Credits
+    Object: {fileID: 0}
+--- !u!1 &7632264991109411946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3574497412144224890}
+  - component: {fileID: 447232492702485917}
+  m_Layer: 0
+  m_Name: GolemP1_Main-P3_Alex-3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3574497412144224890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7632264991109411946}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &447232492702485917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7632264991109411946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u041C\u043E\u0433 \u0431\u044B \u043D\u0430\u0437\u044B\u0432\u0430\u0442\u044C
+      \u043C\u0435\u043D\u044F \u043F\u043E \u0438\u043C\u0435\u043D\u0438"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
     Object: {fileID: 0}
 --- !u!1 &7642645004433607490
 GameObject:
@@ -3731,8 +5428,8 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "<color=\"red\">\u0425\u0445...\u043C\u043C..\u044D\u0442\u043E \u0436\u0435
-      \u043D\u0430\u0434\u043E \u0431\u044B\u043B\u043E \u0434\u043E\u0434\u0443\u043C\u0430\u0442\u044C\u0441\u044F
+    Text: "\u0425\u0445...\u043C\u043C..\u044D\u0442\u043E \u0436\u0435 \u043D\u0430\u0434\u043E
+      \u0431\u044B\u043B\u043E \u0434\u043E\u0434\u0443\u043C\u0430\u0442\u044C\u0441\u044F
       \u043F\u0440\u044B\u0433\u043D\u0443\u0442\u044C \u0432 \u043F\u0440\u043E\u043F\u0430\u0441\u0442\u044C..."
     Object: {fileID: 0}
   - Language: English
@@ -3902,6 +5599,118 @@ MonoBehaviour:
   - Language: English
     Text: Makes projectiles aim at nearest enemy
     Object: {fileID: 0}
+--- !u!1 &8141431059228950164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4950860354522220416}
+  - component: {fileID: 7697324624582928614}
+  m_Layer: 0
+  m_Name: Observatory_Main-P2_Elder-5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4950860354522220416
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8141431059228950164}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7697324624582928614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8141431059228950164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#00195F>\u0418 \u044D\u0442\u043E \u0432\u0435\u0441\u044C \u0442\u0432\u043E\u0439
+      \u043F\u043B\u0430\u043D? \u0417\u0430\u0448\u0438\u0431\u0438\u0441\u044C.
+      \u0412\u0435\u0434\u044C\u043C\u0430 \u043F\u0440\u043E\u0441\u0442\u043E \u0445\u043E\u0434\u0438\u0442,
+      \u0443\u0431\u0438\u0432\u0430\u0435\u0442 \u0432\u0441\u0435\u0445 \u043F\u043E\u0434\u0440\u044F\u0434
+      \u0438 \u0434\u0430\u0436\u0435 \u043D\u0435 \u0438\u043C\u0435\u0435\u0442
+      \u043D\u0438\u043A\u0430\u043A\u043E\u0433\u043E \u0447\u0451\u0442\u043A\u043E\u0433\u043E
+      \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u044F
+      \u0447\u0442\u043E \u0435\u0439 \u0434\u0435\u043B\u0430\u0442\u044C."
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
+--- !u!1 &8161533638045023802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3017931468353087775}
+  - component: {fileID: 3042772224762646692}
+  m_Layer: 0
+  m_Name: Observatory_Swamp_Thief-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3017931468353087775
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8161533638045023802}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3042772224762646692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8161533638045023802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "<color=#005500>\u0416\u0443\u0442\u043A\u043E\u0435 \u043C\u0435\u0441\u0442\u043E.
+      \u0427\u0442\u043E \u0437\u0434\u0435\u0441\u044C \u043F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u043E?"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
+    Object: {fileID: 0}
 --- !u!1 &8364840064980852263
 GameObject:
   m_ObjectHideFlags: 0
@@ -4057,6 +5866,72 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: Continue
+    Object: {fileID: 0}
+--- !u!1 &8554490186168858062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1611980555804757584}
+  - component: {fileID: 1645056062958106708}
+  m_Layer: 0
+  m_Name: Observatory_Main-P2_Alex-3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1611980555804757584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8554490186168858062}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1645056062958106708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8554490186168858062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u0422\u0435 \u043B\u044E\u0434\u0438, \u0447\u0442\u043E \u0437\u0430\u043A\u0430\u0437\u0430\u043B\u0438
+      \u0442\u0435\u0431\u044F \u0434\u043B\u044F \u043F\u043E\u0445\u0438\u0449\u0435\u043D\u0438\u044F
+      \u0448\u043B\u044F\u043F\u044B, \u0442\u043E \u0435\u0441\u0442\u044C \u043C\u0435\u043D\u044F,
+      \u043D\u0430\u0432\u0435\u0440\u043D\u044F\u043A\u0430 \u0437\u043D\u0430\u044E\u0442
+      \u043E\u0431\u043E \u043C\u043D\u0435 \u0438 \u043F\u043E\u044D\u0442\u043E\u043C\u0443
+      \u0441\u0442\u043E\u0438\u0442 \u0438\u0445 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C.
+      \u0410 \u0435\u0449\u0451 \u044F \u043D\u0435 \u043F\u043E\u043D\u0438\u043C\u0430\u044E,
+      \u043F\u043E\u0447\u0435\u043C\u0443 \u0442\u044B \u043D\u0435 \u0443\u0437\u043D\u0430\u0432\u0430\u043B
+      \u043D\u0438\u043A\u0430\u043A\u0438\u0445 \u043F\u043E\u0434\u0440\u043E\u0431\u043D\u043E\u0441\u0442\u0435\u0439
+      \u0438 \u0434\u0443\u043C\u0430\u043B, \u0447\u0442\u043E \u043C\u043E\u0436\u043D\u043E
+      \u0442\u0430\u043A \u043F\u0440\u043E\u0441\u0442\u043E \u043F\u0440\u0438\u043F\u043B\u044B\u0442\u044C
+      \u043D\u0430 \u043E\u0441\u0442\u0440\u043E\u0432 \u0432\u043E\u043B\u0448\u0435\u0431\u043D\u0438\u043A\u043E\u0432
+      \u0438 \u0443\u043A\u0440\u0430\u0441\u0442\u044C \u044F\u043A\u043E\u0431\u044B
+      \u043D\u0435 \u043F\u043E\u0434\u043E\u0437\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u0443\u044E
+      \u0437\u0430\u043F\u0435\u0440\u0442\u0443\u044E \u0448\u043B\u044F\u043F\u0443."
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
     Object: {fileID: 0}
 --- !u!1 &8617089559653724885
 GameObject:
@@ -4218,6 +6093,61 @@ MonoBehaviour:
     Text: "V - \u0442\u0435\u043B\u0435\u043A\u0438\u043D\u0435\u0437, \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442
       \u043F\u043E\u0434\u043D\u0438\u043C\u0430\u0442\u044C \u0438 \u0431\u0440\u043E\u0441\u0430\u0442\u044C
       \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B"
+    Object: {fileID: 0}
+--- !u!1 &8729471797067064174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7905752493048838856}
+  - component: {fileID: 6170377630715362890}
+  m_Layer: 0
+  m_Name: GolemP1_Main-P3_Alex-7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7905752493048838856
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8729471797067064174}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6170377630715362890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8729471797067064174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u0414\u043E\u0432\u043E\u043B\u044C\u043D\u043E! \u0415\u0441\u043B\u0438
+      \u0432\u044B \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u0435 \u0431\u043E\u043B\u0442\u0430\u0442\u044C,
+      \u043C\u044B \u043D\u0435 \u0434\u043E\u0431\u0435\u0440\u0451\u043C\u0441\u044F
+      \u0434\u043E \u0433\u043E\u043B\u0435\u043C\u0430"
+    Object: {fileID: 0}
+  - Language: English
+    Text: 
     Object: {fileID: 0}
 --- !u!1001 &2435901132893010517
 PrefabInstance:
