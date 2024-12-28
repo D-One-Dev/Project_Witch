@@ -223,6 +223,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8791168562390515288}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 80532301e6b6ef844960d9c2edb32960,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5536080169383101048}
   m_SourcePrefab: {fileID: 100100000, guid: 80532301e6b6ef844960d9c2edb32960, type: 3}
 --- !u!4 &6278913883489534958 stripped
 Transform:
@@ -296,7 +300,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e62a43c2d5aa067479a27fa9341b0f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 6132667641908159135}
   targetLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -305,13 +308,45 @@ MonoBehaviour:
     type: 3}
   onDestroy:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5536080169383101048}
+        m_TargetAssemblyTypeName: DeathSound, Assembly-CSharp
+        m_MethodName: PlayDeathSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   lifeTime: 10
   lifeTimeAfterCollide: 0
   damage: 45
   damageType: 2
   targetLockRadius: 7.5
+  ignoreTag: 
   speed: 40
   isHoming: 0
   isElementStrengthened: 0
   rotationSpeed: 15
+--- !u!114 &5536080169383101048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6658851618858588500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09fa7739b404fbd4f8a274cc14f5337b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minPitch: 0.75
+  maxPitch: 1.25
+  AS: {fileID: 0}
+  deathSoundPrefab: {fileID: 3084744284918088881, guid: ff6cd3cf866ab5c49bff333f9f194aea,
+    type: 3}
+  clips:
+  - {fileID: 8300000, guid: 2f589ccf759af01468a8c340adc7593e, type: 3}

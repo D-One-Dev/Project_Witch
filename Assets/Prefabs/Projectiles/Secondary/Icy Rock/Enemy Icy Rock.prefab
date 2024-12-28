@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5689409107020426351}
   - component: {fileID: 5805313514767551304}
   - component: {fileID: 719694661663044624}
+  - component: {fileID: 4902933629494803712}
   m_Layer: 6
   m_Name: Enemy Icy Rock
   m_TagString: Untagged
@@ -169,6 +170,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4902933629494803712}
+        m_TargetAssemblyTypeName: DeathSound, Assembly-CSharp
+        m_MethodName: PlayDeathSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   lifeTime: 30
   lifeTimeAfterCollide: 0
   damage: 15
@@ -194,6 +207,25 @@ MonoBehaviour:
   iceShard: {fileID: 6658851618858588500, guid: a398e7d7213a05846854b2bde798a4c5,
     type: 3}
   shardsAmount: 15
+--- !u!114 &4902933629494803712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121257395508586386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09fa7739b404fbd4f8a274cc14f5337b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minPitch: 0.75
+  maxPitch: 1.25
+  AS: {fileID: 0}
+  deathSoundPrefab: {fileID: 3084744284918088881, guid: ff6cd3cf866ab5c49bff333f9f194aea,
+    type: 3}
+  clips:
+  - {fileID: 8300000, guid: 2f589ccf759af01468a8c340adc7593e, type: 3}
 --- !u!1001 &8650547433712769779
 PrefabInstance:
   m_ObjectHideFlags: 0

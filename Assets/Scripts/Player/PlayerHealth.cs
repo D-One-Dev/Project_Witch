@@ -14,6 +14,12 @@ public class PlayerHealth : EntityHealth
     [Inject (Id = "HealSpeed")]
     private readonly float _healSpeed;
 
+    [Inject (Id = "PlayerSoundBase")]
+    private readonly SoundBase _playerSoundBase;
+
+    [Inject (Id = "AlexHurtSound")]
+    private readonly AudioClip _alexHurtSound;
+
     private HPBarController _playerHealthBarController;
 
     public static Action OnPlayerDeath;
@@ -76,6 +82,7 @@ public class PlayerHealth : EntityHealth
 
     public override void TakeDamage(int damage, DamageType damageType, bool isElementStrengthened)
     {
+        _playerSoundBase.PlaySoundWithRandomPitch(_alexHurtSound, 1f, 1.25f);
         base.TakeDamage(damage, damageType, isElementStrengthened);
         if(_healTimer == null)
         {

@@ -10,4 +10,10 @@ public class SoundBase : MonoBehaviour
         AS.pitch = Random.Range(minPitch, maxPitch);
         AS.PlayOneShot(clip);
     }
+
+    public void PlaySoundWithRandomPitch(AudioClip clip, float minPitch, float maxPitch)
+    {
+        AS.pitch = Random.Range(minPitch, maxPitch);
+        AS.PlayOneShot(clip);
+    }
 }

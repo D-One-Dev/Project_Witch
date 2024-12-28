@@ -32,6 +32,8 @@ public class PlayerInstaller : MonoInstaller
     
     [SerializeField] private SettingsLoader settingsLoader;
     [SerializeField] private AudioClip dashSound;
+    [SerializeField] private SoundBase playerSoundBase;
+    [SerializeField] private AudioClip alexHurtSound;
     
     public override void InstallBindings()
     {
@@ -177,6 +179,16 @@ public class PlayerInstaller : MonoInstaller
         this.Container.Bind<AudioClip>()
             .WithId("DashSound")
             .FromInstance(dashSound)
+            .AsTransient();
+
+        this.Container.Bind<SoundBase>()
+            .WithId("PlayerSoundBase")
+            .FromInstance(playerSoundBase)
+            .AsTransient();
+        
+        this.Container.Bind<AudioClip>()
+            .WithId("AlexHurtSound")
+            .FromInstance(alexHurtSound)
             .AsTransient();
     }
 }
