@@ -30,11 +30,11 @@ namespace Enemies.EnemyUnits
             _walkAction = new Idle();
             _chaseAction = new ChaseWithTrigger(_player, ActivateGolem);
 
-            _attackAction = new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking1", Explode);
+            _attackAction = new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking1", null, Explode);
 
             _deathAction = new Death("isDead");
 
-            _attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking1", Explode));
+            _attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking1", null, Explode));
             _attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", ActivateAttackArea, DeactivateAttackArea));
             _attackActions.Add(new Attack(_player, timeBetweenAttacks, "isAttacking3"));
         }
@@ -45,7 +45,7 @@ namespace Enemies.EnemyUnits
             {
                 _attackAction = _attackActions[Random.Range(0, _attackActions.Count)];
                 
-                yield return new WaitForSeconds(5);
+                yield return new WaitForSeconds(3);
                 
                 if (Random.Range(0, 3) == 0) _chaseAction = new Attack(_player, timeBetweenAttacks, "isAttacking3");
                 else _chaseAction = new Chase(_player);
