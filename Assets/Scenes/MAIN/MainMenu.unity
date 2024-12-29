@@ -2445,6 +2445,7 @@ MonoBehaviour:
   loadGameButton: {fileID: 1147888264}
   settingsLoader: {fileID: 177236603}
   buildVersionText: {fileID: 1656984802}
+  boughtSpellWriter: {fileID: 1971801579}
 --- !u!114 &28569277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96964,6 +96965,7 @@ GameObject:
   - component: {fileID: 1971801572}
   - component: {fileID: 1971801571}
   - component: {fileID: 1971801576}
+  - component: {fileID: 1971801579}
   - component: {fileID: 1971801577}
   - component: {fileID: 1971801578}
   m_Layer: 5
@@ -97192,6 +97194,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1971801579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971801570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf2c0b14dfa57e4489708fb2dd81b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1975378036
 PrefabInstance:
   m_ObjectHideFlags: 0

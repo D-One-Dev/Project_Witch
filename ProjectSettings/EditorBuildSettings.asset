@@ -6,36 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Mike/OLD/MainMenu.unity
-    guid: a66b7dff42b93ce40bcd3c4a1d2f202d
-  - enabled: 0
-    path: Assets/Scenes/Mike/OLD/1Mike.unity
-    guid: 5311b3901eb615e4cbb1acd526106429
-  - enabled: 0
-    path: Assets/Scenes/Mike/OLD/2Mike.unity
-    guid: f87ca8f0fc79ec5449c23648be1eda35
-  - enabled: 0
-    path: Assets/Scenes/Mike/3MIKE.unity
-    guid: a560b90fddf73104fa59115943b9f44d
-  - enabled: 0
-    path: Assets/Scenes/Mike/4MIKE.unity
-    guid: 417a03b315cf32d44907e9d32651bbb0
-  - enabled: 0
-    path: Assets/Scenes/Mike/OLD/1Mike.unity
-    guid: 5311b3901eb615e4cbb1acd526106429
-  - enabled: 0
-    path: Assets/Scenes/Mike/OLD/2Mike.unity
-    guid: f87ca8f0fc79ec5449c23648be1eda35
-  - enabled: 0
-    path: Assets/Scenes/Mike/NEWNEW2.unity
-    guid: f044c84df7277f146bfce1b7de828bfe
-  - enabled: 0
-    path: Assets/Scenes/Mike/NewTest2.unity
-    guid: 1b5ee4b4e4ee5864faa64757701b8a42
-  - enabled: 0
-    path: Assets/Scenes/Mike/Mike2.unity
-    guid: 665ba158cf9cacf43985d5b328b0d299
-  - enabled: 0
     path: Assets/Scenes/TestScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
@@ -44,12 +14,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Volodya/OLD/2.unity
     guid: a35c780b1adabcb4e8bd251eca6e98f9
-  - enabled: 0
-    path: Assets/Scenes/Mike/MikeTest.unity
-    guid: db3abac8b24ee3541b87f19e5ada987b
-  - enabled: 0
-    path: Assets/Scenes/Mike/PERFORMANCETEST.unity
-    guid: 9a68eb396a61a8e4198e6b6e17f6aea6
   - enabled: 1
     path: Assets/Scenes/MAIN/MainMenu.unity
     guid: 8a6b02264751352468ebccdc52c4c81b
@@ -58,31 +22,28 @@ EditorBuildSettings:
     guid: 8b58dc0178e681d4d9ec8699629d6068
   - enabled: 1
     path: Assets/Scenes/MAIN/1.unity
-    guid: 702c477eda6fc7a4f8edc313475c4886
+    guid: 2e3e4ef9770b54548bd58bd07abe0118
   - enabled: 1
     path: Assets/Scenes/MAIN/2.unity
-    guid: f5dc062d8c1a64e45b1c5b9dfcd44e85
+    guid: bf20fab05877c464eb229ba710531412
   - enabled: 1
     path: Assets/Scenes/MAIN/3.unity
-    guid: 8ed225dba61ae4a40849e437b555af63
+    guid: 21ada51d3455b3b498e72d6bf6c49437
   - enabled: 1
     path: Assets/Scenes/MAIN/4.unity
+    guid: 3ecabec61df6ca947aa7fb3f4d3cf734
+  - enabled: 0
+    path: Assets/Scenes/MAIN/OLD/1.unity
+    guid: 702c477eda6fc7a4f8edc313475c4886
+  - enabled: 0
+    path: Assets/Scenes/MAIN/OLD/2.unity
+    guid: f5dc062d8c1a64e45b1c5b9dfcd44e85
+  - enabled: 0
+    path: Assets/Scenes/MAIN/OLD/3.unity
+    guid: 8ed225dba61ae4a40849e437b555af63
+  - enabled: 0
+    path: Assets/Scenes/MAIN/OLD/4.unity
     guid: d01eaf28e6558eb4cb721626571a55c4
-  - enabled: 0
-    path: Assets/Scenes/Mike/OLD/MainMenu.unity
-    guid: e3fa46377c675c84b95cc3eb7a1d43fc
-  - enabled: 0
-    path: Assets/Scenes/Mike/OLD/1.unity
-    guid: 48885f2133d09ba408c84077c7250916
-  - enabled: 0
-    path: Assets/Scenes/Mike/OLD/2.unity
-    guid: 66c91e7c9c899a24eba16af10c5946a9
-  - enabled: 0
-    path: Assets/Scenes/Mike/OLD/3.unity
-    guid: 01b815e84af187346b6625248e7a96f8
-  - enabled: 0
-    path: Assets/Scenes/Mike/OLD/4.unity
-    guid: 7ce3a73a2c5ad98418b549765d54867e
   - enabled: 0
     path: Assets/Scenes/Mike/MainMenu.unity
     guid: d8b2d89fc338f7949add6ffb519efc6c

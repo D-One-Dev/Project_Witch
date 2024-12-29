@@ -1,3 +1,4 @@
+using Lean.Localization;
 using TMPro;
 using UnityEngine;
 using Zenject;
@@ -40,10 +41,10 @@ public class ShopUIController : MonoBehaviour
         instance = this;
         _controls = new Controls();
 
-        _controls.Gameplay.T.performed += ctx =>
-        {
-            TriggerShopScreen();
-        };
+        // _controls.Gameplay.T.performed += ctx =>
+        // {
+        //     TriggerShopScreen();
+        // };
 
         _controls.Gameplay.Esc.performed += ctx =>
         {
@@ -93,8 +94,9 @@ public class ShopUIController : MonoBehaviour
         currentItem = item;
         currentCardUI = itemCardUI;
         currentCard = itemCard;
-        itemNameText.text = currentCard.itemName;
-        itemDescriptionText.text = currentCard.itemDescription;
+        Debug.Log(LeanLocalization.GetTranslationText(currentCard.itemDescriptionId));
+        itemNameText.text = LeanLocalization.GetTranslationText(currentCard.itemNameId);
+        itemDescriptionText.text = LeanLocalization.GetTranslationText(currentCard.itemDescriptionId);
         itemCostText.text = "Cost: " + currentCard.cost;
     }
 
@@ -121,7 +123,7 @@ public class ShopUIController : MonoBehaviour
             }
             else
             {
-                Debug.LogFormat("Can't afford " + currentCard.itemName);
+                Debug.LogFormat("Can't afford " + LeanLocalization.GetTranslationText(currentCard.itemNameId));
                 _animationsController.ShakeBar(currentCardUI.GetComponent<RectTransform>());
             }
         }

@@ -35,6 +35,10 @@ public class MainMenuController : MonoBehaviour
     {
         if(File.Exists(Application.dataPath + "/save.savefile")) File.Delete(Application.dataPath + "/save.savefile");
         if (File.Exists(Application.dataPath + "/save.savefile.meta"))File.Delete(Application.dataPath + "/save.savefile.meta");
+        if(File.Exists(Application.dataPath + "/shopItems.savefile")) File.Delete(Application.dataPath + "/shopItems.savefile");
+        if (File.Exists(Application.dataPath + "/shopItems.savefile.meta"))File.Delete(Application.dataPath + "/shopItems.savefile.meta");
+        if(File.Exists(Application.dataPath + "/boughtSpells.savefile")) File.Delete(Application.dataPath + "/boughtSpells.savefile");
+        if (File.Exists(Application.dataPath + "/boughtSpells.savefile.meta"))File.Delete(Application.dataPath + "/boughtSpells.savefile.meta");
         _animationsController.ChangeScene(_loadingScreen, 1);
     }
 

@@ -233,6 +233,7 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
+  boughtSpellWriter: {fileID: 2104799496}
 --- !u!1 &318027151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1155,6 +1156,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba9debf91ac2ac4448390166b6ca5936, type: 3}
+--- !u!114 &2104799496 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 458136956774971108, guid: ba9debf91ac2ac4448390166b6ca5936,
+    type: 3}
+  m_PrefabInstance: {fileID: 2104799495}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf2c0b14dfa57e4489708fb2dd81b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4971704320908017686
 PrefabInstance:
   m_ObjectHideFlags: 0

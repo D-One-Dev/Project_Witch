@@ -8,6 +8,7 @@ public class CutsceneInstaller : MonoInstaller
     [SerializeField] private GameObject dialogueScreen;
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private Gradient rainbow;
+    [SerializeField] private BoughtSpellWriter boughtSpellWriter;
 
     public override void InstallBindings()
     {
@@ -58,5 +59,8 @@ public class CutsceneInstaller : MonoInstaller
             .WithId("Rainbow")
             .FromInstance(rainbow)
             .AsTransient();
+        this.Container.Bind<BoughtSpellWriter>()
+            .FromInstance(boughtSpellWriter)
+            .AsSingle();
     }
 }

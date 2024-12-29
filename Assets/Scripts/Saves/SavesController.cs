@@ -20,16 +20,19 @@ public class SavesController : IInitializable
     private AnimationsController _animationsController;
     private ShopUIController _shopUIController;
     private SettingsLoader _settingsLoader;
+    private BoughtSpellWriter _boughtSpellWriter;
     private static readonly fsSerializer _serializer = new fsSerializer();
 
     [Inject]
-    public void Construct(PlayerMoney playerMoney, NewSpellCaster newSpellCaster, AnimationsController animationsController, ShopUIController shopUIController, SettingsLoader settingsLoader)
+    public void Construct(PlayerMoney playerMoney, NewSpellCaster newSpellCaster, AnimationsController animationsController, ShopUIController shopUIController,
+        SettingsLoader settingsLoader, BoughtSpellWriter boughtSpellWriter)
     {
         _playerMoney = playerMoney;
         _newSpellCaster = newSpellCaster;
         _animationsController = animationsController;
         _shopUIController = shopUIController;
         _settingsLoader = settingsLoader;
+        _boughtSpellWriter = boughtSpellWriter;
     }
 
     public void Initialize()
@@ -96,6 +99,7 @@ public class SavesController : IInitializable
         File.WriteAllText(Application.dataPath + "/save.savefile", json);
 
         if(_shopUIController != null) SaveShopItems(_shopUIController.GetItemsArray());
+        SaveBoughtSpells();
     }
 
     public void ResetPlayerPos()
@@ -128,6 +132,7 @@ public class SavesController : IInitializable
 
     public SaveFile Load()
     {
+        LoadBoughtSpells();
         if(File.Exists(Application.dataPath + "/save.savefile"))
         {
             string json = File.ReadAllText(Application.dataPath + "/save.savefile");
@@ -216,5 +221,37 @@ public class SavesController : IInitializable
             return file;
         }
         return null;
+    }
+
+    public void SaveBoughtSpells()
+    {
+        Debug.Log(121221);
+        ShopSpells file = _boughtSpellWriter.spells;
+        _serializer.TrySerialize(file, out fsData data);
+        File.WriteAllText(Application.dataPath + "/boughtSpells.savefile", data.ToString());
+    }
+
+    public void LoadBoughtSpells()
+    {
+        if (File.Exists(Application.dataPath + "/boughtSpells.savefile"))
+        {
+            string json = File.ReadAllText(Application.dataPath + "/boughtSpells.savefile");
+            fsData data = fsJsonParser.Parse(json);
+            ShopSpells file = null;
+            _serializer.TryDeserialize(data, ref file);
+            _boughtSpellWriter.spells = file;
+        }
+        else
+        {
+            _boughtSpellWriter.spells = new ShopSpells(new (int, bool)[8]);
+            _boughtSpellWriter.spells.spells[0] = (0, true);
+            _boughtSpellWriter.spells.spells[1] = (1, true);
+            _boughtSpellWriter.spells.spells[2] = (2, false);
+            _boughtSpellWriter.spells.spells[3] = (3, false);
+            _boughtSpellWriter.spells.spells[4] = (4, true);
+            _boughtSpellWriter.spells.spells[5] = (5, true);
+            _boughtSpellWriter.spells.spells[6] = (6, true);
+            _boughtSpellWriter.spells.spells[7] = (7, true);
+        }
     }
 }

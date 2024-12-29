@@ -10,6 +10,7 @@ public class MainMenuInstaller : MonoInstaller
 
     [SerializeField] private SettingsLoader settingsLoader;
     [SerializeField] private TMP_Text buildVersionText;
+    [SerializeField] private BoughtSpellWriter boughtSpellWriter;
     
     public override void InstallBindings()
     {
@@ -62,5 +63,9 @@ public class MainMenuInstaller : MonoInstaller
             .FromNew()
             .AsSingle()
             .NonLazy();
+
+        this.Container.Bind<BoughtSpellWriter>()
+            .FromInstance(boughtSpellWriter)
+            .AsSingle();
     }
 }

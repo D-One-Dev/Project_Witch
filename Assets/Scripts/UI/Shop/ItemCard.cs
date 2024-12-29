@@ -1,3 +1,4 @@
+using Lean.Localization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -6,10 +7,9 @@ using Zenject;
 
 public class ItemCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public string itemName;
+    public string itemNameId;
     public Sprite itemIcon;
-    [TextArea]
-    public string itemDescription;
+    public string itemDescriptionId;
     public int cost;
 
     [SerializeField] private ShopItem item;
@@ -29,7 +29,7 @@ public class ItemCard : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     private void Start()
     {
-        itemNameText.text = itemName;
+        itemNameText.text = LeanLocalization.GetTranslationText(itemNameId);
         itemIconImage.sprite = itemIcon;
     }
 
