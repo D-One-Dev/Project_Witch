@@ -52,6 +52,58 @@ MonoBehaviour:
   - Language: English
     Text: Russian
     Object: {fileID: 0}
+--- !u!1 &119386914874080794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3073252489412496715}
+  - component: {fileID: 8701739097370013302}
+  m_Layer: 0
+  m_Name: Task5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3073252489412496715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119386914874080794}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8701739097370013302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119386914874080794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u0414\u043E\u0431\u0435\u0440\u0438\u0441\u044C \u0434\u043E \u043E\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043E\u0440\u0438\u0438"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Get to the observatory
+    Object: {fileID: 0}
 --- !u!1 &153803784589021900
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,12 +151,13 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "<color=#00195F>\u0410\u0430\u0430\u0430, \u043C\u044B \u0442\u0435\u0431\u0435
-      \u043C\u0435\u0448\u0430\u0435\u043C \u2026 \u0447\u0448\u0448\u0448, \u043C\u043E\u043B\u0447\u0438\u043C
-      \u043C\u043E\u043B\u0447\u0438\u043C \u2026 \u0445\u0430-\u0445\u0430"
+    Text: "<color=#00195F>\u0410\u0430\u0430, \u043C\u044B \u0442\u0435\u0431\u0435
+      \u043C\u0435\u0448\u0430\u0435\u043C\u2026 \u0428\u0448\u0448, \u043C\u043E\u043B\u0447\u0438\u043C,
+      \u043C\u043E\u043B\u0447\u0438\u043C\u2026 \u0425\u0430-\u0445\u0430."
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#00195F>Aaah, we're bothering you... Shh, be quiet, be quiet, be
+      quiet... Ha ha.
     Object: {fileID: 0}
 --- !u!1 &175060742560178754
 GameObject:
@@ -153,10 +206,62 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "<color=#005500>\u041D\u043E...\u044F \u043D\u0435 \u043F\u043E\u043D\u0438\u043C\u0430\u044E..."
+    Text: "<color=#005500>\u041D\u043E... \u042F \u043D\u0435 \u043F\u043E\u043D\u0438\u043C\u0430\u044E..."
     Object: {fileID: 0}
   - Language: English
-    Text: awgawgag
+    Text: <color=#005500>But... I don't get it....
+    Object: {fileID: 0}
+--- !u!1 &333934130097226961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1326219563184113180}
+  - component: {fileID: 1372965916153920005}
+  m_Layer: 0
+  m_Name: Task3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1326219563184113180
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333934130097226961}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1372965916153920005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333934130097226961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u041F\u043E\u0431\u0435\u0434\u0438 \u0441\u0442\u0430\u0440\u0435\u0439\u0448\u0438\u043D\u0443"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Defeat the elder
     Object: {fileID: 0}
 --- !u!1 &373882072655315622
 GameObject:
@@ -212,7 +317,8 @@ MonoBehaviour:
       \u0442\u0435\u0431\u044F \u0446\u0435\u043B\u044C?"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#005500>And what's next? Am I just going to remain a voice in your
+      head? What's your goal?
     Object: {fileID: 0}
 --- !u!1 &387850186030581028
 GameObject:
@@ -265,10 +371,11 @@ MonoBehaviour:
       \u0442\u0432\u043E\u044F \u0434\u0443\u0448\u0430, \u043F\u043E\u044D\u0442\u043E\u043C\u0443
       \u044F \u0438\u043C\u0435\u044E \u0434\u043E\u0441\u0442\u0443\u043F \u043A\u043E
       \u0432\u0441\u0435\u043C \u0442\u0432\u043E\u0438\u043C \u0432\u043E\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u043D\u0438\u044F\u043C
-      \u0438\u0437 \u0436\u0438\u0437\u043D\u0438"
+      \u0438\u0437 \u0436\u0438\u0437\u043D\u0438."
     Object: {fileID: 0}
   - Language: English
-    Text: awgwgawg
+    Text: I couldn't, but I have your soul, so I have access to all your memories
+      from your life.
     Object: {fileID: 0}
 --- !u!1 &597323254367746603
 GameObject:
@@ -696,7 +803,9 @@ MonoBehaviour:
       \u043C\u044B \u0442\u0443\u0442 \u043D\u0435 \u043D\u0430\u0439\u0434\u0451\u043C"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#00195F>Now. The observatory has long since been abandoned, as all
+      the researchers have settled in the city. Nodshire has become more centralized
+      over the last 10 years. And of course we won't find the crystal here.
     Object: {fileID: 0}
 --- !u!1 &1111889802155172202
 GameObject:
@@ -805,7 +914,7 @@ MonoBehaviour:
     Text: "<color=#005500>\u0414\u043E\u0448\u043B\u0438 \u0434\u043E \u0447\u0435\u0433\u043E?"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#005500>Almost what?
     Object: {fileID: 0}
 --- !u!1 &1155458992682350455
 GameObject:
@@ -857,10 +966,11 @@ MonoBehaviour:
     Text: "<color=#00195F>\u0421\u0442\u043E\u044F\u0442\u044C! \u0421\u0442\u0440\u0430\u0436\u0430
       \u043E\u043F\u043E\u0432\u0435\u0441\u0442\u0438\u043B\u0430 \u043D\u0430\u0441
       \u043E \u0441\u0431\u0435\u0436\u0430\u0432\u0448\u0435\u0439 \u0432\u0435\u0434\u044C\u043C\u0435
-      \u0432 \u0442\u0435\u043B\u0435 \u0432\u043E\u0440\u0430"
+      \u0432 \u0442\u0435\u043B\u0435 \u0432\u043E\u0440\u0430!"
     Object: {fileID: 0}
   - Language: English
-    Text: awgawga
+    Text: <color=#00195F>Halt! The guards have alerted us to an escaped witch in
+      the body of a thief!
     Object: {fileID: 0}
 --- !u!1 &1280241531798495214
 GameObject:
@@ -909,10 +1019,10 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "\u041F\u043E\u0447\u0442\u0438 \u0434\u043E\u0448\u043B\u0438"
+    Text: "\u041F\u043E\u0447\u0442\u0438 \u0434\u043E\u0448\u043B\u0438."
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: Almost there.
     Object: {fileID: 0}
 --- !u!1 &1283549008727986402
 GameObject:
@@ -964,7 +1074,7 @@ MonoBehaviour:
     Text: "<color=#005500>\u041E\u043D \u0437\u0430\u043F\u0435\u0440 \u043D\u0430\u0441!"
     Object: {fileID: 0}
   - Language: English
-    Text: gwawgawg
+    Text: <color=#005500>He locked us in!
     Object: {fileID: 0}
 --- !u!1 &1330832336030687156
 GameObject:
@@ -1084,7 +1194,8 @@ MonoBehaviour:
       \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043F\u043E\u0440\u0442\u0430\u043B\u044B"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: It's not here. There's no crystal to activate the observatory, without
+      it we can't use the portals.
     Object: {fileID: 0}
 --- !u!1 &1391654629416375840
 GameObject:
@@ -1135,11 +1246,11 @@ MonoBehaviour:
   - Language: Russian
     Text: "<color=#005500>\u041F\u043E\u0447\u0435\u043C\u0443 \u0431\u044B \u043D\u0430\u043C
       \u043F\u0440\u043E\u0441\u0442\u043E \u043D\u0435 \u0432\u0437\u044F\u0442\u044C
-      \u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u044B \u043B\u0435\u0436\u0430\u0449\u0438\u0435
+      \u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u044B, \u043B\u0435\u0436\u0430\u0449\u0438\u0435
       \u043D\u0430 \u0437\u0435\u043C\u043B\u0435?"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#005500>Why don't we just pick up the crystals lying on the ground?
     Object: {fileID: 0}
 --- !u!1 &1480939403147324838
 GameObject:
@@ -1295,10 +1406,10 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "\u041C\u044B \u0443\u0436\u0435 \u0440\u044F\u0434\u043E\u043C"
+    Text: "\u041C\u044B \u0443\u0436\u0435 \u0440\u044F\u0434\u043E\u043C."
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: We're close.
     Object: {fileID: 0}
 --- !u!1 &1806406904891007551
 GameObject:
@@ -1353,7 +1464,8 @@ MonoBehaviour:
       \u043E \u043D\u0435\u0439?"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#005500>If she knows everything about us, why don't we know anything
+      about her?
     Object: {fileID: 0}
 --- !u!1 &1909012849421822816
 GameObject:
@@ -1405,10 +1517,11 @@ MonoBehaviour:
     Text: "\u041B\u0430\u0434\u043D\u043E, \u043D\u0443\u0436\u043D\u043E \u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C
       \u0437\u0434\u0435\u0441\u044C \u0432\u0441\u0451, \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E
       \u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B \u043F\u0440\u043E\u0441\u0442\u043E
-      \u043A\u0443\u0434\u0430-\u043D\u0438\u0431\u0443\u0434\u044C \u043F\u043E\u043B\u043E\u0436\u0438\u043B\u0438\r"
+      \u043A\u0443\u0434\u0430-\u043D\u0438\u0431\u0443\u0434\u044C \u043F\u043E\u043B\u043E\u0436\u0438\u043B\u0438\r."
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: All right, we need to take a look around, maybe the crystal was just put
+      somewhere else.
     Object: {fileID: 0}
 --- !u!1 &1954441631301627695
 GameObject:
@@ -1513,7 +1626,7 @@ MonoBehaviour:
       \u0443 \u0442\u0435\u0431\u044F \u0436\u0435 \u043C\u043E\u0438 \u0432\u043E\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u043D\u0438\u044F\u2026"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#005500>How do you know ever... Ahh, you have my memories...
     Object: {fileID: 0}
 --- !u!1 &2304927573615736856
 GameObject:
@@ -1562,14 +1675,15 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "<color=#00195F>\u0418 \u0431\u044B\u043B\u043E \u0440\u0435\u0448\u0435\u043D\u043E
+    Text: "<color=#00195F>\u0411\u044B\u043B\u043E \u0440\u0435\u0448\u0435\u043D\u043E
       \u043D\u0430\u0447\u0430\u0442\u044C \u0441\u0442\u0440\u043E\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u043E
       \xAB\u043F\u043E\u0440\u0442\u0430\u043B\u0438\u0442\u0435\u043D\u043E\u0432\xBB,
       \u0432 \u043E\u0434\u043D\u043E\u043C \u0438\u0437 \u043A\u043E\u0442\u043E\u0440\u044B\u0445
-      \u043C\u044B \u0441\u0435\u0439\u0447\u0430\u0441 \u0438 \u043D\u0430\u0445\u043E\u0434\u0438\u043C\u0441\u044F"
+      \u043C\u044B \u0441\u0435\u0439\u0447\u0430\u0441 \u0438 \u043D\u0430\u0445\u043E\u0434\u0438\u043C\u0441\u044F."
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: "<color=#00195F>It was decided to start building \u201Cportalitens\u201D,
+      one of which we are now in."
     Object: {fileID: 0}
 --- !u!1 &2351978445404050777
 GameObject:
@@ -1618,13 +1732,14 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "<color=#005500>\u0427\u0442\u043E...\u0447\u0442\u043E \u0442\u044B \u0441\u0434\u0435\u043B\u0430\u043B\u0430?
+    Text: "<color=#005500>\u0427\u0442\u043E... \u0427\u0442\u043E \u0442\u044B \u0441\u0434\u0435\u043B\u0430\u043B\u0430?
       \u042F \u043D\u0435 \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u044E \u0440\u0443\u043A
       \u0438 \u043D\u043E\u0433, \u0447\u0442\u043E \u0442\u044B \u0441\u0434\u0435\u043B\u0430\u043B
       \u0441\u043E \u043C\u043D\u043E\u0439?"
     Object: {fileID: 0}
   - Language: English
-    Text: gagagwa
+    Text: <color=#005500>What... What have you done? I can't feel my arms and legs,
+      what did you do to me?
     Object: {fileID: 0}
 --- !u!1 &2362173777531708977
 GameObject:
@@ -1740,7 +1855,7 @@ MonoBehaviour:
       \u0436\u0434\u0451\u0442."
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#00195F>Not the strangest of things to come your way.
     Object: {fileID: 0}
 --- !u!1 &2457913635253727273
 GameObject:
@@ -1800,7 +1915,9 @@ MonoBehaviour:
       \u0437\u0430\u043F\u0435\u0440\u0442\u0443\u044E \u0448\u043B\u044F\u043F\u0443.\r"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: I also don't understand why you didn't find out any details and thought
+      you could just sail to Wizard Island and steal a supposedly non-suspicious
+      locked hat like that.
     Object: {fileID: 0}
 --- !u!1 &2534885069748715040
 GameObject:
@@ -1854,18 +1971,10 @@ MonoBehaviour:
       \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F
       \u043E\u0441\u043D\u043E\u0432\u043D\u044B\u0445 \u0437\u0430\u043A\u043B\u0438\u043D\u0430\u043D\u0438\u0439,
       \u043D\u0430\u0436\u043C\u0438 Q \u0438\u043B\u0438 E \u0434\u043B\u044F \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F
-      \u044D\u0444\u0444\u0435\u043A\u0442\u043E\u0432"
+      \u044D\u0444\u0444\u0435\u043A\u0442\u043E\u0432."
     Object: {fileID: 0}
   - Language: English
-    Text: "\u041D\u0430\u0436\u043C\u0438 \u0438\u043B\u0438 \u0437\u0430\u0436\u043C\u0438
-      \u043B\u043A\u043C \u0438\u043B\u0438 \u043F\u043A\u043C \u0434\u043B\u044F
-      \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F
-      \u043E\u0441\u043D\u043E\u0432\u043D\u044B\u0445 \u0437\u0430\u043A\u043B\u0438\u043D\u0430\u043D\u0438\u0439,
-      \u043D\u0430\u0436\u043C\u0438 Q \u0438\u043B\u0438 E \u0434\u043B\u044F \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F
-      \u044D\u0444\u0444\u0435\u043A\u0442\u043E\u0432. \u0417\u0430\u043A\u043B\u0438\u043D\u0430\u043D\u0438\u044F
-      \u0438 \u044D\u0444\u0444\u0435\u043A\u0442\u044B \u043C\u043E\u0436\u043D\u043E
-      \u043A\u043E\u043C\u0431\u0438\u043D\u0438\u0440\u043E\u0432\u0430\u0442\u044C,
-      \u0447\u0442\u043E \u043E\u0447\u0435\u043D\u044C \u0432\u0430\u0436\u043D\u043E!"
+    Text: Press or hold down LMB or RMB to use main spells, press Q or E to use effects.
     Object: {fileID: 0}
 --- !u!1 &2548276856474913070
 GameObject:
@@ -1966,13 +2075,13 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "\u042F...\u044F \u0432\u0441\u0451 \u0443\u0437\u043D\u0430\u043B\u0430!
+    Text: "\u042F... \u042F \u0432\u0441\u0451 \u0443\u0437\u043D\u0430\u043B\u0430!
       \u041D\u0443\u0436\u043D\u043E \u0443\u0445\u043E\u0434\u0438\u0442\u044C,
       \u043F\u043E\u043A\u0430 \u043D\u0435 \u043F\u0440\u0438\u0448\u043B\u0430
-      \u0441\u0442\u0440\u0430\u0436\u0430 \u043C\u043E\u0435\u0433\u043E \u043E\u0442\u0446\u0430"
+      \u0441\u0442\u0440\u0430\u0436\u0430 \u043C\u043E\u0435\u0433\u043E \u043E\u0442\u0446\u0430."
     Object: {fileID: 0}
   - Language: English
-    Text: wgagagwa
+    Text: "\u042F... I found out! We have to leave before my father's guards come."
     Object: {fileID: 0}
 --- !u!1 &2623640419522574960
 GameObject:
@@ -2024,7 +2133,7 @@ MonoBehaviour:
     Text: "\u0418 \u0432\u0441\u0451 \u043F\u043E \u043D\u043E\u0432\u043E\u0439..."
     Object: {fileID: 0}
   - Language: English
-    Text: awgagawg
+    Text: And all over again...
     Object: {fileID: 0}
 --- !u!1 &2669016351343501593
 GameObject:
@@ -2077,7 +2186,7 @@ MonoBehaviour:
       \u0432\u043E\u043F\u0440\u043E\u0441\u043E\u0432 \u0434\u043B\u044F \u043C\u0435\u0440\u0442\u0432\u0435\u0446\u0430"
     Object: {fileID: 0}
   - Language: English
-    Text: gawgaw
+    Text: That's a lot of questions for a dead man
     Object: {fileID: 0}
 --- !u!1 &2713308378502083465
 GameObject:
@@ -2131,7 +2240,8 @@ MonoBehaviour:
       \u0438 \u043D\u0435 \u043C\u0435\u0448\u0430\u0442\u044C \u043C\u043D\u0435."
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: There's the crystal. I'm going to have to ask you to shut up and not disturb
+      me.
     Object: {fileID: 0}
 --- !u!1 &2833736228526930473
 GameObject:
@@ -2185,9 +2295,7 @@ MonoBehaviour:
       \u043F\u0440\u0438\u0431\u043E\u0440\u0435\u0441\u0442\u0438?"
     Object: {fileID: 0}
   - Language: English
-    Text: "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439, \u043F\u0443\u0442\u043D\u0438\u043A.
-      \u0416\u0435\u043B\u0430\u0435\u0448\u044C \u0447\u0442\u043E-\u043D\u0438\u0431\u0443\u0434\u044C
-      \u043F\u0440\u0438\u0431\u043E\u0440\u0435\u0441\u0442\u0438?"
+    Text: Hello, traveler. Would you like to buy something?
     Object: {fileID: 0}
 --- !u!1 &2837168262472394841
 GameObject:
@@ -2291,7 +2399,7 @@ MonoBehaviour:
     Text: "<color=#005500>\u042D\u0442\u043E \u0433\u043E\u043B\u0435\u043C?"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#005500>Is this a golem?
     Object: {fileID: 0}
 --- !u!1 &2957325284486471838
 GameObject:
@@ -2345,7 +2453,7 @@ MonoBehaviour:
       \u043A\u0430\u043A\u0438\u0435 \u043F\u043E\u0440\u0442\u0430\u043B\u044B?"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#005500>Wait, we're in an observatory, what portals?
     Object: {fileID: 0}
 --- !u!1 &3008176189071348864
 GameObject:
@@ -2447,10 +2555,10 @@ MonoBehaviour:
   entries:
   - Language: Russian
     Text: "\u041D\u0430\u0434\u0435\u044E\u0441\u044C, \u0434\u043E \u044D\u0442\u043E\u0433\u043E
-      \u043D\u0435 \u0434\u043E\u0439\u0434\u0451\u0442"
+      \u043D\u0435 \u0434\u043E\u0439\u0434\u0451\u0442."
     Object: {fileID: 0}
   - Language: English
-    Text: gwagagwag
+    Text: I hope it doesn't come to that.
     Object: {fileID: 0}
 --- !u!1 &3181731667510201725
 GameObject:
@@ -2620,7 +2728,7 @@ MonoBehaviour:
       \u0447\u0443\u0436\u0438\u043C\u0438?"
     Object: {fileID: 0}
   - Language: English
-    Text: agwag
+    Text: <color=#005500>Are you starting to confuse your memories with other people's?
     Object: {fileID: 0}
 --- !u!1 &3341983588928112781
 GameObject:
@@ -2674,6 +2782,59 @@ MonoBehaviour:
   - Language: English
     Text: Fullscreen
     Object: {fileID: 0}
+--- !u!1 &3371986361978552068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5878196015899051932}
+  - component: {fileID: 1504948517832827507}
+  m_Layer: 0
+  m_Name: Task1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5878196015899051932
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3371986361978552068}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1504948517832827507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3371986361978552068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u041D\u0430\u0439\u0434\u0438 \u0432\u044B\u0445\u043E\u0434 \u0438\u0437
+      \u043F\u0435\u0449\u0435\u0440\u044B"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Find your way out of the cave
+    Object: {fileID: 0}
 --- !u!1 &3377201872253126324
 GameObject:
   m_ObjectHideFlags: 0
@@ -2724,11 +2885,10 @@ MonoBehaviour:
     Text: "\u041D\u0430\u0436\u043C\u0438 Tab \u0434\u043B\u044F \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F
       \u043C\u0435\u043D\u044E \u0432\u044B\u0431\u043E\u0440\u0430 \u0437\u0430\u043A\u043B\u0438\u043D\u0430\u043D\u0438\u0439.
       \u0412 \u044D\u0442\u043E\u0442 \u043C\u043E\u043C\u0435\u043D\u0442 \u0438\u0433\u0440\u0430
-      \u0432\u0441\u0442\u0430\u0451\u0442 \u043D\u0430 \u043F\u0430\u0443\u0437\u0443"
+      \u0432\u0441\u0442\u0430\u0451\u0442 \u043D\u0430 \u043F\u0430\u0443\u0437\u0443."
     Object: {fileID: 0}
   - Language: English
-    Text: "\u041D\u0430\u0436\u043C\u0438 Tab \u0434\u043B\u044F \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F
-      \u043C\u0435\u043D\u044E \u0432\u044B\u0431\u043E\u0440\u0430 \u0437\u0430\u043A\u043B\u0438\u043D\u0430\u043D\u0438\u0439"
+    Text: Press Tab to open the spell selection menu. The game pauses in this menu.
     Object: {fileID: 0}
 --- !u!1 &3382905889875503264
 GameObject:
@@ -2889,6 +3049,12 @@ Transform:
   - {fileID: 633532314589598365}
   - {fileID: 742451905366813387}
   - {fileID: 58981631332493783}
+  - {fileID: 5878196015899051932}
+  - {fileID: 424465016467559643}
+  - {fileID: 1326219563184113180}
+  - {fileID: 3792621426399010580}
+  - {fileID: 3073252489412496715}
+  - {fileID: 2297774582910510555}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3361877429124737769
@@ -3011,10 +3177,11 @@ MonoBehaviour:
       \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E \u043F\u043E\u0441\u0442\u0443\u043F\u0438\u043B,
       \u0447\u0442\u043E \u0438\u0437\u043E\u043B\u0438\u0440\u043E\u0432\u0430\u043B
       \u0442\u0430\u043A\u043E\u0435 \u0447\u0443\u0434\u043E\u0432\u0438\u0449\u0435
-      \u043E\u0442 \u0446\u0438\u0432\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u0438"
+      \u043E\u0442 \u0446\u0438\u0432\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u0438."
     Object: {fileID: 0}
   - Language: English
-    Text: wgagawg
+    Text: <color=#00195F>Murderer! The king was right to isolate such a monster from
+      civilization.
     Object: {fileID: 0}
 --- !u!1 &3468229576699818295
 GameObject:
@@ -3126,7 +3293,9 @@ MonoBehaviour:
       \u0441\u0432\u043E\u0438\u043C \u043D\u043E\u0440\u0430\u043C."
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#00195F>The observatory was abandoned and the residents moved to
+      the city. There was no one to contain the swamp and the nasty slugs destroyed
+      everything and scattered in their holes.
     Object: {fileID: 0}
 --- !u!1 &3678282051395291840
 GameObject:
@@ -3285,7 +3454,8 @@ MonoBehaviour:
       \u0434\u0430\u0451\u0442 \u043D\u0430\u043C \u043E\u0442\u043F\u043E\u0440"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: Just a part of it. The closer we get to the crystal, the more it fights
+      back.
     Object: {fileID: 0}
 --- !u!1 &3794651445639707172
 GameObject:
@@ -3341,17 +3511,11 @@ MonoBehaviour:
       \u0434\u043E\u043B\u0436\u0435\u043D \u0431\u044B\u0442\u044C \u0431\u043E\u0441\u0441\u0444\u0430\u0439\u0442,
       \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u0432\u043E\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439\u0442\u0435\u0441\u044C
       \u0448\u0430\u043D\u0441\u043E\u043C \u0438 \u043F\u043E\u0442\u0440\u043E\u0433\u0430\u0439\u0442\u0435
-      \u0442\u0440\u0430\u0432\u0443"
+      \u0442\u0440\u0430\u0432\u0443."
     Object: {fileID: 0}
   - Language: English
-    Text: "\u041D\u0430 \u044D\u0442\u043E\u043C \u0434\u0435\u043C\u043A\u0430 \u0434\u0435\u043C\u043A\u0438
-      \u0437\u0430\u043A\u0430\u043D\u0447\u0438\u0432\u0430\u0435\u0442\u0441\u044F.
-      \u0412 \u043F\u043E\u043B\u043D\u043E\u0446\u0435\u043D\u043D\u043E\u0439 \u0434\u0435\u043C\u043A\u0435
-      \u0432 \u044D\u0442\u043E\u0439 \u043B\u043E\u043A\u0430\u0446\u0438\u0438
-      \u0434\u043E\u043B\u0436\u0435\u043D \u0431\u044B\u0442\u044C \u0431\u043E\u0441\u0441\u0444\u0430\u0439\u0442,
-      \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u0432\u043E\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439\u0442\u0435\u0441\u044C
-      \u0448\u0430\u043D\u0441\u043E\u043C \u0438 \u043F\u043E\u0442\u0440\u043E\u0433\u0430\u0439\u0442\u0435
-      \u0442\u0440\u0430\u0432\u0443"
+    Text: This is where the demo of the demo ends. In the full demo there should
+      be a bossfight in this location, so take a chance and touch the grass.
     Object: {fileID: 0}
 --- !u!1 &3855233849202088619
 GameObject:
@@ -3461,7 +3625,8 @@ MonoBehaviour:
       \u0437\u0430 \u043D\u0435\u0433\u043E?"
     Object: {fileID: 0}
   - Language: English
-    Text: awgagaga
+    Text: <color=#005500>So by gaining someone's soul, you get all their skills,
+      abilities, and actually feel like you've lived an entire life for them?
     Object: {fileID: 0}
 --- !u!1 &4047066080985451701
 GameObject:
@@ -3621,7 +3786,7 @@ MonoBehaviour:
       \u043F\u043E\u0434\u043D\u044F\u0442\u044C \u0440\u0435\u0448\u0451\u0442\u043A\u0443\u2026"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: Without the crystal, we can't even lift the grid...
     Object: {fileID: 0}
 --- !u!1 &4168559031466307047
 GameObject:
@@ -3728,7 +3893,8 @@ MonoBehaviour:
       \u0435\u0449\u0451 \u0436\u0438\u0432\u0430?"
     Object: {fileID: 0}
   - Language: English
-    Text: awgawg
+    Text: <color=#005500>What do you mean again? Wait, I know you. So you're still
+      alive?
     Object: {fileID: 0}
 --- !u!1 &4226596290867316683
 GameObject:
@@ -3956,10 +4122,11 @@ MonoBehaviour:
       \u0447\u0442\u043E-\u0442\u043E \u0442\u0430\u043A\u043E\u0435, \u0447\u0442\u043E
       \u043C\u043E\u0433\u043B\u043E \u0431\u044B \u0440\u0435\u0448\u0438\u0442\u044C
       \u0432\u044B\u0448\u0435\u043F\u0435\u0440\u0435\u0447\u0438\u0441\u043B\u0435\u043D\u043D\u044B\u0435
-      \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u044B"
+      \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u044B."
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#00195F>The observatory was far away from the city and not all wizards
+      live on this island, we needed something that could solve the above problems.
     Object: {fileID: 0}
 --- !u!1 &4579422066929754127
 GameObject:
@@ -4013,7 +4180,7 @@ MonoBehaviour:
       \u0441\u0442\u0440\u0430\u043D\u043D\u043E."
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#005500>The crystal is fighting back? That sounds weird.
     Object: {fileID: 0}
 --- !u!1 &4746663219652705590
 GameObject:
@@ -4064,10 +4231,10 @@ MonoBehaviour:
   - Language: Russian
     Text: "\u0425\u043C\u043C, \u0430 \u0437\u0434\u0435\u0441\u044C \u0435\u0449\u0451
       \u043E\u0441\u0442\u0430\u043B\u043E\u0441\u044C \u0447\u0442\u043E-\u0442\u043E
-      \u043F\u043E\u043B\u0435\u0437\u043D\u043E\u0435"
+      \u043F\u043E\u043B\u0435\u0437\u043D\u043E\u0435."
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: Hmm, there's still something useful here.
     Object: {fileID: 0}
 --- !u!1 &4813315853162822733
 GameObject:
@@ -4121,7 +4288,7 @@ MonoBehaviour:
       \u044D\u0442\u043E\u0442 \u043E\u0441\u0442\u0440\u043E\u0432"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: And here comes the observatory, soon we will leave this island.
     Object: {fileID: 0}
 --- !u!1 &4831643172063252163
 GameObject:
@@ -4175,10 +4342,11 @@ MonoBehaviour:
       \u0437\u0430 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u0435 \u043A\u043E\u0442\u043E\u0440\u044B\u0445
       \u0442\u044B \u043F\u043E\u043B\u0443\u0447\u0430\u0435\u0448\u044C \u043C\u043E\u043D\u0435\u0442\u044B.
       \u041E\u0431\u044B\u0447\u043D\u043E \u0441\u0443\u043D\u0434\u0443\u043A\u0438
-      \u0433\u0434\u0435-\u0442\u043E \u0441\u043F\u0440\u044F\u0442\u0430\u043D\u044B"
+      \u0433\u0434\u0435-\u0442\u043E \u0441\u043F\u0440\u044F\u0442\u0430\u043D\u044B."
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: This is one of several types of chests that you get coins for opening.
+      Usually the chests are hidden somewhere.
     Object: {fileID: 0}
 --- !u!1 &4915764784054702286
 GameObject:
@@ -4344,12 +4512,10 @@ MonoBehaviour:
   - Language: Russian
     Text: "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 W/A/S/D \u0434\u043B\u044F
       \u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u044F, Shift \u0434\u043B\u044F
-      \u0431\u0435\u0433\u0430, Space \u0434\u043B\u044F \u043F\u0440\u044B\u0436\u043A\u0430"
+      \u0431\u0435\u0433\u0430, Space \u0434\u043B\u044F \u043F\u0440\u044B\u0436\u043A\u0430."
     Object: {fileID: 0}
   - Language: English
-    Text: "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439 W/A/S/D \u0434\u043B\u044F
-      \u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u044F, Shift \u0434\u043B\u044F
-      \u0431\u0435\u0433\u0430, Space \u0434\u043B\u044F \u043F\u0440\u044B\u0436\u043A\u0430"
+    Text: Use W/A/S/D for movement, Shift for running, Space for jumping.
     Object: {fileID: 0}
 --- !u!1 &5146469689102390067
 GameObject:
@@ -4398,12 +4564,12 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "<color=#005500>\u041A\u0430\u043A \u044D\u0442\u043E...\u0442\u044B \u0442\u043E\u0436\u0435
+    Text: "<color=#005500>\u041A\u0430\u043A \u044D\u0442\u043E... \u0422\u044B \u0442\u043E\u0436\u0435
       \u0443\u043C\u0435\u0435\u0448\u044C \u0432\u0437\u043B\u0430\u043C\u044B\u0442\u044C
       \u0437\u0430\u043C\u043A\u0438?"
     Object: {fileID: 0}
   - Language: English
-    Text: agwawgagwa
+    Text: <color=#005500>How... You know how to pick locks too?
     Object: {fileID: 0}
 --- !u!1 &5165115334223800901
 GameObject:
@@ -4453,10 +4619,10 @@ MonoBehaviour:
   entries:
   - Language: Russian
     Text: "<color=#005500>\u041F\u043E\u0447\u0435\u043C\u0443 \u0442\u0443\u0442
-      \u0432\u0441\u0451 \u0442\u0430\u043A\u043E\u0435\u2026\u0441\u0442\u0440\u0430\u043D\u043D\u043E\u0435?"
+      \u0432\u0441\u0451 \u0442\u0430\u043A\u043E\u0435\u2026 \u0421\u0442\u0440\u0430\u043D\u043D\u043E\u0435?"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#005500>Why is everything so... Weird around here?
     Object: {fileID: 0}
 --- !u!1 &5190161221413337756
 GameObject:
@@ -4561,7 +4727,7 @@ MonoBehaviour:
       \u0443\u0431\u0438\u0442\u044C?"
     Object: {fileID: 0}
   - Language: English
-    Text: gwagagwaga
+    Text: <color=#005500>Are you planning on killing them too?
     Object: {fileID: 0}
 --- !u!1 &5280789248875880271
 GameObject:
@@ -4664,15 +4830,17 @@ MonoBehaviour:
   - Language: Russian
     Text: "<color=#00195F>\u0410\u0445, \u044F \u0442\u0435\u0431\u044F \u043E\u0431\u0438\u0434\u0435\u043B?
       \u0410 \u0447\u0442\u043E \u0434\u0435\u043B\u0430\u0442\u044C \u043D\u0430\u043C?
-      \u0418 \u043D\u0435 \u0445\u043E\u0447\u0435\u0448\u044C \u043B\u0438  \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u0430\u0442\u044C
-      \u043C\u043D\u0435 \u0438 \u0420\u044D\u0439\u043A\u0443 \u0447\u0442\u043E
+      \u0418 \u043D\u0435 \u0445\u043E\u0447\u0435\u0448\u044C \u043B\u0438 \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u0430\u0442\u044C
+      \u043C\u043D\u0435 \u0438 \u0420\u044D\u0439\u043A\u0443, \u0447\u0442\u043E
       \u043F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u043E \u0441 \u043F\u0440\u043E\u0448\u043B\u044B\u043C\u0438
       \u0434\u0443\u0448\u0430\u043C\u0438, \u0434\u043E \u0442\u043E\u0433\u043E
       \u043A\u0430\u043A \u0442\u0435\u0431\u044F \u043F\u043E\u0439\u043C\u0430\u043B
       \u043A\u043E\u0440\u043E\u043B\u044C?"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#00195F>Ah, have I offended you? What are we supposed to do? And
+      do you want to tell me and Reiku what happened to the past souls before the
+      king caught you?
     Object: {fileID: 0}
 --- !u!1 &5533975118568982263
 GameObject:
@@ -4773,7 +4941,7 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "<color=#00195F>\u041E\u043D\u0438 \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0438\u0435
+    Text: "<color=#00195F>\u041E\u043D\u0438 \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0438\u0435,
       \u0438 \u043A \u0442\u043E\u043C\u0443 \u0436\u0435 \u043F\u043E\u0447\u0442\u0438
       \u0443\u0442\u0440\u0430\u0442\u0438\u043B\u0438 \u0432\u0441\u044E \u0441\u0432\u043E\u044E
       \u0441\u0438\u043B\u0443. \u0412 \u0446\u0435\u043D\u0442\u0440\u0435, \u043A\u0443\u0434\u0430
@@ -4781,10 +4949,12 @@ MonoBehaviour:
       \u043D\u0430\u0445\u043E\u0434\u044F\u0442\u0441\u044F \u0441\u0430\u043C\u044B\u0435
       \u043C\u043E\u0449\u043D\u044B\u0435 \u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u044B,
       \u0442\u043E\u043B\u044C\u043A\u043E \u043E\u043D\u0438 \u0430\u043A\u0442\u0438\u0432\u0438\u0440\u0443\u044E\u0442
-      \u043E\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043E\u0440\u0438\u044E"
+      \u043E\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043E\u0440\u0438\u044E."
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#00195F>They are small, and also have almost lost all their power.
+      In the center, where the witch is headed, are the most powerful crystals, only
+      they will activate the observatory.
     Object: {fileID: 0}
 --- !u!1 &5561412107921196048
 GameObject:
@@ -4841,7 +5011,8 @@ MonoBehaviour:
       \u0432 \u0448\u043B\u044F\u043F\u0435"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#00195F>Only the host has access to the memories of other souls.
+      And she is the first soul imprisoned in the hat.
     Object: {fileID: 0}
 --- !u!1 &5565611758714529795
 GameObject:
@@ -5079,12 +5250,11 @@ MonoBehaviour:
       \u043D\u0430\u0436\u0430\u0442\u044C \u041B\u041A\u041C \u0438 \u041F\u041A\u041C
       \u043E\u0434\u043D\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u043E, \u0447\u0442\u043E\u0431\u044B
       \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u044B\u0439
-      \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442"
+      \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442."
     Object: {fileID: 0}
   - Language: English
-    Text: "\u0421\u043F\u0440\u0430\u0432\u0430 \u0435\u0441\u0442\u044C \u0431\u043E\u043B\u043E\u0442\u043E
-      \u0438 \u043B\u043E\u0433\u043E\u0432\u043E \u043E\u0433\u0440\u043E\u043C\u043D\u043E\u0433\u043E
-      \u0441\u043B\u0438\u0437\u043D\u044F"
+    Text: Spells and effects can be combined, which is very important! For example,
+      try pressing LMB and RMB at the same time to get an interesting result.
     Object: {fileID: 0}
 --- !u!1 &6007984418891965907
 GameObject:
@@ -5189,7 +5359,7 @@ MonoBehaviour:
       \u043F\u043E\u043A\u0438\u0434\u0430\u0442\u044C?"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#005500>Why should we leave it?
     Object: {fileID: 0}
 --- !u!1 &6196607124867960967
 GameObject:
@@ -5248,6 +5418,58 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: Russian
     Text: "\u0418\u0433\u0440\u0430 \u0441\u043E\u0437\u0434\u0430\u043D\u0430\nD_One\nTheFireOwl\nMrQwait"
+    Object: {fileID: 0}
+--- !u!1 &6248553652376243484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3792621426399010580}
+  - component: {fileID: 3802360485083802334}
+  m_Layer: 0
+  m_Name: Task4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3792621426399010580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6248553652376243484}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3802360485083802334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6248553652376243484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u0421\u0432\u0435\u0440\u043D\u0438 \u043D\u0430\u043B\u0435\u0432\u043E"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Turn left
     Object: {fileID: 0}
 --- !u!1 &6252509649652936938
 GameObject:
@@ -5400,13 +5622,13 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "\u0427\u0442\u043E\u0436, \u044F \u043D\u0435 \u0445\u043E\u0442\u0435\u043B\u0430
+    Text: "\u0427\u0442\u043E \u0436, \u044F \u043D\u0435 \u0445\u043E\u0442\u0435\u043B\u0430
       \u043D\u0438\u043A\u043E\u0433\u043E \u0443\u0431\u0438\u0432\u0430\u0442\u044C,
       \u043D\u043E \u043F\u043E\u0445\u043E\u0436\u0435 \u043F\u0440\u0438\u0434\u0451\u0442\u0441\u044F
-      \u0441\u0434\u0435\u043B\u0430\u0442\u044C \u0438\u0441\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435"
+      \u0441\u0434\u0435\u043B\u0430\u0442\u044C \u0438\u0441\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435."
     Object: {fileID: 0}
   - Language: English
-    Text: gwagawg
+    Text: Well, I didn't want to kill anyone, but I guess I'll have to make an exception.
     Object: {fileID: 0}
 --- !u!1 &6551171095924296385
 GameObject:
@@ -5572,10 +5794,11 @@ MonoBehaviour:
       \u043C\u044B. \u042F \u0432\u0438\u0436\u0443 \u043F\u043E\u0441\u0435\u043B\u0435\u043D\u0438\u0435,
       \u043C\u043D\u0435 \u043D\u0443\u0436\u043D\u043E \u043E\u043F\u0440\u043E\u0441\u0438\u0442\u044C
       \u0436\u0438\u0442\u0435\u043B\u0435\u0439 \u0438 \u0443\u0437\u043D\u0430\u0442\u044C
-      \u0433\u0434\u0435 \u043C\u044B \u0441\u0435\u0439\u0447\u0430\u0441 \u043D\u0430\u0445\u043E\u0434\u0438\u043C\u0441\u044F"
+      \u0433\u0434\u0435 \u043C\u044B \u0441\u0435\u0439\u0447\u0430\u0441 \u043D\u0430\u0445\u043E\u0434\u0438\u043C\u0441\u044F."
     Object: {fileID: 0}
   - Language: English
-    Text: gwagwagwa
+    Text: First, I need to figure out where we are. I see a settlement, I need to
+      interview the residents and find out where we are now.
     Object: {fileID: 0}
 --- !u!1 &6732053349895035975
 GameObject:
@@ -5687,6 +5910,58 @@ MonoBehaviour:
     Text: <color=#ad8015>She was interested in magic from an early age, and by the
       time she reached adulthood she could do things that not every magician can
       do.
+    Object: {fileID: 0}
+--- !u!1 &6886661900922442122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 424465016467559643}
+  - component: {fileID: 3695876198373968560}
+  m_Layer: 0
+  m_Name: Task2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &424465016467559643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6886661900922442122}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3695876198373968560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6886661900922442122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u0414\u043E\u0431\u0435\u0440\u0438\u0441\u044C \u0434\u043E \u0434\u0435\u0440\u0435\u0432\u043D\u0438"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Get to the village
     Object: {fileID: 0}
 --- !u!1 &7184165426667114304
 GameObject:
@@ -5860,12 +6135,10 @@ MonoBehaviour:
       \u0443\u0432\u043E\u0440\u0430\u0447\u0438\u0432\u044B\u0432\u0430\u0442\u044C\u0441\u044F
       \u043E\u0442 \u0432\u0440\u0430\u0436\u0435\u0441\u043A\u0438\u0445 \u0430\u0442\u0430\u043A
       \u0438 \u043F\u0440\u0435\u043E\u0434\u043E\u043B\u0435\u0432\u0430\u0442\u044C
-      \u043F\u0440\u0435\u043F\u044F\u0442\u0441\u0442\u0432\u0438\u044F"
+      \u043F\u0440\u0435\u043F\u044F\u0442\u0441\u0442\u0432\u0438\u044F."
     Object: {fileID: 0}
   - Language: English
-    Text: "C - \u0442\u0435\u043B\u0435\u043F\u043E\u0440\u0442, \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442
-      \u0443\u0432\u043E\u0440\u0430\u0447\u0438\u0432\u044B\u0432\u0430\u0442\u044C\u0441\u044F
-      \u043E\u0442 \u0432\u0430\u0440\u0436\u0435\u0441\u043A\u0438\u0445 \u0430\u0442\u0430\u043A"
+    Text: C - teleport, allows you to dodge enemy attacks and overcome obstacles.
     Object: {fileID: 0}
 --- !u!1 &7487850897878754761
 GameObject:
@@ -6030,10 +6303,10 @@ MonoBehaviour:
   entries:
   - Language: Russian
     Text: "\u041C\u043E\u0433 \u0431\u044B \u043D\u0430\u0437\u044B\u0432\u0430\u0442\u044C
-      \u043C\u0435\u043D\u044F \u043F\u043E \u0438\u043C\u0435\u043D\u0438"
+      \u043C\u0435\u043D\u044F \u043F\u043E \u0438\u043C\u0435\u043D\u0438."
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: You could have called me by name.
     Object: {fileID: 0}
 --- !u!1 &7642645004433607490
 GameObject:
@@ -6088,7 +6361,60 @@ MonoBehaviour:
       \u043C\u0430\u0433\u0438\u0435\u0439?"
     Object: {fileID: 0}
   - Language: English
-    Text: awgagwgaw
+    Text: <color=#005500>It's been so many years, do you remember how to use magic?
+    Object: {fileID: 0}
+--- !u!1 &7743722186430733436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2297774582910510555}
+  - component: {fileID: 5673015200668044499}
+  m_Layer: 0
+  m_Name: Task6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2297774582910510555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7743722186430733436}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5673015200668044499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7743722186430733436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u0412\u044B\u0439\u0434\u0438 \u0438\u0437 \u043E\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043E\u0440\u0438\u0438
+      \u0438 \u0438\u0434\u0438 \u043D\u0430\u043F\u0440\u0430\u0432\u043E"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Exit the observatory and go right
     Object: {fileID: 0}
 --- !u!1 &7767102184411190524
 GameObject:
@@ -6189,12 +6515,12 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "\u0425\u0445...\u043C\u043C..\u044D\u0442\u043E \u0436\u0435 \u043D\u0430\u0434\u043E
+    Text: "\u0425\u0445... \u041C\u043C... \u042D\u0442\u043E \u0436\u0435 \u043D\u0430\u0434\u043E
       \u0431\u044B\u043B\u043E \u0434\u043E\u0434\u0443\u043C\u0430\u0442\u044C\u0441\u044F
       \u043F\u0440\u044B\u0433\u043D\u0443\u0442\u044C \u0432 \u043F\u0440\u043E\u043F\u0430\u0441\u0442\u044C..."
     Object: {fileID: 0}
   - Language: English
-    Text: gawgagagwa
+    Text: Huh... Mmm... You should've thought of jumping into the abyss...
     Object: {fileID: 0}
 --- !u!1 &7946292836585397136
 GameObject:
@@ -6408,7 +6734,7 @@ MonoBehaviour:
   entries:
   - Language: Russian
     Text: "<color=#00195F>\u0418 \u044D\u0442\u043E \u0432\u0435\u0441\u044C \u0442\u0432\u043E\u0439
-      \u043F\u043B\u0430\u043D? \u0417\u0430\u0448\u0438\u0431\u0438\u0441\u044C.
+      \u043F\u043B\u0430\u043D? \u041F\u0440\u0435\u043A\u0440\u0430\u0441\u043D\u043E.
       \u0412\u0435\u0434\u044C\u043C\u0430 \u043F\u0440\u043E\u0441\u0442\u043E \u0445\u043E\u0434\u0438\u0442,
       \u0443\u0431\u0438\u0432\u0430\u0435\u0442 \u0432\u0441\u0435\u0445 \u043F\u043E\u0434\u0440\u044F\u0434
       \u0438 \u0434\u0430\u0436\u0435 \u043D\u0435 \u0438\u043C\u0435\u0435\u0442
@@ -6417,7 +6743,9 @@ MonoBehaviour:
       \u0447\u0442\u043E \u0435\u0439 \u0434\u0435\u043B\u0430\u0442\u044C."
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#00195F>And that's your whole plan? Great. The witch just goes around
+      killing everyone and doesn't even have any clear idea what she's supposed to
+      do.
     Object: {fileID: 0}
 --- !u!1 &8161533638045023802
 GameObject:
@@ -6470,7 +6798,7 @@ MonoBehaviour:
       \u0427\u0442\u043E \u0437\u0434\u0435\u0441\u044C \u043F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u043E?"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: <color=#005500>Eerie place. What happened here?
     Object: {fileID: 0}
 --- !u!1 &8290517454625481788
 GameObject:
@@ -6797,20 +7125,12 @@ MonoBehaviour:
       \u0442\u0435\u0431\u044F \u0434\u043B\u044F \u043F\u043E\u0445\u0438\u0449\u0435\u043D\u0438\u044F
       \u0448\u043B\u044F\u043F\u044B, \u0442\u043E \u0435\u0441\u0442\u044C \u043C\u0435\u043D\u044F,
       \u043D\u0430\u0432\u0435\u0440\u043D\u044F\u043A\u0430 \u0437\u043D\u0430\u044E\u0442
-      \u043E\u0431\u043E \u043C\u043D\u0435 \u0438 \u043F\u043E\u044D\u0442\u043E\u043C\u0443
-      \u0441\u0442\u043E\u0438\u0442 \u0438\u0445 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C.
-      \u0410 \u0435\u0449\u0451 \u044F \u043D\u0435 \u043F\u043E\u043D\u0438\u043C\u0430\u044E,
-      \u043F\u043E\u0447\u0435\u043C\u0443 \u0442\u044B \u043D\u0435 \u0443\u0437\u043D\u0430\u0432\u0430\u043B
-      \u043D\u0438\u043A\u0430\u043A\u0438\u0445 \u043F\u043E\u0434\u0440\u043E\u0431\u043D\u043E\u0441\u0442\u0435\u0439
-      \u0438 \u0434\u0443\u043C\u0430\u043B, \u0447\u0442\u043E \u043C\u043E\u0436\u043D\u043E
-      \u0442\u0430\u043A \u043F\u0440\u043E\u0441\u0442\u043E \u043F\u0440\u0438\u043F\u043B\u044B\u0442\u044C
-      \u043D\u0430 \u043E\u0441\u0442\u0440\u043E\u0432 \u0432\u043E\u043B\u0448\u0435\u0431\u043D\u0438\u043A\u043E\u0432
-      \u0438 \u0443\u043A\u0440\u0430\u0441\u0442\u044C \u044F\u043A\u043E\u0431\u044B
-      \u043D\u0435 \u043F\u043E\u0434\u043E\u0437\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u0443\u044E
-      \u0437\u0430\u043F\u0435\u0440\u0442\u0443\u044E \u0448\u043B\u044F\u043F\u0443."
+      \u043E\u0431\u043E \u043C\u043D\u0435, \u0438 \u043F\u043E\u044D\u0442\u043E\u043C\u0443
+      \u0441\u0442\u043E\u0438\u0442 \u0438\u0445 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C."
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: The people who commissioned you to kidnap the hat, meaning me, probably
+      know about me, so it's worth checking them out.
     Object: {fileID: 0}
 --- !u!1 &8617089559653724885
 GameObject:
@@ -6966,12 +7286,10 @@ MonoBehaviour:
   - Language: Russian
     Text: "V - \u0442\u0435\u043B\u0435\u043A\u0438\u043D\u0435\u0437, \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442
       \u043F\u043E\u0434\u043D\u0438\u043C\u0430\u0442\u044C \u0438 \u0431\u0440\u043E\u0441\u0430\u0442\u044C
-      \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B"
+      \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B."
     Object: {fileID: 0}
   - Language: English
-    Text: "V - \u0442\u0435\u043B\u0435\u043A\u0438\u043D\u0435\u0437, \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442
-      \u043F\u043E\u0434\u043D\u0438\u043C\u0430\u0442\u044C \u0438 \u0431\u0440\u043E\u0441\u0430\u0442\u044C
-      \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B"
+    Text: V - telekinesis, allows you to lift and throw various objects.
     Object: {fileID: 0}
 --- !u!1 &8729471797067064174
 GameObject:
@@ -7026,7 +7344,7 @@ MonoBehaviour:
       \u0434\u043E \u0433\u043E\u043B\u0435\u043C\u0430"
     Object: {fileID: 0}
   - Language: English
-    Text: 
+    Text: Enough! If you keep talking, we won't get to the golem.
     Object: {fileID: 0}
 --- !u!1 &8805552284706666370
 GameObject:

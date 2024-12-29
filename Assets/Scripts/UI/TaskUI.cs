@@ -1,3 +1,4 @@
+using Lean.Localization;
 using UnityEngine;
 using Zenject;
 
@@ -20,8 +21,11 @@ public class TaskUI : MonoBehaviour
         Instance = this;
     }
 
-    public void ChangeTask(string task)
+    public void ChangeTask(string taskId)
     {
+        //currentTask = task;
+        //_animationsController.ChangeTask(taskUI, task);
+        string task = LeanLocalization.GetTranslationText(taskId);
         currentTask = task;
         _animationsController.ChangeTask(taskUI, task);
     }
