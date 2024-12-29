@@ -18,10 +18,6 @@ namespace Enemies.EnemyUnits
         [SerializeField] private GameObject explosionSphereEffect;
         [SerializeField] private Transform explosionPoint;
 
-        [SerializeField] private GameObject laserBeam;
-
-        private GameObject _currentBeam;
-
         private List<IAction> _attackActions = new();
         
         private IAction _deathAction;
@@ -33,18 +29,14 @@ namespace Enemies.EnemyUnits
             _enemy = new Enemy(_agent, transform, animator, this);
             _walkAction = new Idle();
             _chaseAction = new ChaseWithTrigger(_player, ActivateGolem);
-            
-            _attackAction = new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", DeactivateAttackArea, ActivateAttackArea);
+
+            _attackAction = new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking1", Explode);
 
             _deathAction = new Death("isDead");
 
-            //_attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking1", Explode));
-            //_attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", DeactivateAttackArea, ActivateAttackArea));
-            _attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking3", DespawnLaser, SpawnLaser));
-
-            animator.enabled = false;
-
-            StartCoroutine(UpdateAttack());
+            _attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking1", Explode));
+            _attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", ActivateAttackArea, DeactivateAttackArea));
+            _attackActions.Add(new Attack(_player, timeBetweenAttacks, "isAttacking3"));
         }
 
         private IEnumerator UpdateAttack()
@@ -52,29 +44,21 @@ namespace Enemies.EnemyUnits
             while (!_isDead)
             {
                 _attackAction = _attackActions[Random.Range(0, _attackActions.Count)];
+                
                 yield return new WaitForSeconds(5);
+                
+                if (Random.Range(0, 3) == 0) _chaseAction = new Attack(_player, timeBetweenAttacks, "isAttacking3");
+                else _chaseAction = new Chase(_player);
             }
         }
 
         private void ActivateGolem()
         {
+            animator.SetTrigger("isAwake");
             _centerPoint = Instantiate(centerPointPrefab, transform.position, Quaternion.identity).transform;
             _walkAction = new WalkInRadius(walkPointRange, _centerPoint);
-        }
-
-        private void SpawnLaser() => StartCoroutine(SpawningLaser());
-
-        private IEnumerator SpawningLaser()
-        {
-            yield return new WaitForSeconds(2);
-            _currentBeam = Instantiate(laserBeam, explosionPoint.position, Quaternion.identity);
-            _currentBeam.transform.parent = explosionPoint.transform; 
-        }
-
-        private void DespawnLaser()
-        {
-            Destroy(_currentBeam);
-            print("despawn");
+            
+            StartCoroutine(UpdateAttack());
         }
         
         private void Explode()

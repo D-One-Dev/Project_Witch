@@ -157,12 +157,12 @@ MonoBehaviour:
   _SR: {fileID: 2879248576268380823}
   frontSprite: {fileID: 21300000, guid: 5a9ee42ef771ae24fa699fd2c6cf8f6c, type: 3}
   backSprite: {fileID: 21300000, guid: bac9e2fc32e00a44592c5a7c77dff5f1, type: 3}
-  leftSprite: {fileID: 21300000, guid: 9b499c0acf7763a41b94dc31c819e3f2, type: 3}
-  rightSprite: {fileID: 21300000, guid: fe2e5da2373a0d340ac79ea2971809d8, type: 3}
+  leftSprite: {fileID: 21300000, guid: 515493e302502f04fb79b8c30a14f193, type: 3}
+  rightSprite: {fileID: 21300000, guid: 9b499c0acf7763a41b94dc31c819e3f2, type: 3}
   frontN: {fileID: 2800000, guid: 9f43c21ca06f9564ca6b81e8494c9ed0, type: 3}
   backN: {fileID: 2800000, guid: 4d5570bc405674c4fb93e6b847088412, type: 3}
-  leftN: {fileID: 2800000, guid: b882c163e600dff4fa009e70539bc244, type: 3}
-  rightN: {fileID: 2800000, guid: 5231810bdf90c5e4593e4df78a1b2d7d, type: 3}
+  leftN: {fileID: 2800000, guid: 889f2dc763230534dbba09075162baa4, type: 3}
+  rightN: {fileID: 2800000, guid: 2b0c67202022ac64db0f5d701b85d611, type: 3}
 --- !u!95 &4602600935196817277
 Animator:
   serializedVersion: 5
