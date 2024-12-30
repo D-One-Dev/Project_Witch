@@ -150,6 +150,7 @@ public class SavesController : IInitializable
             if(file.rightSpell != null) _newSpellCaster.RightSpell = file.rightSpell;
             if(file.leftEffect != null) _newSpellCaster.LeftEffect = file.leftEffect;
             if(file.rightEffect != null) _newSpellCaster.RightEffect = file.rightEffect;
+            _newSpellCaster.UpdateSpellIcons();
             _playerMoney.SetBalance(file.money);
             TaskUI.Instance.ChangeTask(file.currentTask);
             return file;
@@ -228,7 +229,6 @@ public class SavesController : IInitializable
 
     public void SaveBoughtSpells()
     {
-        Debug.Log(121221);
         ShopSpells file = _boughtSpellWriter.spells;
         _serializer.TrySerialize(file, out fsData data);
         File.WriteAllText(Application.dataPath + "/boughtSpells.savefile", data.ToString());
