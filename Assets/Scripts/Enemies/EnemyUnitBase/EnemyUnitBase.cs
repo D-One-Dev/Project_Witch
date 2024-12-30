@@ -20,21 +20,28 @@ namespace Enemies.EnemyUnitBase
         
         protected bool _playerInSightRange, _playerInAttackRange;
         protected bool _isDead;
+        
+        public bool IsEnemySystemDeactivated;
 
         [Inject(Id = "PlayerTransform")]
         protected readonly Transform _player;
 
         protected NavMeshAgent _agent;
+        protected EntityHealth Health;
 
         protected Enemy _enemy;
         
         protected IAction _currentAction;
         protected IAction _walkAction, _chaseAction, _attackAction;
 
-        private void Start()
+        private void Awake()
         {
             _agent = GetComponent<NavMeshAgent>();
+            Health = GetComponent<EntityHealth>();
+        }
 
+        private void Start()
+        {
             InitEnemy();
         }
 
@@ -42,12 +49,15 @@ namespace Enemies.EnemyUnitBase
 
         private void Update()
         {
-            _playerInSightRange = Physics.CheckSphere(transform.position, sightRange, playerLayer);
-            _playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, playerLayer);
+            if (!IsEnemySystemDeactivated)
+            {
+                _playerInSightRange = Physics.CheckSphere(transform.position, sightRange, playerLayer);
+                _playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, playerLayer);
             
-            CheckState();
+                CheckState();
             
-            _enemy.DoAction(_currentAction);
+                _enemy.DoAction(_currentAction);
+            }
         }
 
         protected virtual void CheckState()
@@ -74,7 +84,6 @@ namespace Enemies.EnemyUnitBase
             if (deathParticles != null)
             {
                 Instantiate(deathParticles, transform.position, Quaternion.identity);
-                //print("spawnedEffect");
             }
         }
 
@@ -86,6 +95,34 @@ namespace Enemies.EnemyUnitBase
             Gizmos.DrawWireSphere(transform.position, sightRange);
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, attackRange);
+        }
+
+        public void ActivateEnemyUnit()
+        {
+            IsEnemySystemDeactivated = false;
+            Health.EnableHealth();
+        }
+
+        public void DeactivateEnemyUnit()
+        {
+            IsEnemySystemDeactivated = true;
+            Health.DisableHealth();
+        }
+
+        protected void ChangeEnemyTag(string _tag)
+        {
+            tag = _tag;
+            
+            ChangeTag(transform, _tag);
+        }
+        
+        private void ChangeTag(Transform parent, string _tag)
+        {
+            foreach (Transform child in parent)
+            {
+                child.tag = _tag;
+                ChangeTag(child, _tag);
+            }
         }
     }
 }

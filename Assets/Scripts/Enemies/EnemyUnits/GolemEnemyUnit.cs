@@ -18,6 +18,8 @@ namespace Enemies.EnemyUnits
         [SerializeField] private GameObject explosionSphereEffect;
         [SerializeField] private Transform explosionPoint;
 
+        [SerializeField] private EnemyBeamSpawning enemyBeamSpawning;
+
         private List<IAction> _attackActions = new();
         
         private IAction _deathAction;
@@ -26,15 +28,17 @@ namespace Enemies.EnemyUnits
         
         protected override void InitEnemy()
         {
+            ChangeEnemyTag("Untagged");
+            
             _enemy = new Enemy(_agent, transform, animator, this);
             _walkAction = new Idle();
             _chaseAction = new ChaseWithTrigger(_player, ActivateGolem);
 
-            _attackAction = new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking1", Explode);
+            _attackAction = new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking1", null, Explode);
 
             _deathAction = new Death("isDead");
 
-            _attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking1", Explode));
+            _attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking1", null, Explode));
             _attackActions.Add(new AttackWithCallback(_player, timeBetweenAttacks, "isAttacking2", ActivateAttackArea, DeactivateAttackArea));
             _attackActions.Add(new Attack(_player, timeBetweenAttacks, "isAttacking3"));
         }
@@ -45,7 +49,7 @@ namespace Enemies.EnemyUnits
             {
                 _attackAction = _attackActions[Random.Range(0, _attackActions.Count)];
                 
-                yield return new WaitForSeconds(5);
+                yield return new WaitForSeconds(3);
                 
                 if (Random.Range(0, 3) == 0) _chaseAction = new Attack(_player, timeBetweenAttacks, "isAttacking3");
                 else _chaseAction = new Chase(_player);
@@ -54,6 +58,8 @@ namespace Enemies.EnemyUnits
 
         private void ActivateGolem()
         {
+            ChangeEnemyTag("Enemy");
+            
             animator.SetTrigger("isAwake");
             _centerPoint = Instantiate(centerPointPrefab, transform.position, Quaternion.identity).transform;
             _walkAction = new WalkInRadius(walkPointRange, _centerPoint);
@@ -105,6 +111,8 @@ namespace Enemies.EnemyUnits
             base.Death();
             StopAllCoroutines();
             _currentAction = _deathAction;
+            enemyBeamSpawning.DespawnLaser();
+            ChangeEnemyTag("Untagged");
             print(_currentAction);
         }
     }

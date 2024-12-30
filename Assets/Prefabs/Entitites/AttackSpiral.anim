@@ -19006,6 +19006,14 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 1.4666667
+    functionName: PlaySoundWithRandomPitch
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 359835230b62e2f42b5bdd07ba99a0fa,
+      type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 1.5
     functionName: ActivateLaser
     data: 

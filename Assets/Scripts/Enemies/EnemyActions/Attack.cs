@@ -75,7 +75,7 @@ namespace Enemies.EnemyActions
                     }
                     else
                     {
-                        _timeForAttack = Enemy.Animator.GetNextAnimatorClipInfo(0).Length;
+                        _timeForAttack = Enemy.Animator.GetNextAnimatorStateInfo(0).normalizedTime;
                     }
                 }
             }
@@ -86,7 +86,7 @@ namespace Enemies.EnemyActions
         protected IEnumerator Attacking()
         {
             if (_timeForAttack == 0)
-                yield return new WaitForSeconds(Enemy.Animator.GetCurrentAnimatorClipInfo(0).Length + 0.1f);
+                yield return new WaitForSeconds(Enemy.Animator.GetCurrentAnimatorStateInfo(0).normalizedTime + 0.1f);
             else yield return new WaitForSeconds(_timeForAttack);
         }
     }
@@ -133,7 +133,7 @@ namespace Enemies.EnemyActions
                     }
                     else
                     {
-                        _timeForAttack = Enemy.Animator.GetNextAnimatorClipInfo(0).Length;
+                        _timeForAttack = Enemy.Animator.GetNextAnimatorStateInfo(0).normalizedTime;
                     }
                 }
             }
@@ -143,9 +143,9 @@ namespace Enemies.EnemyActions
         
         protected IEnumerator Attacking()
         {
-            Debug.Log("attack " + Enemy.Animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
+            Debug.Log("attack " + Enemy.Animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
             if (_timeForAttack == 0)
-                yield return new WaitForSeconds(Enemy.Animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
+                yield return new WaitForSeconds(Enemy.Animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
             else yield return new WaitForSeconds(_timeForAttack);
             
             

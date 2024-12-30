@@ -16,6 +16,8 @@ public class EntityHealth : MonoBehaviour, IDamageable
     protected AnimationsController _animationsController;
 
     protected bool isDead;
+
+    protected bool isHealthDisabled;
     [SerializeField] protected bool isDestroyAfterDead = true;
 
     protected Coroutine surfaceDamageCoroutine = null;
@@ -63,6 +65,8 @@ public class EntityHealth : MonoBehaviour, IDamageable
 
     private void Triggered(Collider other)
     {
+        if (isHealthDisabled) return;
+        
         if (other.gameObject.CompareTag("DamagingSurface"))
         {
             TakeSurfaceDamage(other.gameObject.GetComponent<DamagingSurface>().damage);
@@ -73,6 +77,8 @@ public class EntityHealth : MonoBehaviour, IDamageable
 
     public virtual void TakeDamage(int damage, DamageType damageType, bool isElementStrengthened)
     {
+        if (isHealthDisabled) return;
+        
         int coef = isElementStrengthened ? 4 : 2;
         if((damageResistType & damageType) != DamageType.None) damage /= coef;
         if ((damageVulnerabilityType & damageType) != DamageType.None) damage *= coef;
@@ -97,6 +103,8 @@ public class EntityHealth : MonoBehaviour, IDamageable
 
     public void TakeSurfaceDamage(int damage)
     {
+        if (isHealthDisabled) return;
+        
         if (surfaceDamageCoroutine == null)
         {
             surfaceDamageCoroutine = StartCoroutine(SurfaceDamageCooldown());
@@ -131,5 +139,15 @@ public class EntityHealth : MonoBehaviour, IDamageable
         OnDeath.Invoke();
         if (gameObject.TryGetComponent(out EnemyMoneyCost component)) component.DropMoney();
         if (isDestroyAfterDead) Destroy(gameObject);
+    }
+
+    public void EnableHealth()
+    {
+        isHealthDisabled = false;
+    }
+    
+    public void DisableHealth()
+    {
+        isHealthDisabled = true;
     }
 }
