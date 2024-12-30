@@ -13,11 +13,14 @@ public class CameraLook : ITickable, IInitializable
     private float _xRotation;
     private float _currentSens;
     private Controls _controls;
+    private SavesController _savesController;
+    private float loadedSens;
 
     [Inject]
-    public void Construct(CharacterController characterController, Controls controls)
+    public void Construct(CharacterController characterController, Controls controls, SavesController savesController)
     {
         _characterController = characterController;
+        _savesController = savesController;
         _controls = controls;
         PlayerHealth.OnPlayerDeath += DisableControls;
         _controls.Enable();
@@ -32,14 +35,16 @@ public class CameraLook : ITickable, IInitializable
             _cam.localRotation = Quaternion.Euler(playerRotX, 0f, 0f);
             _xRotation = _cam.localRotation.eulerAngles.x;
         }
+        UpdateMouseSens();
+
     }
     public void Tick()
     {
         if (_characterController.enabled)
         {
             Vector2 mouseDelta = _controls.Gameplay.MouseDelta.ReadValue<Vector2>();
-            float mouseX = mouseDelta.x * _currentSens;
-            float mouseY = mouseDelta.y * _currentSens;
+            float mouseX = mouseDelta.x * _currentSens * loadedSens;
+            float mouseY = mouseDelta.y * _currentSens * loadedSens;
             _xRotation -= mouseY;
             _xRotation = Mathf.Clamp(_xRotation, -90f, 90f);
 
@@ -59,5 +64,11 @@ public class CameraLook : ITickable, IInitializable
     private void DisableControls()
     {
         _controls.Disable();
+    }
+
+    public void UpdateMouseSens()
+    {
+        SavesController.SettingsFile file =  _savesController.LoadSettings();
+        loadedSens = file.mouseSens;
     }
 }

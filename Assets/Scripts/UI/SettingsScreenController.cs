@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using VolFx;
 using Zenject;
 using Lean.Localization;
+using System;
 
 public class SettingsScreenController : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class SettingsScreenController : MonoBehaviour
 
     [SerializeField] private TMP_Text musicText;
     [SerializeField] private Slider musicSlider;
+
+    [SerializeField] private TMP_Text mouseSensText;
+    [SerializeField] private Slider mouseSensSlider;
 
     [SerializeField] private TMP_Dropdown graphicsDropdown;
     [SerializeField] private TMP_Dropdown voiceLanguageDropdown;
@@ -23,6 +27,7 @@ public class SettingsScreenController : MonoBehaviour
     private SavesController _savesController;
     private int soundVolume = -1;
     private int musicVolume = -1;
+    private float mouseSens = -1f;
     private int graphics = -1;
     private int voiceLanguage = -1;
     private int textLanguage = -1;
@@ -59,6 +64,13 @@ public class SettingsScreenController : MonoBehaviour
         SaveSettings();
     }
 
+    public void OnMouseSensChanged()
+    {
+        mouseSens = mouseSensSlider.value;
+        mouseSensText.text = LeanLocalization.GetTranslationText("MouseSensSetting") + Math.Round(mouseSens, 1);
+        SaveSettings();
+    }
+
     public void OnGraphicsChanged()
     {
         graphics = graphicsDropdown.value;
@@ -87,6 +99,7 @@ public class SettingsScreenController : MonoBehaviour
         }
         soundText.text = LeanLocalization.GetTranslationText("SoundSetting") + soundVolume;
         musicText.text = LeanLocalization.GetTranslationText("MusicSetting") + musicVolume;
+        mouseSensText.text = LeanLocalization.GetTranslationText("MouseSensSetting") + Math.Round(mouseSens, 1);
         SaveSettings();
     }
 
@@ -104,12 +117,12 @@ public class SettingsScreenController : MonoBehaviour
 
     public void SaveSettings()
     {
-        _savesController.SaveSettings(soundVolume, musicVolume, graphics, voiceLanguage, textLanguage, windowType, VSync);
+        _savesController.SaveSettings(soundVolume, musicVolume, graphics, voiceLanguage, textLanguage, windowType, VSync, mouseSens);
     }
 
     public void LoadSettings()
     {
-        if (!File.Exists(Application.dataPath + "/settings.savefile")) _savesController.SaveSettings(50, 50, 3, 0, 0, 0, 0);
+        if (!File.Exists(Application.dataPath + "/settings.savefile")) _savesController.SaveSettings(50, 50, 3, 0, 0, 0, 0, 1f);
         
         SavesController.SettingsFile file = _savesController.LoadSettings();
         
@@ -122,12 +135,15 @@ public class SettingsScreenController : MonoBehaviour
             textLanguage = file.textLanguage;
             windowType = file.windowType;
             VSync = file.VSync;
+            mouseSens = file.mouseSens;
 
             if (soundText) soundText.text = LeanLocalization.GetTranslationText("SoundSetting") + soundVolume;
             if (musicText) musicText.text = LeanLocalization.GetTranslationText("MusicSetting") + musicVolume;
+            if (mouseSensText) mouseSensText.text = LeanLocalization.GetTranslationText("MouseSensSetting") + Math.Round(mouseSens, 1);
 
             if (soundSlider) soundSlider.value = soundVolume;
             if (musicSlider) musicSlider.value = musicVolume;
+            if (mouseSensSlider) mouseSensSlider.value = mouseSens;
 
             if (graphicsDropdown) graphicsDropdown.value = graphics;
             if (voiceLanguageDropdown) voiceLanguageDropdown.value = voiceLanguage;

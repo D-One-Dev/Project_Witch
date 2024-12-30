@@ -60,6 +60,7 @@ public class SavesController : IInitializable
         public int textLanguage;
         public int windowType;
         public int VSync;
+        public float mouseSens;
     }
 
     public class ShopItemsFile
@@ -168,7 +169,7 @@ public class SavesController : IInitializable
         return 0;
     }
 
-    public void SaveSettings(int soundVolume, int musicVolume, int graphics, int voiceLanguage, int textLanguage, int windowType, int VSync)
+    public void SaveSettings(int soundVolume, int musicVolume, int graphics, int voiceLanguage, int textLanguage, int windowType, int VSync, float mouseSens)
     {
         SettingsFile file = new SettingsFile();
         if (file.soundVolume != -1) file.soundVolume = soundVolume;
@@ -185,6 +186,8 @@ public class SavesController : IInitializable
         else file.windowType = 0;
         if (file.VSync != -1) file.VSync = VSync;
         else file.VSync = 0;
+        if(file.mouseSens != -1f) file.mouseSens = mouseSens;
+        else file.mouseSens = 1f;
         string json = JsonUtility.ToJson(file);
         File.WriteAllText(Application.dataPath + "/settings.savefile", json);
 
