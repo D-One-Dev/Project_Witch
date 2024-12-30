@@ -186,13 +186,14 @@ namespace Enemies.EnemyUnits
             _agent.baseOffset = 0.73f;
             _currentAction = _deathAction;
             lightEffect.SetActive(false);
-            shieldSphere.SetActive(false);
             MusicController.Instance.DisableMusic();
             defeatTrigger.SetActive(true);
         }
 
         public void Absorption()
         {
+            shieldSphere.SetActive(false);
+            
             for (int i = 0; i < dropParts.Length; i++)
             {
                 Instantiate(dropParts[i], transform.position, Quaternion.identity);
