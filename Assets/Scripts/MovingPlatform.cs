@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
@@ -6,19 +7,50 @@ public class MovingPlatform : MonoBehaviour
     [SerializeField] private Transform endPoint;
 
     [SerializeField] private float speed;
+    [SerializeField] private float timeForWaitOnPoint;
+    
     private float _currentProgress;
 
-    private void Update()
+    private bool _isPlatformStay;
+
+    private void FixedUpdate()
     {
-        _currentProgress += Time.deltaTime * speed;
+        if (_isPlatformStay) return;
+        
+        _currentProgress += Time.fixedDeltaTime * speed;
         
         transform.position = Vector3.Lerp(startPoint.position, endPoint.position, _currentProgress);
 
         if (_currentProgress >= 1f)
         {
-            _currentProgress = 0f;
+            _isPlatformStay = true;
+            
+            StartCoroutine(Stay());
 
+            _currentProgress = 0f;
             (startPoint, endPoint) = (endPoint, startPoint);
+        }
+    }
+
+    private IEnumerator Stay()
+    {
+        yield return new WaitForSeconds(timeForWaitOnPoint);
+        _isPlatformStay = false;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            other.transform.SetParent(transform);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            other.transform.SetParent(null);
         }
     }
 }
