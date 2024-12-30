@@ -21,22 +21,27 @@ namespace Enemies.EnemyUnitBase
         protected bool _playerInSightRange, _playerInAttackRange;
         protected bool _isDead;
         
-        protected bool IsEnemySystemDeactivated;
+        public bool IsEnemySystemDeactivated;
 
         [Inject(Id = "PlayerTransform")]
         protected readonly Transform _player;
 
         protected NavMeshAgent _agent;
+        protected EntityHealth Health;
 
         protected Enemy _enemy;
         
         protected IAction _currentAction;
         protected IAction _walkAction, _chaseAction, _attackAction;
 
-        private void Start()
+        private void Awake()
         {
             _agent = GetComponent<NavMeshAgent>();
+            Health = GetComponent<EntityHealth>();
+        }
 
+        private void Start()
+        {
             InitEnemy();
         }
 
@@ -92,8 +97,32 @@ namespace Enemies.EnemyUnitBase
             Gizmos.DrawWireSphere(transform.position, attackRange);
         }
 
-        public void ActivateEnemyUnit() => IsEnemySystemDeactivated = false;
+        public void ActivateEnemyUnit()
+        {
+            IsEnemySystemDeactivated = false;
+            Health.EnableHealth();
+        }
+
+        public void DeactivateEnemyUnit()
+        {
+            IsEnemySystemDeactivated = true;
+            Health.DisableHealth();
+        }
+
+        protected void ChangeEnemyTag(string _tag)
+        {
+            tag = _tag;
+            
+            ChangeTag(transform, _tag);
+        }
         
-        public void DeactivateEnemyUnit() => IsEnemySystemDeactivated = true;
+        private void ChangeTag(Transform parent, string _tag)
+        {
+            foreach (Transform child in parent)
+            {
+                child.tag = _tag;
+                ChangeTag(child, _tag);
+            }
+        }
     }
 }

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,18 +9,30 @@ namespace Enemies
         [SerializeField] private GolemWave[] waves;
 
         [SerializeField] private UnityEvent onStartBossFight;
+        [SerializeField] private UnityEvent onEndBossFight;
+
+        [SerializeField] private GameObject explosionEffect;
         
         private int _currentWave = -1;
-        private int _currentWaveEnemiesCount;
+
+        private int _currentEnemiesWaveCount;
+        private List<int> _currentDefeatedEnemiesID = new();
+
+        private bool isBossfightActivated;
 
         private void Start()
         {
             for (int i = 0; i < waves.Length; i++)
             {
-                for (int j = 0; j < waves[i].golems.Length; j++)
+                for (int j = 0; j < waves[i].golems.Count; j++)
                 {
                     GolemInWave golem = waves[i].golems[j].gameObject.AddComponent<GolemInWave>();
                     golem.bossFightSystem = this;
+                    
+                    golem.waveID = i;
+                    golem.golemID = j;
+                    
+                    golem.gameObject.GetComponent<EntityHealth>().OnDeath.AddListener(golem.OnDeath);
                     
                     waves[i].golems[j].DeactivateEnemyUnit();
                 }
@@ -30,37 +43,56 @@ namespace Enemies
         {
             _currentWave++;
 
+            Instantiate(explosionEffect, transform.position, Quaternion.identity);
+            
+            Debug.Log("current wave " + _currentWave);
+
             if (_currentWave >= waves.Length)
             {
                 //Bossfight complete
-                print("HELL YEAH");
+                Debug.Log("HELL YEAH");
+                
+                onEndBossFight?.Invoke();
                 
                 return;
             }
 
-            _currentWaveEnemiesCount = waves[_currentWave].golems.Length;
+            _currentEnemiesWaveCount = waves[_currentWave].golems.Count;
                 
-            for (int i = 0; i < waves[_currentWave].golems.Length; i++)
+            for (int i = 0; i < waves[_currentWave].golems.Count; i++)
             {
                 waves[_currentWave].golems[i].ActivateEnemyUnit();
+                print(waves[_currentWave].golems[i]);
             }
         }
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag("Player"))
+            if (!isBossfightActivated && other.CompareTag("Player"))
             {
+                print("entered");
+                isBossfightActivated = true;
                 onStartBossFight?.Invoke();
                 StartNextWave();
             }
         }
 
-        public void OnDestroyGolemInWave()
+        public void OnDestroyGolemInWave(int waveID, int golemID)
         {
-            _currentWaveEnemiesCount--;
+            if (_currentEnemiesWaveCount == -1 || waveID != _currentWave) return;
 
-            if (_currentWaveEnemiesCount <= 0)
+            if (!_currentDefeatedEnemiesID.Contains(golemID))
             {
+                _currentEnemiesWaveCount--;
+                Debug.Log("current enemies wave count " + _currentEnemiesWaveCount);
+
+                _currentDefeatedEnemiesID.Add(golemID);
+            }
+
+            if (_currentEnemiesWaveCount <= 0)
+            {
+                _currentEnemiesWaveCount = -1;
+                _currentDefeatedEnemiesID = new List<int>();
                 StartNextWave();
             }
         }
@@ -69,6 +101,6 @@ namespace Enemies
     [System.Serializable]
     public class GolemWave
     {
-        public EnemyUnitBase.EnemyUnitBase[] golems;
+        public List<EnemyUnitBase.EnemyUnitBase> golems;
     }
 }

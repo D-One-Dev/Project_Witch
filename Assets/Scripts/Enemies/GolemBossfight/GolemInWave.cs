@@ -5,10 +5,13 @@ namespace Enemies
     public class GolemInWave : MonoBehaviour
     {
         public GolemWaveBossfight bossFightSystem;
+
+        public int waveID;
+        public int golemID;
         
-        private void OnDestroy()
+        public void OnDeath()
         {
-            bossFightSystem.OnDestroyGolemInWave();
+            bossFightSystem.OnDestroyGolemInWave(waveID, golemID);
         }
     }
 }

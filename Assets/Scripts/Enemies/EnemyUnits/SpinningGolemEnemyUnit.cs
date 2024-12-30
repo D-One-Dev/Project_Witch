@@ -11,21 +11,27 @@ namespace Enemies.EnemyUnits
         private static readonly int IsRushing = Animator.StringToHash("isRushing");
 
         private IAction defaultChaseAction;
-
         private IAction _deathAction;
 
         private float _defaultAcceleration;
+
+        private SphereCollider _attackArea;
 
         protected override void InitEnemy()
         {
             _enemy = new Enemy(_agent, transform, animator, this);
             _walkAction = new Idle();
             
+            ChangeEnemyTag("Untagged");
+            
             _chaseAction = new ChaseWithTrigger(_player, () =>
             {
+                ChangeEnemyTag("Enemy");
+                
                 StartCoroutine(UpdateAttackState());
                 animator.SetTrigger("isAwake");
                 SetDefaultAttackMode();
+                _attackArea.enabled = true;
             });
 
             _attackAction = new Idle();
@@ -34,6 +40,9 @@ namespace Enemies.EnemyUnits
 
             defaultChaseAction = new Chase(_player);
             _defaultAcceleration = _agent.acceleration;
+
+            _attackArea = GetComponent<SphereCollider>();
+            _attackArea.enabled = false;
         }
 
         private IEnumerator UpdateAttackState()
@@ -73,6 +82,7 @@ namespace Enemies.EnemyUnits
             StopAllCoroutines();
             _currentAction = _deathAction;
             _agent.enabled = false;
+            ChangeEnemyTag("Untagged");
         }
     }
 }

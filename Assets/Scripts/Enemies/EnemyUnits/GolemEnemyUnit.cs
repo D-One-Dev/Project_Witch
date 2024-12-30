@@ -18,6 +18,8 @@ namespace Enemies.EnemyUnits
         [SerializeField] private GameObject explosionSphereEffect;
         [SerializeField] private Transform explosionPoint;
 
+        [SerializeField] private EnemyBeamSpawning enemyBeamSpawning;
+
         private List<IAction> _attackActions = new();
         
         private IAction _deathAction;
@@ -26,6 +28,8 @@ namespace Enemies.EnemyUnits
         
         protected override void InitEnemy()
         {
+            ChangeEnemyTag("Untagged");
+            
             _enemy = new Enemy(_agent, transform, animator, this);
             _walkAction = new Idle();
             _chaseAction = new ChaseWithTrigger(_player, ActivateGolem);
@@ -54,6 +58,8 @@ namespace Enemies.EnemyUnits
 
         private void ActivateGolem()
         {
+            ChangeEnemyTag("Enemy");
+            
             animator.SetTrigger("isAwake");
             _centerPoint = Instantiate(centerPointPrefab, transform.position, Quaternion.identity).transform;
             _walkAction = new WalkInRadius(walkPointRange, _centerPoint);
@@ -105,6 +111,8 @@ namespace Enemies.EnemyUnits
             base.Death();
             StopAllCoroutines();
             _currentAction = _deathAction;
+            enemyBeamSpawning.DespawnLaser();
+            ChangeEnemyTag("Untagged");
             print(_currentAction);
         }
     }
