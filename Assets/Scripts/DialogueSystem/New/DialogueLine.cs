@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using Lean.Localization;
+using UnityEngine.Events;
 
 [System.Serializable]
 public class DialogueLine : DialogueBase
@@ -16,6 +17,7 @@ public class DialogueLine : DialogueBase
     [SerializeField] private TextAnimator.AnimationType animationType;
     [SerializeField] private float timeScale;
     [SerializeField] private float magnitude;
+    [SerializeField] public UnityEvent onLineEnd;
 
     private string _line;
     private Coroutine _lineAppearCoroutine;

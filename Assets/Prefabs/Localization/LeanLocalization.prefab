@@ -1911,6 +1911,59 @@ MonoBehaviour:
   - Language: English
     Text: <color=#00195F>Not the strangest of things to come your way.
     Object: {fileID: 0}
+--- !u!1 &2415826674421300335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3275123862975281156}
+  - component: {fileID: 357285544579393978}
+  m_Layer: 0
+  m_Name: CutsceneSorry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3275123862975281156
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2415826674421300335}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9119077503101532315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &357285544579393978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2415826674421300335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u042D\u0442\u043E \u043D\u0435 \u0444\u0438\u043D\u0430\u043B\u044C\u043D\u0430\u044F
+      \u0432\u0435\u0440\u0441\u0438\u044F \u043A\u0430\u0442\u0441\u0446\u0435\u043D\u044B"
+    Object: {fileID: 0}
+  - Language: English
+    Text: This is not the final version of the cutscene
+    Object: {fileID: 0}
 --- !u!1 &2457913635253727273
 GameObject:
   m_ObjectHideFlags: 0
@@ -3113,6 +3166,7 @@ Transform:
   - {fileID: 7822562972732944668}
   - {fileID: 4930184722681215486}
   - {fileID: 3506024021236171998}
+  - {fileID: 3275123862975281156}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3361877429124737769

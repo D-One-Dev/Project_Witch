@@ -35,6 +35,7 @@ public class DialogueHolder : MonoBehaviour
             _currentLine.StartLine(this, dialogueText);
             _textAnimator.SetAnimation(_currentLine.GetAnimationParameters());
             yield return new WaitUntil(() => _currentLine.IsFinished);
+            _currentLine.onLineEnd?.Invoke();
         }
 
         Debug.Log("Dialogue End");

@@ -31036,8 +31036,8 @@ MonoBehaviour:
     type: 2}
   poisonedRockSpell: {fileID: 11400000, guid: 0254283dd62da1743a02174769f0f69f, type: 2}
   poisonedShardSpell: {fileID: 11400000, guid: 7b8ed292a1d873144b32986d525b3a9e, type: 2}
-  leftSpell: {fileID: 11400000, guid: 29341cccf08603947a03fb4888d7ce25, type: 2}
-  rightSpell: {fileID: 11400000, guid: 7f3762dc9062be0468aedb52f423c6da, type: 2}
+  leftSpell: {fileID: 11400000, guid: 7f3762dc9062be0468aedb52f423c6da, type: 2}
+  rightSpell: {fileID: 11400000, guid: 29341cccf08603947a03fb4888d7ce25, type: 2}
   leftEffect: {fileID: 11400000, guid: d9cfc28c11392ad4cacfe913abe3b01a, type: 2}
   rightEffect: {fileID: 11400000, guid: 0ba98c0a383de2340a26ac4f7fe7e267, type: 2}
 --- !u!114 &1760312126
