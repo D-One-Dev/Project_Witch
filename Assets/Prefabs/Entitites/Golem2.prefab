@@ -404,6 +404,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3846169369354141184}
+        m_TargetAssemblyTypeName: Enemies.AttackInArea, Assembly-CSharp
+        m_MethodName: DisableDamage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   partOfColliderTriggers: []
 --- !u!114 &9035134091911473081
 MonoBehaviour:
@@ -429,6 +441,7 @@ MonoBehaviour:
   sightRange: 50
   attackRange: 10
   deathParticles: {fileID: 0}
+  IsEnemySystemDeactivated: 0
   rushCooldown: 15
 --- !u!114 &3846169369354141184
 MonoBehaviour:

@@ -44,5 +44,10 @@ namespace Enemies
             yield return new WaitForSeconds(cooldownForAttackWhileStaying);
             _isCooldownForAttack = false;
         }
+
+        public void DisableDamage() 
+        {
+            damage = 0;
+        }
     }
 }

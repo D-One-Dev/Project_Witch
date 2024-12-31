@@ -24,7 +24,6 @@ public class NextSceneTrigger : MonoBehaviour
     {
         _savesController.CurrentSceneID = nextSceneID;
         _savesController.Save();
-        Debug.Log(loadingScreen);
         _savesController.ResetPlayerPos();
         _animationsController.ChangeScene(loadingScreen, nextSceneID);
     }

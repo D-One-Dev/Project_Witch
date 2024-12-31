@@ -139,7 +139,7 @@ PlayerSettings:
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
-  bundleVersion: 1.0.0 DEMO
+  bundleVersion: 1.0.1 DEMO
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -844,7 +844,7 @@ PlayerSettings:
   scriptingBackend:
     Standalone: 1
   il2cppCompilerConfiguration:
-    Standalone: 1
+    Standalone: 2
   il2cppCodeGeneration: {}
   managedStrippingLevel:
     EmbeddedLinux: 1
